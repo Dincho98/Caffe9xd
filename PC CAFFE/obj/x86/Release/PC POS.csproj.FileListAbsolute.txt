@@ -1,0 +1,61 @@
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\bin\Release\pc_pos_database.sdf
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\bin\Release\PC POS.exe.config
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\bin\Release\PC POS.exe
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\bin\Release\PC POS.pdb
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\Interop.SSCE.dll
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PC POS.csproj.ResolveComReference.cache
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmNovaKalkulacija.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPartnerTrazi.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmMenu.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmNoviPartner.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmRobaTrazi.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmRobaUsluge.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.probe.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Properties.Resources.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PC POS.exe
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PC POS.pdb
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPopisKalkulacija.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmFaktura.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPonude.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmRadniNalog.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmSveFakture.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmSvePonude.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmSviRadniNalozi.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmKarticaRobe.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmKarticaSkladiste.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmOtpremnica.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmStavkeRadnogNaloga.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmSviNormativi.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmNormativi.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\bin\Release\PC POS.exe.manifest
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\bin\Release\PC POS.application
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PC POS.exe.manifest
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PC POS.application
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmAktivnostiZaposlenika.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmUnosInventura.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmKasa.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmKasaPrijava.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPromocijePostavke.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmSveOtpremnice.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmUzvratiti.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Form1.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPostavaBaze.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmKasaOpcije.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPodaci_tvrtka.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPosPrinter.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmPostavke.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.frmSveInventure.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Kasa.frmIspisOdredenogRacuna.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Kasa.frmStornoRacuna.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmBlagajne.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmDucani.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.Gradovi.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmGrupeProizvoda.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmProizvodaci.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmSkladista.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmZaposlenici.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmZemlje.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS\obj\x86\Release\PCPOS.Sifarnik.frmZiroRacun.resources

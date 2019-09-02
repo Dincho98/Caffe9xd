@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSstatistike" targetNamespace="http://tempuri.org/DSstatistike.xsd" xmlns:mstns="http://tempuri.org/DSstatistike.xsd" xmlns="http://tempuri.org/DSstatistike.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSstatistike" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSstatistike" msprop:Generator_UserDSName="DSstatistike">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTstatistika" msprop:Generator_TableClassName="DTstatistikaDataTable" msprop:Generator_TableVarName="tableDTstatistika" msprop:Generator_TablePropName="DTstatistika" msprop:Generator_RowDeletingName="DTstatistikaRowDeleting" msprop:Generator_RowChangingName="DTstatistikaRowChanging" msprop:Generator_RowEvHandlerName="DTstatistikaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTstatistikaRowDeleted" msprop:Generator_UserTableName="DTstatistika" msprop:Generator_RowChangedName="DTstatistikaRowChanged" msprop:Generator_RowEvArgName="DTstatistikaRowChangeEvent" msprop:Generator_RowClassName="DTstatistikaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="drzava" msprop:Generator_ColumnVarNameInTable="columndrzava" msprop:Generator_ColumnPropNameInRow="drzava" msprop:Generator_ColumnPropNameInTable="drzavaColumn" msprop:Generator_UserColumnName="drzava" type="xs:string" minOccurs="0" />
+              <xs:element name="broj_gostiju" msprop:Generator_ColumnVarNameInTable="columnbroj_gostiju" msprop:Generator_ColumnPropNameInRow="broj_gostiju" msprop:Generator_ColumnPropNameInTable="broj_gostijuColumn" msprop:Generator_UserColumnName="broj_gostiju" type="xs:decimal" minOccurs="0" />
+              <xs:element name="broj_nocenja" msprop:Generator_ColumnVarNameInTable="columnbroj_nocenja" msprop:Generator_ColumnPropNameInRow="broj_nocenja" msprop:Generator_ColumnPropNameInTable="broj_nocenjaColumn" msprop:Generator_UserColumnName="broj_nocenja" type="xs:decimal" minOccurs="0" />
+              <xs:element name="taksa" msprop:Generator_ColumnVarNameInTable="columntaksa" msprop:Generator_ColumnPropNameInRow="taksa" msprop:Generator_ColumnPropNameInTable="taksaColumn" msprop:Generator_UserColumnName="taksa" type="xs:decimal" minOccurs="0" />
+              <xs:element name="naslov" msprop:Generator_ColumnVarNameInTable="columnnaslov" msprop:Generator_ColumnPropNameInRow="naslov" msprop:Generator_ColumnPropNameInTable="naslovColumn" msprop:Generator_UserColumnName="naslov" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

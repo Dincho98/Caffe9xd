@@ -1,0 +1,9 @@
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\bin\Debug\Shop.exe
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\bin\Debug\Shop.pdb
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\obj\x86\Debug\Shop.Properties.Resources.resources
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\obj\x86\Debug\Shop.exe
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\obj\x86\Debug\Shop.pdb
+C:\Users\Korisnik01\AppData\Local\Temporary Projects\Shop\obj\x86\Debug\Shop.frmMenu.resources

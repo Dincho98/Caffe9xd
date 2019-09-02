@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSkasaVrstaRobe" targetNamespace="http://tempuri.org/DSkasaVrstaRobe.xsd" xmlns:mstns="http://tempuri.org/DSkasaVrstaRobe.xsd" xmlns="http://tempuri.org/DSkasaVrstaRobe.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSkasaVrstaRobe" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSkasaVrstaRobe" msprop:Generator_UserDSName="DSkasaVrstaRobe">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTvrstaRobe" msprop:Generator_TableClassName="DTvrstaRobeDataTable" msprop:Generator_TableVarName="tableDTvrstaRobe" msprop:Generator_TablePropName="DTvrstaRobe" msprop:Generator_RowDeletingName="DTvrstaRobeRowDeleting" msprop:Generator_UserTableName="DTvrstaRobe" msprop:Generator_RowChangingName="DTvrstaRobeRowChanging" msprop:Generator_RowEvHandlerName="DTvrstaRobeRowChangeEventHandler" msprop:Generator_RowDeletedName="DTvrstaRobeRowDeleted" msprop:Generator_RowEvArgName="DTvrstaRobeRowChangeEvent" msprop:Generator_RowChangedName="DTvrstaRobeRowChanged" msprop:Generator_RowClassName="DTvrstaRobeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="naslov" msprop:Generator_ColumnVarNameInTable="columnnaslov" msprop:Generator_ColumnPropNameInRow="naslov" msprop:Generator_ColumnPropNameInTable="naslovColumn" msprop:Generator_UserColumnName="naslov" type="xs:string" minOccurs="0" />
+              <xs:element name="vrsta_robe" msprop:Generator_ColumnVarNameInTable="columnvrsta_robe" msprop:Generator_ColumnPropNameInRow="vrsta_robe" msprop:Generator_ColumnPropNameInTable="vrsta_robeColumn" msprop:Generator_UserColumnName="vrsta_robe" type="xs:string" minOccurs="0" />
+              <xs:element name="sve_ukupno" msprop:Generator_ColumnVarNameInTable="columnsve_ukupno" msprop:Generator_ColumnPropNameInRow="sve_ukupno" msprop:Generator_ColumnPropNameInTable="sve_ukupnoColumn" msprop:Generator_UserColumnName="sve_ukupno" type="xs:string" minOccurs="0" />
+              <xs:element name="rabat" msprop:Generator_ColumnVarNameInTable="columnrabat" msprop:Generator_ColumnPropNameInRow="rabat" msprop:Generator_ColumnPropNameInTable="rabatColumn" msprop:Generator_UserColumnName="rabat" type="xs:string" minOccurs="0" />
+              <xs:element name="osnovica" msprop:Generator_ColumnVarNameInTable="columnosnovica" msprop:Generator_ColumnPropNameInRow="osnovica" msprop:Generator_ColumnPropNameInTable="osnovicaColumn" msprop:Generator_UserColumnName="osnovica" type="xs:string" minOccurs="0" />
+              <xs:element name="pdv" msprop:Generator_ColumnVarNameInTable="columnpdv" msprop:Generator_ColumnPropNameInRow="pdv" msprop:Generator_ColumnPropNameInTable="pdvColumn" msprop:Generator_UserColumnName="pdv" type="xs:string" minOccurs="0" />
+              <xs:element name="iznos_bez_pdva" msprop:Generator_ColumnVarNameInTable="columniznos_bez_pdva" msprop:Generator_ColumnPropNameInRow="iznos_bez_pdva" msprop:Generator_ColumnPropNameInTable="iznos_bez_pdvaColumn" msprop:Generator_UserColumnName="iznos_bez_pdva" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

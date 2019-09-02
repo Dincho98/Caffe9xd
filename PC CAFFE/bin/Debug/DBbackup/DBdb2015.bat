@@ -1,0 +1,1 @@
+pg_dump.exe --host localhost --port 5432 --username postgres --format custom --blobs --verbose --file "C:\Users\POWER\Desktop\Sigurnosna kopija 2013\db20152013-12-18.backup" "db2015"

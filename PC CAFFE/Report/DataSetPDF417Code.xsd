@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetPDF417Code" targetNamespace="http://tempuri.org/DataSetPDF417Code.xsd" xmlns:mstns="http://tempuri.org/DataSetPDF417Code.xsd" xmlns="http://tempuri.org/DataSetPDF417Code.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetPDF417Code" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetPDF417Code" msprop:Generator_UserDSName="DataSetPDF417Code">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PDF417" msprop:Generator_TableClassName="PDF417DataTable" msprop:Generator_TableVarName="tablePDF417" msprop:Generator_TablePropName="PDF417" msprop:Generator_RowDeletingName="PDF417RowDeleting" msprop:Generator_RowChangingName="PDF417RowChanging" msprop:Generator_RowEvHandlerName="PDF417RowChangeEventHandler" msprop:Generator_RowDeletedName="PDF417RowDeleted" msprop:Generator_UserTableName="PDF417" msprop:Generator_RowChangedName="PDF417RowChanged" msprop:Generator_RowEvArgName="PDF417RowChangeEvent" msprop:Generator_RowClassName="PDF417Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnPropNameInTable="ImageColumn" msprop:Generator_UserColumnName="Image" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

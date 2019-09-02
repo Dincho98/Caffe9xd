@@ -1,0 +1,53 @@
+C:\Users\HP\Desktop\PC POS\PC POS Update\bin\Debug\PC POS Update.exe
+C:\Users\HP\Desktop\PC POS\PC POS Update\bin\Debug\PC POS Update.pdb
+C:\Users\HP\Desktop\PC POS\PC POS Update\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\HP\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+C:\Users\HP\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\HP\Desktop\PC POS\PC POS Update\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\HP\Desktop\PC POS\PC POS Update\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\HP\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\HP\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC POS Update.pdb
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC POS Update.pdb
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\bin\Debug\PC POS Update.exe
+C:\Users\Korisnik01\Desktop\PC POS\PC POS Update\bin\Debug\PC POS Update.pdb
+C:\Users\PRO\Desktop\PC POS\PC POS Update\bin\Debug\PC POS Update.exe
+C:\Users\PRO\Desktop\PC POS\PC POS Update\bin\Debug\PC POS Update.pdb
+C:\Users\PRO\Desktop\PC POS\PC POS Update\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\PRO\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+C:\Users\PRO\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\PRO\Desktop\PC POS\PC POS Update\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\PRO\Desktop\PC POS\PC POS Update\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\PRO\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\PRO\Desktop\PC POS\PC POS Update\obj\x86\Debug\PC POS Update.pdb
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\bin\Debug\PC POS Update.exe
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\bin\Debug\PC POS Update.pdb
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\PRO\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.pdb
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\bin\Debug\PC POS Update.exe
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\bin\Debug\PC POS Update.pdb
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.csproj.GenerateResource.Cache
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.pdb
+C:\Users\DrazenPC\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.csprojResolveAssemblyReference.cache
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\bin\Debug\PC POS Update.exe
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\bin\Debug\PC POS Update.pdb
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC_POS_Update.frmUpdate.resources
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\ProBook\Desktop\PC CAFFE\PC POS Update\obj\x86\Debug\PC POS Update.pdb

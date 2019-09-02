@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IzdatnicaDataSet" targetNamespace="http://tempuri.org/IzdatnicaDataSet.xsd" xmlns:mstns="http://tempuri.org/IzdatnicaDataSet.xsd" xmlns="http://tempuri.org/IzdatnicaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IzdatnicaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IzdatnicaDataSet" msprop:Generator_UserDSName="IzdatnicaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableIzdatnica" msprop:Generator_TableClassName="DataTableIzdatnicaDataTable" msprop:Generator_TableVarName="tableDataTableIzdatnica" msprop:Generator_TablePropName="DataTableIzdatnica" msprop:Generator_RowDeletingName="DataTableIzdatnicaRowDeleting" msprop:Generator_RowChangingName="DataTableIzdatnicaRowChanging" msprop:Generator_RowEvHandlerName="DataTableIzdatnicaRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableIzdatnicaRowDeleted" msprop:Generator_UserTableName="DataTableIzdatnica" msprop:Generator_RowChangedName="DataTableIzdatnicaRowChanged" msprop:Generator_RowEvArgName="DataTableIzdatnicaRowChangeEvent" msprop:Generator_RowClassName="DataTableIzdatnicaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Izdatnica" msprop:Generator_ColumnVarNameInTable="columnID_Izdatnica" msprop:Generator_ColumnPropNameInRow="ID_Izdatnica" msprop:Generator_ColumnPropNameInTable="ID_IzdatnicaColumn" msprop:Generator_UserColumnName="ID_Izdatnica" type="xs:int" minOccurs="0" />
+              <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:string" minOccurs="0" />
+              <xs:element name="Partner" msprop:Generator_ColumnVarNameInTable="columnPartner" msprop:Generator_ColumnPropNameInRow="Partner" msprop:Generator_ColumnPropNameInTable="PartnerColumn" msprop:Generator_UserColumnName="Partner" type="xs:string" minOccurs="0" />
+              <xs:element name="Iznos" msprop:Generator_ColumnVarNameInTable="columnIznos" msprop:Generator_ColumnPropNameInRow="Iznos" msprop:Generator_ColumnPropNameInTable="IznosColumn" msprop:Generator_UserColumnName="Iznos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DatumOd" msprop:Generator_ColumnVarNameInTable="columnDatumOd" msprop:Generator_ColumnPropNameInRow="DatumOd" msprop:Generator_ColumnPropNameInTable="DatumOdColumn" msprop:Generator_UserColumnName="DatumOd" type="xs:string" minOccurs="0" />
+              <xs:element name="DatumDo" msprop:Generator_ColumnVarNameInTable="columnDatumDo" msprop:Generator_ColumnPropNameInRow="DatumDo" msprop:Generator_ColumnPropNameInTable="DatumDoColumn" msprop:Generator_UserColumnName="DatumDo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

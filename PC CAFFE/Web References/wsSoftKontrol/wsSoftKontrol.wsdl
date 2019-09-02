@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Registracija">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="productKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="activationKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oib" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nazivPoslovnice" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idGrad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="adresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fisPoslo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="napUred" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistracijaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistracijaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Kontrola">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oib" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KontrolaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KontrolaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkIfProductKeyExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="productKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkIfProductKeyExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkIfProductKeyExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegistracijaSoapIn">
+    <wsdl:part name="parameters" element="tns:Registracija" />
+  </wsdl:message>
+  <wsdl:message name="RegistracijaSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistracijaResponse" />
+  </wsdl:message>
+  <wsdl:message name="KontrolaSoapIn">
+    <wsdl:part name="parameters" element="tns:Kontrola" />
+  </wsdl:message>
+  <wsdl:message name="KontrolaSoapOut">
+    <wsdl:part name="parameters" element="tns:KontrolaResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkIfProductKeyExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:checkIfProductKeyExists" />
+  </wsdl:message>
+  <wsdl:message name="checkIfProductKeyExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:checkIfProductKeyExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsSoftKontrolSoap">
+    <wsdl:operation name="Registracija">
+      <wsdl:input message="tns:RegistracijaSoapIn" />
+      <wsdl:output message="tns:RegistracijaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Kontrola">
+      <wsdl:input message="tns:KontrolaSoapIn" />
+      <wsdl:output message="tns:KontrolaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkIfProductKeyExists">
+      <wsdl:input message="tns:checkIfProductKeyExistsSoapIn" />
+      <wsdl:output message="tns:checkIfProductKeyExistsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsSoftKontrolSoap" type="tns:wsSoftKontrolSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Registracija">
+      <soap:operation soapAction="http://tempuri.org/Registracija" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kontrola">
+      <soap:operation soapAction="http://tempuri.org/Kontrola" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkIfProductKeyExists">
+      <soap:operation soapAction="http://tempuri.org/checkIfProductKeyExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsSoftKontrolSoap12" type="tns:wsSoftKontrolSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Registracija">
+      <soap12:operation soapAction="http://tempuri.org/Registracija" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kontrola">
+      <soap12:operation soapAction="http://tempuri.org/Kontrola" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkIfProductKeyExists">
+      <soap12:operation soapAction="http://tempuri.org/checkIfProductKeyExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsSoftKontrol">
+    <wsdl:port name="wsSoftKontrolSoap" binding="tns:wsSoftKontrolSoap">
+      <soap:address location="http://software.pc1.hr/wsSoftKontrol.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsSoftKontrolSoap12" binding="tns:wsSoftKontrolSoap12">
+      <soap12:address location="http://software.pc1.hr/wsSoftKontrol.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

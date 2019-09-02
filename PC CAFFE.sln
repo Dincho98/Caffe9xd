@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PC CAFFE", "PC CAFFE\PC CAFFE.csproj", "{F92B694A-66F9-40C6-9176-5CA2D7306642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESORT", "RESORT\RESORT.csproj", "{EE766858-0BC2-414A-B9DB-B5EC3D11EBA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESORT Update", "RESORT Update\RESORT Update.csproj", "{B7DDE602-D222-4BAD-881A-51736ED64312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiniNovijeFajloveZaPostgres", "SkiniNovijeFajloveZaPostgres\SkiniNovijeFajloveZaPostgres.csproj", "{4B812C4D-D74F-4EF9-BA83-739F4AEFBB16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DlluSystem32", "DlluSystem32\DlluSystem32.csproj", "{D793E5C3-2ACA-4594-8AFE-3C5931362048}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F92B694A-66F9-40C6-9176-5CA2D7306642}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F92B694A-66F9-40C6-9176-5CA2D7306642}.Debug|x86.ActiveCfg = Debug|x86
+		{F92B694A-66F9-40C6-9176-5CA2D7306642}.Debug|x86.Build.0 = Debug|x86
+		{F92B694A-66F9-40C6-9176-5CA2D7306642}.Release|Any CPU.ActiveCfg = Release|x86
+		{F92B694A-66F9-40C6-9176-5CA2D7306642}.Release|x86.ActiveCfg = Release|x86
+		{F92B694A-66F9-40C6-9176-5CA2D7306642}.Release|x86.Build.0 = Release|x86
+		{EE766858-0BC2-414A-B9DB-B5EC3D11EBA5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EE766858-0BC2-414A-B9DB-B5EC3D11EBA5}.Debug|x86.ActiveCfg = Debug|x86
+		{EE766858-0BC2-414A-B9DB-B5EC3D11EBA5}.Debug|x86.Build.0 = Debug|x86
+		{EE766858-0BC2-414A-B9DB-B5EC3D11EBA5}.Release|Any CPU.ActiveCfg = Release|x86
+		{EE766858-0BC2-414A-B9DB-B5EC3D11EBA5}.Release|x86.ActiveCfg = Release|x86
+		{EE766858-0BC2-414A-B9DB-B5EC3D11EBA5}.Release|x86.Build.0 = Release|x86
+		{B7DDE602-D222-4BAD-881A-51736ED64312}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B7DDE602-D222-4BAD-881A-51736ED64312}.Debug|x86.ActiveCfg = Debug|x86
+		{B7DDE602-D222-4BAD-881A-51736ED64312}.Release|Any CPU.ActiveCfg = Release|x86
+		{B7DDE602-D222-4BAD-881A-51736ED64312}.Release|x86.ActiveCfg = Release|x86
+		{4B812C4D-D74F-4EF9-BA83-739F4AEFBB16}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4B812C4D-D74F-4EF9-BA83-739F4AEFBB16}.Debug|x86.ActiveCfg = Debug|x86
+		{4B812C4D-D74F-4EF9-BA83-739F4AEFBB16}.Debug|x86.Build.0 = Debug|x86
+		{4B812C4D-D74F-4EF9-BA83-739F4AEFBB16}.Release|Any CPU.ActiveCfg = Release|x86
+		{4B812C4D-D74F-4EF9-BA83-739F4AEFBB16}.Release|x86.ActiveCfg = Release|x86
+		{4B812C4D-D74F-4EF9-BA83-739F4AEFBB16}.Release|x86.Build.0 = Release|x86
+		{D793E5C3-2ACA-4594-8AFE-3C5931362048}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D793E5C3-2ACA-4594-8AFE-3C5931362048}.Debug|x86.ActiveCfg = Debug|x86
+		{D793E5C3-2ACA-4594-8AFE-3C5931362048}.Debug|x86.Build.0 = Debug|x86
+		{D793E5C3-2ACA-4594-8AFE-3C5931362048}.Release|Any CPU.ActiveCfg = Release|x86
+		{D793E5C3-2ACA-4594-8AFE-3C5931362048}.Release|x86.ActiveCfg = Release|x86
+		{D793E5C3-2ACA-4594-8AFE-3C5931362048}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2B60F0A-447E-41CD-AB48-48AF6CCACABE}
+	EndGlobalSection
+EndGlobal

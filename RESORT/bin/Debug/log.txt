@@ -1,0 +1,2057 @@
+
+
+**************************************************************
+Forma: frmMeni
+Linija: 200
+Greška:
+greška
+**************************************************************
+
+
+**************************************************************
+Forma: frmMeni
+Linija: 200
+Greška:
+greška
+**************************************************************
+
+**************************************************************
+DATUM:28.5.2013. 13:14:29, FORMA: frmMeni
+LINIJA KODA:200
+GREŠKA:
+greška
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:51:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('22','21','1','46,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "46,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('6','6','1','33,5','21.5.2013. 0:00:00','31.5.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "33,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('10','10','1','36,5','1.6.2013. 0:00:00','14.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "36,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('15','15','1','43,5','15.6.2013. 0:00:00','28.6.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "43,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('23','22','1','53,5','29.6.2013. 0:00:00','19.7.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('28','27','1','58,5','20.7.2013. 0:00:00','23.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "58,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:31.5.2013. 11:58:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO R_CijenaSoba (broj_sobe,id_soba,id_valuta,cijena_nocenja,od_datuma,do_datuma) VALUES ('33','32','1','53,5','24.8.2013. 0:00:00','30.8.2013. 23:59:59')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "53,5"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:1.6.2013. 11:46:39, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO neuspjela_fiskalizacija (broj_racuna,xml,greska,id_ducan,id_kasa,blagajnik,iznos,date) VALUES ('1','<?xml version="1.0" encoding="utf-8"?><tns:RacunZahtjev xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="signXmlId" xmlns:tns="http://www.apis-it.hr/fin/2012/types/f73"><tns:Zaglavlje><tns:IdPoruke>895f102a-c484-4997-b5dc-f70866053312</tns:IdPoruke><tns:DatumVrijeme>01.06.2013T11:46:30</tns:DatumVrijeme></tns:Zaglavlje><tns:Racun><tns:Oib>74119470951</tns:Oib><tns:USustPdv>true</tns:USustPdv><tns:DatVrijeme>01.06.2013T11:46:30</tns:DatVrijeme><tns:OznSlijed>P</tns:OznSlijed><tns:BrRac><tns:BrOznRac>1</tns:BrOznRac><tns:OznPosPr>PC</tns:OznPosPr><tns:OznNapUr>1</tns:OznNapUr></tns:BrRac><tns:Pdv><tns:Porez><tns:Stopa>10.00</tns:Stopa><tns:Osnovica>29152.90</tns:Osnovica><tns:Iznos>2915.29</tns:Iznos></tns:Porez></tns:Pdv><tns:IznosUkupno>32922.18</tns:IznosUkupno><tns:NacinPlac>G</tns:NacinPlac><tns:OibOper>0000000000000</tns:OibOper><tns:ZastKod>0761db10637f281b2d708f851c4147a5</tns:ZastKod><tns:NakDost>false</tns:NakDost></tns:Racun></tns:RacunZahtjev>','<?xml version=1.0 encoding=UTF-8?><soap:Envelope xmlns:soap=http://schemas.xmlsoap.org/soap/envelope/ xmlns:xsd=http://www.w3.org/2001/XMLSchema><soap:Body><tns:RacunOdgovor Id=G0xc100a080-4D xsi:schemaLocation=http://www.apis-it.hr/fin/2012/types/f73 ../schema/FiskalizacijaSchema.xsd  xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:tns=http://www.apis-it.hr/fin/2012/types/f73><tns:Zaglavlje><tns:IdPoruke>895f102a-c484-4997-b5dc-f70866053312</tns:IdPoruke><tns:DatumVrijeme>01.06.2013T11:46:37</tns:DatumVrijeme></tns:Zaglavlje><tns:Greske><tns:Greska><tns:SifraGreske>s001</tns:SifraGreske><tns:PorukaGreske>
+	            	Poruka nije u skladu s XML shemom :  cvc-simple-type 1: element {http://www.apis-it.hr/fin/2012/types/f73}OibOper value 0000000000000 is not a valid instance of type {http://www.apis-it.hr/fin/2012/types/f73}OibType</tns:PorukaGreske></tns:Greska></tns:Greske><Signature xmlns=http://www.w3.org/2000/09/xmldsig#><SignedInfo><CanonicalizationMethod Algorithm=http://www.w3.org/TR/2001/REC-xml-c14n-20010315 /><SignatureMethod Algorithm=http://www.w3.org/2000/09/xmldsig#rsa-sha1 /><Reference URI=#G0xc100a080-4D><Transforms><Transform Algorithm=http://www.w3.org/2000/09/xmldsig#enveloped-signature /><Transform Algorithm=http://www.w3.org/TR/2001/REC-xml-c14n-20010315 /></Transforms><DigestMethod Algorithm=http://www.w3.org/2000/09/xmldsig#sha1 /><DigestValue>AeN2TqtDSliaFVwOYjGZrAmMf2E=</DigestValue></Reference></SignedInfo><SignatureValue>I5CXLn2SJhgszNW0mD+tEy8oQKzWFbq2/UXQz/ro0gwkTFfbg9/LXRlhcEYGlet2Bi5mvNz1hRtr0eN920W9HnVbqPob76KgJqeZipqlcVZvM/MujGWxdDj3rkXhRnH7gg0LFQ3HKz0lgHRlgr6CZiq4Q9VfoQy/5I3ZzIjCBq4YIuAug9X2u+sLhWVjsKze64fFLw+9WdvWjRSB5W7HeRj9bARas3jgkSl1zCmS8SfjlbrFGlQo6fAgm/OTazKnO9pXqMUP6UPI0q4Yonce+zJHHgyUufVSA2ICFv/SUtD2ukknqdj1kerEpaTuXQsKH2dKSxV/uEtr1T+VIzaDJw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIExDCCA6ygAwIBAgIEPssQcTANBgkqhkiG9w0BAQUFADArMQswCQYDVQQGEwJIUjENMAsGA1UEChMERklOQTENMAsGA1UECxMEREVNTzAeFw0xMjA5MjYwODExNDlaFw0xNDA5MjYwODQxNDlaMHgxCzAJBgNVBAYTAkhSMQ0wCwYDVQQKEwRGSU5BMQ0wCwYDVQQLEwRERU1PMREwDwYDVQQLEwhQb3Nsb3ZuaTEgMB4GA1UECxMXQVBJUyBJVCBELk8uTy4gODA1NDEzNzIxFjAUBgNVBAMTDWZpc2thbGNpc3Rlc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC81TtKtJ84emCS/HK7gSovjNdluZWB0DbIMq3cBFpOpmurcbDCJ1Z17XiPLa+UWYIqyAjHQyDnG/H4c5EeGoli9swz5QcZFBmyXTpSd3GuMROgUAd4bcvbw1/HDONE5cE8PL11GIy8gi5ANZkujalYmx+1ImnhHxx1Bh2UJ/bcl2eXPtieBQBwtClATSzseB5FFz8LcSyfzM7h39PsAIZ0p8YzH7W+307gvgrJHYb/n4ADwlxieHqb5j74DVD0rUPcUE5d0nSZ7hfEkW8xICgs1Ly6Vu3w7Z5M8vb4QmoPnlT1EaHCXiweuK6vjkUk8RQmYY4lTFBs8zHiG7h4n9bPAgMBAAGjggGhMIIBnTAOBgNVHQ8BAf8EBAMCBaAwQgYDVR0gBDswOTA3BgkrfIhQBR8FBAIwKjAoBggrBgEFBQcCARYcaHR0cDovL2RlbW8tcGtpLmZpbmEuaHIvY3BzLzCBzgYDVR0fBIHGMIHDMEKgQKA+pDwwOjELMAkGA1UEBhMCSFIxDTALBgNVBAoTBEZJTkExDTALBgNVBAsTBERFTU8xDTALBgNVBAMTBENSTDcwfaB7oHmGT2xkYXA6Ly9kZW1vLWxkYXAuZmluYS5oci9vdT1ERU1PLG89RklOQSxjPUhSP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3QlM0JiaW5hcnmGJmh0dHA6Ly9kZW1vLXBraS5maW5hLmhyL2NybC9kZW1vY2EuY3JsMCsGA1UdEAQkMCKADzIwMTIwOTI2MDgxMTQ5WoEPMjAxNDA5MjYwODQxNDlaMB8GA1UdIwQYMBaAFHpgI45InTJrpOUt3bhZtJT8QmKeMB0GA1UdDgQWBBRgIJsZevSn6kDuSzChmaa9Sqr6sjAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBBQUAA4IBAQCo5kJWaNjgS+UG7XQHsHersDFk4K5W/Y2Pbubary0j3IwJrveHbUR3HOb0KiVenF6+1FL3sCI/2tfH3wSszWL8Gkit8jUudTo5vDyLqEUXYDHlFUBwseudsPkUxPiQ6HuuFd3PiUAWf00chXD38eTjfapNu6VeQt4EORSO+rEXdhWihVb5HxFIVPTkqHmq1KINwtV9+thwE3hNMwacRa4gwTB1O+jadVlJQMq+kgwnLGLBcwr0W+x1ye6MPSYEUxSNFGHPG/evP9DRLwJtR3ngvlCDusnO+A75Nn40VYcoIjw6EN1V+plK+HkLye0zzLsnHIWTSGfZ2sQVG5xCURiI</X509Certificate><X509IssuerSerial><X509IssuerName>OU=DEMO, O=FINA, C=HR</X509IssuerName><X509SerialNumber>1053495409</X509SerialNumber></X509IssuerSerial></X509Data></KeyInfo></Signature></tns:RacunOdgovor></soap:Body></soap:Envelope>','PC','1','0000000000000','32922.18','2013-06-01 11:46:39')
+Npgsql.NpgsqlException:
+relation "neuspjela_fiskalizacija" does not exist
+Severity: ERROR
+Code: 42P01
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:4.6.2013. 15:19:55, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','7','2.00','14.00','0','0','10','---------','---------','BORAVIŠNA PRISTOJBA','10','7')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:4.6.2013. 15:19:56, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:4.6.2013. 15:19:56, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','7','2.00','40.00','0','0','10','---------','---------','USLUGA','10','20')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:4.6.2013. 15:19:56, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:4.6.2013. 15:19:56, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','7','5','500.00','0','0','0','---------','---------','dgjdfgjdfg','10','100')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:4.6.2013. 15:33:12, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','8','10','10000.00','0','0','0','---------','---------','Dodatna stavka','10','1000')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:4.6.2013. 15:34:54, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','9','10','100.00','0','0','0','---------','---------','Dodatna stavka','10','10')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:15:11, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','10','20.00','140.00','0','0','1','---------','---------','BORAVIŠNA PRISTOJBA','10','7')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:15:18, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 80
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:15:18, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','10','10','500.00','0','0','0','---------','---------','Dodatna stavka','10','50')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:43:25, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','11','5','35.00','0','0','1','---------','---------','BORAVIŠNA PRISTOJBA','10','7')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:43:27, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 80
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:47:00, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','12','10','1000.00','0','0','0','---------','---------','Dodatna stavka','10','100')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:49:50, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','13','10','100.00','0','0','0','','','Dodatna stavka','10','10')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: ""
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 8:51:05, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','14','10','100.00','0','0','0',,,'Dodatna stavka','10','10')
+Npgsql.NpgsqlException:
+syntax error at or near ","
+Severity: ERROR
+Code: 42601
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 14:31:33, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO rfakture (broj,godina,datumdvo,datum,datum_valute,valuta,id_valuta,id_partner,nacin_placanja,id_izradio,model,napomena,ukupno) VALUES ('16','2013','5.6.2013. 8:55:05','5.6.2013. 8:55:05','5.6.2013. 8:55:05','7,6','1','0','1','13','','','-100.00')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "7,6"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 14:40:36, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO rfakture (broj,godina,datumdvo,datum,datum_valute,valuta,id_valuta,id_partner,nacin_placanja,id_izradio,model,napomena,ukupno) VALUES ('16','2013','1.6.2013. 12:43:33','31.5.2013. 12:43:33','1.6.2013. 12:43:33','7,6','1','0','1','13','','','-516.00')
+Npgsql.NpgsqlException:
+invalid input syntax for type numeric: "7,6"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 14:57:16, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','17','1','7.00','0','0','5','2013-06-05 14:57:16','2013-06-05 14:57:16','BORAVIŠNA PRISTOJBA','0','7')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 14:57:23, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 80
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 14:57:23, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','17','1','20.00','0','0','5','2013-06-05 14:57:23','2013-06-05 14:57:23','USLUGA','0','20')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 14:57:24, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 80
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 15:51:52, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','18','20.00','140.00','0','0','1','2013-06-05 15:51:52','2013-06-05 15:51:52','BORAVIŠNA PRISTOJBA','10','7')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:5.6.2013. 15:51:59, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 80
+**************************************************************
+
+**************************************************************
+DATUM:6.6.2013. 8:11:09, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('','19','10','70.00','0','0','1','2013-06-06 8:11:09','2013-06-06 8:11:09','BORAVIŠNA PRISTOJBA','10','7')
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:6.6.2013. 8:11:23, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE unos_gosta SET odjava='1' WHERE id=''
+Npgsql.NpgsqlException:
+invalid input syntax for integer: ""
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 80
+**************************************************************
+
+**************************************************************
+DATUM:9.7.2013. 9:02:55, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','33','1','7.00','0','0','0','','','BORAVIŠNA PRISTOJBA','0','7')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: ""
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:9.7.2013. 9:03:18, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','34','2','14.00','0','0','0','','','BORAVIŠNA PRISTOJBA','0','7')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: ""
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:9.7.2013. 9:10:35, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','36','9','63.00','0','0','0','---------','---------','BORAVIŠNA PRISTOJBA','0','7')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT\RemoteDB.cs:line 59
+**************************************************************
+
+**************************************************************
+DATUM:8.4.2014. 10:21:58, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO Rfaktura_stavke (id_unos_gosta,broj,dana,ukupno,rabat,avans,broj_sobe,datumDolaska,datumOdlaska, ime_gosta,porez,cijena_sobe) VALUES ('0','440','1','100.00','0','0','0','','','dfgjdfgj','25','100')
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: ""
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT\RemoteDB.cs:line 58
+**************************************************************
+
+**************************************************************
+DATUM:14.7.2014. 10:44:17, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE Rfaktura_stavke SET  id_unos_gosta='0', broj='3', dana='5', ukupno='500.00', rabat='0', avans='0', datumDolaska='---------', broj_sobe='0', ime_gosta='Dodatna stavkafk', datumOdlaska='---------', porez='0', cijena_sobe='100' WHERE id='3'
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT\RemoteDB.cs:line 78
+**************************************************************
+
+**************************************************************
+DATUM:14.7.2014. 11:22:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE Rfaktura_stavke SET  id_unos_gosta='0', broj='3', dana='5', ukupno='500.00', rabat='0', avans='0', datumDolaska='---------', broj_sobe='0', ime_gosta='Dodatna stavkafk', datumOdlaska='---------', porez='0', cijena_sobe='100' WHERE id='3'
+Npgsql.NpgsqlException:
+invalid input syntax for type timestamp: "---------"
+Severity: ERROR
+Code: 22007
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:26.7.2014. 17:54:28, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE rfakture SET jir='31852283-f2f5-4f39-ac74-43954fa77eea' AND zki='c806afb0661ffc8633dad110d754adc2' WHERE broj='441'
+Npgsql.NpgsqlException:
+column "zki" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:26.7.2014. 17:57:51, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE rfakture SET jir='a134f6ea-aec2-49a5-ae7d-4b59a224cc6b' AND zik='0e0fd96051ba76c109ff2603f7d0daac' WHERE broj='159'
+Npgsql.NpgsqlException:
+invalid input syntax for type boolean: "a134f6ea-aec2-49a5-ae7d-4b59a224cc6b"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:17.9.2015. 13:05:01, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE Rponude_stavke SET  broj='1', dana='36', ukupno='22319.00', rabat='3', avans='1', datumDolaska='17.9.2015. 12:40:55', opis_usluge='vas up', datumOdlaska='17.9.2015. 12:40:55', porez='10', boravisna_pristojba='10', iznos_usluge='125', cijena_sobe='500' WHERE id='DataGridViewTextBoxCell { ColumnIndex=12, RowIndex=0 }'
+Npgsql.NpgsqlException:
+invalid input syntax for integer: "DataGridViewTextBoxCell { ColumnIndex=12, RowIndex=0 }"
+Severity: ERROR
+Code: 22P02
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql)
+**************************************************************
+
+**************************************************************
+DATUM:9.5.2017. 13:04:02, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+ALTER TABLE valute ADD COLUMN sifra character(3); ALTER TABLE valute ADD COLUMN naziv character(3); ALTER TABLE valute ADD COLUMN puni_naziv character varying(100); ALTER TABLE valute ADD COLUMN paritet numeric; 
+Npgsql.NpgsqlException:
+column "naziv" of relation "valute" already exists
+Severity: ERROR
+Code: 42701
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 68
+**************************************************************
+
+**************************************************************
+DATUM:9.5.2017. 13:04:04, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE valute SET sifra='978',naziv='EUR',puni_naziv='Euro',paritet='1' WHERE ime_valute='978 EUR'
+Npgsql.NpgsqlException:
+column "sifra" of relation "valute" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 68
+**************************************************************
+
+**************************************************************
+DATUM:9.5.2017. 13:04:04, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE valute SET sifra='840',naziv='USD',puni_naziv='Američki Dolar',paritet='1' WHERE ime_valute='840 USD'
+Npgsql.NpgsqlException:
+column "sifra" of relation "valute" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 68
+**************************************************************
+
+**************************************************************
+DATUM:9.5.2017. 13:04:07, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE valute SET sifra='348',naziv='HUF',puni_naziv='Mađarska forinta',paritet='100' WHERE ime_valute='348 HUF'
+Npgsql.NpgsqlException:
+column "sifra" of relation "valute" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 68
+**************************************************************
+
+**************************************************************
+DATUM:9.5.2017. 13:04:08, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE valute SET sifra='756',naziv='CHF',puni_naziv='Švicarski franak',paritet='1' WHERE ime_valute='756 CHF'
+Npgsql.NpgsqlException:
+column "sifra" of relation "valute" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 68
+**************************************************************
+
+**************************************************************
+DATUM:9.5.2017. 13:04:09, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE valute SET sifra='1',tecaj='1',naziv='HR',puni_naziv='Kune',paritet='1' WHERE id_valuta='1'
+Npgsql.NpgsqlException:
+column "sifra" of relation "valute" does not exist
+Severity: ERROR
+Code: 42703
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 68
+**************************************************************
+
+**************************************************************
+DATUM:19.5.2017. 9:06:03, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO grad (grad,posta,id_drzava,zupanija,naselje) VALUES ('Ž. Gora','40312','60','Međ','Ž. Gora')
+Npgsql.NpgsqlException:
+duplicate key value violates unique constraint "grad_primary_key"
+Severity: ERROR
+Code: 23505
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 52
+**************************************************************
+
+**************************************************************
+DATUM:30.5.2017. 13:26:34, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+UPDATE valute SET naziv='GBPp' WHERE id_valuta='7'
+Npgsql.NpgsqlException:
+value too long for type character(3)
+Severity: ERROR
+Code: 22001
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.update(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 68
+**************************************************************
+
+**************************************************************
+DATUM:14.6.2017. 8:18:52, FORMA: RemoteDB
+LINIJA KODA:65
+GREŠKA:
+INSERT INTO valute (sifra,naziv,ime_valute,puni_naziv,tecaj,paritet) VALUES('432','TES','432 TES','Test valuta', '12','1')
+Npgsql.NpgsqlException:
+duplicate key value violates unique constraint "valute_primary_key"
+Severity: ERROR
+Code: 23505
+   at Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext()
+   at Npgsql.ForwardsOnlyDataReader.GetNextResponseObject()
+   at Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   at Npgsql.ForwardsOnlyDataReader.NextResult()
+   at Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError)
+   at Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at RESORT.RemoteDB.insert(String sql) in D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE GIT\RESORT\RemoteDB.cs:line 52
+**************************************************************

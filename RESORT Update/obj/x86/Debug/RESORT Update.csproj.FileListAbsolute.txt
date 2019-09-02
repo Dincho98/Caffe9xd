@@ -1,0 +1,19 @@
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\obj\x86\Debug\PC POS Update.pdb
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\obj\x86\Debug\RESORT_Update.frmUpdate.resources
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\obj\x86\Debug\RESORT Update.csproj.GenerateResource.Cache
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\bin\Debug\PC POS Update.exe
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\bin\Debug\PC POS Update.pdb
+C:\Users\DrazenPC\Desktop\PC CAFFE\RESORT Update\obj\x86\Debug\RESORT Update.csprojResolveAssemblyReference.cache
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\PC POS Update.exe
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\PC POS Update.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\PC POS Update.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\PC POS Update.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\bin\Debug\PC POS Update.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\bin\Debug\PC POS Update.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\RESORT_Update.frmUpdate.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\PC_POS_Update.Properties.Resources.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\RESORT Update\obj\x86\Debug\GenerateResource.write.1.tlog

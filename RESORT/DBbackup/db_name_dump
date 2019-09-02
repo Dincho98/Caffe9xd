@@ -1,0 +1,5143 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+SET search_path = public, pg_catalog;
+
+ALTER TABLE ONLY public.zupanije DROP CONSTRAINT zupanije_primary_key;
+ALTER TABLE ONLY public.ziro_racun DROP CONSTRAINT ziro_racun_primary_key;
+ALTER TABLE ONLY public.zemlja DROP CONSTRAINT zemlja_primary_key;
+ALTER TABLE ONLY public.zaposlenici DROP CONSTRAINT zaposlenici_primary_key;
+ALTER TABLE ONLY public.valute DROP CONSTRAINT valute_primary_key;
+ALTER TABLE ONLY public.stolovi DROP CONSTRAINT stolovi_primary_key;
+ALTER TABLE ONLY public.skladiste DROP CONSTRAINT skladiste_primary_key;
+ALTER TABLE ONLY public.roba_prodaja DROP CONSTRAINT roba_prodaja_primary_key;
+ALTER TABLE ONLY public.roba DROP CONSTRAINT roba_primary_key;
+ALTER TABLE ONLY public.remote_postavke DROP CONSTRAINT remote_postavke_primary_key;
+ALTER TABLE ONLY public.racuni DROP CONSTRAINT racuni_primary_key;
+ALTER TABLE ONLY public.racun_stavke DROP CONSTRAINT racun_stavke_primary_key;
+ALTER TABLE ONLY public.racun_popust_kod_sljedece_kupnje DROP CONSTRAINT racun_popust_kod_sljedece_kupnje_primary_key;
+ALTER TABLE ONLY public.promocije DROP CONSTRAINT promocije_primary_key;
+ALTER TABLE ONLY public.promocija1 DROP CONSTRAINT promocija1_primary_key;
+ALTER TABLE ONLY public.promjena_cijene_stavke DROP CONSTRAINT promjena_cijene_stavke_primary_key;
+ALTER TABLE ONLY public.promjena_cijene DROP CONSTRAINT promjena_cijene_primary_key;
+ALTER TABLE ONLY public.primka_stavke DROP CONSTRAINT primka_stavke_primary_key;
+ALTER TABLE ONLY public.primka DROP CONSTRAINT primka_primary_key;
+ALTER TABLE ONLY public.povrat_robe_stavke DROP CONSTRAINT povrat_robe_stavke_primary_key;
+ALTER TABLE ONLY public.povrat_robe DROP CONSTRAINT povrat_robe_primary_key;
+ALTER TABLE ONLY public.pos_print DROP CONSTRAINT pos_print_primary_key;
+ALTER TABLE ONLY public.porezi DROP CONSTRAINT porezi_primary_key;
+ALTER TABLE ONLY public.porez_na_potrosnju DROP CONSTRAINT porez_na_potrosnju_primary_key;
+ALTER TABLE ONLY public.ponude_stavke DROP CONSTRAINT ponude_stavke_primary_key;
+ALTER TABLE ONLY public.ponude DROP CONSTRAINT ponude_primary_key;
+ALTER TABLE ONLY public.podgrupa DROP CONSTRAINT podgrupa_primary_key;
+ALTER TABLE ONLY public.podaci_tvrtka DROP CONSTRAINT podaci_tvrtka_primary_key;
+ALTER TABLE ONLY public.pocetno_stanje_stavke DROP CONSTRAINT pocetno_stanje_stavke_primary_key;
+ALTER TABLE ONLY public.pocetno_stanje DROP CONSTRAINT pocetno_stanje_primary_key;
+ALTER TABLE ONLY public.partners DROP CONSTRAINT partners_primary_key;
+ALTER TABLE ONLY public.otpremnice DROP CONSTRAINT otpremnice_primary_key;
+ALTER TABLE ONLY public.otpremnica_stavke DROP CONSTRAINT otpremnica_stavke_primary_key;
+ALTER TABLE ONLY public.otprema DROP CONSTRAINT otprema_primary_key;
+ALTER TABLE ONLY public.neuspjela_fiskalizacija DROP CONSTRAINT neuspjela_fiskalizacija_primary_key;
+ALTER TABLE ONLY public.nacin_placanja DROP CONSTRAINT nacin_placanja_primary_key;
+ALTER TABLE ONLY public.money DROP CONSTRAINT money_primary_key;
+ALTER TABLE ONLY public.mjesto_troska DROP CONSTRAINT mjesto_troska_primary_key;
+ALTER TABLE ONLY public.meduskladisnica_stavke DROP CONSTRAINT meduskladisnica_stavke_primary_key;
+ALTER TABLE ONLY public.meduskladisnica DROP CONSTRAINT meduskladisnica_primary_key;
+ALTER TABLE ONLY public.manufacturers DROP CONSTRAINT manufacturers_primary_key;
+ALTER TABLE ONLY public.izjava DROP CONSTRAINT izjava_primary_key;
+ALTER TABLE ONLY public.inventura_stavke DROP CONSTRAINT inventura_stavke_primary_key;
+ALTER TABLE ONLY public.inventura DROP CONSTRAINT inventura_primary_key;
+ALTER TABLE ONLY public.grupa DROP CONSTRAINT grupa_primary_key;
+ALTER TABLE ONLY public.grad DROP CONSTRAINT grad_primary_key;
+ALTER TABLE ONLY public.fiskalizacija DROP CONSTRAINT fiskalizacija_primary_key;
+ALTER TABLE ONLY public.fakture_vd DROP CONSTRAINT fakture_vd_primary_key;
+ALTER TABLE ONLY public.fakture DROP CONSTRAINT fakture_primary_key;
+ALTER TABLE ONLY public.faktura_stavke DROP CONSTRAINT faktura_stavke_primary_key;
+ALTER TABLE ONLY public.ducan DROP CONSTRAINT ducan_primary_key;
+ALTER TABLE ONLY public.dopustenja DROP CONSTRAINT dopustenja_primary_key;
+ALTER TABLE ONLY public.djelatnosti DROP CONSTRAINT djelatnosti_primary_key;
+ALTER TABLE ONLY public.caffe_normativ DROP CONSTRAINT caffe_normativ_primary_key;
+ALTER TABLE ONLY public.caffe_narudzbe DROP CONSTRAINT caffe_narudzbe_primary_key;
+ALTER TABLE ONLY public.blagajna DROP CONSTRAINT blagajna_primary_key;
+ALTER TABLE ONLY public.bankovne_kartice DROP CONSTRAINT bankovne_kartice_primary_key;
+ALTER TABLE ONLY public.aktivnost_zaposlenici DROP CONSTRAINT aktivnost_zaposlenici_primary_key;
+ALTER TABLE public.zupanije ALTER COLUMN id_zupanija DROP DEFAULT;
+ALTER TABLE public.ziro_racun ALTER COLUMN id_ziroracun DROP DEFAULT;
+ALTER TABLE public.zemlja ALTER COLUMN id_zemlja DROP DEFAULT;
+ALTER TABLE public.zaposlenici ALTER COLUMN id_zaposlenik DROP DEFAULT;
+ALTER TABLE public.valute ALTER COLUMN id_valuta DROP DEFAULT;
+ALTER TABLE public.stolovi ALTER COLUMN id_stol DROP DEFAULT;
+ALTER TABLE public.skladiste ALTER COLUMN id_skladiste DROP DEFAULT;
+ALTER TABLE public.roba_prodaja ALTER COLUMN id_roba_prodaja DROP DEFAULT;
+ALTER TABLE public.roba ALTER COLUMN id_roba DROP DEFAULT;
+ALTER TABLE public.remote_postavke ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE public.racun_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.racun_popust_kod_sljedece_kupnje ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE public.promocije ALTER COLUMN id_promocija DROP DEFAULT;
+ALTER TABLE public.promjena_cijene_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.primka_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.povrat_robe_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.porezi ALTER COLUMN id_porez DROP DEFAULT;
+ALTER TABLE public.porez_na_potrosnju ALTER COLUMN id_porez_potrosnja DROP DEFAULT;
+ALTER TABLE public.ponude_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.podgrupa ALTER COLUMN id_podgrupa DROP DEFAULT;
+ALTER TABLE public.pocetno_stanje_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.otpremnice ALTER COLUMN id_otpremnica DROP DEFAULT;
+ALTER TABLE public.otpremnica_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.otprema ALTER COLUMN id_otprema DROP DEFAULT;
+ALTER TABLE public.neuspjela_fiskalizacija ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE public.nacin_placanja ALTER COLUMN id_placanje DROP DEFAULT;
+ALTER TABLE public.money ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE public.mjesto_troska ALTER COLUMN id_mjesto DROP DEFAULT;
+ALTER TABLE public.meduskladisnica_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.meduskladisnica ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE public.manufacturers ALTER COLUMN id_manufacturers DROP DEFAULT;
+ALTER TABLE public.izjava ALTER COLUMN id_izjava DROP DEFAULT;
+ALTER TABLE public.inventura_stavke ALTER COLUMN id_stavke DROP DEFAULT;
+ALTER TABLE public.grupa ALTER COLUMN id_grupa DROP DEFAULT;
+ALTER TABLE public.grad ALTER COLUMN id_grad DROP DEFAULT;
+ALTER TABLE public.faktura_stavke ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.ducan ALTER COLUMN id_ducan DROP DEFAULT;
+ALTER TABLE public.dopustenja ALTER COLUMN id_dopustenje DROP DEFAULT;
+ALTER TABLE public.djelatnosti ALTER COLUMN id_djelatnost DROP DEFAULT;
+ALTER TABLE public.caffe_normativ ALTER COLUMN id_stavka DROP DEFAULT;
+ALTER TABLE public.caffe_narudzbe ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE public.blagajna ALTER COLUMN id_blagajna DROP DEFAULT;
+ALTER TABLE public.aktivnost_zaposlenici ALTER COLUMN id_aktivnost DROP DEFAULT;
+DROP SEQUENCE public.zupanije_id_zupanija_seq;
+DROP TABLE public.zupanije;
+DROP SEQUENCE public.ziro_racun_id_ziroracun_seq;
+DROP TABLE public.ziro_racun;
+DROP SEQUENCE public.zemlja_id_zemlja_seq;
+DROP TABLE public.zemlja;
+DROP SEQUENCE public.zaposlenici_id_zaposlenik_seq;
+DROP TABLE public.zaposlenici;
+DROP SEQUENCE public.valute_id_valuta_seq;
+DROP TABLE public.valute;
+DROP SEQUENCE public.stolovi_id_stol_seq;
+DROP TABLE public.stolovi;
+DROP SEQUENCE public.skladiste_id_skladiste_seq;
+DROP TABLE public.skladiste;
+DROP SEQUENCE public.roba_prodaja_id_roba_prodaja_seq;
+DROP TABLE public.roba_prodaja;
+DROP SEQUENCE public.roba_id_roba_seq;
+DROP TABLE public.roba;
+DROP SEQUENCE public.remote_postavke_id_seq;
+DROP TABLE public.remote_postavke;
+DROP TABLE public.racuni;
+DROP SEQUENCE public.racun_stavke_id_stavka_seq;
+DROP TABLE public.racun_stavke;
+DROP SEQUENCE public.racun_popust_kod_sljedece_kupnje_id_seq;
+DROP TABLE public.racun_popust_kod_sljedece_kupnje;
+DROP SEQUENCE public.promocije_id_promocija_seq;
+DROP TABLE public.promocije;
+DROP TABLE public.promocija1;
+DROP SEQUENCE public.promjena_cijene_stavke_id_stavka_seq;
+DROP TABLE public.promjena_cijene_stavke;
+DROP TABLE public.promjena_cijene;
+DROP SEQUENCE public.primka_stavke_id_stavka_seq;
+DROP TABLE public.primka_stavke;
+DROP TABLE public.primka;
+DROP SEQUENCE public.povrat_robe_stavke_id_stavka_seq;
+DROP TABLE public.povrat_robe_stavke;
+DROP TABLE public.povrat_robe;
+DROP TABLE public.postavke;
+DROP TABLE public.pos_print;
+DROP SEQUENCE public.porezi_id_porez_seq;
+DROP TABLE public.porezi;
+DROP SEQUENCE public.porez_na_potrosnju_id_porez_potrosnja_seq;
+DROP TABLE public.porez_na_potrosnju;
+DROP SEQUENCE public.ponude_stavke_id_stavka_seq;
+DROP TABLE public.ponude_stavke;
+DROP TABLE public.ponude;
+DROP SEQUENCE public.podgrupa_id_podgrupa_seq;
+DROP TABLE public.podgrupa;
+DROP TABLE public.podaci_tvrtka;
+DROP SEQUENCE public.pocetno_stanje_stavke_id_stavka_seq;
+DROP TABLE public.pocetno_stanje_stavke;
+DROP TABLE public.pocetno_stanje;
+DROP TABLE public.partners;
+DROP SEQUENCE public.otpremnice_id_otpremnica_seq;
+DROP TABLE public.otpremnice;
+DROP SEQUENCE public.otpremnica_stavke_id_stavka_seq;
+DROP TABLE public.otpremnica_stavke;
+DROP SEQUENCE public.otprema_id_otprema_seq;
+DROP TABLE public.otprema;
+DROP SEQUENCE public.neuspjela_fiskalizacija_id_seq;
+DROP TABLE public.neuspjela_fiskalizacija;
+DROP SEQUENCE public.nacin_placanja_id_placanje_seq;
+DROP TABLE public.nacin_placanja;
+DROP TABLE public.na_stol;
+DROP SEQUENCE public.money_id_seq;
+DROP TABLE public.money;
+DROP SEQUENCE public.mjesto_troska_id_mjesto_seq;
+DROP TABLE public.mjesto_troska;
+DROP SEQUENCE public.meduskladisnica_stavke_id_stavka_seq;
+DROP TABLE public.meduskladisnica_stavke;
+DROP SEQUENCE public.meduskladisnica_id_seq;
+DROP TABLE public.meduskladisnica;
+DROP SEQUENCE public.manufacturers_id_manufacturers_seq;
+DROP TABLE public.manufacturers;
+DROP SEQUENCE public.izjava_id_izjava_seq;
+DROP TABLE public.izjava;
+DROP SEQUENCE public.inventura_stavke_id_stavke_seq;
+DROP TABLE public.inventura_stavke;
+DROP TABLE public.inventura;
+DROP SEQUENCE public.grupa_id_grupa_seq;
+DROP TABLE public.grupa;
+DROP SEQUENCE public.grad_id_grad_seq;
+DROP TABLE public.grad;
+DROP TABLE public.fiskalizacija;
+DROP TABLE public.fakture_vd;
+DROP TABLE public.fakture;
+DROP SEQUENCE public.faktura_stavke_id_stavka_seq;
+DROP TABLE public.faktura_stavke;
+DROP SEQUENCE public.ducan_id_ducan_seq;
+DROP TABLE public.ducan;
+DROP SEQUENCE public.dopustenja_id_dopustenje_seq;
+DROP TABLE public.dopustenja;
+DROP SEQUENCE public.djelatnosti_id_djelatnost_seq;
+DROP TABLE public.djelatnosti;
+DROP SEQUENCE public.caffe_normativ_id_stavka_seq;
+DROP TABLE public.caffe_normativ;
+DROP SEQUENCE public.caffe_narudzbe_id_seq;
+DROP TABLE public.caffe_narudzbe;
+DROP SEQUENCE public.blagajna_id_blagajna_seq;
+DROP TABLE public.blagajna;
+DROP TABLE public.bankovne_kartice;
+DROP SEQUENCE public.aktivnost_zaposlenici_id_aktivnost_seq;
+DROP TABLE public.aktivnost_zaposlenici;
+DROP EXTENSION plpgsql;
+DROP SCHEMA public;
+--
+-- Name: public; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA public;
+
+
+ALTER SCHEMA public OWNER TO postgres;
+
+--
+-- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: postgres
+--
+
+COMMENT ON SCHEMA public IS 'standard public schema';
+
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: aktivnost_zaposlenici; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE aktivnost_zaposlenici (
+    id_aktivnost integer NOT NULL,
+    id_zaposlenik bigint,
+    datum timestamp without time zone,
+    radnja character varying(100)
+);
+
+
+ALTER TABLE public.aktivnost_zaposlenici OWNER TO postgres;
+
+--
+-- Name: aktivnost_zaposlenici_id_aktivnost_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE aktivnost_zaposlenici_id_aktivnost_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.aktivnost_zaposlenici_id_aktivnost_seq OWNER TO postgres;
+
+--
+-- Name: aktivnost_zaposlenici_id_aktivnost_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE aktivnost_zaposlenici_id_aktivnost_seq OWNED BY aktivnost_zaposlenici.id_aktivnost;
+
+
+--
+-- Name: aktivnost_zaposlenici_id_aktivnost_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('aktivnost_zaposlenici_id_aktivnost_seq', 1, false);
+
+
+--
+-- Name: bankovne_kartice; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE bankovne_kartice (
+    id_kartica integer NOT NULL,
+    naziv character varying(50)
+);
+
+
+ALTER TABLE public.bankovne_kartice OWNER TO postgres;
+
+--
+-- Name: blagajna; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE blagajna (
+    ime_blagajne character varying(100),
+    id_ducan integer,
+    aktivnost character varying(2),
+    id_blagajna integer NOT NULL
+);
+
+
+ALTER TABLE public.blagajna OWNER TO postgres;
+
+--
+-- Name: blagajna_id_blagajna_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE blagajna_id_blagajna_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.blagajna_id_blagajna_seq OWNER TO postgres;
+
+--
+-- Name: blagajna_id_blagajna_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE blagajna_id_blagajna_seq OWNED BY blagajna.id_blagajna;
+
+
+--
+-- Name: blagajna_id_blagajna_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('blagajna_id_blagajna_seq', 1, true);
+
+
+--
+-- Name: caffe_narudzbe; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE caffe_narudzbe (
+    sifra_stavke character varying(25),
+    djelatnik integer,
+    kuhinja_spremna smallint,
+    sank_spreman smallint,
+    broj_racuna bigint,
+    kolicina character varying(10),
+    id integer NOT NULL,
+    id_stol integer
+);
+
+
+ALTER TABLE public.caffe_narudzbe OWNER TO postgres;
+
+--
+-- Name: caffe_narudzbe_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE caffe_narudzbe_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.caffe_narudzbe_id_seq OWNER TO postgres;
+
+--
+-- Name: caffe_narudzbe_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE caffe_narudzbe_id_seq OWNED BY caffe_narudzbe.id;
+
+
+--
+-- Name: caffe_narudzbe_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('caffe_narudzbe_id_seq', 2, true);
+
+
+--
+-- Name: caffe_normativ; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE caffe_normativ (
+    id_stavka integer NOT NULL,
+    sifra character varying(25),
+    sifra_normativ character varying(25),
+    kolicina character varying(10),
+    id_skladiste integer
+);
+
+
+ALTER TABLE public.caffe_normativ OWNER TO postgres;
+
+--
+-- Name: caffe_normativ_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE caffe_normativ_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.caffe_normativ_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: caffe_normativ_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE caffe_normativ_id_stavka_seq OWNED BY caffe_normativ.id_stavka;
+
+
+--
+-- Name: caffe_normativ_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('caffe_normativ_id_stavka_seq', 1, false);
+
+
+--
+-- Name: djelatnosti; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE djelatnosti (
+    id_djelatnost integer NOT NULL,
+    ime_djelatnosti character varying(100)
+);
+
+
+ALTER TABLE public.djelatnosti OWNER TO postgres;
+
+--
+-- Name: djelatnosti_id_djelatnost_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE djelatnosti_id_djelatnost_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.djelatnosti_id_djelatnost_seq OWNER TO postgres;
+
+--
+-- Name: djelatnosti_id_djelatnost_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE djelatnosti_id_djelatnost_seq OWNED BY djelatnosti.id_djelatnost;
+
+
+--
+-- Name: djelatnosti_id_djelatnost_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('djelatnosti_id_djelatnost_seq', 1, true);
+
+
+--
+-- Name: dopustenja; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE dopustenja (
+    id_dopustenje integer NOT NULL,
+    naziv character varying(50)
+);
+
+
+ALTER TABLE public.dopustenja OWNER TO postgres;
+
+--
+-- Name: dopustenja_id_dopustenje_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE dopustenja_id_dopustenje_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.dopustenja_id_dopustenje_seq OWNER TO postgres;
+
+--
+-- Name: dopustenja_id_dopustenje_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE dopustenja_id_dopustenje_seq OWNED BY dopustenja.id_dopustenje;
+
+
+--
+-- Name: dopustenja_id_dopustenje_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('dopustenja_id_dopustenje_seq', 1, true);
+
+
+--
+-- Name: ducan; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE ducan (
+    ime_ducana character varying(100),
+    aktivnost character varying(2),
+    id_ducan integer NOT NULL
+);
+
+
+ALTER TABLE public.ducan OWNER TO postgres;
+
+--
+-- Name: ducan_id_ducan_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE ducan_id_ducan_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.ducan_id_ducan_seq OWNER TO postgres;
+
+--
+-- Name: ducan_id_ducan_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE ducan_id_ducan_seq OWNED BY ducan.id_ducan;
+
+
+--
+-- Name: ducan_id_ducan_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('ducan_id_ducan_seq', 1, true);
+
+
+--
+-- Name: faktura_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE faktura_stavke (
+    id_stavka integer NOT NULL,
+    kolicina character varying(8),
+    vpc numeric,
+    porez character varying(10),
+    broj_fakture bigint,
+    rabat character varying(10),
+    id_skladiste integer,
+    sifra character varying(20),
+    oduzmi character varying(2),
+    odjava character varying(1),
+    nbc pg_catalog.money,
+    porez_potrosnja character varying(10)
+);
+
+
+ALTER TABLE public.faktura_stavke OWNER TO postgres;
+
+--
+-- Name: faktura_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE faktura_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.faktura_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: faktura_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE faktura_stavke_id_stavka_seq OWNED BY faktura_stavke.id_stavka;
+
+
+--
+-- Name: faktura_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('faktura_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: fakture; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE fakture (
+    broj_fakture bigint NOT NULL,
+    id_odrediste bigint,
+    id_fakturirati bigint,
+    date timestamp without time zone,
+    datedvo timestamp without time zone,
+    datum_valute timestamp without time zone,
+    id_izjava integer,
+    id_zaposlenik integer,
+    id_zaposlenik_izradio integer,
+    model character varying(10),
+    id_nacin_placanja bigint,
+    zr integer,
+    id_valuta integer,
+    otprema integer,
+    id_predujam bigint,
+    napomena text,
+    ukupno pg_catalog.money,
+    id_vd character(5),
+    godina_predujma character(6),
+    godina_ponude character(6),
+    godina_fakture character varying(6),
+    mj_troska character varying(100),
+    oduzmi_iz_skladista character varying(1)
+);
+
+
+ALTER TABLE public.fakture OWNER TO postgres;
+
+--
+-- Name: fakture_vd; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE fakture_vd (
+    id_vd character varying(5) NOT NULL,
+    vd character varying(30),
+    grupa character varying(5)
+);
+
+
+ALTER TABLE public.fakture_vd OWNER TO postgres;
+
+--
+-- Name: fiskalizacija; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE fiskalizacija (
+    id character(1) NOT NULL,
+    oznaka_slijednosti character(1),
+    naziv_certifikata character varying(20),
+    aktivna smallint
+);
+
+
+ALTER TABLE public.fiskalizacija OWNER TO postgres;
+
+--
+-- Name: grad; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE grad (
+    id_grad integer NOT NULL,
+    grad character varying(100),
+    posta character varying(10),
+    zupanija character varying(80),
+    naselje character varying(100),
+    aktivnost smallint,
+    id_drzava integer
+);
+
+
+ALTER TABLE public.grad OWNER TO postgres;
+
+--
+-- Name: grad_id_grad_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE grad_id_grad_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.grad_id_grad_seq OWNER TO postgres;
+
+--
+-- Name: grad_id_grad_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE grad_id_grad_seq OWNED BY grad.id_grad;
+
+
+--
+-- Name: grad_id_grad_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('grad_id_grad_seq', 1, true);
+
+
+--
+-- Name: grupa; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE grupa (
+    id_grupa integer NOT NULL,
+    grupa character varying(50),
+    opis character varying(150),
+    id_podgrupa integer,
+    aktivnost smallint
+);
+
+
+ALTER TABLE public.grupa OWNER TO postgres;
+
+--
+-- Name: grupa_id_grupa_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE grupa_id_grupa_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.grupa_id_grupa_seq OWNER TO postgres;
+
+--
+-- Name: grupa_id_grupa_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE grupa_id_grupa_seq OWNED BY grupa.id_grupa;
+
+
+--
+-- Name: grupa_id_grupa_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('grupa_id_grupa_seq', 1, true);
+
+
+--
+-- Name: inventura; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE inventura (
+    broj_inventure character varying(15) NOT NULL,
+    id_skladiste integer,
+    datum timestamp without time zone,
+    id_zaposlenik integer,
+    napomena text,
+    godina character varying(5)
+);
+
+
+ALTER TABLE public.inventura OWNER TO postgres;
+
+--
+-- Name: inventura_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE inventura_stavke (
+    broj_inventure character varying(15),
+    sifra_robe character varying(20),
+    jmj character varying(15),
+    kolicina character varying(10),
+    cijena numeric,
+    naziv character varying(50),
+    id_stavke integer NOT NULL,
+    porez character varying(5)
+);
+
+
+ALTER TABLE public.inventura_stavke OWNER TO postgres;
+
+--
+-- Name: inventura_stavke_id_stavke_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE inventura_stavke_id_stavke_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.inventura_stavke_id_stavke_seq OWNER TO postgres;
+
+--
+-- Name: inventura_stavke_id_stavke_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE inventura_stavke_id_stavke_seq OWNED BY inventura_stavke.id_stavke;
+
+
+--
+-- Name: inventura_stavke_id_stavke_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('inventura_stavke_id_stavke_seq', 1, false);
+
+
+--
+-- Name: izjava; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE izjava (
+    izjava text,
+    id_izjava integer NOT NULL
+);
+
+
+ALTER TABLE public.izjava OWNER TO postgres;
+
+--
+-- Name: izjava_id_izjava_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE izjava_id_izjava_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.izjava_id_izjava_seq OWNER TO postgres;
+
+--
+-- Name: izjava_id_izjava_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE izjava_id_izjava_seq OWNED BY izjava.id_izjava;
+
+
+--
+-- Name: izjava_id_izjava_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('izjava_id_izjava_seq', 1, true);
+
+
+--
+-- Name: manufacturers; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE manufacturers (
+    id_manufacturers integer NOT NULL,
+    manufacturers character varying(100)
+);
+
+
+ALTER TABLE public.manufacturers OWNER TO postgres;
+
+--
+-- Name: manufacturers_id_manufacturers_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE manufacturers_id_manufacturers_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.manufacturers_id_manufacturers_seq OWNER TO postgres;
+
+--
+-- Name: manufacturers_id_manufacturers_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE manufacturers_id_manufacturers_seq OWNED BY manufacturers.id_manufacturers;
+
+
+--
+-- Name: manufacturers_id_manufacturers_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('manufacturers_id_manufacturers_seq', 1, false);
+
+
+--
+-- Name: meduskladisnica; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE meduskladisnica (
+    broj character varying(15),
+    godina character varying(4),
+    id_skladiste_od integer,
+    id_skladiste_do integer,
+    datum timestamp without time zone,
+    id_izradio integer,
+    org_dokumenat character varying(100),
+    napomena text,
+    id integer NOT NULL
+);
+
+
+ALTER TABLE public.meduskladisnica OWNER TO postgres;
+
+--
+-- Name: meduskladisnica_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE meduskladisnica_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.meduskladisnica_id_seq OWNER TO postgres;
+
+--
+-- Name: meduskladisnica_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE meduskladisnica_id_seq OWNED BY meduskladisnica.id;
+
+
+--
+-- Name: meduskladisnica_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('meduskladisnica_id_seq', 1, false);
+
+
+--
+-- Name: meduskladisnica_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE meduskladisnica_stavke (
+    sifra character varying(25),
+    mpc pg_catalog.money,
+    pdv character varying(10),
+    vpc pg_catalog.money,
+    kolicina character varying(10),
+    broj character varying(15),
+    godina character varying(4),
+    id_stavka integer NOT NULL,
+    odjava character varying(1),
+    nbc pg_catalog.money,
+    iz_skladista integer
+);
+
+
+ALTER TABLE public.meduskladisnica_stavke OWNER TO postgres;
+
+--
+-- Name: meduskladisnica_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE meduskladisnica_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.meduskladisnica_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: meduskladisnica_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE meduskladisnica_stavke_id_stavka_seq OWNED BY meduskladisnica_stavke.id_stavka;
+
+
+--
+-- Name: meduskladisnica_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('meduskladisnica_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: mjesto_troska; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE mjesto_troska (
+    id_mjesto integer NOT NULL,
+    mjesto character varying(60)
+);
+
+
+ALTER TABLE public.mjesto_troska OWNER TO postgres;
+
+--
+-- Name: mjesto_troska_id_mjesto_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE mjesto_troska_id_mjesto_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.mjesto_troska_id_mjesto_seq OWNER TO postgres;
+
+--
+-- Name: mjesto_troska_id_mjesto_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE mjesto_troska_id_mjesto_seq OWNED BY mjesto_troska.id_mjesto;
+
+
+--
+-- Name: mjesto_troska_id_mjesto_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('mjesto_troska_id_mjesto_seq', 1, true);
+
+
+--
+-- Name: money; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE money (
+    id integer NOT NULL,
+    iznos pg_catalog.money
+);
+
+
+ALTER TABLE public.money OWNER TO postgres;
+
+--
+-- Name: money_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE money_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.money_id_seq OWNER TO postgres;
+
+--
+-- Name: money_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE money_id_seq OWNED BY money.id;
+
+
+--
+-- Name: money_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('money_id_seq', 1, false);
+
+
+--
+-- Name: na_stol; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE na_stol (
+    id_stol integer,
+    sifra character varying(25),
+    broj_narudzbe character varying(7),
+    kom numeric,
+    id_poslovnica integer,
+    id_skladiste character varying(100),
+    mpc numeric,
+    vpc numeric,
+    porez numeric,
+    porez_potrosnja numeric,
+    br numeric
+);
+
+
+ALTER TABLE public.na_stol OWNER TO postgres;
+
+--
+-- Name: nacin_placanja; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE nacin_placanja (
+    id_placanje integer NOT NULL,
+    naziv_placanja character varying(50),
+    ostalo character varying(50)
+);
+
+
+ALTER TABLE public.nacin_placanja OWNER TO postgres;
+
+--
+-- Name: nacin_placanja_id_placanje_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE nacin_placanja_id_placanje_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.nacin_placanja_id_placanje_seq OWNER TO postgres;
+
+--
+-- Name: nacin_placanja_id_placanje_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE nacin_placanja_id_placanje_seq OWNED BY nacin_placanja.id_placanje;
+
+
+--
+-- Name: nacin_placanja_id_placanje_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('nacin_placanja_id_placanje_seq', 1, true);
+
+
+--
+-- Name: neuspjela_fiskalizacija; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE neuspjela_fiskalizacija (
+    id integer NOT NULL,
+    broj_racuna character varying(20),
+    xml text,
+    greska text,
+    id_ducan character varying(20),
+    id_kasa character varying(20),
+    blagajnik character varying(20),
+    iznos character varying(20),
+    date timestamp without time zone
+);
+
+
+ALTER TABLE public.neuspjela_fiskalizacija OWNER TO postgres;
+
+--
+-- Name: neuspjela_fiskalizacija_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE neuspjela_fiskalizacija_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.neuspjela_fiskalizacija_id_seq OWNER TO postgres;
+
+--
+-- Name: neuspjela_fiskalizacija_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE neuspjela_fiskalizacija_id_seq OWNED BY neuspjela_fiskalizacija.id;
+
+
+--
+-- Name: neuspjela_fiskalizacija_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('neuspjela_fiskalizacija_id_seq', 1, true);
+
+
+--
+-- Name: otprema; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE otprema (
+    id_otprema integer NOT NULL,
+    naziv character varying(100)
+);
+
+
+ALTER TABLE public.otprema OWNER TO postgres;
+
+--
+-- Name: otprema_id_otprema_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE otprema_id_otprema_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.otprema_id_otprema_seq OWNER TO postgres;
+
+--
+-- Name: otprema_id_otprema_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE otprema_id_otprema_seq OWNED BY otprema.id_otprema;
+
+
+--
+-- Name: otprema_id_otprema_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('otprema_id_otprema_seq', 1, true);
+
+
+--
+-- Name: otpremnica_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE otpremnica_stavke (
+    id_stavka integer NOT NULL,
+    kolicina character varying(15),
+    vpc numeric,
+    porez character varying(10),
+    broj_otpremnice bigint,
+    rabat character varying(20),
+    id_skladiste integer,
+    sifra_robe character varying(20),
+    oduzmi character varying(2),
+    godina_otpremnice character varying(6),
+    odjava character varying(1),
+    nbc pg_catalog.money,
+    porez_potrosnja character varying(5)
+);
+
+
+ALTER TABLE public.otpremnica_stavke OWNER TO postgres;
+
+--
+-- Name: otpremnica_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE otpremnica_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.otpremnica_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: otpremnica_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE otpremnica_stavke_id_stavka_seq OWNED BY otpremnica_stavke.id_stavka;
+
+
+--
+-- Name: otpremnica_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('otpremnica_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: otpremnice; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE otpremnice (
+    godina_otpremnice character varying(6),
+    id_skladiste integer,
+    osoba_partner bigint,
+    id_odrediste bigint,
+    vrsta_dok character varying(5),
+    datum timestamp without time zone,
+    id_izjava integer,
+    napomena text,
+    id_kom bigint,
+    id_izradio bigint,
+    id_otprema integer,
+    mj_otpreme character varying(100),
+    adr_otpreme character varying(100),
+    isprave character varying(100),
+    id_prijevoznik bigint,
+    registracija character varying(15),
+    istovarno_mj character varying(100),
+    istovarni_rok timestamp without time zone,
+    troskovi_prijevoza character varying(10),
+    broj_otpremnice bigint,
+    partner_osoba character varying(1),
+    ukupno pg_catalog.money,
+    id_otpremnica integer NOT NULL
+);
+
+
+ALTER TABLE public.otpremnice OWNER TO postgres;
+
+--
+-- Name: otpremnice_id_otpremnica_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE otpremnice_id_otpremnica_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.otpremnice_id_otpremnica_seq OWNER TO postgres;
+
+--
+-- Name: otpremnice_id_otpremnica_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE otpremnice_id_otpremnica_seq OWNED BY otpremnice.id_otpremnica;
+
+
+--
+-- Name: otpremnice_id_otpremnica_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('otpremnice_id_otpremnica_seq', 1, false);
+
+
+--
+-- Name: partners; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE partners (
+    ime_tvrtke character varying(100),
+    id_grad bigint,
+    adresa character varying(150),
+    r1r2 character varying(10),
+    oib character varying(16),
+    napomena character varying(150),
+    id_djelatnost integer,
+    zr character varying(30),
+    id_zemlja integer,
+    id_partner bigint NOT NULL,
+    ime character varying(30),
+    prezime character varying(30),
+    email character varying(30),
+    tel character varying(30),
+    mob character varying(30),
+    datum_rodenja timestamp without time zone,
+    bodovi numeric,
+    popust numeric,
+    broj_kartice integer,
+    aktivan smallint,
+    vrsta_korisnika smallint,
+    primanje_letaka smallint,
+    id_zupanija integer
+);
+
+
+ALTER TABLE public.partners OWNER TO postgres;
+
+--
+-- Name: pocetno_stanje; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE pocetno_stanje (
+    broj integer NOT NULL,
+    id_skladiste integer,
+    date timestamp without time zone,
+    id_izradio integer,
+    napomena text
+);
+
+
+ALTER TABLE public.pocetno_stanje OWNER TO postgres;
+
+--
+-- Name: pocetno_stanje_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE pocetno_stanje_stavke (
+    id_stavka integer NOT NULL,
+    sifra character varying(30),
+    ean character varying(30),
+    kolicina character varying(15),
+    pdv character varying(4),
+    mpc pg_catalog.money,
+    nbc pg_catalog.money,
+    broj bigint
+);
+
+
+ALTER TABLE public.pocetno_stanje_stavke OWNER TO postgres;
+
+--
+-- Name: pocetno_stanje_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE pocetno_stanje_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.pocetno_stanje_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: pocetno_stanje_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE pocetno_stanje_stavke_id_stavka_seq OWNED BY pocetno_stanje_stavke.id_stavka;
+
+
+--
+-- Name: pocetno_stanje_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('pocetno_stanje_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: podaci_tvrtka; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE podaci_tvrtka (
+    id integer NOT NULL,
+    ime_tvrtke character varying(100),
+    skraceno_ime character varying(100),
+    oib character varying(100),
+    tel character varying(100),
+    fax character varying(100),
+    mob character varying(100),
+    adresa character varying(100),
+    vl character varying(100),
+    zr character varying(100),
+    id_grad integer,
+    email character varying(50),
+    text_bottom text,
+    poslovnica_adresa character varying(50),
+    poslovnica_grad character varying(50),
+    iban character varying(30),
+    naziv_fakture character varying(50),
+    naslov_racuna character varying(100),
+    r1 character varying(2)
+);
+
+
+ALTER TABLE public.podaci_tvrtka OWNER TO postgres;
+
+--
+-- Name: podgrupa; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE podgrupa (
+    naziv character varying(100),
+    id_podgrupa integer NOT NULL
+);
+
+
+ALTER TABLE public.podgrupa OWNER TO postgres;
+
+--
+-- Name: podgrupa_id_podgrupa_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE podgrupa_id_podgrupa_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.podgrupa_id_podgrupa_seq OWNER TO postgres;
+
+--
+-- Name: podgrupa_id_podgrupa_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE podgrupa_id_podgrupa_seq OWNED BY podgrupa.id_podgrupa;
+
+
+--
+-- Name: podgrupa_id_podgrupa_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('podgrupa_id_podgrupa_seq', 1, true);
+
+
+--
+-- Name: ponude; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE ponude (
+    broj_ponude bigint NOT NULL,
+    id_odrediste bigint,
+    id_fakturirati bigint,
+    date timestamp without time zone,
+    vrijedi_do timestamp without time zone,
+    id_izjava integer,
+    id_zaposlenik_komercijala bigint,
+    id_zaposlenik_izradio bigint,
+    model character varying(15),
+    id_nacin_placanja integer,
+    zr integer,
+    id_valuta integer,
+    otprema integer,
+    id_nar_kupca bigint,
+    id_vd character varying(5),
+    godina_ponude character varying(6),
+    ukupno pg_catalog.money,
+    napomena text
+);
+
+
+ALTER TABLE public.ponude OWNER TO postgres;
+
+--
+-- Name: ponude_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE ponude_stavke (
+    kolicina character varying(10),
+    vpc numeric,
+    porez character varying(5),
+    broj_ponude bigint,
+    rabat character varying(5),
+    id_skladiste integer,
+    sifra character varying(20),
+    id_stavka integer NOT NULL,
+    naziv character varying(50),
+    oduzmi character varying(2),
+    porez_potrosnja character varying(5)
+);
+
+
+ALTER TABLE public.ponude_stavke OWNER TO postgres;
+
+--
+-- Name: ponude_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE ponude_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.ponude_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: ponude_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE ponude_stavke_id_stavka_seq OWNED BY ponude_stavke.id_stavka;
+
+
+--
+-- Name: ponude_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('ponude_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: porez_na_potrosnju; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE porez_na_potrosnju (
+    id_porez_potrosnja integer NOT NULL,
+    naziv character varying(30),
+    iznos character varying(10)
+);
+
+
+ALTER TABLE public.porez_na_potrosnju OWNER TO postgres;
+
+--
+-- Name: porez_na_potrosnju_id_porez_potrosnja_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE porez_na_potrosnju_id_porez_potrosnja_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.porez_na_potrosnju_id_porez_potrosnja_seq OWNER TO postgres;
+
+--
+-- Name: porez_na_potrosnju_id_porez_potrosnja_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE porez_na_potrosnju_id_porez_potrosnja_seq OWNED BY porez_na_potrosnju.id_porez_potrosnja;
+
+
+--
+-- Name: porez_na_potrosnju_id_porez_potrosnja_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('porez_na_potrosnju_id_porez_potrosnja_seq', 1, true);
+
+
+--
+-- Name: porezi; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE porezi (
+    id_porez integer NOT NULL,
+    naziv character varying(50),
+    iznos character varying(10)
+);
+
+
+ALTER TABLE public.porezi OWNER TO postgres;
+
+--
+-- Name: porezi_id_porez_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE porezi_id_porez_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.porezi_id_porez_seq OWNER TO postgres;
+
+--
+-- Name: porezi_id_porez_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE porezi_id_porez_seq OWNED BY porezi.id_porez;
+
+
+--
+-- Name: porezi_id_porez_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('porezi_id_porez_seq', 1, true);
+
+
+--
+-- Name: pos_print; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE pos_print (
+    id integer NOT NULL,
+    logical_name character varying(30),
+    device_category character varying(30),
+    ispred_kolicine character varying(5),
+    ispred_cijene character varying(5),
+    ispred_popust character varying(5),
+    ispred_ukupno character varying(5),
+    linija_praznih_bottom character varying(5),
+    ispred_artikl character varying(2),
+    bottom_text text,
+    barcode_print_bool character varying(1),
+    logical_name_drawer character varying(30),
+    device_category_drawer character varying(30),
+    drawer_bool character varying(1),
+    linedisplay_logicalname character varying(30),
+    linedisplay_device_category character varying(30),
+    linedisplay_bool character varying(1),
+    posprinterbool character varying(1),
+    windows_printer_name character varying(100),
+    windows_printer_name2 character varying(100),
+    broj_slova_na_racunu character varying(10)
+);
+
+
+ALTER TABLE public.pos_print OWNER TO postgres;
+
+--
+-- Name: postavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE postavke (
+    default_ducan character varying(30),
+    default_blagajna character varying(30),
+    default_skladiste character varying(30),
+    default_blagajnik character varying(30),
+    on_off_cashback character varying(1),
+    on_off_bodovi character varying(1),
+    on_off_postotak character varying(1),
+    pass character varying(100),
+    caffe_icon_width integer,
+    cafe_icon_height integer,
+    hrana_bool character varying(1),
+    pdv character varying(5),
+    sustav_pdv character varying(1),
+    porez_potrosnja character varying(3),
+    salji_na_web character varying(1),
+    salji_na_web_ftp character varying(100),
+    salji_na_web_user character varying(100),
+    salji_na_web_pass character varying(100),
+    aktivnost smallint,
+    lokacija_sigurnosne_kopije text,
+    gasenje_racunala smallint,
+    backup_aktivnost smallint,
+    backup_vrijeme character varying(100),
+    direct_print integer,
+    ladicaon integer,
+    preferirajsifre integer
+);
+
+
+ALTER TABLE public.postavke OWNER TO postgres;
+
+--
+-- Name: povrat_robe; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE povrat_robe (
+    broj bigint NOT NULL,
+    datum timestamp without time zone,
+    id_odrediste bigint,
+    id_partner bigint,
+    mjesto_troska character varying(100),
+    orginalni_dokument character varying(100),
+    id_izradio integer,
+    napomena text,
+    godina character varying(4),
+    id_skladiste integer
+);
+
+
+ALTER TABLE public.povrat_robe OWNER TO postgres;
+
+--
+-- Name: povrat_robe_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE povrat_robe_stavke (
+    sifra character varying(25),
+    vpc pg_catalog.money,
+    pdv character varying(8),
+    rabat character varying(15),
+    broj bigint,
+    kolicina character varying(8),
+    id_stavka integer NOT NULL,
+    nbc pg_catalog.money,
+    mpc pg_catalog.money
+);
+
+
+ALTER TABLE public.povrat_robe_stavke OWNER TO postgres;
+
+--
+-- Name: povrat_robe_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE povrat_robe_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.povrat_robe_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: povrat_robe_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE povrat_robe_stavke_id_stavka_seq OWNED BY povrat_robe_stavke.id_stavka;
+
+
+--
+-- Name: povrat_robe_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('povrat_robe_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: primka; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE primka (
+    broj_primke character varying(15) NOT NULL,
+    id_skladiste integer,
+    br_ulaznog_doc character varying(25),
+    id_partner bigint,
+    datum timestamp without time zone,
+    iznos_bez_poreza numeric,
+    iznos_sa_porezom numeric,
+    carina numeric,
+    valuta numeric,
+    napomena text,
+    iznos numeric,
+    id_zaposlenik integer
+);
+
+
+ALTER TABLE public.primka OWNER TO postgres;
+
+--
+-- Name: primka_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE primka_stavke (
+    id_stavka integer NOT NULL,
+    sifra character varying(25),
+    u_pakiranju numeric,
+    broj_paketa numeric,
+    kolicina numeric,
+    cijena_po_komadu numeric,
+    rabat numeric,
+    nabavna_cijena numeric,
+    ulazni_porez numeric,
+    nabavni_iznos numeric,
+    iznos numeric,
+    broj_primke character varying(15),
+    id_skladiste integer
+);
+
+
+ALTER TABLE public.primka_stavke OWNER TO postgres;
+
+--
+-- Name: primka_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE primka_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.primka_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: primka_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE primka_stavke_id_stavka_seq OWNED BY primka_stavke.id_stavka;
+
+
+--
+-- Name: primka_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('primka_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: promjena_cijene; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE promjena_cijene (
+    broj bigint NOT NULL,
+    id_skladiste integer,
+    date timestamp without time zone,
+    id_izradio integer,
+    napomena text
+);
+
+
+ALTER TABLE public.promjena_cijene OWNER TO postgres;
+
+--
+-- Name: promjena_cijene_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE promjena_cijene_stavke (
+    id_stavka integer NOT NULL,
+    stara_cijena pg_catalog.money,
+    nova_cijena pg_catalog.money,
+    pdv character varying(10),
+    sifra character varying(30),
+    postotak character varying(20),
+    broj bigint
+);
+
+
+ALTER TABLE public.promjena_cijene_stavke OWNER TO postgres;
+
+--
+-- Name: promjena_cijene_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE promjena_cijene_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.promjena_cijene_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: promjena_cijene_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE promjena_cijene_stavke_id_stavka_seq OWNED BY promjena_cijene_stavke.id_stavka;
+
+
+--
+-- Name: promjena_cijene_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('promjena_cijene_stavke_id_stavka_seq', 1, false);
+
+
+--
+-- Name: promocija1; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE promocija1 (
+    id_promocija integer NOT NULL,
+    ime character varying(50),
+    popust character varying(10),
+    aktivnost character varying(2),
+    ime_bodovi character varying(100),
+    bod_kn character varying(100),
+    kn_bod character varying(100),
+    aktivnost_bodovi character varying(100),
+    traje_do character varying(15)
+);
+
+
+ALTER TABLE public.promocija1 OWNER TO postgres;
+
+--
+-- Name: promocije; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE promocije (
+    naziv character varying(50),
+    od_datuma timestamp without time zone,
+    do_datuma timestamp without time zone,
+    artikl1 character varying(20),
+    artikl2 character varying(20),
+    artikl3 character varying(20),
+    popust1 character varying(4),
+    popust2 character varying(4),
+    popust3 character varying(4),
+    nacin1 character varying(20),
+    id_promocija integer NOT NULL,
+    aktivnost character varying(1)
+);
+
+
+ALTER TABLE public.promocije OWNER TO postgres;
+
+--
+-- Name: promocije_id_promocija_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE promocije_id_promocija_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.promocije_id_promocija_seq OWNER TO postgres;
+
+--
+-- Name: promocije_id_promocija_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE promocije_id_promocija_seq OWNED BY promocije.id_promocija;
+
+
+--
+-- Name: promocije_id_promocija_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('promocije_id_promocija_seq', 1, false);
+
+
+--
+-- Name: racun_popust_kod_sljedece_kupnje; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE racun_popust_kod_sljedece_kupnje (
+    broj_racuna character varying(15),
+    ukupno character varying(100),
+    popust character varying(100),
+    koristeno character varying(2),
+    datum timestamp without time zone,
+    dokumenat character varying(100),
+    id integer NOT NULL
+);
+
+
+ALTER TABLE public.racun_popust_kod_sljedece_kupnje OWNER TO postgres;
+
+--
+-- Name: racun_popust_kod_sljedece_kupnje_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE racun_popust_kod_sljedece_kupnje_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.racun_popust_kod_sljedece_kupnje_id_seq OWNER TO postgres;
+
+--
+-- Name: racun_popust_kod_sljedece_kupnje_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE racun_popust_kod_sljedece_kupnje_id_seq OWNED BY racun_popust_kod_sljedece_kupnje.id;
+
+
+--
+-- Name: racun_popust_kod_sljedece_kupnje_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('racun_popust_kod_sljedece_kupnje_id_seq', 1, false);
+
+
+--
+-- Name: racun_stavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE racun_stavke (
+    broj_racuna character varying(10),
+    sifra_robe character varying(20),
+    id_skladiste integer,
+    mpc pg_catalog.money,
+    porez character varying(5),
+    kolicina character varying(6),
+    id_stavka integer NOT NULL,
+    rabat character varying(15),
+    vpc numeric,
+    odjava character varying(1),
+    nbc pg_catalog.money,
+    porez_potrosnja character varying(10),
+    id_ducan integer,
+    id_blagajna integer
+);
+
+
+ALTER TABLE public.racun_stavke OWNER TO postgres;
+
+--
+-- Name: racun_stavke_id_stavka_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE racun_stavke_id_stavka_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.racun_stavke_id_stavka_seq OWNER TO postgres;
+
+--
+-- Name: racun_stavke_id_stavka_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE racun_stavke_id_stavka_seq OWNED BY racun_stavke.id_stavka;
+
+
+--
+-- Name: racun_stavke_id_stavka_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('racun_stavke_id_stavka_seq', 10, true);
+
+
+--
+-- Name: racuni; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE racuni (
+    broj_racuna character varying(10) NOT NULL,
+    datum_racuna timestamp without time zone,
+    id_ducan integer,
+    id_kasa integer,
+    id_kupac bigint,
+    id_blagajnik integer,
+    ukupno_gotovina pg_catalog.money,
+    ukupno_kartice pg_catalog.money,
+    storno character varying(2),
+    ukupno pg_catalog.money,
+    dobiveno_gotovina pg_catalog.money,
+    id_stol integer,
+    ukupno_virman pg_catalog.money,
+    jir character varying(50),
+    zik character varying(50),
+    nacin_placanja character varying(1)
+);
+
+
+ALTER TABLE public.racuni OWNER TO postgres;
+
+--
+-- Name: remote_postavke; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE remote_postavke (
+    id integer NOT NULL,
+    rad_sa_narudzbama smallint
+);
+
+
+ALTER TABLE public.remote_postavke OWNER TO postgres;
+
+--
+-- Name: remote_postavke_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE remote_postavke_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.remote_postavke_id_seq OWNER TO postgres;
+
+--
+-- Name: remote_postavke_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE remote_postavke_id_seq OWNED BY remote_postavke.id;
+
+
+--
+-- Name: remote_postavke_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('remote_postavke_id_seq', 1, true);
+
+
+--
+-- Name: roba; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE roba (
+    naziv character varying(100),
+    id_grupa bigint,
+    jm character varying(100),
+    mpc pg_catalog.money,
+    id_roba integer NOT NULL,
+    sifra character varying(20),
+    ean character varying(25),
+    porez character varying(20),
+    porez_potrosnja character varying(10),
+    aktivnost character varying(1),
+    id_podgrupa integer
+);
+
+
+ALTER TABLE public.roba OWNER TO postgres;
+
+--
+-- Name: roba_id_roba_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE roba_id_roba_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.roba_id_roba_seq OWNER TO postgres;
+
+--
+-- Name: roba_id_roba_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE roba_id_roba_seq OWNED BY roba.id_roba;
+
+
+--
+-- Name: roba_id_roba_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('roba_id_roba_seq', 161, true);
+
+
+--
+-- Name: roba_prodaja; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE roba_prodaja (
+    id_roba_prodaja integer NOT NULL,
+    id_skladiste integer,
+    kolicina character varying(10),
+    nc numeric,
+    vpc numeric,
+    sifra character varying(20),
+    porez_potrosnja character varying(10),
+    id_grupa integer,
+    id_podgrupa integer,
+    mjera character varying(10),
+    aktivnost character varying(1),
+    povratna_naknada character varying(8),
+    poticajna_naknada character varying(8),
+    ulazni_porez character varying(8),
+    izlazni_porez character varying(8),
+    naziv character varying(50),
+    mpc numeric,
+    id_partner integer
+);
+
+
+ALTER TABLE public.roba_prodaja OWNER TO postgres;
+
+--
+-- Name: roba_prodaja_id_roba_prodaja_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE roba_prodaja_id_roba_prodaja_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.roba_prodaja_id_roba_prodaja_seq OWNER TO postgres;
+
+--
+-- Name: roba_prodaja_id_roba_prodaja_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE roba_prodaja_id_roba_prodaja_seq OWNED BY roba_prodaja.id_roba_prodaja;
+
+
+--
+-- Name: roba_prodaja_id_roba_prodaja_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('roba_prodaja_id_roba_prodaja_seq', 1, true);
+
+
+--
+-- Name: skladiste; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE skladiste (
+    skladiste character varying(100),
+    id_grad bigint,
+    id_zemlja integer,
+    id_skladiste integer NOT NULL,
+    aktivnost character varying(2)
+);
+
+
+ALTER TABLE public.skladiste OWNER TO postgres;
+
+--
+-- Name: skladiste_id_skladiste_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE skladiste_id_skladiste_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.skladiste_id_skladiste_seq OWNER TO postgres;
+
+--
+-- Name: skladiste_id_skladiste_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE skladiste_id_skladiste_seq OWNED BY skladiste.id_skladiste;
+
+
+--
+-- Name: skladiste_id_skladiste_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('skladiste_id_skladiste_seq', 1, true);
+
+
+--
+-- Name: stolovi; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE stolovi (
+    id_stol integer NOT NULL,
+    naziv character varying(100),
+    aktivnost integer,
+    id_poslovnica character varying(100)
+);
+
+
+ALTER TABLE public.stolovi OWNER TO postgres;
+
+--
+-- Name: stolovi_id_stol_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE stolovi_id_stol_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.stolovi_id_stol_seq OWNER TO postgres;
+
+--
+-- Name: stolovi_id_stol_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE stolovi_id_stol_seq OWNED BY stolovi.id_stol;
+
+
+--
+-- Name: stolovi_id_stol_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('stolovi_id_stol_seq', 1, true);
+
+
+--
+-- Name: valute; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE valute (
+    id_valuta integer NOT NULL,
+    ime_valute character varying(50),
+    tecaj character varying(30)
+);
+
+
+ALTER TABLE public.valute OWNER TO postgres;
+
+--
+-- Name: valute_id_valuta_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE valute_id_valuta_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.valute_id_valuta_seq OWNER TO postgres;
+
+--
+-- Name: valute_id_valuta_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE valute_id_valuta_seq OWNED BY valute.id_valuta;
+
+
+--
+-- Name: valute_id_valuta_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('valute_id_valuta_seq', 1, true);
+
+
+--
+-- Name: zaposlenici; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE zaposlenici (
+    id_zaposlenik integer NOT NULL,
+    ime character varying(50),
+    prezime character varying(50),
+    id_grad bigint,
+    adresa character varying(100),
+    id_dopustenje integer,
+    oib character varying(14),
+    tel character varying(50),
+    datum_rodenja timestamp without time zone,
+    email character varying(50),
+    mob character varying(50),
+    aktivan character varying(2),
+    zaporka character varying(25)
+);
+
+
+ALTER TABLE public.zaposlenici OWNER TO postgres;
+
+--
+-- Name: zaposlenici_id_zaposlenik_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE zaposlenici_id_zaposlenik_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.zaposlenici_id_zaposlenik_seq OWNER TO postgres;
+
+--
+-- Name: zaposlenici_id_zaposlenik_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE zaposlenici_id_zaposlenik_seq OWNED BY zaposlenici.id_zaposlenik;
+
+
+--
+-- Name: zaposlenici_id_zaposlenik_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('zaposlenici_id_zaposlenik_seq', 7, true);
+
+
+--
+-- Name: zemlja; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE zemlja (
+    id_zemlja integer NOT NULL,
+    zemlja character varying(100),
+    country_code character varying(5),
+    aktivnost character varying(2)
+);
+
+
+ALTER TABLE public.zemlja OWNER TO postgres;
+
+--
+-- Name: zemlja_id_zemlja_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE zemlja_id_zemlja_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.zemlja_id_zemlja_seq OWNER TO postgres;
+
+--
+-- Name: zemlja_id_zemlja_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE zemlja_id_zemlja_seq OWNED BY zemlja.id_zemlja;
+
+
+--
+-- Name: zemlja_id_zemlja_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('zemlja_id_zemlja_seq', 1, true);
+
+
+--
+-- Name: ziro_racun; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE ziro_racun (
+    id_ziroracun integer NOT NULL,
+    ziroracun character varying(50),
+    banka character varying(50),
+    aktivnost character varying(2)
+);
+
+
+ALTER TABLE public.ziro_racun OWNER TO postgres;
+
+--
+-- Name: ziro_racun_id_ziroracun_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE ziro_racun_id_ziroracun_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.ziro_racun_id_ziroracun_seq OWNER TO postgres;
+
+--
+-- Name: ziro_racun_id_ziroracun_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE ziro_racun_id_ziroracun_seq OWNED BY ziro_racun.id_ziroracun;
+
+
+--
+-- Name: ziro_racun_id_ziroracun_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('ziro_racun_id_ziroracun_seq', 1, true);
+
+
+--
+-- Name: zupanije; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE zupanije (
+    naziv character varying(70),
+    id_zupanija integer NOT NULL
+);
+
+
+ALTER TABLE public.zupanije OWNER TO postgres;
+
+--
+-- Name: zupanije_id_zupanija_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE zupanije_id_zupanija_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.zupanije_id_zupanija_seq OWNER TO postgres;
+
+--
+-- Name: zupanije_id_zupanija_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE zupanije_id_zupanija_seq OWNED BY zupanije.id_zupanija;
+
+
+--
+-- Name: zupanije_id_zupanija_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('zupanije_id_zupanija_seq', 1, true);
+
+
+--
+-- Name: id_aktivnost; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY aktivnost_zaposlenici ALTER COLUMN id_aktivnost SET DEFAULT nextval('aktivnost_zaposlenici_id_aktivnost_seq'::regclass);
+
+
+--
+-- Name: id_blagajna; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY blagajna ALTER COLUMN id_blagajna SET DEFAULT nextval('blagajna_id_blagajna_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY caffe_narudzbe ALTER COLUMN id SET DEFAULT nextval('caffe_narudzbe_id_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY caffe_normativ ALTER COLUMN id_stavka SET DEFAULT nextval('caffe_normativ_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_djelatnost; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY djelatnosti ALTER COLUMN id_djelatnost SET DEFAULT nextval('djelatnosti_id_djelatnost_seq'::regclass);
+
+
+--
+-- Name: id_dopustenje; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY dopustenja ALTER COLUMN id_dopustenje SET DEFAULT nextval('dopustenja_id_dopustenje_seq'::regclass);
+
+
+--
+-- Name: id_ducan; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY ducan ALTER COLUMN id_ducan SET DEFAULT nextval('ducan_id_ducan_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY faktura_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('faktura_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_grad; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY grad ALTER COLUMN id_grad SET DEFAULT nextval('grad_id_grad_seq'::regclass);
+
+
+--
+-- Name: id_grupa; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY grupa ALTER COLUMN id_grupa SET DEFAULT nextval('grupa_id_grupa_seq'::regclass);
+
+
+--
+-- Name: id_stavke; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY inventura_stavke ALTER COLUMN id_stavke SET DEFAULT nextval('inventura_stavke_id_stavke_seq'::regclass);
+
+
+--
+-- Name: id_izjava; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY izjava ALTER COLUMN id_izjava SET DEFAULT nextval('izjava_id_izjava_seq'::regclass);
+
+
+--
+-- Name: id_manufacturers; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY manufacturers ALTER COLUMN id_manufacturers SET DEFAULT nextval('manufacturers_id_manufacturers_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY meduskladisnica ALTER COLUMN id SET DEFAULT nextval('meduskladisnica_id_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY meduskladisnica_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('meduskladisnica_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_mjesto; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY mjesto_troska ALTER COLUMN id_mjesto SET DEFAULT nextval('mjesto_troska_id_mjesto_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY money ALTER COLUMN id SET DEFAULT nextval('money_id_seq'::regclass);
+
+
+--
+-- Name: id_placanje; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY nacin_placanja ALTER COLUMN id_placanje SET DEFAULT nextval('nacin_placanja_id_placanje_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY neuspjela_fiskalizacija ALTER COLUMN id SET DEFAULT nextval('neuspjela_fiskalizacija_id_seq'::regclass);
+
+
+--
+-- Name: id_otprema; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY otprema ALTER COLUMN id_otprema SET DEFAULT nextval('otprema_id_otprema_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY otpremnica_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('otpremnica_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_otpremnica; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY otpremnice ALTER COLUMN id_otpremnica SET DEFAULT nextval('otpremnice_id_otpremnica_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY pocetno_stanje_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('pocetno_stanje_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_podgrupa; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY podgrupa ALTER COLUMN id_podgrupa SET DEFAULT nextval('podgrupa_id_podgrupa_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY ponude_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('ponude_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_porez_potrosnja; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY porez_na_potrosnju ALTER COLUMN id_porez_potrosnja SET DEFAULT nextval('porez_na_potrosnju_id_porez_potrosnja_seq'::regclass);
+
+
+--
+-- Name: id_porez; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY porezi ALTER COLUMN id_porez SET DEFAULT nextval('porezi_id_porez_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY povrat_robe_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('povrat_robe_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY primka_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('primka_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY promjena_cijene_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('promjena_cijene_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id_promocija; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY promocije ALTER COLUMN id_promocija SET DEFAULT nextval('promocije_id_promocija_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY racun_popust_kod_sljedece_kupnje ALTER COLUMN id SET DEFAULT nextval('racun_popust_kod_sljedece_kupnje_id_seq'::regclass);
+
+
+--
+-- Name: id_stavka; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY racun_stavke ALTER COLUMN id_stavka SET DEFAULT nextval('racun_stavke_id_stavka_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY remote_postavke ALTER COLUMN id SET DEFAULT nextval('remote_postavke_id_seq'::regclass);
+
+
+--
+-- Name: id_roba; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY roba ALTER COLUMN id_roba SET DEFAULT nextval('roba_id_roba_seq'::regclass);
+
+
+--
+-- Name: id_roba_prodaja; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY roba_prodaja ALTER COLUMN id_roba_prodaja SET DEFAULT nextval('roba_prodaja_id_roba_prodaja_seq'::regclass);
+
+
+--
+-- Name: id_skladiste; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY skladiste ALTER COLUMN id_skladiste SET DEFAULT nextval('skladiste_id_skladiste_seq'::regclass);
+
+
+--
+-- Name: id_stol; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY stolovi ALTER COLUMN id_stol SET DEFAULT nextval('stolovi_id_stol_seq'::regclass);
+
+
+--
+-- Name: id_valuta; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY valute ALTER COLUMN id_valuta SET DEFAULT nextval('valute_id_valuta_seq'::regclass);
+
+
+--
+-- Name: id_zaposlenik; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY zaposlenici ALTER COLUMN id_zaposlenik SET DEFAULT nextval('zaposlenici_id_zaposlenik_seq'::regclass);
+
+
+--
+-- Name: id_zemlja; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY zemlja ALTER COLUMN id_zemlja SET DEFAULT nextval('zemlja_id_zemlja_seq'::regclass);
+
+
+--
+-- Name: id_ziroracun; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY ziro_racun ALTER COLUMN id_ziroracun SET DEFAULT nextval('ziro_racun_id_ziroracun_seq'::regclass);
+
+
+--
+-- Name: id_zupanija; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY zupanije ALTER COLUMN id_zupanija SET DEFAULT nextval('zupanije_id_zupanija_seq'::regclass);
+
+
+--
+-- Data for Name: aktivnost_zaposlenici; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY aktivnost_zaposlenici (id_aktivnost, id_zaposlenik, datum, radnja) FROM stdin;
+\.
+
+
+--
+-- Data for Name: bankovne_kartice; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY bankovne_kartice (id_kartica, naziv) FROM stdin;
+\.
+
+
+--
+-- Data for Name: blagajna; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY blagajna (ime_blagajne, id_ducan, aktivnost, id_blagajna) FROM stdin;
+1	1	1	1
+\.
+
+
+--
+-- Data for Name: caffe_narudzbe; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY caffe_narudzbe (sifra_stavke, djelatnik, kuhinja_spremna, sank_spreman, broj_racuna, kolicina, id, id_stol) FROM stdin;
+10	2	0	0	1	1	1	1
+34	2	0	0	1	1	2	1
+\.
+
+
+--
+-- Data for Name: caffe_normativ; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY caffe_normativ (id_stavka, sifra, sifra_normativ, kolicina, id_skladiste) FROM stdin;
+\.
+
+
+--
+-- Data for Name: djelatnosti; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY djelatnosti (id_djelatnost, ime_djelatnosti) FROM stdin;
+1	Arhitektura, graditeljstvo
+2	Biotehnologija i farmacija
+3	Elektrotehnika
+4	Strojarstvo i brodogradnja
+5	Financije
+6	Racunovodstvo i osiguranja
+7	Geologija, rudarstvo i metalurgija
+8	Informatika i telekomunikacije
+9	Instalacije, odrzavanje i popravak
+10	Ljepota i zabava
+11	Marketing i PR
+12	Mediji i izdavastvo
+13	Obrazovanje i znanost
+14	Poljoprivreda i sumarstvo
+15	Pravo i administracija
+16	Prodaja
+17	Proizvodnja i zanatske usluge
+18	Sigurnost i zastita
+19	Transport, skladistenje i logistika
+20	Turizam i ugostiteljstvo
+21	Umjetnost, kultura i dizajn
+22	Organizacija i savjetovanje
+23	Zdravstvo i socijalna skrb
+\.
+
+
+--
+-- Data for Name: dopustenja; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY dopustenja (id_dopustenje, naziv) FROM stdin;
+1	Programer
+2	Administrator
+3	Blagajnik
+4	Konobar
+\.
+
+
+--
+-- Data for Name: ducan; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY ducan (ime_ducana, aktivnost, id_ducan) FROM stdin;
+PC	DA	1
+\.
+
+
+--
+-- Data for Name: faktura_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY faktura_stavke (id_stavka, kolicina, vpc, porez, broj_fakture, rabat, id_skladiste, sifra, oduzmi, odjava, nbc, porez_potrosnja) FROM stdin;
+\.
+
+
+--
+-- Data for Name: fakture; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY fakture (broj_fakture, id_odrediste, id_fakturirati, date, datedvo, datum_valute, id_izjava, id_zaposlenik, id_zaposlenik_izradio, model, id_nacin_placanja, zr, id_valuta, otprema, id_predujam, napomena, ukupno, id_vd, godina_predujma, godina_ponude, godina_fakture, mj_troska, oduzmi_iz_skladista) FROM stdin;
+\.
+
+
+--
+-- Data for Name: fakture_vd; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY fakture_vd (id_vd, vd, grupa) FROM stdin;
+IFA  	IZLAZNA FAKTURA	fak
+IFVP 	IZLAZNA FAKTURA VL. POTREBA	fak
+IFI  	IZLAZNA FAKTURA IZVOZ	fak
+IFV  	IZLAZNA FAKTURA VOZILA	fak
+PO   	PONUDA	pon
+RN   	 RADNI NALOG	rna
+\.
+
+
+--
+-- Data for Name: fiskalizacija; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY fiskalizacija (id, oznaka_slijednosti, naziv_certifikata, aktivna) FROM stdin;
+1	P	FISKAL 1	0
+\.
+
+
+--
+-- Data for Name: grad; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY grad (id_grad, grad, posta, zupanija, naselje, aktivnost, id_drzava) FROM stdin;
+1	Zagreb 	10000	GRAD ZAGREB 	Zagreb-Donji Grad 	1	60
+12	Zagreb-Sloboština 	10010 	GRAD ZAGREB 	Buzin 	1	60
+15	Zagreb-Novi Zagreb 	10020 	GRAD ZAGREB 	Botinec 	1	60
+24	Zagreb-Dubrava 	10040 	GRAD ZAGREB 	Zagreb-Gornja Dubrava 	1	60
+26	Zagreb-Susedgrad 	10090 	GRAD ZAGREB 	Zagreb-Stenjevec 	1	60
+28	Zagreb 	10110 	GRAD ZAGREB 	Zagreb-Trešnjevka-sjever 	1	60
+30	Lučko 	10250 	GRAD ZAGREB 	Ježdovec 	1	60
+32	Hrvatski Leskovac 	10251 	GRAD ZAGREB 	Demerje 	1	60
+34	Donji Dragonožec 	10253 	GRAD ZAGREB 	Donji Dragonožec 	1	60
+41	Gornji Stupnik 	10255 	ZAGREBAČKA 	Donji Stupnik 	1	60
+44	Brezovica 	10257 	GRAD ZAGREB 	Brebernica 	1	60
+54	Zaprešić 	10290 	GRAD ZAGREB 	Ivanec Bistranski 	1	60
+58	Prigorje Brdovečko 	10291 	ZAGREBAČKA 	Brdovec 	1	60
+65	Šenkovec 	10292 	ZAGREBAČKA 	Donji Laduč 	1	60
+71	Dubravica 	10293 	ZAGREBAČKA 	Bobovec Rozganski 	1	60
+81	Donja Pušća 	10294 	ZAGREBAČKA 	Pojatno 	1	60
+90	Kupljenovo 	10295 	ZAGREBAČKA 	Hruševec Kupljenski 	1	60
+93	Luka 	10296 	ZAGREBAČKA 	Krajska Ves 	1	60
+98	Jakovlje 	10297 	ZAGREBAČKA 	Igrišće 	1	60
+101	Donja Bistra 	10298 	ZAGREBAČKA 	Jablanovec 	1	60
+108	Marija Gorica 	10299 	ZAGREBAČKA 	Bijela Gorica 	1	60
+118	Ivanić Grad 	10310 	ZAGREBAČKA 	Caginec 	1	60
+137	Kloštar Ivanić 	10312 	ZAGREBAČKA 	Bešlinec 	1	60
+148	Križ 	10314 	ZAGREBAČKA 	Bunjani 	1	60
+157	Novoselec 	10315 	ZAGREBAČKA 	Konšćani 	1	60
+164	Vrbovec 	10340 	ZAGREBAČKA 	Banovo 	1	60
+194	Lonjica 	10341 	ZAGREBAČKA 	Dulepska 	1	60
+199	Dubrava 	10342 	ZAGREBAČKA 	Bađinec 	1	60
+230	Farkaševac 	10344 	ZAGREBAČKA 	Bolč 	1	60
+240	Gradec 	10345 	ZAGREBAČKA 	Buzadovac 	1	60
+257	Preseka 	10346 	ZAGREBAČKA 	Žunci 	1	60
+272	Rakovec 	10347 	ZAGREBAČKA 	Samoborec 	1	60
+287	Sesvete 	10360 	GRAD ZAGREB 	Budenec 	1	60
+301	Sesvete Kraljevec 	10361 	GRAD ZAGREB 	Cerje 	1	60
+313	Kašina 	10362 	GRAD ZAGREB 	Blaguša 	1	60
+325	Belovar 	10363 	GRAD ZAGREB 	Adamovec 	1	60
+332	Dugo Selo 	10370 	ZAGREBAČKA 	Andrilovec 	1	60
+366	Oborovo 	10372 	ZAGREBAČKA 	Novaki Oborovski 	1	60
+370	Ivanja Reka 	10373 	GRAD ZAGREB 	Ivanja Reka 	1	60
+372	Sveti Ivan Zelina 	10380 	ZAGREBAČKA 	Berislavec 	1	60
+399	Bedenica 	10381 	ZAGREBAČKA 	Novakovec Bisaški 	1	60
+406	Donja Zelina 	10382 	ZAGREBAČKA 	Banje Selo 	1	60
+427	Komin 	10383 	ZAGREBAČKA 	Dubovec Bisaški 	1	60
+440	Velika Mlaka 	10408 	ZAGREBAČKA 	Velika Mlaka 	1	60
+441	Velika Gorica 	10410 	ZAGREBAČKA 	Bapča 	1	60
+464	Orle 	10411 	ZAGREBAČKA 	Sop Bukevski 	1	60
+476	Donja Lomnica 	10412 	ZAGREBAČKA 	Donja Lomnica 	1	60
+481	Kravarsko 	10413 	ZAGREBAČKA 	Ključić Brdo 	1	60
+497	Pokupsko 	10414 	ZAGREBAČKA 	Cvetković Brdo 	1	60
+519	Buševec 	10417 	ZAGREBAČKA 	Buševec 	1	60
+522	Dubranec 	10418 	ZAGREBAČKA 	Cerovski Vrh 	1	60
+533	Samobor 	10430 	ZAGREBAČKA 	Bobovica 	1	60
+568	Sveta Nedjelja 	10431 	ZAGREBAČKA 	Brezje 	1	60
+576	Bregana 	10432 	ZAGREBAČKA 	Beder 	1	60
+597	Strmec 	10434 	ZAGREBAČKA 	Orešje 	1	60
+599	Sveti Martin pod Okićem 	10435 	ZAGREBAČKA 	Dolec Podokićki 	1	60
+607	Rakov Potok 	10436 	ZAGREBAČKA 	Horvati 	1	60
+611	Bestovje 	10437 	ZAGREBAČKA 	Bestovje 	1	60
+613	Jastrebarsko 	10450 	ZAGREBAČKA 	Brebrovac 	1	60
+666	Pisarovina 	10451 	ZAGREBAČKA 	Bratina 	1	60
+680	Gorica Svetojanska 	10453 	ZAGREBAČKA 	Belčići 	1	60
+699	Krašić 	10454 	ZAGREBAČKA 	Gornja Kupčina 	1	60
+758	Kostanjevac 	10455 	ZAGREBAČKA 	Barovka 	1	60
+780	Dubrovnik 	20000 	DUBROVAČKO-NERETVANSKA 	Dubrovnik 	1	60
+781	Topolo 	20205 	DUBROVAČKO-NERETVANSKA 	Imotica 	1	60
+786	Mlini 	20207 	DUBROVAČKO-NERETVANSKA 	Bosanka 	1	60
+804	Cavtat 	20210 	DUBROVAČKO-NERETVANSKA 	Brotnice 	1	60
+812	Čilipi 	20213 	DUBROVAČKO-NERETVANSKA 	Čilipi 	1	60
+816	Gruda 	20215 	DUBROVAČKO-NERETVANSKA 	Drvenik 	1	60
+832	Dubravka 	20216 	DUBROVAČKO-NERETVANSKA 	Dubravka 	1	60
+836	Koločep 	20221 	DUBROVAČKO-NERETVANSKA 	Koločep 	1	60
+837	Lopud 	20222 	DUBROVAČKO-NERETVANSKA 	Lopud 	1	60
+838	Šipanska Luka 	20223 	DUBROVAČKO-NERETVANSKA 	Suđurađ 	1	60
+840	Maranovići 	20224 	DUBROVAČKO-NERETVANSKA 	Korita 	1	60
+846	Babino Polje 	20225 	DUBROVAČKO-NERETVANSKA 	Babino Polje 	1	60
+851	Goveđari 	20226 	DUBROVAČKO-NERETVANSKA 	Goveđari 	1	60
+854	Ston 	20230 	DUBROVAČKO-NERETVANSKA 	Čepikuće 	1	60
+875	Slano 	20232 	DUBROVAČKO-NERETVANSKA 	Banići 	1	60
+882	Zaton Veliki 	20235 	DUBROVAČKO-NERETVANSKA 	Brsečine 	1	60
+892	Mokošica 	20236 	DUBROVAČKO-NERETVANSKA 	Čajkovica 	1	60
+908	Trpanj 	20240 	DUBROVAČKO-NERETVANSKA 	Donja Vrućica 	1	60
+912	Oskorušno 	20242 	DUBROVAČKO-NERETVANSKA 	Donja Banda 	1	60
+914	Kuna 	20243 	DUBROVAČKO-NERETVANSKA 	Kuna Pelješka 	1	60
+916	Potomje 	20244 	DUBROVAČKO-NERETVANSKA 	Potomje 	1	60
+917	Trstenik 	20245 	DUBROVAČKO-NERETVANSKA 	Trstenik 	1	60
+918	Janjina 	20246 	DUBROVAČKO-NERETVANSKA 	Drače 	1	60
+924	Žuljana 	20247 	DUBROVAČKO-NERETVANSKA 	Dubrava 	1	60
+926	Putniković 	20248 	DUBROVAČKO-NERETVANSKA 	Dančanje 	1	60
+929	Orebić 	20250 	DUBROVAČKO-NERETVANSKA 	Orebić 	1	60
+933	Korčula 	20260 	DUBROVAČKO-NERETVANSKA 	Korčula 	1	60
+934	Lumbarda 	20263 	DUBROVAČKO-NERETVANSKA 	Lumbarda 	1	60
+935	Račišće 	20264 	DUBROVAČKO-NERETVANSKA 	Račišće 	1	60
+936	Kučište 	20267 	DUBROVAČKO-NERETVANSKA 	Kučište 	1	60
+939	Lovište 	20269 	DUBROVAČKO-NERETVANSKA 	Lovište 	1	60
+940	Vela Luka 	20270 	DUBROVAČKO-NERETVANSKA 	Potirna 	1	60
+942	Blato 	20271 	DUBROVAČKO-NERETVANSKA 	Blato 	1	60
+943	Smokvica 	20272 	DUBROVAČKO-NERETVANSKA 	Smokvica 	1	60
+944	Čara 	20273 	DUBROVAČKO-NERETVANSKA 	Čara 	1	60
+945	Pupnat 	20274 	DUBROVAČKO-NERETVANSKA 	Pupnat 	1	60
+946	Žrnovo 	20275 	DUBROVAČKO-NERETVANSKA 	Žrnovo 	1	60
+947	Nova Sela 	20278 	DUBROVAČKO-NERETVANSKA 	Borovci 	1	60
+954	Lastovo 	20290 	DUBROVAČKO-NERETVANSKA 	Glavat 	1	60
+961	Ploče 	20340 	DUBROVAČKO-NERETVANSKA 	Baćina 	1	60
+965	Kula Norinska 	20341 	DUBROVAČKO-NERETVANSKA 	Krvavac 	1	60
+970	Otrić Seoci 	20342 	DUBROVAČKO-NERETVANSKA 	Otrić-Seoci 	1	60
+971	Rogotin 	20343 	DUBROVAČKO-NERETVANSKA 	Rogotin 	1	60
+973	Komin Dalmacija 	20344 	DUBROVAČKO-NERETVANSKA 	Banja 	1	60
+976	Staševica 	20345 	DUBROVAČKO-NERETVANSKA 	Staševica 	1	60
+977	Metković 	20350 	DUBROVAČKO-NERETVANSKA 	Dubravica 	1	60
+982	Vid 	20352 	DUBROVAČKO-NERETVANSKA 	Prud 	1	60
+984	Mlinište 	20353 	DUBROVAČKO-NERETVANSKA 	Badžula 	1	60
+989	Opuzen 	20355 	DUBROVAČKO-NERETVANSKA 	Buk-Vlaka 	1	60
+993	Klek 	20356 	DUBROVAČKO-NERETVANSKA 	Duboka 	1	60
+1000	Blace 	20357 	DUBROVAČKO-NERETVANSKA 	Pržinovac 	1	60
+1010	Split 	21000 	SPLITSKO-DALMATINSKA 	Kamen 	1	60
+1012	Prgomet 	21201 	SPLITSKO-DALMATINSKA 	Bogdanovići 	1	60
+1020	Lećevica 	21202 	SPLITSKO-DALMATINSKA 	Brštanovo 	1	60
+1029	Donji Muć 	21203 	SPLITSKO-DALMATINSKA 	Crivac 	1	60
+1035	Dugopolje 	21204 	SPLITSKO-DALMATINSKA 	Dugopolje 	1	60
+1039	Donji Dolac 	21205 	SPLITSKO-DALMATINSKA 	Donji Dolac 	1	60
+1043	Donje Ogorje 	21206 	SPLITSKO-DALMATINSKA 	Bračević 	1	60
+1050	Kostanje 	21207 	SPLITSKO-DALMATINSKA 	Kostanje 	1	60
+1052	Kučiće 	21208 	SPLITSKO-DALMATINSKA 	Kučiće 	1	60
+1055	Mravince 	21209 	SPLITSKO-DALMATINSKA 	Kučine 	1	60
+1057	Solin 	21210 	SPLITSKO-DALMATINSKA 	Blaca 	1	60
+1060	Kaštel Sućurac 	21212 	SPLITSKO-DALMATINSKA 	Kaštel Sućurac 	1	60
+1061	Kaštel Gomilica 	21213 	SPLITSKO-DALMATINSKA 	Kaštel Gomilica 	1	60
+1062	Kaštel Kambelovac 	21214 	SPLITSKO-DALMATINSKA 	Kaštel Kambelovac 	1	60
+1063	Kaštel Lukšić 	21215 	SPLITSKO-DALMATINSKA 	Kaštel Lukšić 	1	60
+1064	Kaštel Stari 	21216 	SPLITSKO-DALMATINSKA 	Kaštel Stari 	1	60
+1065	Kaštel Štafilić 	21217 	SPLITSKO-DALMATINSKA 	Kaštel Novi 	1	60
+1067	Trogir 	21220 	SPLITSKO-DALMATINSKA 	Divulje 	1	60
+1075	Marina 	21222 	SPLITSKO-DALMATINSKA 	Dograde 	1	60
+1084	Okrug Gornji 	21223 	SPLITSKO-DALMATINSKA 	Okrug Donji 	1	60
+1086	Slatine 	21224 	SPLITSKO-DALMATINSKA 	Slatine 	1	60
+1088	Drvenik Veliki 	21225 	SPLITSKO-DALMATINSKA 	Drvenik Mali 	1	60
+1090	Vinišće 	21226 	SPLITSKO-DALMATINSKA 	Vinišće 	1	60
+1091	Blizna Donja 	21228 	SPLITSKO-DALMATINSKA 	Blizna Donja 	1	60
+1097	Sinj 	21230 	SPLITSKO-DALMATINSKA 	Brnaze 	1	60
+1107	Klis 	21231 	SPLITSKO-DALMATINSKA 	Klis 	1	60
+1111	Dicmo 	21232 	SPLITSKO-DALMATINSKA 	Bisko 	1	60
+1119	Hrvace 	21233 	SPLITSKO-DALMATINSKA 	Zelovo 	1	60
+1131	Vrlika 	21236 	SPLITSKO-DALMATINSKA 	Garjak 	1	60
+1140	Otok Dalmacija 	21238 	SPLITSKO-DALMATINSKA 	Korita 	1	60
+1143	Trilj 	21240 	SPLITSKO-DALMATINSKA 	Budimiri 	1	60
+1157	Obrovac Sinjski 	21241 	SPLITSKO-DALMATINSKA 	Bajagić 	1	60
+1161	Grab 	21242 	SPLITSKO-DALMATINSKA 	Grab 	1	60
+1167	Cista Velika 	21244 	SPLITSKO-DALMATINSKA 	Biorine 	1	60
+1170	Aržano 	21246 	SPLITSKO-DALMATINSKA 	Kamensko 	1	60
+1178	Neorić 	21247 	SPLITSKO-DALMATINSKA 	Gizdavac 	1	60
+1182	Šestanovac 	21250 	SPLITSKO-DALMATINSKA 	Katuni 	1	60
+1186	Žrnovnica 	21251 	SPLITSKO-DALMATINSKA 	Donje Sitno 	1	60
+1189	Tugare 	21252 	SPLITSKO-DALMATINSKA 	Dubrava 	1	60
+1193	Gata 	21253 	SPLITSKO-DALMATINSKA 	Čisla 	1	60
+1197	Blato na Cetini 	21254 	SPLITSKO-DALMATINSKA 	Blato na Cetini 	1	60
+1201	Zadvarje 	21255 	SPLITSKO-DALMATINSKA 	Slime 	1	60
+1204	Cista Provo 	21256 	SPLITSKO-DALMATINSKA 	Cista Provo 	1	60
+1206	Lovreć 	21257 	SPLITSKO-DALMATINSKA 	Lovreć 	1	60
+1208	Imotski 	21260 	SPLITSKO-DALMATINSKA 	Donji Vinjani 	1	60
+1214	Runović 	21261 	SPLITSKO-DALMATINSKA 	Podosoje 	1	60
+1216	Kamenmost 	21262 	SPLITSKO-DALMATINSKA 	Drum 	1	60
+1222	Krivodol 	21263 	SPLITSKO-DALMATINSKA 	Dolića Draga 	1	60
+1228	Donji Proložac 	21264 	SPLITSKO-DALMATINSKA 	Donji Proložac 	1	60
+1232	Studenci 	21265 	SPLITSKO-DALMATINSKA 	Studenci 	1	60
+1233	Zmijavci 	21266 	SPLITSKO-DALMATINSKA 	Zmijavci 	1	60
+1234	Zagvozd 	21270 	SPLITSKO-DALMATINSKA 	Biokovsko Selo 	1	60
+1238	Grabovac 	21271 	SPLITSKO-DALMATINSKA 	Medovdolac 	1	60
+1240	Slivno 	21272 	SPLITSKO-DALMATINSKA 	Mijaca 	1	60
+1246	Dragljane 	21275 	SPLITSKO-DALMATINSKA 	Dragljane 	1	60
+1252	Vrgorac 	21276 	SPLITSKO-DALMATINSKA 	Banja 	1	60
+1265	Dusina 	21277 	SPLITSKO-DALMATINSKA 	Dusina 	1	60
+1268	Srinjine 	21292 	SPLITSKO-DALMATINSKA 	Srinjine 	1	60
+1269	Makarska 	21300 	SPLITSKO-DALMATINSKA 	Makarska 	1	60
+1271	Omiš 	21310 	SPLITSKO-DALMATINSKA 	Borak 	1	60
+1276	Stobreč 	21311 	SPLITSKO-DALMATINSKA 	Stobreč 	1	60
+1277	Podstrana 	21312 	SPLITSKO-DALMATINSKA 	Podstrana 	1	60
+1278	Jesenice 	21314 	SPLITSKO-DALMATINSKA 	Jesenice 	1	60
+1279	Dugi Rat 	21315 	SPLITSKO-DALMATINSKA 	Dugi Rat 	1	60
+1280	Lokva Rogoznica 	21317 	SPLITSKO-DALMATINSKA 	Čelina 	1	60
+1282	Mimice 	21318 	SPLITSKO-DALMATINSKA 	Marušići 	1	60
+1285	Baška Voda 	21320 	SPLITSKO-DALMATINSKA 	Bast 	1	60
+1288	Brela 	21322 	SPLITSKO-DALMATINSKA 	Brela 	1	60
+1289	Promajna 	21323 	SPLITSKO-DALMATINSKA 	Promajna 	1	60
+1290	Tučepi 	21325 	SPLITSKO-DALMATINSKA 	Tučepi 	1	60
+1291	Podgora 	21327 	SPLITSKO-DALMATINSKA 	Gornje Igrane 	1	60
+1293	Drašnice 	21328 	SPLITSKO-DALMATINSKA 	Drašnice 	1	60
+1294	Igrane 	21329 	SPLITSKO-DALMATINSKA 	Igrane 	1	60
+1296	Gradac 	21330 	SPLITSKO-DALMATINSKA 	Gradac 	1	60
+1297	Drvenik 	21333 	SPLITSKO-DALMATINSKA 	Drvenik 	1	60
+1298	Zaostrog 	21334 	SPLITSKO-DALMATINSKA 	Zaostrog 	1	60
+1299	Podaca 	21335 	SPLITSKO-DALMATINSKA 	Brist 	1	60
+1301	Supetar 	21400 	SPLITSKO-DALMATINSKA 	Mirca 	1	60
+1303	Sutivan 	21403 	SPLITSKO-DALMATINSKA 	Sutivan 	1	60
+1304	Ložišća 	21404 	SPLITSKO-DALMATINSKA 	Bobovišća 	1	60
+1306	Milna 	21405 	SPLITSKO-DALMATINSKA 	Milna 	1	60
+1307	Postira 	21410 	SPLITSKO-DALMATINSKA 	Splitska 	1	60
+1311	Pučišća 	21412 	SPLITSKO-DALMATINSKA 	Pučišća 	1	60
+1312	Povlja 	21413 	SPLITSKO-DALMATINSKA 	Povlja 	1	60
+1313	Bol 	21420 	SPLITSKO-DALMATINSKA 	Bol 	1	60
+1315	Nerežišća 	21423 	SPLITSKO-DALMATINSKA 	Donji Humac 	1	60
+1318	Pražnica 	21424 	SPLITSKO-DALMATINSKA 	Gornji Humac 	1	60
+1320	Selca 	21425 	SPLITSKO-DALMATINSKA 	Novo Selo 	1	60
+1323	Grohote 	21430 	SPLITSKO-DALMATINSKA 	Donje Selo 	1	60
+1328	Stomorska 	21432 	SPLITSKO-DALMATINSKA 	Gornje Selo 	1	60
+1331	Hvar 	21450 	SPLITSKO-DALMATINSKA 	Hvar 	1	60
+1337	Brusje 	21454 	SPLITSKO-DALMATINSKA 	Brusje 	1	60
+1338	Stari Grad 	21460 	SPLITSKO-DALMATINSKA 	Dol 	1	60
+1342	Vrbanj 	21462 	SPLITSKO-DALMATINSKA 	Vrbanj 	1	60
+1344	Vrboska 	21463 	SPLITSKO-DALMATINSKA 	Vrboska 	1	60
+1345	Jelsa 	21465 	SPLITSKO-DALMATINSKA 	Sveta Nedjelja 	1	60
+1353	Zastražišće 	21466 	SPLITSKO-DALMATINSKA 	Poljica 	1	60
+1355	Gdinj 	21467 	SPLITSKO-DALMATINSKA 	Gdinj 	1	60
+1358	Sućuraj 	21469 	SPLITSKO-DALMATINSKA 	Sućuraj 	1	60
+1359	Vis 	21480 	SPLITSKO-DALMATINSKA 	Marinje Zemlje 	1	60
+1367	Podšpilje 	21483 	SPLITSKO-DALMATINSKA 	Borovik 	1	60
+1373	Komiža 	21485 	SPLITSKO-DALMATINSKA 	Biševo 	1	60
+1378	Šibenik 	22000 	ŠIBENSKO-KNINSKA 	Boraja 	1	60
+1393	Primošten 	22202 	ŠIBENSKO-KNINSKA 	Kruševo 	1	60
+1401	Rogoznica 	22203 	ŠIBENSKO-KNINSKA 	Dvornica 	1	60
+1413	Perković 	22205 	ŠIBENSKO-KNINSKA 	Danilo 	1	60
+1419	Vodice 	22211 	ŠIBENSKO-KNINSKA 	Srima 	1	60
+1421	Tribunj 	22212 	ŠIBENSKO-KNINSKA 	Tribunj 	1	60
+1422	Pirovac 	22213 	ŠIBENSKO-KNINSKA 	Kašić 	1	60
+1425	Čista Velika 	22214 	ŠIBENSKO-KNINSKA 	Cicvare 	1	60
+1432	Zaton 	22215 	ŠIBENSKO-KNINSKA 	Raslina 	1	60
+1436	Lozovac 	22221 	ŠIBENSKO-KNINSKA 	Pokrovnik 	1	60
+1445	Skradin 	22222 	ŠIBENSKO-KNINSKA 	Bićine 	1	60
+1461	Ružić 	22232 	ŠIBENSKO-KNINSKA 	Kadina Glavica 	1	60
+1464	Prvić Luka 	22233 	ŠIBENSKO-KNINSKA 	Prvić Luka 	1	60
+1465	Prvić Šepurine 	22234 	ŠIBENSKO-KNINSKA 	Prvić Šepurine 	1	60
+1466	Kaprije 	22235 	ŠIBENSKO-KNINSKA 	Kaprije 	1	60
+1467	Žirje 	22236 	ŠIBENSKO-KNINSKA 	Žirje 	1	60
+1468	Tisno 	22240 	ŠIBENSKO-KNINSKA 	Dazlina 	1	60
+1471	Jezera 	22242 	ŠIBENSKO-KNINSKA 	Jezera 	1	60
+1472	Murter 	22243 	ŠIBENSKO-KNINSKA 	Kornati 	1	60
+1475	Knin 	22300 	ŠIBENSKO-KNINSKA 	Knin 	1	60
+1497	Golubić 	22301 	ŠIBENSKO-KNINSKA 	Golubić 	1	60
+1500	Oklaj 	22303 	ŠIBENSKO-KNINSKA 	Bobodol 	1	60
+1510	Kistanje 	22305 	ŠIBENSKO-KNINSKA 	Ervenik 	1	60
+1525	Kijevo 	22310 	ŠIBENSKO-KNINSKA 	Polača 	1	60
+1529	Drniš 	22320 	ŠIBENSKO-KNINSKA 	Badanj 	1	60
+1536	Siverić 	22321 	ŠIBENSKO-KNINSKA 	Biočić 	1	60
+1542	Ružić 	22322 	ŠIBENSKO-KNINSKA 	Kričke 	1	60
+1552	Unešić 	22323 	ŠIBENSKO-KNINSKA 	Sedramić 	1	60
+1569	Drinovci 	22324 	ŠIBENSKO-KNINSKA 	Bogatić 	1	60
+1577	Zadar 	23000 	ZADARSKA 	Babindub 	1	60
+1583	Bibinje 	23205 	ZADARSKA 	Bibinje 	1	60
+1584	Sukošan 	23206 	ZADARSKA 	Debeljak 	1	60
+1586	Sveti Filip i Jakov 	23207 	ZADARSKA 	Donje Raštane 	1	60
+1592	Biograd na moru 	23210 	ZADARSKA 	Biograd na Moru 	1	60
+1594	Pakoštane 	23211 	ZADARSKA 	Drage 	1	60
+1597	Tkon 	23212 	ZADARSKA 	Kraj 	1	60
+1599	Zemunik 	23222 	ZADARSKA 	Galovac 	1	60
+1603	Škabrnja 	23223 	ZADARSKA 	Glavica 	1	60
+1607	Pridraga 	23226 	ZADARSKA 	Pridraga 	1	60
+1608	Petrčane 	23231 	ZADARSKA 	Kožino 	1	60
+1610	Nin 	23232 	ZADARSKA 	Grbe 	1	60
+1616	Privlaka 	23233 	ZADARSKA 	Privlaka 	1	60
+1617	Vir 	23234 	ZADARSKA 	Vir 	1	60
+1618	Vrsi 	23235 	ZADARSKA 	Poljica 	1	60
+1620	Poličnik 	23241 	ZADARSKA 	Dračevac Ninski 	1	60
+1627	Posedarje 	23242 	ZADARSKA 	Grgurice 	1	60
+1634	Jasenice 	23243 	ZADARSKA 	Vučipolje 	1	60
+1636	Starigrad Paklenica 	23244 	ZADARSKA 	Seline 	1	60
+1638	Srb 	23245 	ZADARSKA 	Zaklopac 	1	60
+1640	Ražanac 	23248 	ZADARSKA 	Jovići 	1	60
+1646	Povljana 	23249 	ZADARSKA 	Dinjiška 	1	60
+1654	Pag 	23250 	ZADARSKA 	Bošana 	1	60
+1657	Kolan 	23251 	ZADARSKA 	Šimuni 	1	60
+1661	Pašman 	23262 	ZADARSKA 	Dobropoljana 	1	60
+1664	Ždrelac 	23263 	ZADARSKA 	Banj 	1	60
+1666	Neviđane 	23264 	ZADARSKA 	Neviđane 	1	60
+1667	Kukljica 	23271 	ZADARSKA 	Kukljica 	1	60
+1668	Kali 	23272 	ZADARSKA 	Kali 	1	60
+1669	Preko 	23273 	ZADARSKA 	Ošljak 	1	60
+1673	Lukoran 	23274 	ZADARSKA 	Lukoran 	1	60
+1674	Ugljan 	23275 	ZADARSKA 	Ugljan 	1	60
+1675	Sali 	23281 	ZADARSKA 	Sali 	1	60
+1677	Žman 	23282 	ZADARSKA 	Luka 	1	60
+1679	Rava 	23283 	ZADARSKA 	Rava 	1	60
+1680	Veli Iž 	23284 	ZADARSKA 	Mali Iž 	1	60
+1682	Brbinj 	23285 	ZADARSKA 	Brbinj 	1	60
+1684	Božava 	23286 	ZADARSKA 	Božava 	1	60
+1686	Veli Rat 	23287 	ZADARSKA 	Soline 	1	60
+1689	Sestrunj 	23291 	ZADARSKA 	Rivanj 	1	60
+1692	Molat 	23292 	ZADARSKA 	Brgulje 	1	60
+1695	Ist 	23293 	ZADARSKA 	Ist 	1	60
+1696	Premuda 	23294 	ZADARSKA 	Premuda 	1	60
+1697	Silba 	23295 	ZADARSKA 	Silba 	1	60
+1698	Olib 	23296 	ZADARSKA 	Olib 	1	60
+1699	Novigrad Dalmacija 	23312 	ZADARSKA 	Novigrad 	1	60
+1701	Benkovac 	23420 	ZADARSKA 	Benkovac 	1	60
+1743	Stankovci 	23422 	ZADARSKA 	Banjevci 	1	60
+1750	Polača 	23423 	ZADARSKA 	Tinj 	1	60
+1755	Gračac 	23440 	ZADARSKA 	Bruvno 	1	60
+1778	Srb 	23445 	ZADARSKA 	Begluci 	1	60
+1792	Obrovac 	23450 	ZADARSKA 	Bilišane 	1	60
+1804	Karin 	23452 	ZADARSKA 	Donji Karin 	1	60
+1806	Osijek 	31000 	OSJEČKO-BARANJSKA 	Brijest 	1	60
+1813	Bijelo Brdo 	31204 	OSJEČKO-BARANJSKA 	Bijelo Brdo 	1	60
+1814	Aljmaš 	31205 	OSJEČKO-BARANJSKA 	Aljmaš 	1	60
+1815	Erdut 	31206 	OSJEČKO-BARANJSKA 	Erdut 	1	60
+1816	Tenja 	31207 	OSJEČKO-BARANJSKA 	Klisa 	1	60
+1818	Petrijevci 	31208 	OSJEČKO-BARANJSKA 	Petrijevci 	1	60
+1819	Laslovo 	31214 	OSJEČKO-BARANJSKA 	Laslovo 	1	60
+1824	Ernestinovo 	31215 	OSJEČKO-BARANJSKA 	Divoš 	1	60
+1830	Antunovac 	31216 	OSJEČKO-BARANJSKA 	Antunovac 	1	60
+1832	Višnjevac 	31220 	OSJEČKO-BARANJSKA 	Višnjevac 	1	60
+1833	Josipovac 	31221 	OSJEČKO-BARANJSKA 	Josipovac 	1	60
+1834	Bizovac 	31222 	OSJEČKO-BARANJSKA 	Bizovac 	1	60
+1840	Brođanci 	31223 	OSJEČKO-BARANJSKA 	Brođanci 	1	60
+1843	Koška 	31224 	OSJEČKO-BARANJSKA 	Andrijevac 	1	60
+1852	Breznica Našička 	31225 	OSJEČKO-BARANJSKA 	Lađanska 	1	60
+1855	Dalj 	31226 	OSJEČKO-BARANJSKA 	Dalj 	1	60
+1856	Zelčin 	31227 	OSJEČKO-BARANJSKA 	Harkanovci 	1	60
+1860	Beli Manastir 	31300 	OSJEČKO-BARANJSKA 	Beli Manastir 	1	60
+1867	Kneževo 	31302 	OSJEČKO-BARANJSKA 	Kneževo 	1	60
+1868	Popovac 	31303 	OSJEČKO-BARANJSKA 	Podolje 	1	60
+1871	Duboševica 	31304 	OSJEČKO-BARANJSKA 	Duboševica 	1	60
+1873	Draž 	31305 	OSJEČKO-BARANJSKA 	Draž 	1	60
+1875	Batina 	31306 	OSJEČKO-BARANJSKA 	Batina 	1	60
+1876	Zmajevac 	31307 	OSJEČKO-BARANJSKA 	Zmajevac 	1	60
+1877	Kneževi Vinogradi 	31309 	OSJEČKO-BARANJSKA 	Suza 	1	60
+1889	Karanac 	31315 	OSJEČKO-BARANJSKA 	Karanac 	1	60
+1890	Petlovac 	31321 	OSJEČKO-BARANJSKA 	Petlovac 	1	60
+1892	Baranjsko Petrovo Selo 	31322 	OSJEČKO-BARANJSKA 	Baranjsko Petrovo Selo 	1	60
+1896	Jagodnjak 	31324 	OSJEČKO-BARANJSKA 	Bolman 	1	60
+1900	Čeminac 	31325 	OSJEČKO-BARANJSKA 	Čeminac 	1	60
+1903	Darda 	31326 	OSJEČKO-BARANJSKA 	Darda 	1	60
+1907	Bilje 	31327 	OSJEČKO-BARANJSKA 	Bilje 	1	60
+1911	Lug 	31328 	OSJEČKO-BARANJSKA 	Lug 	1	60
+1912	Đakovo 	31400 	OSJEČKO-BARANJSKA 	Budrovci 	1	60
+1916	Viškovci 	31401 	OSJEČKO-BARANJSKA 	Viškovci 	1	60
+1917	Semeljci 	31402 	OSJEČKO-BARANJSKA 	Kešinci 	1	60
+1922	Vuka 	31403 	OSJEČKO-BARANJSKA 	Široko Polje 	1	60
+1927	Vladislavci 	31404 	OSJEČKO-BARANJSKA 	Dopsin 	1	60
+1930	Strizivojna 	31410 	OSJEČKO-BARANJSKA 	Merolino Sikirevačko 	1	60
+1932	Trnava 	31411 	OSJEČKO-BARANJSKA 	Dragotin 	1	60
+1939	Levanjska Varoš 	31416 	OSJEČKO-BARANJSKA 	Borojevci 	1	60
+1950	Piškorevci 	31417 	OSJEČKO-BARANJSKA 	Novi Perkovci 	1	60
+1952	Drenje 	31418 	OSJEČKO-BARANJSKA 	Borovik 	1	60
+1959	Satnica Đakovačka 	31421 	OSJEČKO-BARANJSKA 	Gašinci 	1	60
+1961	Gorjani 	31422 	OSJEČKO-BARANJSKA 	Gorjani 	1	60
+1967	Punitovci 	31424 	OSJEČKO-BARANJSKA 	Josipovac Punitovački 	1	60
+1971	Čepin 	31431 	OSJEČKO-BARANJSKA 	Čepin 	1	60
+1975	Budimci 	31432 	OSJEČKO-BARANJSKA 	Budimci 	1	60
+1977	Podgorač 	31433 	OSJEČKO-BARANJSKA 	Podgorje Bračevačko 	1	60
+1985	Našice 	31500 	OSJEČKO-BARANJSKA 	Brezik Našički 	1	60
+2006	Đurđenovac 	31511 	OSJEČKO-BARANJSKA 	Beljevina 	1	60
+2018	Feričanci 	31512 	OSJEČKO-BARANJSKA 	Feričanci 	1	60
+2022	Donja Motičina 	31513 	OSJEČKO-BARANJSKA 	Donja Motičina 	1	60
+2023	Podravska Moslavina 	31530 	OSJEČKO-BARANJSKA 	Gezinci 	1	60
+2027	Viljevo 	31531 	OSJEČKO-BARANJSKA 	Cret Viljevski 	1	60
+2030	Donji Miholjac 	31540 	OSJEČKO-BARANJSKA 	Donji Miholjac 	1	60
+2034	Magadenovac 	31542 	OSJEČKO-BARANJSKA 	Beničanci 	1	60
+2041	Miholjački Poreč 	31543 	OSJEČKO-BARANJSKA 	Golinci 	1	60
+2047	Valpovo 	31550 	OSJEČKO-BARANJSKA 	Bocanjevci 	1	60
+2053	Belišće 	31551 	OSJEČKO-BARANJSKA 	Belišće 	1	60
+2055	Podgajci Podravski 	31552 	OSJEČKO-BARANJSKA 	Podgajci Podravski 	1	60
+2058	Marijanci 	31555 	OSJEČKO-BARANJSKA 	Črnkovci 	1	60
+2059	Gat 	31554 	OSJEČKO-BARANJSKA 	Gat 	1	60
+2067	Vukovar 	32000 	VUKOVARSKO-SRIJEMSKA 	Vukovar 	1	60
+2069	Vukovar 	32010 	VUKOVARSKO-SRIJEMSKA 	Lipovača 	1	60
+2070	Vinkovci 	32100 	VUKOVARSKO-SRIJEMSKA 	Mirkovci 	1	60
+2072	Tordinci 	32214 	VUKOVARSKO-SRIJEMSKA 	Ostrovo 	1	60
+2073	Gaboš 	32212 	VUKOVARSKO-SRIJEMSKA 	Gaboš 	1	60
+2074	Markušica 	32213 	VUKOVARSKO-SRIJEMSKA 	Markušica 	1	60
+2079	Nuštar 	32221 	VUKOVARSKO-SRIJEMSKA 	Cerić 	1	60
+2082	Bršadin 	32222 	VUKOVARSKO-SRIJEMSKA 	Bršadin 	1	60
+2084	Trpinja 	32224 	VUKOVARSKO-SRIJEMSKA 	Trpinja 	1	60
+2086	Bobota 	32225 	VUKOVARSKO-SRIJEMSKA 	Bobota 	1	60
+2089	Borovo 	32227 	VUKOVARSKO-SRIJEMSKA 	Borovo 	1	60
+2090	Petrovci 	32229 	VUKOVARSKO-SRIJEMSKA 	Petrovci 	1	60
+2091	Sotin 	32232 	VUKOVARSKO-SRIJEMSKA 	Grabovo 	1	60
+2094	Lovas 	32237 	VUKOVARSKO-SRIJEMSKA 	Mohovo 	1	60
+2096	Šarengrad 	32234 	VUKOVARSKO-SRIJEMSKA 	Šarengrad 	1	60
+2097	Bapska 	32235 	VUKOVARSKO-SRIJEMSKA 	Bapska 	1	60
+2098	Ilok 	32236 	VUKOVARSKO-SRIJEMSKA 	Ilok 	1	60
+2100	Čakovci 	32238 	VUKOVARSKO-SRIJEMSKA 	Bokšić 	1	60
+2104	Negoslavci 	32239 	VUKOVARSKO-SRIJEMSKA 	Negoslavci 	1	60
+2105	Stari Jankovci 	32241 	VUKOVARSKO-SRIJEMSKA 	Novi Jankovci 	1	60
+2107	Slakovci 	32242 	VUKOVARSKO-SRIJEMSKA 	Svinjarevci 	1	60
+2110	Orolik 	32243 	VUKOVARSKO-SRIJEMSKA 	Orolik 	1	60
+2112	Đeletovci 	32244 	VUKOVARSKO-SRIJEMSKA 	Đeletovci 	1	60
+2113	Nijemci 	32245 	VUKOVARSKO-SRIJEMSKA 	Donje Novo Selo 	1	60
+2116	Lipovac 	32246 	VUKOVARSKO-SRIJEMSKA 	Apševci 	1	60
+2118	Banovci 	32247 	VUKOVARSKO-SRIJEMSKA 	Banovci 	1	60
+2120	Ilača 	32248 	VUKOVARSKO-SRIJEMSKA 	Ilača 	1	60
+2121	Tovarnik 	32249 	VUKOVARSKO-SRIJEMSKA 	Tovarnik 	1	60
+2122	Privlaka 	32251 	VUKOVARSKO-SRIJEMSKA 	Privlaka 	1	60
+2123	Otok 	32252 	VUKOVARSKO-SRIJEMSKA 	Otok 	1	60
+2124	Komletinci 	32253 	VUKOVARSKO-SRIJEMSKA 	Komletinci 	1	60
+2125	Vrbanja 	32254 	VUKOVARSKO-SRIJEMSKA 	Vrbanja 	1	60
+2126	Soljani 	32255 	VUKOVARSKO-SRIJEMSKA 	Soljani 	1	60
+2127	Strošinci 	32256 	VUKOVARSKO-SRIJEMSKA 	Strošinci 	1	60
+2128	Drenovci 	32257 	VUKOVARSKO-SRIJEMSKA 	Drenovci 	1	60
+2129	Posavski Podgajci 	32258 	VUKOVARSKO-SRIJEMSKA 	Posavski Podgajci 	1	60
+2130	Gunja 	32260 	VUKOVARSKO-SRIJEMSKA 	Gunja 	1	60
+2132	Račinovci 	32262 	VUKOVARSKO-SRIJEMSKA 	Račinovci 	1	60
+2134	Županja 	32270 	VUKOVARSKO-SRIJEMSKA 	Županja 	1	60
+2135	Rokovci-Andrijaševci 	32271 	VUKOVARSKO-SRIJEMSKA 	Andrijaševci 	1	60
+2137	Cerna 	32272 	VUKOVARSKO-SRIJEMSKA 	Cerna 	1	60
+2139	Gradište 	32273 	VUKOVARSKO-SRIJEMSKA 	Gradište 	1	60
+2140	Štitar 	32274 	VUKOVARSKO-SRIJEMSKA 	Štitar 	1	60
+2141	Bošnjaci 	32275 	VUKOVARSKO-SRIJEMSKA 	Bošnjaci 	1	60
+2142	Babina Greda 	32276 	VUKOVARSKO-SRIJEMSKA 	Babina Greda 	1	60
+2143	Jarmina 	32280 	VUKOVARSKO-SRIJEMSKA 	Jarmina 	1	60
+2145	Ivankovo 	32281 	VUKOVARSKO-SRIJEMSKA 	Ivankovo 	1	60
+2146	Retkovci 	32282 	VUKOVARSKO-SRIJEMSKA 	Prkovci 	1	60
+2148	Vođinci 	32283 	VUKOVARSKO-SRIJEMSKA 	Novi Mikanovci 	1	60
+2150	Stari Mikanovci 	32284 	VUKOVARSKO-SRIJEMSKA 	Đurđanci 	1	60
+2154	Virovitica 	33000 	VIROVITIČKO-PODRAVSKA 	Čemernica 	1	60
+2164	Špišić Bukovica 	33404 	VIROVITIČKO-PODRAVSKA 	Bušetina 	1	60
+2171	Pitomača 	33405 	VIROVITIČKO-PODRAVSKA 	Grabrovnica 	1	60
+2182	Lukač 	33406 	VIROVITIČKO-PODRAVSKA 	Brezik 	1	60
+2194	Suhopolje 	33410 	VIROVITIČKO-PODRAVSKA 	Borova 	1	60
+2207	Gradina 	33411 	VIROVITIČKO-PODRAVSKA 	Bačevac 	1	60
+2218	Cabuna 	33412 	VIROVITIČKO-PODRAVSKA 	Budanica 	1	60
+2224	Crnac 	33507 	VIROVITIČKO-PODRAVSKA 	Breštanovci 	1	60
+2234	Zdenci 	33513 	VIROVITIČKO-PODRAVSKA 	Bankovci 	1	60
+2243	Čačinci 	33514 	VIROVITIČKO-PODRAVSKA 	Brezovljani Vojlovički 	1	60
+2255	Orahovica 	33515 	VIROVITIČKO-PODRAVSKA 	Bijeljevina Orahovička 	1	60
+2268	Mikleuš 	33517 	VIROVITIČKO-PODRAVSKA 	Balinci 	1	60
+2276	Nova Bukovica 	33518 	VIROVITIČKO-PODRAVSKA 	Bjelkovac 	1	60
+2283	Slatina 	33520 	VIROVITIČKO-PODRAVSKA 	Bakić 	1	60
+2314	Voćin 	33522 	VIROVITIČKO-PODRAVSKA 	Bokane 	1	60
+2325	Čađavica 	33523 	VIROVITIČKO-PODRAVSKA 	Čađavica 	1	60
+2336	Sopje 	33525 	VIROVITIČKO-PODRAVSKA 	Sopjanska Greda 	1	60
+2338	Pivnica Slavonska 	33533 	VIROVITIČKO-PODRAVSKA 	Kravljak 	1	60
+2345	Požega 	34000 	POŽEŠKO-SLAVONSKA 	Alaginci 	1	60
+2376	Jakšić 	34308 	POŽEŠKO-SLAVONSKA 	Šumanovci 	1	60
+2388	Pleternica 	34310 	POŽEŠKO-SLAVONSKA 	Bilice 	1	60
+2415	Sesvete kod Požege 	34312 	POŽEŠKO-SLAVONSKA 	Grabarje 	1	60
+2421	Ratkovica 	34315 	POŽEŠKO-SLAVONSKA 	Brodski Drenovac 	1	60
+2424	Brestovac 	34322 	POŽEŠKO-SLAVONSKA 	Amatovci 	1	60
+2482	Velika 	34330 	POŽEŠKO-SLAVONSKA 	Antunovac 	1	60
+2496	Kaptol 	34334 	POŽEŠKO-SLAVONSKA 	Alilovci 	1	60
+2505	Vetovo 	34335 	POŽEŠKO-SLAVONSKA 	Hrnjevac 	1	60
+2510	Kutjevo 	34340 	POŽEŠKO-SLAVONSKA 	Bjeliševac 	1	60
+2516	Bektež 	34343 	POŽEŠKO-SLAVONSKA 	Bektež 	1	60
+2523	Čaglin 	34350 	POŽEŠKO-SLAVONSKA 	Mali Bilač 	1	60
+2553	Poljana 	34543 	POŽEŠKO-SLAVONSKA 	Antunovac 	1	60
+2559	Pakrac 	34550 	POŽEŠKO-SLAVONSKA 	Japaga 	1	60
+2561	Lipik 	34551 	POŽEŠKO-SLAVONSKA 	Šeovica 	1	60
+2612	Badljevina 	34552 	POŽEŠKO-SLAVONSKA 	Badljevina 	1	60
+2620	Slavonski Brod 	35000 	BRODSKO-POSAVSKA 	Brodski Varoš 	1	60
+2622	Podvinje 	35107 	BRODSKO-POSAVSKA 	Podvinje 	1	60
+2625	Podcrkavlje 	35201 	BRODSKO-POSAVSKA 	Brodski Zdenci 	1	60
+2636	Ruščica 	35208 	BRODSKO-POSAVSKA 	Donja Vrba 	1	60
+2642	Bukovlje 	35209 	BRODSKO-POSAVSKA 	Bukovlje 	1	60
+2645	Vrpolje 	35210 	BRODSKO-POSAVSKA 	Čajkovci 	1	60
+2648	Trnjani 	35211 	BRODSKO-POSAVSKA 	Korduševci 	1	60
+2654	Garčin 	35212 	BRODSKO-POSAVSKA 	Bicko Selo 	1	60
+2658	Oprisavci 	35213 	BRODSKO-POSAVSKA 	Oprisavci 	1	60
+2663	Donji Andrijevci 	35214 	BRODSKO-POSAVSKA 	Donji Andrijevci 	1	60
+2672	Slavonski Šamac 	35220 	BRODSKO-POSAVSKA 	Kruševica 	1	60
+2674	Velika Kopanica 	35221 	BRODSKO-POSAVSKA 	Beravci 	1	60
+2677	Gundinci 	35222 	BRODSKO-POSAVSKA 	Gundinci 	1	60
+2678	Sikirevci 	35224 	BRODSKO-POSAVSKA 	Jaruge 	1	60
+2680	Lužani 	35257 	BRODSKO-POSAVSKA 	Bečic 	1	60
+2682	Oriovac 	35250 	BRODSKO-POSAVSKA 	Kujnik 	1	60
+2686	Sibinj 	35252 	BRODSKO-POSAVSKA 	Brđani 	1	60
+2700	Brodski Stupnik 	35253 	BRODSKO-POSAVSKA 	Brodski Stupnik 	1	60
+2703	Bebrina 	35254 	BRODSKO-POSAVSKA 	Banovci 	1	60
+2710	Slavonski Kobaš 	35255 	BRODSKO-POSAVSKA 	Slavonski Kobaš 	1	60
+2714	Nova Gradiška 	35400 	BRODSKO-POSAVSKA 	Kovačevac 	1	60
+2721	Rešetari 	35403 	BRODSKO-POSAVSKA 	Bukovica 	1	60
+2723	Cernik 	35404 	BRODSKO-POSAVSKA 	Baćin Dol 	1	60
+2734	Nova Kapela 	35410 	BRODSKO-POSAVSKA 	Batrina 	1	60
+2746	Staro Petrovo Selo 	35420 	BRODSKO-POSAVSKA 	Blažević Dol 	1	60
+2755	Zapolje 	35422 	BRODSKO-POSAVSKA 	Adžamovci 	1	60
+2765	Vrbje 	35423 	BRODSKO-POSAVSKA 	Dolina 	1	60
+2768	Orubica 	35424 	BRODSKO-POSAVSKA 	Orubica 	1	60
+2769	Davor 	35425 	BRODSKO-POSAVSKA 	Davor 	1	60
+2770	Dragalić 	35428 	BRODSKO-POSAVSKA 	Donji Bogićevci 	1	60
+2774	Gornji Bogićevci 	35429 	BRODSKO-POSAVSKA 	Mašić 	1	60
+2784	Okučani 	35430 	BRODSKO-POSAVSKA 	Dubovac 	1	60
+2800	Stara Gradiška 	35435 	BRODSKO-POSAVSKA 	Donji Varoš 	1	60
+2806	Čakovec 	40000 	MEĐIMURSKA 	Čakovec 	1	60
+2824	Nedelišće 	40305 	MEĐIMURSKA 	Dunjkovec 	1	60
+2831	Macinec 	40306 	MEĐIMURSKA 	Badličan 	1	60
+2844	Lopatinec 	40311 	MEĐIMURSKA 	Brezje 	1	60
+2853	Štrigova 	40312 	MEĐIMURSKA 	Martinuševec 	1	60
+2866	Sveti Martin na Muri 	40313 	MEĐIMURSKA 	Hlapičina 	1	60
+2881	Selnica 	40314 	MEĐIMURSKA 	Štrukovec 	1	60
+2892	Mursko Središče 	40315 	MEĐIMURSKA 	Križovec 	1	60
+2899	Podturen 	40317 	MEĐIMURSKA 	Celine 	1	60
+2902	Dekanovec 	40318 	MEĐIMURSKA 	Dekanovec 	1	60
+2906	Belica 	40319 	MEĐIMURSKA 	Belica 	1	60
+2908	Donji Kraljevec 	40320 	MEĐIMURSKA 	Donji Hrašćan 	1	60
+2912	Mala Subotica 	40321 	MEĐIMURSKA 	Držimurec 	1	60
+2918	Orehovica 	40322 	MEĐIMURSKA 	Orehovica 	1	60
+2921	Prelog 	40323 	MEĐIMURSKA 	Cirkovljan 	1	60
+2931	Goričan 	40324 	MEĐIMURSKA 	Goričan 	1	60
+2932	Sveta Marija 	40326 	MEĐIMURSKA 	Donji Vidovec 	1	60
+2935	Donja Dubrava 	40328 	MEĐIMURSKA 	Donja Dubrava 	1	60
+2936	Kotoriba 	40329 	MEĐIMURSKA 	Kotoriba 	1	60
+2937	Varaždin 	42000 	VARAŽDINSKA 	Donji Kućan 	1	60
+2943	Trnovec Bartolovečki 	42202 	VARAŽDINSKA 	Zbelava 	1	60
+2950	Jalžabet 	42203 	VARAŽDINSKA 	Imbriovec Jalžabetski 	1	60
+2956	Turčin 	42204 	VARAŽDINSKA 	Črnec Biškupečki 	1	60
+2977	Vidovec 	42205 	VARAŽDINSKA 	Gojanec 	1	60
+2988	Petrijanec 	42206 	VARAŽDINSKA 	Družbinec 	1	60
+2994	Vinica 	42207 	VARAŽDINSKA 	Donje Vratno 	1	60
+3002	Cestica 	42208 	VARAŽDINSKA 	Babinec 	1	60
+3022	Sračinec 	42209 	VARAŽDINSKA 	Sračinec 	1	60
+3024	Novi Marof 	42220 	VARAŽDINSKA 	Donje Makojišće 	1	60
+3043	Ljubešćica 	42222 	VARAŽDINSKA 	Čurilovec 	1	60
+3049	Varaždinske Toplice 	42223 	VARAŽDINSKA 	Boričevec Toplički 	1	60
+3071	Breznički Hum 	42225 	VARAŽDINSKA 	Bisag 	1	60
+3093	Ludbreg 	42230 	VARAŽDINSKA 	Apatija 	1	60
+3108	Mali Bukovec 	42231 	VARAŽDINSKA 	Lunjkovec 	1	60
+3117	Martijanec 	42232 	VARAŽDINSKA 	Čičkovina 	1	60
+3125	Sveti Đurđ 	42233 	VARAŽDINSKA 	Hrženica 	1	60
+3134	Ivanec 	42240 	VARAŽDINSKA 	Bedenec 	1	60
+3150	Radovan 	42242 	VARAŽDINSKA 	Cerje Tužno 	1	60
+3166	Maruševec 	42243 	VARAŽDINSKA 	Bikovec 	1	60
+3182	Klenovnik 	42244 	VARAŽDINSKA 	Horvatsko 	1	60
+3189	Donja Voća 	42245 	VARAŽDINSKA 	Budinščak 	1	60
+3197	Lepoglava 	42250 	VARAŽDINSKA 	Crkovec 	1	60
+3207	Bednja 	42253 	VARAŽDINSKA 	Bednja 	1	60
+3238	Bjelovar 	43000 	BJELOVARSKO-BILOGORSKA 	Bjelovar 	1	60
+3278	Zrinski Topolovac 	43202 	BJELOVARSKO-BILOGORSKA 	Tvrda Reka 	1	60
+3282	Kapela 	43203 	BJELOVARSKO-BILOGORSKA 	Babotok 	1	60
+3302	Rovišće 	43212 	BJELOVARSKO-BILOGORSKA 	Domankuš 	1	60
+3310	Veliko Trojstvo 	43226 	BJELOVARSKO-BILOGORSKA 	Dominkovica 	1	60
+3320	Šandrovac 	43227 	BJELOVARSKO-BILOGORSKA 	Jasenik 	1	60
+3323	Ivanska 	43231 	BJELOVARSKO-BILOGORSKA 	Đurđic 	1	60
+3329	Berek 	43232 	BJELOVARSKO-BILOGORSKA 	Berek 	1	60
+3340	Garešnica 	43280 	BJELOVARSKO-BILOGORSKA 	Trnovitički Popovac 	1	60
+3347	Čazma 	43240 	BJELOVARSKO-BILOGORSKA 	Andigola 	1	60
+3383	Štefanje 	43246 	BJELOVARSKO-BILOGORSKA 	Blatnica 	1	60
+3391	Narta 	43247 	BJELOVARSKO-BILOGORSKA 	Kolarevo Selo 	1	60
+3394	Gudovac 	43251 	BJELOVARSKO-BILOGORSKA 	Gudovac 	1	60
+3395	Veliki Grđevac 	43270 	BJELOVARSKO-BILOGORSKA 	Bačkovica 	1	60
+3412	Nova Rača 	43272 	BJELOVARSKO-BILOGORSKA 	Dautan 	1	60
+3423	Bulinac 	43273 	BJELOVARSKO-BILOGORSKA 	Bedenik 	1	60
+3429	Severin 	43274 	BJELOVARSKO-BILOGORSKA 	Orovac 	1	60
+3444	Veliko Vukovje 	43282 	BJELOVARSKO-BILOGORSKA 	Mala Bršljanica 	1	60
+3448	Kaniška Iva 	43283 	BJELOVARSKO-BILOGORSKA 	Kaniška Iva 	1	60
+3451	Hercegovac 	43284 	BJELOVARSKO-BILOGORSKA 	Begovača 	1	60
+3466	Grubišno Polje 	43290 	BJELOVARSKO-BILOGORSKA 	Dapčevački Brđani 	1	60
+3485	Veliki Zdenci 	43293 	BJELOVARSKO-BILOGORSKA 	Mali Zdenci 	1	60
+3488	Daruvar 	43500 	BJELOVARSKO-BILOGORSKA 	Daruvar 	1	60
+3521	Končanica 	43505 	BJELOVARSKO-BILOGORSKA 	Boriš 	1	60
+3529	Dežanovac 	43506 	BJELOVARSKO-BILOGORSKA 	Dežanovac 	1	60
+3544	Đulovac 	43532 	BJELOVARSKO-BILOGORSKA 	Donje Cjepidlake 	1	60
+3555	Sirač 	43541 	BJELOVARSKO-BILOGORSKA 	Barica 	1	60
+3558	Sisak 	44000 	SISAČKO-MOSLAVAČKA 	Hrastelnica 	1	60
+3573	Sisak-Caprag 	44010 	SISAČKO-MOSLAVAČKA 	Crnac 	1	60
+3576	Martinska Ves 	44201 	SISAČKO-MOSLAVAČKA 	Desni Dubrovčak 	1	60
+3586	Topolovac 	44202 	SISAČKO-MOSLAVAČKA 	Budaševo 	1	60
+3591	Gušće 	44203 	SISAČKO-MOSLAVAČKA 	Čigoč 	1	60
+3599	Petrinja 	44250 	SISAČKO-MOSLAVAČKA 	Bijelnik 	1	60
+3612	Sunja 	44210 	SISAČKO-MOSLAVAČKA 	Bestrma 	1	60
+3700	Mošćenica 	44253 	SISAČKO-MOSLAVAČKA 	Moščenica 	1	60
+3701	Lekenik 	44272 	SISAČKO-MOSLAVAČKA 	Brežane Lekeničke 	1	60
+3711	Sela 	44273 	SISAČKO-MOSLAVAČKA 	Greda 	1	60
+3722	Velika Ludina 	44316 	SISAČKO-MOSLAVAČKA 	Gornja Vlahinićka 	1	60
+3734	Popovača 	44317 	SISAČKO-MOSLAVAČKA 	Donja Jelenska 	1	60
+3743	Voloder 	44318 	SISAČKO-MOSLAVAČKA 	Donja Gračenica 	1	60
+3746	Kutina 	44320 	SISAČKO-MOSLAVAČKA 	Batina 	1	60
+3766	Banova Jaruga 	44321 	SISAČKO-MOSLAVAČKA 	Banova Jaruga 	1	60
+3770	Lipovljani 	44322 	SISAČKO-MOSLAVAČKA 	Kozarice 	1	60
+3776	Rajić 	44323 	SISAČKO-MOSLAVAČKA 	Borovac 	1	60
+3782	Jasenovac 	44324 	SISAČKO-MOSLAVAČKA 	Jasenovac 	1	60
+3793	Novska 	44330 	SISAČKO-MOSLAVAČKA 	Bair 	1	60
+3807	Glina 	44400 	SISAČKO-MOSLAVAČKA 	Balinac 	1	60
+3877	Gvozd 	44410 	SISAČKO-MOSLAVAČKA 	Blatuša 	1	60
+3896	Topusko 	44415 	SISAČKO-MOSLAVAČKA 	Batinova Kosa 	1	60
+3912	Hrvatska Kostajnica 	44430 	SISAČKO-MOSLAVAČKA 	Čukur 	1	60
+3945	Dvor 	44440 	SISAČKO-MOSLAVAČKA 	Bansko Vrpolje 	1	60
+4008	Hrvatska Dubica 	44450 	SISAČKO-MOSLAVAČKA 	Baćin 	1	60
+4014	Karlovac 	47000 	KARLOVAČKA 	Blatnica Pokupska 	1	60
+4029	Draganić 	47201 	KARLOVAČKA 	Draganić 	1	60
+4030	Lasinja 	47206 	KARLOVAČKA 	Banski Kovačevac 	1	60
+4037	Skakavac 	47212 	KARLOVAČKA 	Banska Selnica 	1	60
+4050	Vojnić 	47220 	KARLOVAČKA 	Kljaić Brdo 	1	60
+4097	Cetingrad 	47222 	KARLOVAČKA 	Batnoga 	1	60
+4133	Slunj 	47240 	KARLOVAČKA 	Arapovac 	1	60
+4201	Cerovac Vukmanički 	47241 	KARLOVAČKA 	Cerovac Vukmanićki 	1	60
+4215	Krnjak 	47242 	KARLOVAČKA 	Brezova Glava 	1	60
+4248	Rakovica 	47245 	KARLOVAČKA 	Basara 	1	60
+4275	Duga Resa 	47250 	KARLOVAČKA 	Belajska Vinica 	1	60
+4331	Bosiljevo 	47251 	KARLOVAČKA 	Beč 	1	60
+4374	Barilović 	47252 	KARLOVAČKA 	Barilović 	1	60
+4411	Generalski Stol 	47262 	KARLOVAČKA 	Donje Dubrave 	1	60
+4427	Tounj 	47264 	KARLOVAČKA 	Gornje Dubrave 	1	60
+4436	Netretić 	47271 	KARLOVAČKA 	Baići 	1	60
+4486	Žakanje 	47276 	KARLOVAČKA 	Breznik Žakanjski 	1	60
+4503	Ozalj 	47280 	KARLOVAČKA 	Mirkopolje 	1	60
+4607	Mahično 	47286 	KARLOVAČKA 	Goršćaki 	1	60
+4617	Ogulin 	47300 	KARLOVAČKA 	Desmerice 	1	60
+4638	Josipdol 	47303 	KARLOVAČKA 	Carevo Polje 	1	60
+4650	Plaški 	47304 	KARLOVAČKA 	Janja Gora 	1	60
+4659	Saborsko 	47306 	KARLOVAČKA 	Begovac 	1	60
+4664	Koprivnica 	48000 	KOPRIVNIČKO-KRIŽEVAČKA 	Bakovčica 	1	60
+4689	Sveti Ivan Žabno 	48214 	KOPRIVNIČKO-KRIŽEVAČKA 	Brdo Cirkvensko 	1	60
+4704	Križevci 	48260 	KOPRIVNIČKO-KRIŽEVAČKA 	Donji Tkalec 	1	60
+4772	Orehovec 	48267 	KOPRIVNIČKO-KRIŽEVAČKA 	Žibrinovec 	1	60
+4783	Gornja Rijeka 	48268 	KOPRIVNIČKO-KRIŽEVAČKA 	Sudovec 	1	60
+4828	Sokolovac 	48306 	KOPRIVNIČKO-KRIŽEVAČKA 	Brđani Sokolovački 	1	60
+4854	Rasinja 	48312 	KOPRIVNIČKO-KRIŽEVAČKA 	Belanovo Selo 	1	60
+4874	Đelekovec 	48316 	KOPRIVNIČKO-KRIŽEVAČKA 	Đelekovec 	1	60
+4877	Legrad 	48317 	KOPRIVNIČKO-KRIŽEVAČKA 	Antolovec 	1	60
+4883	Peteranec 	48321 	KOPRIVNIČKO-KRIŽEVAČKA 	Peteranec 	1	60
+4885	Drnje 	48322 	KOPRIVNIČKO-KRIŽEVAČKA 	Botovo 	1	60
+4888	Virje 	48326 	KOPRIVNIČKO-KRIŽEVAČKA 	Delovi 	1	60
+4897	Molve 	48327 	KOPRIVNIČKO-KRIŽEVAČKA 	Ždala 	1	60
+4905	Gola 	48331 	KOPRIVNIČKO-KRIŽEVAČKA 	Gola 	1	60
+4909	Đurđevac 	48350 	KOPRIVNIČKO-KRIŽEVAČKA 	Budrovac 	1	60
+4925	Ferdinandovac 	48356 	KOPRIVNIČKO-KRIŽEVAČKA 	Ferdinandovac 	1	60
+4927	Kalinovac 	48361 	KOPRIVNIČKO-KRIŽEVAČKA 	Batinske 	1	60
+4930	Kloštar Podravski 	48362 	KOPRIVNIČKO-KRIŽEVAČKA 	Dinjevac 	1	60
+4931	Podravske Sesvete 	48363 	KOPRIVNIČKO-KRIŽEVAČKA 	Brodić 	1	60
+4933	Krapina 	49000 	KRAPINSKO-ZAGORSKA 	Bobovje 	1	60
+4950	Zabok 	49210 	KRAPINSKO-ZAGORSKA 	Bračak 	1	60
+4967	Veliko Trgovišće 	49214 	KRAPINSKO-ZAGORSKA 	Bezavina 	1	60
+4980	Tuhelj 	49215 	KRAPINSKO-ZAGORSKA 	Banska Gorica 	1	60
+4994	Desinić 	49216 	KRAPINSKO-ZAGORSKA 	Desinić 	1	60
+5022	Krapinske Toplice 	49217 	KRAPINSKO-ZAGORSKA 	Čret 	1	60
+5039	Pregrada 	49218 	KRAPINSKO-ZAGORSKA 	Benkovo 	1	60
+5065	Bedekovčina 	49221 	KRAPINSKO-ZAGORSKA 	Vučak 	1	60
+5080	Sveti Križ Začretje 	49223 	KRAPINSKO-ZAGORSKA 	Brezova 	1	60
+5104	Đurmanec 	49225 	KRAPINSKO-ZAGORSKA 	Donji Macelj 	1	60
+5117	Hum na Sutli 	49231 	KRAPINSKO-ZAGORSKA 	Brezno Gora 	1	60
+5135	Radoboj 	49232 	KRAPINSKO-ZAGORSKA 	Bregi Radobojski 	1	60
+5144	Gornje Jesenje 	49233 	KRAPINSKO-ZAGORSKA 	Brdo Jesenjsko 	1	60
+5149	Petrovsko 	49234 	KRAPINSKO-ZAGORSKA 	Škarićevo 	1	60
+5162	Donja Stubica 	49240 	KRAPINSKO-ZAGORSKA 	Donja Podgora 	1	60
+5175	Oroslavje 	49243 	KRAPINSKO-ZAGORSKA 	Andraševec 	1	60
+5180	Gornja Stubica 	49245 	KRAPINSKO-ZAGORSKA 	Banšćica 	1	60
+5200	Marija Bistrica 	49246 	KRAPINSKO-ZAGORSKA 	Globočec 	1	60
+5224	Zlatar Bistrica 	49247 	KRAPINSKO-ZAGORSKA 	Lug Poznanovečki 	1	60
+5231	Zlatar 	49250 	KRAPINSKO-ZAGORSKA 	Belec 	1	60
+5250	Mače 	49251 	KRAPINSKO-ZAGORSKA 	Delkovec 	1	60
+5259	Mihovljan 	49252 	KRAPINSKO-ZAGORSKA 	Frkuljevec Mihovljanski 	1	60
+5269	Lobor 	49253 	KRAPINSKO-ZAGORSKA 	Cebovec 	1	60
+5279	Konjščina 	49282 	KRAPINSKO-ZAGORSKA 	Bočadir 	1	60
+5296	Hrašćina-Trgovišće 	49283 	KRAPINSKO-ZAGORSKA 	Domovec 	1	60
+5304	Budinščina 	49284 	KRAPINSKO-ZAGORSKA 	Budinšćina 	1	60
+5319	Klanjec 	49290 	KRAPINSKO-ZAGORSKA 	Bobovec Tomaševečki 	1	60
+5338	Kraljevec na Sutli 	49294 	KRAPINSKO-ZAGORSKA 	Draše 	1	60
+5348	Kumrovec 	49295 	KRAPINSKO-ZAGORSKA 	Donji Škrnik 	1	60
+5358	Rijeka 	51000 	PRIMORSKO-GORANSKA 	Rijeka 	1	60
+5359	Matulji 	51211 	PRIMORSKO-GORANSKA 	Pobri 	1	60
+5365	Vele Mune 	51212 	PRIMORSKO-GORANSKA 	Male Mune 	1	60
+5368	Jurdani 	51213 	PRIMORSKO-GORANSKA 	Brešca 	1	60
+5378	Šapjane 	51214 	PRIMORSKO-GORANSKA 	Brdce 	1	60
+5383	Kastav 	51215 	PRIMORSKO-GORANSKA 	Kastav 	1	60
+5384	Viškovo 	51216 	PRIMORSKO-GORANSKA 	Kosi 	1	60
+5391	Klana 	51217 	PRIMORSKO-GORANSKA 	Breza 	1	60
+5396	Dražice 	51218 	PRIMORSKO-GORANSKA 	Buzdohanj 	1	60
+5423	Kostrena 	51221 	PRIMORSKO-GORANSKA 	Kostrena 	1	60
+5424	Bakar 	51222 	PRIMORSKO-GORANSKA 	Bakar 	1	60
+5426	Škrljevo 	51223 	PRIMORSKO-GORANSKA 	Plosna 	1	60
+5429	Krasica 	51224 	PRIMORSKO-GORANSKA 	Krasica 	1	60
+5431	Hreljin 	51226 	PRIMORSKO-GORANSKA 	Hreljin 	1	60
+5432	Kukuljanovo 	51227 	PRIMORSKO-GORANSKA 	Kukuljanovo 	1	60
+5433	Križišće 	51241 	PRIMORSKO-GORANSKA 	Križišće 	1	60
+5436	Tribalj 	51243 	PRIMORSKO-GORANSKA 	Drivenik 	1	60
+5438	Grižane 	51244 	PRIMORSKO-GORANSKA 	Grižane-Belgrad 	1	60
+5439	Novi Vinodolski 	51250 	PRIMORSKO-GORANSKA 	Novi Vinodolski 	1	60
+5441	Ledenice 	51251 	PRIMORSKO-GORANSKA 	Bater 	1	60
+5448	Klenovica 	51252 	PRIMORSKO-GORANSKA 	Drinak 	1	60
+5459	Bribir 	51253 	PRIMORSKO-GORANSKA 	Bribir 	1	60
+5460	Crikvenica 	51260 	PRIMORSKO-GORANSKA 	Crikvenica 	1	60
+5464	Bakarac 	51261 	PRIMORSKO-GORANSKA 	Bakarac 	1	60
+5465	Šmrika 	51263 	PRIMORSKO-GORANSKA 	Šmrika 	1	60
+5466	Jadranovo 	51264 	PRIMORSKO-GORANSKA 	Jadranovo 	1	60
+5467	Rab 	51280 	PRIMORSKO-GORANSKA 	Banjol 	1	60
+5474	Lopar 	51281 	PRIMORSKO-GORANSKA 	Lopar 	1	60
+5475	Delnice 	51300 	PRIMORSKO-GORANSKA 	Delnice 	1	60
+5496	Brod na Kupi 	51301 	PRIMORSKO-GORANSKA 	Belo 	1	60
+5519	Plešce 	51303 	PRIMORSKO-GORANSKA 	Fažonci 	1	60
+5529	Gerovo 	51304 	PRIMORSKO-GORANSKA 	Gerovo 	1	60
+5535	Tršće 	51305 	PRIMORSKO-GORANSKA 	Brinjeva Draga 	1	60
+5550	Čabar 	51306 	PRIMORSKO-GORANSKA 	Čabar 	1	60
+5557	Prezid 	51307 	PRIMORSKO-GORANSKA 	Bazli 	1	60
+5561	Skrad 	51311 	PRIMORSKO-GORANSKA 	Brezje Dobransko 	1	60
+5585	Brod Moravice 	51312 	PRIMORSKO-GORANSKA 	Brod Moravice 	1	60
+5623	Kupjak 	51313 	PRIMORSKO-GORANSKA 	Dedin 	1	60
+5628	Ravna Gora 	51314 	PRIMORSKO-GORANSKA 	Ravna Gora 	1	60
+5632	Mrkopalj 	51315 	PRIMORSKO-GORANSKA 	Begovo Razdolje 	1	60
+5638	Lokve 	51316 	PRIMORSKO-GORANSKA 	Homer 	1	60
+5645	Crni Lug 	51317 	PRIMORSKO-GORANSKA 	Bela Vodica 	1	60
+5660	Fužine 	51322 	PRIMORSKO-GORANSKA 	Belo Selo 	1	60
+5665	Lič 	51323 	PRIMORSKO-GORANSKA 	Lič 	1	60
+5666	Zlobin 	51324 	PRIMORSKO-GORANSKA 	Zlobin 	1	60
+5667	Moravice 	51325 	PRIMORSKO-GORANSKA 	Bunjevci 	1	60
+5691	Vrbovsko 	51326 	PRIMORSKO-GORANSKA 	Hajdine 	1	60
+5701	Gomirje 	51327 	PRIMORSKO-GORANSKA 	Gomirje 	1	60
+5705	Lukovdol 	51328 	PRIMORSKO-GORANSKA 	Blaževci 	1	60
+5719	Severin na Kupi 	51329 	PRIMORSKO-GORANSKA 	Damalj 	1	60
+5732	Opatija 	51410 	PRIMORSKO-GORANSKA 	Opatija 	1	60
+5733	Ičići 	51414 	PRIMORSKO-GORANSKA 	Ičići 	1	60
+5740	Lovran 	51415 	PRIMORSKO-GORANSKA 	Dobreć 	1	60
+5747	Mošćenička Draga 	51417 	PRIMORSKO-GORANSKA 	Grabrova 	1	60
+5755	Brseč 	51418 	PRIMORSKO-GORANSKA 	Brseč 	1	60
+5760	Krk 	51500 	PRIMORSKO-GORANSKA 	Kornić 	1	60
+5767	Malinska 	51511 	PRIMORSKO-GORANSKA 	Bajčići 	1	60
+5812	Omišalj 	51513 	PRIMORSKO-GORANSKA 	Njivice 	1	60
+5814	Šilo 	51515 	PRIMORSKO-GORANSKA 	Polje 	1	60
+5818	Vrbnik 	51516 	PRIMORSKO-GORANSKA 	Garica 	1	60
+5822	Punat 	51521 	PRIMORSKO-GORANSKA 	Punat 	1	60
+5824	Draga Bašćanska 	51522 	PRIMORSKO-GORANSKA 	Draga Bašćanska 	1	60
+5825	Baška 	51523 	PRIMORSKO-GORANSKA 	Baška 	1	60
+5828	Mali Lošinj 	51550 	PRIMORSKO-GORANSKA 	Male Srakane 	1	60
+5831	Veli Lošinj 	51551 	PRIMORSKO-GORANSKA 	Veli Lošinj 	1	60
+5832	Ilovik 	51552 	PRIMORSKO-GORANSKA 	Ilovik 	1	60
+5833	Nerezine 	51554 	PRIMORSKO-GORANSKA 	Belej 	1	60
+5839	Martinšćica 	51556 	PRIMORSKO-GORANSKA 	Grmov 	1	60
+5844	Cres 	51557 	PRIMORSKO-GORANSKA 	Beli 	1	60
+5865	Susak 	51561 	PRIMORSKO-GORANSKA 	Susak 	1	60
+5866	Unije 	51562 	PRIMORSKO-GORANSKA 	Unije 	1	60
+5867	Ćunski 	51564 	PRIMORSKO-GORANSKA 	Ćunski 	1	60
+5868	Pazin 	52000 	ISTARSKA 	Beram 	1	60
+5887	Pula Pola 	52100 	ISTARSKA 	Pula - Pola 	1	60
+5898	Medulin 	52203 	ISTARSKA 	Medulin 	1	60
+5899	Ližnjan Lisignano 	52204 	ISTARSKA 	Ližnjan - Lisignano 	1	60
+5901	Marčana 	52206 	ISTARSKA 	Divšići 	1	60
+5908	Barban 	52207 	ISTARSKA 	Barban 	1	60
+5934	Krnica 	52208 	ISTARSKA 	Cokuni 	1	60
+5945	Rovinj Rovigno 	52210 	ISTARSKA 	Rovinj - Rovigno 	1	60
+5947	Bale Valle 	52211 	ISTARSKA 	Bale - Valle 	1	60
+5949	Fažana Fasana 	52212 	ISTARSKA 	Fažana - Fasana 	1	60
+5951	Vodnjan Dignano 	52215 	ISTARSKA 	Gajana - Gaiano 	1	60
+5954	Galižana Gallesano 	52216 	ISTARSKA 	Galižana - Gallesano 	1	60
+5955	Labin 	52220 	ISTARSKA 	Bartići 	1	60
+5990	Rabac 	52221 	ISTARSKA 	Rabac 	1	60
+5991	Koromačno 	52222 	ISTARSKA 	Brovinje 	1	60
+5996	Raša 	52223 	ISTARSKA 	Krapan 	1	60
+6000	Trget 	52224 	ISTARSKA 	Brgod 	1	60
+6005	Nedešćina 	52231 	ISTARSKA 	Eržišće 	1	60
+6015	Kršan 	52232 	ISTARSKA 	Blaškovići 	1	60
+6029	Plomin 	52234 	ISTARSKA 	Jesenovik 	1	60
+6037	Pićan 	52332 	ISTARSKA 	Jakačići 	1	60
+6043	Podpićan 	52333 	ISTARSKA 	Potpićan 	1	60
+6048	Žminj 	52341 	ISTARSKA 	Sutivanac 	1	60
+6084	Svetvinčenat 	52342 	ISTARSKA 	Paradiž 	1	60
+6104	Kanfanar 	52352 	ISTARSKA 	Golaš 	1	60
+6125	Cerovlje 	52402 	ISTARSKA 	Duričići 	1	60
+6140	Gračišće 	52403 	ISTARSKA 	Gračišće 	1	60
+6143	Sveti Petar u Šumi 	52404 	ISTARSKA 	Sveti Petar u Šumi 	1	60
+6144	Buzet 	52420 	ISTARSKA 	Baredine 	1	60
+6194	Lanišće 	52422 	ISTARSKA 	Brest 	1	60
+6208	Karojba 	52423 	ISTARSKA 	Karojba 	1	60
+6212	Motovun Montona 	52424 	ISTARSKA 	Brkač - Bercaz S. Pancrazio 	1	60
+6216	Roč 	52425 	ISTARSKA 	Benčići 	1	60
+6233	Lupoglav 	52426 	ISTARSKA 	Brest pod Učkom 	1	60
+6238	Livade Levade 	52427 	ISTARSKA 	Bartolići 	1	60
+6245	Oprtalj Portole 	52428 	ISTARSKA 	Antonci - Antonzi 	1	60
+6257	Grožnjan Grisignana 	52429 	ISTARSKA 	Bijele Zemlje - Terre Bianche 	1	60
+6264	Boljun 	52434 	ISTARSKA 	Belaj 	1	60
+6269	Poreč Parenzo 	52440 	ISTARSKA 	Buići 	1	60
+6295	Tinjan 	52444 	ISTARSKA 	Brčići 	1	60
+6303	Baderna 	52445 	ISTARSKA 	Baderna 	1	60
+6314	Nova Vas 	52446 	ISTARSKA 	Antonci 	1	60
+6324	Vižinada 	52447 	ISTARSKA 	Bajkini 	1	60
+6351	Sveti Lovreč 	52448 	ISTARSKA 	Jakići Gorinji 	1	60
+6377	Červar Porat 	52449 	ISTARSKA 	Bašarinka 	1	60
+6381	Vrsar Orsera 	52450 	ISTARSKA 	Begi 	1	60
+6390	Funtana Fontane 	52452 	ISTARSKA 	Funtana - Fontane 	1	60
+6391	Buje Buie 	52460 	ISTARSKA 	Baredine - Baredine 	1	60
+6402	Momjan Momiano 	52462 	ISTARSKA 	Brdo - Collato 	1	60
+6412	Višnjan Visignano 	52463 	ISTARSKA 	Anžići 	1	60
+6468	Kaštelir Castelliere 	52464 	ISTARSKA 	Babići 	1	60
+6482	Tar 	52465 	ISTARSKA 	Rogovići 	1	60
+6488	Novigrad-Cittanova 	52466 	ISTARSKA 	Antenal - Antenal 	1	60
+6493	Umag Umago 	52470 	ISTARSKA 	Babići - Babici 	1	60
+6512	Brtonigla Verteneglio 	52474 	ISTARSKA 	Buroli - Buroli 	1	60
+6519	Savurdija Salvore 	52475 	ISTARSKA 	Bašanija - Bassania 	1	60
+6523	Gospić 	53000 	LIČKO-SENJSKA 	Barlete 	1	60
+6555	Karlobag 	53288 	LIČKO-SENJSKA 	Baške Oštarije 	1	60
+6556	Lički Osik 	53201 	LIČKO-SENJSKA 	Budak 	1	60
+6561	Perušić 	53202 	LIČKO-SENJSKA 	Bukovac Perušićki 	1	60
+6573	Kosinj 	53203 	LIČKO-SENJSKA 	Kruščica 	1	60
+6580	Klanac 	53212 	LIČKO-SENJSKA 	Aleksinica 	1	60
+6586	Donje Pazarište 	53213 	LIČKO-SENJSKA 	Donje Pazarište 	1	60
+6592	Otočac 	53220 	LIČKO-SENJSKA 	Brlog 	1	60
+6610	Vrhovine 	53223 	LIČKO-SENJSKA 	Donji Babin Potok 	1	60
+6617	Ličko Lešće 	53224 	LIČKO-SENJSKA 	Čovići 	1	60
+6622	Korenica 	53230 	LIČKO-SENJSKA 	Bjelopolje 	1	60
+6652	Plitvička Jezera 	53231 	LIČKO-SENJSKA 	Čujića Krčevina 	1	60
+6664	Ličko Petrovo Selo 	53233 	LIČKO-SENJSKA 	Donji Vaganac 	1	60
+6671	Udbina 	53234 	LIČKO-SENJSKA 	Čojluk 	1	60
+6682	Podlapača 	53236 	LIČKO-SENJSKA 	Breštane 	1	60
+6688	Lovinac 	53244 	LIČKO-SENJSKA 	Gornja Ploča 	1	60
+6698	Donji Lapac 	53250 	LIČKO-SENJSKA 	Birovača 	1	60
+6716	Brinje 	53260 	LIČKO-SENJSKA 	Brinje 	1	60
+6722	Križpolje 	53261 	LIČKO-SENJSKA 	Glibodol 	1	60
+6726	Jezerane 	53262 	LIČKO-SENJSKA 	Jezerane 	1	60
+6728	Senj 	53270 	LIČKO-SENJSKA 	Bunica 	1	60
+6734	Vratnik 	53273 	LIČKO-SENJSKA 	Alan 	1	60
+6744	Krasno 	53274 	LIČKO-SENJSKA 	Krasno 	1	60
+6745	Sveti Juraj 	53284 	LIČKO-SENJSKA 	Biljevine 	1	60
+6752	Jablanac 	53287 	LIČKO-SENJSKA 	Jablanac 	1	60
+6766	Lukovo Šugarje 	53289 	LIČKO-SENJSKA 	Barić Draga 	1	60
+6768	Novalja 	53291 	LIČKO-SENJSKA 	Gajac 	1	60
+6772	Lun 	53294 	LIČKO-SENJSKA 	Lun 	1	60
+6773	Zubovići 	53296 	LIČKO-SENJSKA 	Caska 	1	60
+\.
+
+
+--
+-- Data for Name: grupa; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY grupa (id_grupa, grupa, opis, id_podgrupa, aktivnost) FROM stdin;
+1	GAZIRANA PIĆA		1	1
+6	PIVO		1	1
+7	SOKOVI		1	1
+8	TOPLI NAPICI		1	1
+9	VINA		1	1
+10	VODA		1	1
+11	ŽESTOKA PIĆA		1	1
+12	OSTALO		1	1
+\.
+
+
+--
+-- Data for Name: inventura; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY inventura (broj_inventure, id_skladiste, datum, id_zaposlenik, napomena, godina) FROM stdin;
+\.
+
+
+--
+-- Data for Name: inventura_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY inventura_stavke (broj_inventure, sifra_robe, jmj, kolicina, cijena, naziv, id_stavke, porez) FROM stdin;
+\.
+
+
+--
+-- Data for Name: izjava; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY izjava (izjava, id_izjava) FROM stdin;
+	1
+Probna izjava 2	2
+Probna izjava 3	3
+Ovo je neka probna izjava	4
+\.
+
+
+--
+-- Data for Name: manufacturers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY manufacturers (id_manufacturers, manufacturers) FROM stdin;
+\.
+
+
+--
+-- Data for Name: meduskladisnica; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY meduskladisnica (broj, godina, id_skladiste_od, id_skladiste_do, datum, id_izradio, org_dokumenat, napomena, id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: meduskladisnica_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY meduskladisnica_stavke (sifra, mpc, pdv, vpc, kolicina, broj, godina, id_stavka, odjava, nbc, iz_skladista) FROM stdin;
+\.
+
+
+--
+-- Data for Name: mjesto_troska; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY mjesto_troska (id_mjesto, mjesto) FROM stdin;
+1	PC Čakovec...
+\.
+
+
+--
+-- Data for Name: money; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY money (id, iznos) FROM stdin;
+\.
+
+
+--
+-- Data for Name: na_stol; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY na_stol (id_stol, sifra, broj_narudzbe, kom, id_poslovnica, id_skladiste, mpc, vpc, porez, porez_potrosnja, br) FROM stdin;
+\.
+
+
+--
+-- Data for Name: nacin_placanja; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY nacin_placanja (id_placanje, naziv_placanja, ostalo) FROM stdin;
+1	Gotovina	
+2	Kartice	
+3	Virman	
+\.
+
+
+--
+-- Data for Name: neuspjela_fiskalizacija; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY neuspjela_fiskalizacija (id, broj_racuna, xml, greska, id_ducan, id_kasa, blagajnik, iznos, date) FROM stdin;
+\.
+
+
+--
+-- Data for Name: otprema; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY otprema (id_otprema, naziv) FROM stdin;
+1	
+2	Poštom na račun pošiljatelja
+3	Overseas Express
+4	Poštom na račun primatelja
+5	Vlastita
+\.
+
+
+--
+-- Data for Name: otpremnica_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY otpremnica_stavke (id_stavka, kolicina, vpc, porez, broj_otpremnice, rabat, id_skladiste, sifra_robe, oduzmi, godina_otpremnice, odjava, nbc, porez_potrosnja) FROM stdin;
+\.
+
+
+--
+-- Data for Name: otpremnice; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY otpremnice (godina_otpremnice, id_skladiste, osoba_partner, id_odrediste, vrsta_dok, datum, id_izjava, napomena, id_kom, id_izradio, id_otprema, mj_otpreme, adr_otpreme, isprave, id_prijevoznik, registracija, istovarno_mj, istovarni_rok, troskovi_prijevoza, broj_otpremnice, partner_osoba, ukupno, id_otpremnica) FROM stdin;
+\.
+
+
+--
+-- Data for Name: partners; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY partners (ime_tvrtke, id_grad, adresa, r1r2, oib, napomena, id_djelatnost, zr, id_zemlja, id_partner, ime, prezime, email, tel, mob, datum_rodenja, bodovi, popust, broj_kartice, aktivan, vrsta_korisnika, primanje_letaka, id_zupanija) FROM stdin;
+POWER COMPUTERS d.o.o.	2806	K. ZRINSKI 2		2179415		5	1212121212	60	830	Emil	Bogdan	prodaja@pc1.com	0	0	1984-11-27 00:00:00	0	0	0	1	1	0	0
+\.
+
+
+--
+-- Data for Name: pocetno_stanje; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY pocetno_stanje (broj, id_skladiste, date, id_izradio, napomena) FROM stdin;
+\.
+
+
+--
+-- Data for Name: pocetno_stanje_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY pocetno_stanje_stavke (id_stavka, sifra, ean, kolicina, pdv, mpc, nbc, broj) FROM stdin;
+\.
+
+
+--
+-- Data for Name: podaci_tvrtka; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY podaci_tvrtka (id, ime_tvrtke, skraceno_ime, oib, tel, fax, mob, adresa, vl, zr, id_grad, email, text_bottom, poslovnica_adresa, poslovnica_grad, iban, naziv_fakture, naslov_racuna, r1) FROM stdin;
+1	POWER COMPUTERS d.o.o	0	74119470951	0	0	0	0	0	0	2806	0	Društvo upisano pri trgovačkom sudu Varaždin pod brojem: TT-00. MBS: 07007712. Temeljni kapital: 20.000.00kn. Član uprave: Emil Bogdan, Vesna Pevec.	0	Čakovec 40000	0	Otpremnica račun R1:   	Račun R1: 	R1
+\.
+
+
+--
+-- Data for Name: podgrupa; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY podgrupa (naziv, id_podgrupa) FROM stdin;
+Piće	1
+Hrana	2
+Trgovačka roba	3
+\.
+
+
+--
+-- Data for Name: ponude; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY ponude (broj_ponude, id_odrediste, id_fakturirati, date, vrijedi_do, id_izjava, id_zaposlenik_komercijala, id_zaposlenik_izradio, model, id_nacin_placanja, zr, id_valuta, otprema, id_nar_kupca, id_vd, godina_ponude, ukupno, napomena) FROM stdin;
+\.
+
+
+--
+-- Data for Name: ponude_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY ponude_stavke (kolicina, vpc, porez, broj_ponude, rabat, id_skladiste, sifra, id_stavka, naziv, oduzmi, porez_potrosnja) FROM stdin;
+\.
+
+
+--
+-- Data for Name: porez_na_potrosnju; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY porez_na_potrosnju (id_porez_potrosnja, naziv, iznos) FROM stdin;
+1	Porez na potrošnju 3%	3
+2	Nulta stopa	0
+\.
+
+
+--
+-- Data for Name: porezi; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY porezi (id_porez, naziv, iznos) FROM stdin;
+1	PDV 25%	25
+2	PDV 10%	10
+3	Nulta stopa	0
+\.
+
+
+--
+-- Data for Name: pos_print; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY pos_print (id, logical_name, device_category, ispred_kolicine, ispred_cijene, ispred_popust, ispred_ukupno, linija_praznih_bottom, ispred_artikl, bottom_text, barcode_print_bool, logical_name_drawer, device_category_drawer, drawer_bool, linedisplay_logicalname, linedisplay_device_category, linedisplay_bool, posprinterbool, windows_printer_name, windows_printer_name2, broj_slova_na_racunu) FROM stdin;
+1	PosPrinter	PosPrinter	5	7	3	7	5	15	               HVALA NA KUPNJI	1	CashDrawer	CashDrawer	0	LineDisplay	LineDisplay	0	1	Star TSP600 Cutter TSP643	Nije instaliran	36
+\.
+
+
+--
+-- Data for Name: postavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY postavke (default_ducan, default_blagajna, default_skladiste, default_blagajnik, on_off_cashback, on_off_bodovi, on_off_postotak, pass, caffe_icon_width, cafe_icon_height, hrana_bool, pdv, sustav_pdv, porez_potrosnja, salji_na_web, salji_na_web_ftp, salji_na_web_user, salji_na_web_pass, aktivnost, lokacija_sigurnosne_kopije, gasenje_racunala, backup_aktivnost, backup_vrijeme, direct_print, ladicaon, preferirajsifre) FROM stdin;
+1	1	1	2	0	0	1	drazen2814mia	132	70	1	25	1	3	0	ftp://			0		0	0		1	1	\N
+\.
+
+
+--
+-- Data for Name: povrat_robe; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY povrat_robe (broj, datum, id_odrediste, id_partner, mjesto_troska, orginalni_dokument, id_izradio, napomena, godina, id_skladiste) FROM stdin;
+\.
+
+
+--
+-- Data for Name: povrat_robe_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY povrat_robe_stavke (sifra, vpc, pdv, rabat, broj, kolicina, id_stavka, nbc, mpc) FROM stdin;
+\.
+
+
+--
+-- Data for Name: primka; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY primka (broj_primke, id_skladiste, br_ulaznog_doc, id_partner, datum, iznos_bez_poreza, iznos_sa_porezom, carina, valuta, napomena, iznos, id_zaposlenik) FROM stdin;
+\.
+
+
+--
+-- Data for Name: primka_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY primka_stavke (id_stavka, sifra, u_pakiranju, broj_paketa, kolicina, cijena_po_komadu, rabat, nabavna_cijena, ulazni_porez, nabavni_iznos, iznos, broj_primke, id_skladiste) FROM stdin;
+\.
+
+
+--
+-- Data for Name: promjena_cijene; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY promjena_cijene (broj, id_skladiste, date, id_izradio, napomena) FROM stdin;
+\.
+
+
+--
+-- Data for Name: promjena_cijene_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY promjena_cijene_stavke (id_stavka, stara_cijena, nova_cijena, pdv, sifra, postotak, broj) FROM stdin;
+\.
+
+
+--
+-- Data for Name: promocija1; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY promocija1 (id_promocija, ime, popust, aktivnost, ime_bodovi, bod_kn, kn_bod, aktivnost_bodovi, traje_do) FROM stdin;
+1	Nagrađivanje	0	0	0	0	0	0	0
+\.
+
+
+--
+-- Data for Name: promocije; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY promocije (naziv, od_datuma, do_datuma, artikl1, artikl2, artikl3, popust1, popust2, popust3, nacin1, id_promocija, aktivnost) FROM stdin;
+\.
+
+
+--
+-- Data for Name: racun_popust_kod_sljedece_kupnje; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY racun_popust_kod_sljedece_kupnje (broj_racuna, ukupno, popust, koristeno, datum, dokumenat, id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: racun_stavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY racun_stavke (broj_racuna, sifra_robe, id_skladiste, mpc, porez, kolicina, id_stavka, rabat, vpc, odjava, nbc, porez_potrosnja, id_ducan, id_blagajna) FROM stdin;
+1	10	1	kn11,00	25	1	1	0	8.59375	\N	kn0,00	3	1	1
+1	10	1	kn11,00	25	1	2	0	8.59375	\N	kn0,00	3	1	1
+1	13	1	kn11,00	25	1	3	0	8.59375	\N	kn0,00	3	1	1
+1	34	1	kn40,00	25	1	4	0	31.25	\N	kn0,00	3	1	1
+2	10	1	kn11,00	25	1	5	0	8.59375	\N	kn0,00	3	1	1
+2	34	1	kn40,00	25	1	6	0	31.25	\N	kn0,00	3	1	1
+2	13	1	kn11,00	25	1	7	0	8.59375	\N	kn0,00	3	1	1
+2	11	1	kn11,00	25	1	8	0	8.59375	\N	kn0,00	3	1	1
+3	10	1	kn11,00	25	1	9	0	8.59375	\N	kn0,00	3	1	1
+4	10	1	kn11,00	25	1	10	0	8.59375	\N	kn0,00	3	1	1
+\.
+
+
+--
+-- Data for Name: racuni; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY racuni (broj_racuna, datum_racuna, id_ducan, id_kasa, id_kupac, id_blagajnik, ukupno_gotovina, ukupno_kartice, storno, ukupno, dobiveno_gotovina, id_stol, ukupno_virman, jir, zik, nacin_placanja) FROM stdin;
+1	2012-12-31 08:35:40	1	1	0	2	kn73,00	kn0,00	NE	kn73,00	kn73,00	1	kn0,00	a65a51ca-74b4-4d05-a7b2-f120c0e5b7fa	3042bdeb0e4b54c3e370af4f569a4831	G
+2	2012-12-31 09:59:29	1	1	0	2	kn73,00	kn0,00	NE	kn73,00	kn73,00	0	kn0,00	d112985e-1e83-4d9f-966d-9c686f024c4e	2aecf1dd832cbddf8cc8cc6e911feee8	G
+3	2013-01-02 15:51:12	1	1	0	2	kn11,00	kn0,00	NE	kn11,00	kn11,00	0	kn0,00	1582172c-6469-4387-b3c2-f44ee83957d4	8c326aceba83893c4a232e7fe86f3a6c	G
+4	2013-01-02 15:51:29	1	1	0	3	kn11,00	kn0,00	NE	kn11,00	kn11,00	0	kn0,00	530cd7e8-c6d4-4197-9ab8-47199daec00c	e35eccfe8509dc4215c4f5b0ed1d053a	G
+\.
+
+
+--
+-- Data for Name: remote_postavke; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY remote_postavke (id, rad_sa_narudzbama) FROM stdin;
+1	0
+\.
+
+
+--
+-- Data for Name: roba; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY roba (naziv, id_grupa, jm, mpc, id_roba, sifra, ean, porez, porez_potrosnja, aktivnost, id_podgrupa) FROM stdin;
+KAVA	8	ŠALICA	kn5,00	1	1	0,00	25	3	1	\N
+KAVA MLIJEKO	8	ŠALICA	kn6,00	2	2	0,00	25	3	1	\N
+KAVA VRHNJE	8	ŠALICA	kn6,00	3	3	0,00	25	3	1	\N
+KAVA ŠLAG	8	ŠALICA	kn7,00	4	4	0,00	25	3	1	\N
+VRUĆA ČOKOLADA	8	ŠALICA	kn10,00	6	6	0,00	25	3	1	\N
+ČAJ	8	ŠALICA	kn5,00	7	7	0,00	25	3	1	\N
+CAPPUCCINO	8	ŠALICA	kn10,00	5	5	0,00	25	3,00	1	\N
+KUHANO VINO 0,20	9	0.20	kn10,00	8	8	0,00	25	3	1	\N
+MED	12	KOM	kn0,00	9	9	0,00	25	0	1	\N
+COCA COLA 0,25	1	0.25	kn11,00	10	10	0,00	25	3	1	\N
+FANTA 0,25	1	0.25	kn11,00	11	11	0,00	25	3	1	\N
+SPRITE 0,25	1	0.25	kn11,00	12	12	0,00	25	3	1	\N
+COCKTA 0,25	1	0.25	kn11,00	13	13	0,00	25	3	1	\N
+SCHWEPPES BITTER LEMON 0,25	1	0.25	kn11,00	14	14	0,00	25	3	1	\N
+TANGERINA 0,25	1	0.25	kn11,00	15	15	0,00	25	3	1	\N
+ORANGINA 0,25	1	0.25	kn11,00	16	16	0,00	25	3	1	\N
+SCHWEPPES TONIC 0,25	1	0.25	kn11,00	17	17	0,00	25	3	1	\N
+JUICY 0,20	7	0.20	kn11,00	18	18	0,00	25	0,00	1	\N
+CEDEVITA 0,20	7	0.20	kn8,00	19	19	0,00	25	0,00	1	\N
+STUDENA OKUS 0,50	10	0.50	kn10,00	21	21	0,00	25	0,00	1	\N
+JAMNICA 0,25	10	0.25	kn10,00	22	22	0,00	25	3	1	\N
+RED BULL 0,25	1	0.25	kn20,00	23	23	0,00	25	3	1	\N
+MINERALNA VODA 1,00	10	1 LITRA	kn10,00	24	24	0,00	25	3	1	\N
+JANA 0,33	10	0.33	kn10,00	25	25	0,00	25	3	1	\N
+BAMBUS 0,3	9	0.3	kn14,00	26	30	0,00	25	3	1	\N
+BAMBUS 0,2	9	0.2	kn9,00	27	31	0,00	25	3	1	\N
+GEMIŠT 0,2	9	0.2	kn6,00	28	32	0,00	25	3	1	\N
+ŠKROPEC 0,10	9	0.10	kn4,00	29	33	0,00	25	3	1	\N
+COCA COLA 1,00	1	1 LITRA	kn40,00	30	34	0,00	25	3	1	\N
+JUICE 1,00	7	1 LITRA	kn50,00	31	35	0,00	25	0,00	1	\N
+ISO SPORT 0,33	1	0.33	kn11,00	32	36	0,00	25	3	1	\N
+ALOE VERA 0,25	7	0.25	kn11,00	33	39	0,00	25	0,00	1	\N
+VINO BIJELO 1,00	9	1 LITRA	kn40,00	34	40	0,00	25	3	1	\N
+GEMIŠT 0,3	9	0.3	kn8,00	35	41	0,00	25	3	1	\N
+VINO CRNO 1,00	9	1 LITRA	kn50,00	37	43	0,00	25	3	1	\N
+SOMERSBY 0,33	6	0.33	kn15,00	40	46	0,00	25	3	1	\N
+VINO V 0,10	9	0.10	kn10,00	41	47	0,00	25	3	1	\N
+VERMUTH 0,10	9	0.10	kn10,00	42	48	0,00	25	3	1	\N
+TOČENO PIVO 1,00	6	1 LITRA	kn20,00	43	49	0,00	25	3	1	\N
+PAN 0,5	6	0.5	kn11,00	44	50	0,00	25	3	1	\N
+PAN 0,35	6	0.35	kn10,00	45	51	0,00	25	3	1	\N
+PAN 0,25	6	0.25	kn10,00	46	52	0,00	25	3	1	\N
+OŽUJSKO 0,5	6	0.5	kn11,00	47	53	0,00	25	3	1	\N
+OŽUJSKO COOL 0,5	6	0.5	kn11,00	48	54	0,00	25	3	1	\N
+PAN ZLATNI 0,5	6	0.5	kn12,00	49	55	0,00	25	3	1	\N
+ZLATOROG 0,5	6	0.5	kn11,00	50	56	0,00	25	3	1	\N
+KARLOVAČKO RADLER 0,5	6	0.5	kn11,00	51	57	0,00	25	3	1	\N
+KARLOVAČKO RADLER 0,33	6	0.33	kn10,00	52	58	0,00	25	3	1	\N
+TUBORG LIMUN 0,33	6	0.33	kn11,00	53	59	0,00	25	3	1	\N
+TUBORG GREEN 0,33	6	0.33	kn11,00	54	60	0,00	25	3	1	\N
+HEINEKEN 0,33	6	0.33	kn11,00	55	61	0,00	25	3	1	\N
+BECKS 0,33	6	0.33	kn11,00	56	62	0,00	25	3	1	\N
+OŽUJSKO 0,25	6	0.25	kn9,00	57	63	0,00	25	3	1	\N
+BAVARIA 0,25	6	0.25	kn10,00	58	64	0,00	25	3	1	\N
+STELA 0,33	6	0.33	kn11,00	59	65	0,00	25	3	1	\N
+AMBRO 0,03	11	0.03	kn7,00	60	70	0,00	25	3	1	\N
+AMBRO 0,05	11	0.05	kn11,00	61	71	0,00	25	3	1	\N
+AMARO 0,03	11	0.03	kn7,00	62	72	0,00	25	3	1	\N
+AMARO 0,05	11	0.05	kn10,00	63	73	0,00	25	3	1	\N
+BRANDY 0,03	11	0.03	kn7,00	64	74	0,00	25	3	1	\N
+BRANDY 0,05	11	0.05	kn10,00	65	75	0,00	25	3	1	\N
+PELINKOVAC 0,03	11	0.03	kn7,00	66	76	0,00	25	3	1	\N
+PELINKOVAC 0,05	11	0.05	kn10,00	67	77	0,00	25	3	1	\N
+MENTOL 0,03	11	0.03	kn7,00	68	78	0,00	25	3	1	\N
+MENTOL 0,05	11	0.05	kn10,00	69	79	0,00	25	3	1	\N
+KRUŠKOVAC 0,03	11	0.03	kn7,00	70	80	0,00	25	3	1	\N
+KRUŠKOVAC 0,05	11	0.05	kn10,00	71	81	0,00	25	3	1	\N
+RUM 0,03	11	0.03	kn7,00	72	82	0,00	25	3	1	\N
+RUM 0,05	11	0.05	kn10,00	73	83	0,00	25	3	1	\N
+TRAVARICA 0,03	11	0.03	kn7,00	74	84	0,00	25	3	1	\N
+TRAVARICA 0,05	11	0.05	kn10,00	75	85	0,00	25	3	1	\N
+CHERY 0,03	11	0.03	kn6,00	76	86	0,00	25	3	1	\N
+CHERY 0,05	11	0.05	kn9,00	77	87	0,00	25	3	1	\N
+CYNAR 0,03	11	0.03	kn8,00	78	88	0,00	25	3	1	\N
+CYNAR 0,05	11	0.05	kn12,00	79	89	0,00	25	3	1	\N
+GIN 0,03	11	0.03	kn7,00	80	90	0,00	25	3	1	\N
+GEMIŠT SPORTSKI	9	0.30	kn6,00	36	42	0,00	25	3,00	1	\N
+VINO CRNO 0,1	9	0.10	kn5,00	39	45	0,00	25	3,00	1	\N
+GIN 0,05	11	0.05	kn10,00	81	91	0,00	25	3	1	\N
+VODKA 0,03	11	0.03	kn7,00	82	92	0,00	25	3	1	\N
+VODKA 0,05	11	0.05	kn10,00	83	93	0,00	25	3	1	\N
+STOCK 0,03	11	0.03	kn8,00	84	94	0,00	25	3	1	\N
+STOCK 0,05	11	0.05	kn12,00	85	95	0,00	25	3	1	\N
+KEGLEVICH 0,03	11	0.03	kn8,00	86	96	0,00	25	3	1	\N
+KEGLEVICH 0,05	11	0.05	kn12,00	87	97	0,00	25	3	1	\N
+DALMATINO 0,03	11	0.03	kn8,00	88	98	0,00	25	3	1	\N
+DALMATINO 0,05	11	0.05	kn12,00	89	99	0,00	25	3	1	\N
+BLACKY 0,03	11	0.03	kn8,00	90	100	0,00	25	3	1	\N
+BLACKY 0,05	11	0.05	kn12,00	91	101	0,00	25	3	1	\N
+JEGERMAISTER 0,03	11	0.03	kn12,00	92	102	0,00	25	3	1	\N
+JEGERMAISTER 0,05	11	0.05	kn20,00	93	103	0,00	25	3	1	\N
+TEQILA 0,03	11	0.03	kn12,00	94	104	0,00	25	3	1	\N
+TEQILA 0,05	11	0.05	kn20,00	95	105	0,00	25	3	1	\N
+VISKI 0,03	11	0.03	kn12,00	96	106	0,00	25	3	1	\N
+VISKI 0,05	11	0.05	kn20,00	97	107	0,00	25	3	1	\N
+ENCIJAN 0,03	11	0.03	kn7,00	98	108	0,00	25	3	1	\N
+ENCIJAN 0,05	11	0.05	kn10,00	99	109	0,00	25	3	1	\N
+KAVA BEZ KOFEINA 	8	ŠALICA	kn8,00	100	111	0,00	25	3	1	\N
+MLIJEKO 1,00	8	1 LITRA	kn20,00	101	112	0,00	25	3	1	\N
+VRHNJE	8	KOM	kn1,00	102	113	0,00	25	3	1	\N
+LIMUN	8	KOM	kn1,00	103	114	0,00	25	0,00	1	\N
+LIMUN KRIŠKA	8	KRIŠKA	kn1,00	104	115	0,00	25	0,00	1	\N
+ŠLAG PORCIJA	8	PORCIJA	kn4,00	105	116	0,00	25	0,00	1	\N
+LEDENA KAVA	8	ŠALICA	kn10,00	107	118	0,00	25	3	1	\N
+NEŠTO	8	POR	kn25,00	108	138	0,00	25	3	1	\N
+VEKI 0,03	11	0.03	kn7,00	109	140	0,00	25	3	1	\N
+VEKI 0,05	11	0.05	kn11,00	110	141	0,00	25	3	1	\N
+VILJAMOVKA 0,03	11	0.03	kn12,00	111	142	0,00	25	3	1	\N
+VILJAMOVKA 0,05	11	0.05	kn20,00	112	143	0,00	25	3	1	\N
+KARLOVAČKO 0,05	6	0.05	kn11,00	113	144	0,00	25	3	1	\N
+OŽUJSKO 0,33	6	0.33	kn10,00	114	145	0,00	25	3	1	\N
+JAMNICA 0,25	10	0.25	kn5,00	115	146	0,00	25	3	1	\N
+ČOKOLADNI 0,03	11	0.03	kn6,00	116	147	0,00	25	3	1	\N
+ČOKOLADNI 0,05	11	0.05	kn9,00	117	148	0,00	25	3	1	\N
+KAVA 0,03	11	0.03	kn6,00	118	149	0,00	25	3	1	\N
+PAN PART	6	0.5	kn9,00	119	160	0,00	25	3	1	\N
+BAMBUS M.P.	9	0.20	kn6,00	120	161	0,00	25	3	1	\N
+BAMBUS V.P.	9	0.30	kn10,00	121	162	0,00	25	3	1	\N
+PUSKIN 0,03	11	0.03	kn8,00	129	170	0,00	25	3	1	\N
+PUSKIN 0,05	11	0.05	kn12,00	130	171	0,00	25	3	1	\N
+MEDICA 0,03	11	0.03	kn7,00	131	172	0,00	25	3	1	\N
+MEDICA 0,05	11	0.05	kn10,00	132	173	0,00	25	3	1	\N
+KAKAO	8	ŠALICA	kn10,00	133	190	0,00	25	3	1	\N
+ORAHOVAC 0,03	11	0.03	kn7,00	134	191	0,00	25	3	1	\N
+ORAHOVAC 0,05	11	0.05	kn10,00	135	192	0,00	25	3	1	\N
+MARTINI 0,03	11	0.03	kn5,00	136	193	0,00	25	3	1	\N
+MARTINI 0,10	11	0.10	kn16,00	137	194	0,00	25	3	1	\N
+PINA COLADA 0,03	11	0.03	kn7,00	138	195	0,00	25	3	1	\N
+WALTER WOLF	12	KOM	kn20,00	141	201	0,00	25	0,00	1	\N
+MC 	12	KOM	kn18,00	142	202	0,00	25	0,00	1	\N
+RONHILL	12	KOM	kn20,00	140	200	0,00	25	0,00	1	\N
+FILTER 160	12	KOM	kn18,00	143	203	0,00	25	0,00	1	\N
+MARLBORO	12	KOM	kn23,00	144	204	0,00	25	0,00	1	\N
+RONHILL S	12	KOM	kn19,00	145	205	0,00	25	0,00	1	\N
+AVANGARD	12	KOM	kn20,00	146	206	0,00	25	0,00	1	\N
+YORK 	12	KOM	kn16,00	147	207	0,00	25	0,00	1	\N
+MC SLIMS	12	KOM	kn18,00	148	208	0,00	25	0,00	1	\N
+BENSTON	12	KOM	kn16,00	149	209	0,00	25	0,00	1	\N
+PŠENIČNO PIVO 0,5	6	0.5	kn11,00	150	210	0,00	25	3	1	\N
+PŠENIČNO 0,33	6	0.33	kn10,00	151	211	0,00	25	3	1	\N
+STAROPRAMEN 0,5	6	0.5	kn11,00	152	212	0,00	25	3	1	\N
+TOMISLAV 0,5	6	0.5	kn12,00	153	213	0,00	25	3	1	\N
+UNION 0,5	6	0.5	kn12,00	154	214	0,00	25	3	1	\N
+LIMONA 0,25	7	0.25	kn11,00	155	220	0,00	25	0,00	1	\N
+ICE TEA 0,5	7	0.5	kn12,00	156	221	0,00	25	0,00	1	\N
+JANA 0,33	10	0.33	kn8,00	157	222	0,00	25	0,00	1	\N
+PAN PARTI	6	0,5	kn10,00	106	117	0,00	25	3,00	1	\N
+BLACKY COLA P	11	0.13	kn10,00	123	164	0,00	25	3,00	1	\N
+AMARO COLA P	11	0.13	kn7,00	124	165	0,00	25	3,00	1	\N
+LITER LITER P	9	2 LITRA	kn30,00	127	168	0,00	25	3,00	1	\N
+VODKA COLA P	11	0.13	kn7,00	125	166	0,00	25	3,00	1	\N
+BULL VODKA P	11	0.13	kn12,00	126	167	0,00	25	3,00	1	\N
+STUDENA LEDENI ČAJ 0,20	10	0.20	kn11,00	20	20	0,00	25	0,00	1	\N
+STOCK COLA P	11	0.13	kn10,00	122	163	0,00	25	3,00	1	\N
+\.
+
+
+--
+-- Data for Name: roba_prodaja; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY roba_prodaja (id_roba_prodaja, id_skladiste, kolicina, nc, vpc, sifra, porez_potrosnja, id_grupa, id_podgrupa, mjera, aktivnost, povratna_naknada, poticajna_naknada, ulazni_porez, izlazni_porez, naziv, mpc, id_partner) FROM stdin;
+1	1	0	10.00	0	1	0,00	1	1	0	1	0,00	0,00	0,00	0,00	Proba	\N	\N
+\.
+
+
+--
+-- Data for Name: skladiste; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY skladiste (skladiste, id_grad, id_zemlja, id_skladiste, aktivnost) FROM stdin;
+Skladište 1	1	1	1	DA
+\.
+
+
+--
+-- Data for Name: stolovi; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY stolovi (id_stol, naziv, aktivnost, id_poslovnica) FROM stdin;
+1	Sala, stol 1	1	1
+4	Terasa stol 1	1	1
+\.
+
+
+--
+-- Data for Name: valute; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY valute (id_valuta, ime_valute, tecaj) FROM stdin;
+1	HR kune	0
+2	840 USD	5,972247
+3	348 HUF	2,605412
+4	756 CHF	6,251124
+5	978 EUR	7,510100
+\.
+
+
+--
+-- Data for Name: zaposlenici; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY zaposlenici (id_zaposlenik, ime, prezime, id_grad, adresa, id_dopustenje, oib, tel, datum_rodenja, email, mob, aktivan, zaporka) FROM stdin;
+1	Održavanje	PC	0	0	1	11111111111	0800 400 040	1984-11-27 00:00:00	drazen@pc1.com	0800 400 040	DA	,00000000000000000000,
+2	Draga		2892		2	58314067995		1970-12-24 14:03:56			DA	0
+3	Kristian		2892		4	88974904372		1970-12-24 14:05:18			DA	1
+4	Vesna		2892		4	08817124479		1970-12-24 14:05:57			DA	2
+5	Maja		2892		4	89808037890		1970-12-24 14:06:24			DA	3
+6	Manuela		2892		4	53911919298		1970-12-24 14:06:57			DA	4
+7	Danijela		2892		4	71007547190		1970-12-24 14:07:30			DA	5
+\.
+
+
+--
+-- Data for Name: zemlja; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY zemlja (id_zemlja, zemlja, country_code, aktivnost) FROM stdin;
+1	Afghanistan	AF	DA
+8	Aland Islands	AX	DA
+9	Albania	AL	DA
+10	Algeria	DZ	DA
+11	American Samoa	AS	DA
+12	Andorra	AD	DA
+13	Angola	AO	DA
+14	Anguilla	AI	DA
+15	Antarctica	AQ	DA
+16	Antigua And Barbuda	AG	DA
+17	Argentina	AR	DA
+18	Armenia	AM	DA
+19	Aruba	AW	DA
+20	Australia	AU	DA
+21	Austria	AT	DA
+22	Azerbaijan	AZ	DA
+23	Bahamas	BS	DA
+24	Bahrain	BH	DA
+25	Bangladesh	BD	DA
+26	Barbados	BB	DA
+27	Belarus	BY	DA
+28	Belgium	BE	DA
+29	Belize	BZ	DA
+30	Benin	BJ	DA
+31	Bermuda	BM	DA
+32	Bhutan	BT	DA
+33	Bolivia	BO	DA
+34	Bosnia And Herzegovina	BA	DA
+35	Botswana	BW	DA
+36	Bouvet Island	BV	DA
+37	Brazil	BR	DA
+38	British Indian Ocean Territory	IO	DA
+39	Brunei Darussalam	BN	DA
+40	Bulgaria	BG	DA
+41	Burkina Faso	BF	DA
+42	Burundi	BI	DA
+43	Cambodia	KH	DA
+44	Cameroon	CM	DA
+45	Canada	CA	DA
+46	Cape Verde	CV	DA
+47	Cayman Islands	KY	DA
+48	Central African Republic	CF	DA
+49	Chad	TD	DA
+50	Chile	CL	DA
+51	China	CN	DA
+52	Christmas Island	CX	DA
+53	Cocos Keeling Islands	CC	DA
+54	Colombia	CO	DA
+55	Comoros	KM	DA
+56	Congo	CG	DA
+57	Congo, The Democratic Republic Of The	CD	DA
+58	Cook Islands	CK	DA
+59	Costa Rica	CR	DA
+60	Croatia	HR	DA
+61	Cuba	CU	DA
+62	Cyprus	CY	DA
+63	Czech Republic	CZ	DA
+64	Denmark	DK	DA
+65	Djibouti	DJ	DA
+66	Dominica	DM	DA
+67	Dominican Republic	DO	DA
+68	Ecuador	EC	DA
+69	Egypt	EG	DA
+70	El Salvador	SV	DA
+71	Equatorial Guinea	GQ	DA
+72	Eritrea	ER	DA
+73	Estonia	EE	DA
+74	Ethiopia	ET	DA
+75	Falkland Islands Malvinas	FK	DA
+76	Faroe Islands	FO	DA
+77	Fiji	FJ	DA
+78	Finland	FI	DA
+79	France	FR	DA
+80	French Guiana	GF	DA
+81	French Polynesia	PF	DA
+82	French Southern Territories	TF	DA
+83	Gabon	GA	DA
+84	Gambia	GM	DA
+85	Georgia	GE	DA
+86	Germany	DE	DA
+87	Ghana	GH	DA
+88	Gibraltar	GI	DA
+89	Greece	GR	DA
+90	Greenland	GL	DA
+91	Grenada	GD	DA
+92	Guadeloupe	GP	DA
+93	Guam	GU	DA
+94	Guatemala	GT	DA
+95	Guernsey	 GG	DA
+96	Guinea	GN	DA
+97	Guinea-Bissau	GW	DA
+98	Guyana	GY	DA
+99	Haiti	HT	DA
+100	Heard Island And Mcdonald Islands	HM	DA
+101	Holy See Vatican City State	VA	DA
+102	Honduras	HN	DA
+103	Hong Kong	HK	DA
+104	Hungary	HU	DA
+105	Iceland	IS	DA
+106	India	IN	DA
+107	Indonesia	ID	DA
+108	Iran, Islamic Republic Of	IR	DA
+109	Iraq	IQ	DA
+110	Ireland	IE	DA
+111	Isle Of Man	IM	DA
+112	Israel	IL	DA
+113	Italy	IT	DA
+114	Jamaica	JM	DA
+115	Japan	JP	DA
+116	Jersey	JE	DA
+117	Jordan	JO	DA
+118	Kazakhstan	KZ	DA
+119	Kenya	KE	DA
+120	Kiribati	KI	DA
+121	Korea, Republic Of	KR	DA
+122	Kuwait	KW	DA
+123	Kyrgyzstan	KG	DA
+124	Latvia	LV	DA
+125	Lebanon	LB	DA
+126	Lesotho	LS	DA
+127	Liberia	LR	DA
+128	Libyan Arab Jamahiriya	LY	DA
+129	Liechtenstein	LI	DA
+130	Lithuania	LT	DA
+131	Luxembourg	LU	DA
+132	Macao	MO	DA
+133	Macedonia, The Former Yugoslav Republic Of	MK	DA
+134	Madagascar	MG	DA
+135	Malawi	MW	DA
+136	Malaysia	MY	DA
+137	Maldives	MV	DA
+138	Mali	ML	DA
+139	Malta	MT	DA
+140	Marshall Islands	MH	DA
+141	Martinique	MQ	DA
+142	Mauritania	MR	DA
+143	Mauritius	MU	DA
+144	Mayotte	YT	DA
+145	Mexico	MX	DA
+146	Micronesia, Federated States Of	FM	DA
+147	Moldova, Republic Of	MD	DA
+148	Monaco	MC	DA
+149	Mongolia	MN	DA
+150	Montserrat	MS	DA
+151	Morocco	MA	DA
+152	Mozambique	MZ	DA
+153	Myanmar	MM	DA
+154	Namibia	NA	DA
+155	Nauru	NR	DA
+156	Nepal	NP	DA
+157	Netherlands	NL	DA
+158	Netherlands Antilles	AN	DA
+159	New Caledonia	NC	DA
+160	New Zealand	NZ	DA
+161	Nicaragua	NI	DA
+162	Niger	NE	DA
+163	Nigeria	NG	DA
+164	Niue	NU	DA
+165	Norfolk Island	NF	DA
+166	Northern Mariana Islands	MP	DA
+167	Norway	NO	DA
+168	Oman	OM	DA
+169	Pakistan	PK	DA
+170	Palau	PW	DA
+171	Palestinian Territory, Occupied	PS	DA
+172	Panama	PA	DA
+173	Papua New Guinea	PG	DA
+174	Paraguay	PY	DA
+175	Peru	PE	DA
+176	Philippines	PH	DA
+177	Pitcairn	PN	DA
+178	Poland	PL	DA
+179	Portugal	PT	DA
+180	Puerto Rico	PR	DA
+181	Qatar	QA	DA
+182	Reunion	RE	DA
+183	Romania	RO	DA
+184	Russian Federation	RU	DA
+185	Rwanda	RW	DA
+186	Saint Helena	SH	DA
+187	Saint Kitts And Nevis	KN	DA
+188	Saint Lucia	LC	DA
+189	Saint Pierre And Miquelon	PM	DA
+190	Saint Vincent And The Grenadines	VC	DA
+191	Samoa	WS	DA
+192	San Marino	SM	DA
+193	Sao Tome And Principe	ST	DA
+194	Saudi Arabia	SA	DA
+195	Senegal	SN	DA
+196	Serbia And Montenegro	CS	DA
+197	Seychelles	SC	DA
+198	Sierra Leone	SL	DA
+199	Singapore	SG	DA
+200	Slovakia	SK	DA
+201	Slovenia	SI	DA
+202	Solomon Islands	SB	DA
+203	Somalia	SO	DA
+204	South Africa	ZA	DA
+205	South Georgia And The South Sandwich Islands	GS	DA
+206	Spain	ES	DA
+207	Sri Lanka	LK	DA
+208	Sudan	SD	DA
+209	Suriname	SR	DA
+210	Svalbard And Jan Mayen	SJ	DA
+211	Swaziland	SZ	DA
+212	Sweden	SE	DA
+213	Switzerland	CH	DA
+214	Syrian Arab Republic	SY	DA
+215	Taiwan, Province Of China	TW	DA
+216	Tajikistan	TJ	DA
+217	Tanzania, United Republic Of	TZ	DA
+218	Thailand	TH	DA
+219	Timor-Leste	TL	DA
+220	Togo	TG	DA
+221	Tokelau	TK	DA
+222	Tonga	TO	DA
+223	Trinidad And Tobago	TT	DA
+224	Tunisia	TN	DA
+225	Turkey	TR	DA
+226	Turkmenistan	TM	DA
+227	Turks And Caicos Islands	TC	DA
+228	Tuvalu	TV	DA
+229	Uganda	UG	DA
+230	Ukraine	UA	DA
+231	United Arab Emirates	AE	DA
+232	United Kingdom	GB	DA
+233	United States	US	DA
+234	United States Minor Outlying Islands	UM	DA
+235	Uruguay	UY	DA
+236	Uzbekistan	UZ	DA
+237	Vanuatu	VU	DA
+238	Venezuela	VE	DA
+239	Viet Nam	VN	DA
+240	Virgin Islands, British	VG	DA
+241	Virgin Islands, U.S.	VI	DA
+242	Wallis And Futuna	WF	DA
+243	Western Sahara	EH	DA
+244	Yemen	YE	DA
+245	Zambia	ZM	DA
+246	Zimbabwe	ZW	DA
+247	Nije specificirano	ZZ	DA
+\.
+
+
+--
+-- Data for Name: ziro_racun; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY ziro_racun (id_ziroracun, ziroracun, banka, aktivnost) FROM stdin;
+1	78978397-7898798	Međimurska banka	DA
+\.
+
+
+--
+-- Data for Name: zupanije; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY zupanije (naziv, id_zupanija) FROM stdin;
+Bjelovarsko-bilogorska županija	1
+Brodsko-posavska županija	2
+Dubrovačko-neretvanska županija	3
+Istarska županija	4
+Karlovačka županija	5
+Koprivničko-križevačka županija	6
+Krapinsko-zagorska županija	7
+Međimurska županija	8
+Osječko-baranjska županija	9
+Požeško-slavonska županija	10
+Primorsko-goranska županija	11
+Sisačko-moslavačka županija	12
+Splitsko-dalmatinska županija	13
+Varaždinska županija	14
+Virovitičko-podravska županija	15
+Vukovarsko-srijemska županija	16
+Zadarska županija	17
+Zagrebačka županija	18
+Šibensko-kninska županija	19
+Grad Zagreb	20
+\.
+
+
+--
+-- Name: aktivnost_zaposlenici_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY aktivnost_zaposlenici
+    ADD CONSTRAINT aktivnost_zaposlenici_primary_key PRIMARY KEY (id_aktivnost);
+
+
+--
+-- Name: bankovne_kartice_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY bankovne_kartice
+    ADD CONSTRAINT bankovne_kartice_primary_key PRIMARY KEY (id_kartica);
+
+
+--
+-- Name: blagajna_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY blagajna
+    ADD CONSTRAINT blagajna_primary_key PRIMARY KEY (id_blagajna);
+
+
+--
+-- Name: caffe_narudzbe_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY caffe_narudzbe
+    ADD CONSTRAINT caffe_narudzbe_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: caffe_normativ_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY caffe_normativ
+    ADD CONSTRAINT caffe_normativ_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: djelatnosti_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY djelatnosti
+    ADD CONSTRAINT djelatnosti_primary_key PRIMARY KEY (id_djelatnost);
+
+
+--
+-- Name: dopustenja_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY dopustenja
+    ADD CONSTRAINT dopustenja_primary_key PRIMARY KEY (id_dopustenje);
+
+
+--
+-- Name: ducan_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY ducan
+    ADD CONSTRAINT ducan_primary_key PRIMARY KEY (id_ducan);
+
+
+--
+-- Name: faktura_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY faktura_stavke
+    ADD CONSTRAINT faktura_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: fakture_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY fakture
+    ADD CONSTRAINT fakture_primary_key PRIMARY KEY (broj_fakture);
+
+
+--
+-- Name: fakture_vd_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY fakture_vd
+    ADD CONSTRAINT fakture_vd_primary_key PRIMARY KEY (id_vd);
+
+
+--
+-- Name: fiskalizacija_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY fiskalizacija
+    ADD CONSTRAINT fiskalizacija_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: grad_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY grad
+    ADD CONSTRAINT grad_primary_key PRIMARY KEY (id_grad);
+
+
+--
+-- Name: grupa_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY grupa
+    ADD CONSTRAINT grupa_primary_key PRIMARY KEY (id_grupa);
+
+
+--
+-- Name: inventura_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY inventura
+    ADD CONSTRAINT inventura_primary_key PRIMARY KEY (broj_inventure);
+
+
+--
+-- Name: inventura_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY inventura_stavke
+    ADD CONSTRAINT inventura_stavke_primary_key PRIMARY KEY (id_stavke);
+
+
+--
+-- Name: izjava_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY izjava
+    ADD CONSTRAINT izjava_primary_key PRIMARY KEY (id_izjava);
+
+
+--
+-- Name: manufacturers_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY manufacturers
+    ADD CONSTRAINT manufacturers_primary_key PRIMARY KEY (id_manufacturers);
+
+
+--
+-- Name: meduskladisnica_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY meduskladisnica
+    ADD CONSTRAINT meduskladisnica_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: meduskladisnica_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY meduskladisnica_stavke
+    ADD CONSTRAINT meduskladisnica_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: mjesto_troska_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY mjesto_troska
+    ADD CONSTRAINT mjesto_troska_primary_key PRIMARY KEY (id_mjesto);
+
+
+--
+-- Name: money_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY money
+    ADD CONSTRAINT money_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: nacin_placanja_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY nacin_placanja
+    ADD CONSTRAINT nacin_placanja_primary_key PRIMARY KEY (id_placanje);
+
+
+--
+-- Name: neuspjela_fiskalizacija_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY neuspjela_fiskalizacija
+    ADD CONSTRAINT neuspjela_fiskalizacija_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: otprema_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY otprema
+    ADD CONSTRAINT otprema_primary_key PRIMARY KEY (id_otprema);
+
+
+--
+-- Name: otpremnica_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY otpremnica_stavke
+    ADD CONSTRAINT otpremnica_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: otpremnice_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY otpremnice
+    ADD CONSTRAINT otpremnice_primary_key PRIMARY KEY (id_otpremnica);
+
+
+--
+-- Name: partners_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY partners
+    ADD CONSTRAINT partners_primary_key PRIMARY KEY (id_partner);
+
+
+--
+-- Name: pocetno_stanje_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY pocetno_stanje
+    ADD CONSTRAINT pocetno_stanje_primary_key PRIMARY KEY (broj);
+
+
+--
+-- Name: pocetno_stanje_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY pocetno_stanje_stavke
+    ADD CONSTRAINT pocetno_stanje_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: podaci_tvrtka_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY podaci_tvrtka
+    ADD CONSTRAINT podaci_tvrtka_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: podgrupa_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY podgrupa
+    ADD CONSTRAINT podgrupa_primary_key PRIMARY KEY (id_podgrupa);
+
+
+--
+-- Name: ponude_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY ponude
+    ADD CONSTRAINT ponude_primary_key PRIMARY KEY (broj_ponude);
+
+
+--
+-- Name: ponude_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY ponude_stavke
+    ADD CONSTRAINT ponude_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: porez_na_potrosnju_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY porez_na_potrosnju
+    ADD CONSTRAINT porez_na_potrosnju_primary_key PRIMARY KEY (id_porez_potrosnja);
+
+
+--
+-- Name: porezi_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY porezi
+    ADD CONSTRAINT porezi_primary_key PRIMARY KEY (id_porez);
+
+
+--
+-- Name: pos_print_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY pos_print
+    ADD CONSTRAINT pos_print_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: povrat_robe_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY povrat_robe
+    ADD CONSTRAINT povrat_robe_primary_key PRIMARY KEY (broj);
+
+
+--
+-- Name: povrat_robe_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY povrat_robe_stavke
+    ADD CONSTRAINT povrat_robe_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: primka_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY primka
+    ADD CONSTRAINT primka_primary_key PRIMARY KEY (broj_primke);
+
+
+--
+-- Name: primka_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY primka_stavke
+    ADD CONSTRAINT primka_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: promjena_cijene_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY promjena_cijene
+    ADD CONSTRAINT promjena_cijene_primary_key PRIMARY KEY (broj);
+
+
+--
+-- Name: promjena_cijene_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY promjena_cijene_stavke
+    ADD CONSTRAINT promjena_cijene_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: promocija1_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY promocija1
+    ADD CONSTRAINT promocija1_primary_key PRIMARY KEY (id_promocija);
+
+
+--
+-- Name: promocije_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY promocije
+    ADD CONSTRAINT promocije_primary_key PRIMARY KEY (id_promocija);
+
+
+--
+-- Name: racun_popust_kod_sljedece_kupnje_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY racun_popust_kod_sljedece_kupnje
+    ADD CONSTRAINT racun_popust_kod_sljedece_kupnje_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: racun_stavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY racun_stavke
+    ADD CONSTRAINT racun_stavke_primary_key PRIMARY KEY (id_stavka);
+
+
+--
+-- Name: racuni_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY racuni
+    ADD CONSTRAINT racuni_primary_key PRIMARY KEY (broj_racuna);
+
+
+--
+-- Name: remote_postavke_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY remote_postavke
+    ADD CONSTRAINT remote_postavke_primary_key PRIMARY KEY (id);
+
+
+--
+-- Name: roba_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY roba
+    ADD CONSTRAINT roba_primary_key PRIMARY KEY (id_roba);
+
+
+--
+-- Name: roba_prodaja_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY roba_prodaja
+    ADD CONSTRAINT roba_prodaja_primary_key PRIMARY KEY (id_roba_prodaja);
+
+
+--
+-- Name: skladiste_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY skladiste
+    ADD CONSTRAINT skladiste_primary_key PRIMARY KEY (id_skladiste);
+
+
+--
+-- Name: stolovi_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY stolovi
+    ADD CONSTRAINT stolovi_primary_key PRIMARY KEY (id_stol);
+
+
+--
+-- Name: valute_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY valute
+    ADD CONSTRAINT valute_primary_key PRIMARY KEY (id_valuta);
+
+
+--
+-- Name: zaposlenici_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY zaposlenici
+    ADD CONSTRAINT zaposlenici_primary_key PRIMARY KEY (id_zaposlenik);
+
+
+--
+-- Name: zemlja_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY zemlja
+    ADD CONSTRAINT zemlja_primary_key PRIMARY KEY (id_zemlja);
+
+
+--
+-- Name: ziro_racun_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY ziro_racun
+    ADD CONSTRAINT ziro_racun_primary_key PRIMARY KEY (id_ziroracun);
+
+
+--
+-- Name: zupanije_primary_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY zupanije
+    ADD CONSTRAINT zupanije_primary_key PRIMARY KEY (id_zupanija);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+--
+-- PostgreSQL database dump complete
+--
+

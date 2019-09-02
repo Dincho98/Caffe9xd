@@ -1,0 +1,1 @@
+pg_dump.exe --host localhost --port 5432 --username postgres --format custom --blobs --verbose --file "C:\Users\DrazenPC\Desktop\db2013-03-14.backup" "pansion"

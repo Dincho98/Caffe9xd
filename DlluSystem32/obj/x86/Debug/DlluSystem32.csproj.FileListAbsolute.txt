@@ -1,0 +1,37 @@
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\bin\Debug\DlluSystem32.exe
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\bin\Debug\DlluSystem32.pdb
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+C:\Users\Programer\Desktop\PC CAFFE\DlluSystem32\bin\Debug\DlluSystem32.exe
+C:\Users\Programer\Desktop\PC CAFFE\DlluSystem32\bin\Debug\DlluSystem32.pdb
+C:\Users\Programer\Desktop\PC CAFFE\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+C:\Users\Programer\Desktop\PC CAFFE\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\bin\Debug\DlluSystem32.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\bin\Debug\DlluSystem32.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\DlluSystem32\bin\Debug\DlluSystem32.exe
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\DlluSystem32\bin\Debug\DlluSystem32.pdb
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.csprojResolveAssemblyReference.cache
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\DlluSystem32\bin\Debug\DlluSystem32.exe
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\DlluSystem32\bin\Debug\DlluSystem32.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.csprojAssemblyReference.cache
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\DlluSystem32\bin\Debug\DlluSystem32.exe
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\DlluSystem32\bin\Debug\DlluSystem32.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.csprojAssemblyReference.cache
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\bin\Debug\DlluSystem32.exe
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\bin\Debug\DlluSystem32.pdb
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\Debug\DlluSystem32.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb

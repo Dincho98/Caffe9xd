@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSkasaNacinPlacanja" targetNamespace="http://tempuri.org/DSkasaNacinPlacanja.xsd" xmlns:mstns="http://tempuri.org/DSkasaNacinPlacanja.xsd" xmlns="http://tempuri.org/DSkasaNacinPlacanja.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSkasaNacinPlacanja" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSkasaNacinPlacanja" msprop:Generator_UserDSName="DSkasaNacinPlacanja">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="KasaNacinPlacanja" msprop:Generator_TableClassName="KasaNacinPlacanjaDataTable" msprop:Generator_TableVarName="tableKasaNacinPlacanja" msprop:Generator_TablePropName="KasaNacinPlacanja" msprop:Generator_RowDeletingName="KasaNacinPlacanjaRowDeleting" msprop:Generator_UserTableName="KasaNacinPlacanja" msprop:Generator_RowChangingName="KasaNacinPlacanjaRowChanging" msprop:Generator_RowEvHandlerName="KasaNacinPlacanjaRowChangeEventHandler" msprop:Generator_RowDeletedName="KasaNacinPlacanjaRowDeleted" msprop:Generator_RowEvArgName="KasaNacinPlacanjaRowChangeEvent" msprop:Generator_RowChangedName="KasaNacinPlacanjaRowChanged" msprop:Generator_RowClassName="KasaNacinPlacanjaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="naslov" msprop:Generator_ColumnVarNameInTable="columnnaslov" msprop:Generator_ColumnPropNameInRow="naslov" msprop:Generator_ColumnPropNameInTable="naslovColumn" msprop:Generator_UserColumnName="naslov" type="xs:string" minOccurs="0" />
+              <xs:element name="vrsta_placanja" msprop:Generator_ColumnVarNameInTable="columnvrsta_placanja" msprop:Generator_ColumnPropNameInRow="vrsta_placanja" msprop:Generator_ColumnPropNameInTable="vrsta_placanjaColumn" msprop:Generator_UserColumnName="vrsta_placanja" type="xs:string" minOccurs="0" />
+              <xs:element name="sveUkupno" msprop:Generator_ColumnVarNameInTable="columnsveUkupno" msprop:Generator_ColumnPropNameInRow="sveUkupno" msprop:Generator_ColumnPropNameInTable="sveUkupnoColumn" msprop:Generator_UserColumnName="sveUkupno" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rabat" msprop:Generator_ColumnVarNameInTable="columnrabat" msprop:Generator_ColumnPropNameInRow="rabat" msprop:Generator_ColumnPropNameInTable="rabatColumn" msprop:Generator_UserColumnName="rabat" type="xs:string" minOccurs="0" />
+              <xs:element name="osnovica" msprop:Generator_ColumnVarNameInTable="columnosnovica" msprop:Generator_ColumnPropNameInRow="osnovica" msprop:Generator_ColumnPropNameInTable="osnovicaColumn" msprop:Generator_UserColumnName="osnovica" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pdv" msprop:Generator_ColumnVarNameInTable="columnpdv" msprop:Generator_ColumnPropNameInRow="pdv" msprop:Generator_ColumnPropNameInTable="pdvColumn" msprop:Generator_UserColumnName="pdv" type="xs:string" minOccurs="0" />
+              <xs:element name="iznosBezPoreza" msprop:Generator_ColumnVarNameInTable="columniznosBezPoreza" msprop:Generator_ColumnPropNameInRow="iznosBezPoreza" msprop:Generator_ColumnPropNameInTable="iznosBezPorezaColumn" msprop:Generator_UserColumnName="iznosBezPoreza" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

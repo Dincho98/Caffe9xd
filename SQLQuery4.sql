@@ -1,0 +1,1 @@
+﻿ SELECT * FROM [People] WHERE NOT EXISTS(SELECT * FROM ItemList WHERE People.Id=ItemList.People_ID);

@@ -1,0 +1,5 @@
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\bin\Release\DlluSystem32.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\bin\Release\DlluSystem32.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Release\ResolveAssemblyReference.cache
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Release\DlluSystem32.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\DlluSystem32\obj\x86\Release\DlluSystem32.pdb

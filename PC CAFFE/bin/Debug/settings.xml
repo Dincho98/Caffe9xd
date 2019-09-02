@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <database_compact>
+    <path_database path="D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE -  F45\PC CAFFE\bin\Debug\database.sdf" />
+  </database_compact>
+  <database_remote>
+    <postgree server="localhost" port="5432" username="postgres" database="db2019" active="1" />
+  </database_remote>
+  <program>
+    <run_progam run="caffe" />
+  </program>
+</settings>

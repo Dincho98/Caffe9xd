@@ -1,0 +1,426 @@
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\PC POS.exe.config
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\Interop.SSCE.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PC CAFFE.csproj.ResolveComReference.cache
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PC POS.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\database.sdf
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\PC POS.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\PC POS.XmlSerializers.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\PC POS.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\GenCode128.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\Mono.Security.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\Npgsql.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\PC POS Update.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\Raverus.FiskalizacijaDEV.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\Raverus.FiskalizacijaDEV.XmlSerializers.dll
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\bin\Release\PC POS Update.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\ResolveAssemblyReference.cache
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.aaaaa.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodajRacunKartica.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodajRacunNaKarticu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmKarticaKupca.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNaknadnoDodavanjePartnera.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNarudzbaAdresa.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPredracuni.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmStoloviZaNaplatuCustom.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirStolaCustom.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.DodatniPopustPostoci.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodatniPopustStolovi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.Dodaci.frmBrojcanikKave.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.Dodaci.frmVracaNekuVrijednost.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodajNormativ.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodatniPopust.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmGasenjePrograma.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmKarticaSkladista.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmKolicina.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmMaliPrinter.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirGumba.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirZaposlenikaNaknadno.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPocetnoStanje.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPoravnanjeSkladista.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPotvrda.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPregledSmjene.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPrijava.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmProdajnaRoba.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmProdajniArtikli.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRadSaSiframa.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRegistracija.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRepromaterijal.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmBackOffice.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmCaffe.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNaplata.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNarudzbe.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNormativi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirStola.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOpcije.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRobaNaSkladistu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmStolovi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmStoloviZaNaplatu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmSveSmjene.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmSviRacuni.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmTipkovnica.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmUskladenje.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmUskladenjePrometa.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmZavrsiSmjenu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmZid.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmFakturaStorno.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmKoristiKarticu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmMiniOtpremnica.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmNaknadnaFiskalizacija.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmOtpremnicaUFakturu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSviDokumentiPotrosnogMaterijala.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Fiskalizacija.frmNeupjeleTransakcije.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Fiskalizacija.frmPoslovniProstor.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Fiskalizacija.frmPregledNefiskaliziranog.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Form1.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmAktivnostiZaposlenika.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmBarCode.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmBlagajnickiIzvjestaj.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmCreateRemoteDB.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmIspisProdajnihArtiklaNaMaliPrinter.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPotrosniMaterijal.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmMeduskladisnica.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPocetnoStanje.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPostavaBaze.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPostavkeUdaljeneBaze.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSinkronizacija.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPorezNaPotrosnju.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPrometIzakljucnoStanje.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.kalkulacija_caffe.frmKalkulacijaIspis.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.PrometiPoDanima.frmIspisProdajnihArtiklaPoDanima.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.PrometiPoDanima.frmListePoDanima.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Uskladenje.frmUskladenjeRep.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.predracuni.frmIspisPredracuna.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.predracuni.frmIzdanePonude.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.normativi.frmNormativi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.predracuni.frmPOSMaliPrinter.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Primka.frmPrimkaIspis.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPrometStanje.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmScren.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmDodajPartnera.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmKasaOpcije.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.podloga.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPosPrinter.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPostavke.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSveInventure.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmUnosInventura.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmKarticaRobe.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmKarticaSkladiste.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmKasa.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmKasaPrijava.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmOtpremnica.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPromocijePostavke.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmStavkeRadnogNaloga.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSveOtpremnice.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSviNormativi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmFaktura.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmNormativi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmNovaKalkulacija.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPodsjetnik.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPrometKase.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPrometPoRobi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPromjenaCijene.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPromjenaNacinaPlacanja.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmSviRacuni.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Faktura.repFaktura.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Inventura.frmInventura.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Kalkulacija.frmKalkulacija.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Kasa.frmPrometKase.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Liste2.frmListe.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Liste.frmListe.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Report.Odjava.frmOdjava.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSveMS.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmMeduskladisnica.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSveKalkulacije.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmKalkulacija.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmOdjavaKomisione.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmPostaviStanjePremaZadnjojInventuri.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmPovratRobe.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmPrimka.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSveOdjave_komisione.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSvePrimke.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSvePromjeneCijena.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSviPovrati.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmZapisnikopromjeniCijene.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmBlagajne.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmDodajZemlju.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmKartice.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmNapomene.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmZiroRacun.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmAddPartners.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmNoviGrad.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPartnerTrazi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmMenu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmNoviPartner.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPonude.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmPopisKalkulacija.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmRadniNalog.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmRobaTrazi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmRobaUsluge.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSveFakture.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSavPotrosniMaterijal.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSviRadniNalozi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmUzvratiti.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmIspisOdredenogRacuna.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmStornoRacuna.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.probe.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Properties.Resources.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmDucani.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.Gradovi.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmGrupeProizvoda.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmProizvodaci.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmSkladista.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmZaposlenici.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmZemlje.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.frmSveMeduskladisnice.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.SinkronizacijaDobavljac.frmRoto.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Sinkronizacija.frmPoruka.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Until.frmHtmlInfo.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPorezUpozorenje.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPromjenaGodine.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPotvrdaZaNovuGodinu.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPromjenaPoreza.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PCPOS.Until.frmUvozArtiklaCSV.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\GenerateResource.read.1.tlog
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\GenerateResource.write.1.tlog
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\RdlCompile.cache
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\RdlCompile.compiled
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PC POS.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\PC CAFFE\obj\x86\Release\PC POS.XmlSerializers.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC CAFFE.csprojAssemblyReference.cache
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\Interop.SSCE.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC CAFFE.csproj.ResolveComReference.cache
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.aaaaa.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmBon.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmBonUpis.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.FrmLogin.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirPodgrupe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmSveNarudzbe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRegistracija2017.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodajRacunKartica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodajRacunNaKarticu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmKarticaKupca.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNaknadnoDodavanjePartnera.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNarudzbaAdresa.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPredracuni.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmStoloviZaNaplatuCustom.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirStolaCustom.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.DodatniPopustPostoci.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodatniPopustStolovi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.Dodaci.frmBrojcanikKave.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.Dodaci.frmVracaNekuVrijednost.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodajNormativ.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmDodatniPopust.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmGasenjePrograma.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmKarticaSkladista.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmKolicina.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmMaliPrinter.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirGumba.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirZaposlenikaNaknadno.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPocetnoStanje.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPoravnanjeSkladista.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPotvrda.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPregledSmjene.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmPrijava.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmProdajnaRoba.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmProdajniArtikli.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRadSaSiframa.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRegistracija.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRepromaterijal.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmBackOffice.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmCaffe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNaplata.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNarudzbe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmNormativi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOdabirStola.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmOpcije.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmRobaNaSkladistu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmStolovi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmStoloviZaNaplatu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmSveSmjene.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmSviRacuni.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmTipkovnica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmUskladenje.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmUskladenjePrometa.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmZavrsiSmjenu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Caffe.frmZid.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.FormPodrska.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmFakturaStorno.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmKoristiKarticu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmMiniOtpremnica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmNaknadnaFiskalizacija.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmNewInfo.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmOsobe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmOtpremnicaUFakturu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSviDokumentiPotrosnogMaterijala.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Fiskalizacija.frmNeupjeleTransakcije.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Fiskalizacija.frmPoslovniProstor.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Fiskalizacija.frmPregledNefiskaliziranog.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Form1.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmAktivnostiZaposlenika.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmBarCode.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmBlagajnickiIzvjestaj.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmCreateRemoteDB.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmIspisProdajnihArtiklaNaMaliPrinter.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPotrosniMaterijal.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmMeduskladisnica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPocetnoStanje.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPostavaBaze.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPostavkeUdaljeneBaze.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSinkronizacija.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.UskladaRobeNaSkladistuForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.IzlazniDokumenti.ObracunForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.IzlazniDokumenti.ObracunGrupeProizvodaForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.IzlazniDokumenti.PPMIPOForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.IzlazniRacuni.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmNapomenaRacun.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPorezNaPotrosnju.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPrometIzakljucnoStanje.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Properties.Strings.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Beauty.KarticaKupca.frmKarticaKupca.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Beauty.StatistikaRadaPoZaposleniku.frmStatistikaRadaPoZaposleniku.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.BlagajnickiIzvjestaj.frmBlagajnickaIsplatnica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.BlagajnickiIzvjestaj.frmBlagajnickiIzvjestajReport.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.GrupeProizvoda.ReportObracunGrupe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.IzlazniDokumenti.ObracunReport.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Kalkposkl.FaktureForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Kalkposkl.KalkulacijeForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Kalkposkl.PrimkeForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.kalkulacija_caffe.frmKalkulacijaIspis.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.KarticaSkladista.frmKarticaSkladista2.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.KarticaSkladista.frmKarticaSkladista.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Narudzbe.frmNarudzbe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.PPMIPO.PnpReportForm.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.predracuni.frmPredracuniSvi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.PrometiPoDanima.frmIspisProdajnihArtiklaPoDanima.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.PrometiPoDanima.frmListePoDanima.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Uskladenje.frmUskladenjeRep.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.predracuni.frmIspisPredracuna.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.predracuni.frmIzdanePonude.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.normativi.frmNormativi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.predracuni.frmPOSMaliPrinter.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Primka.frmPrimkaIspis.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPrometStanje.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmScren.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmDodajPartnera.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmKasaOpcije.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.podloga.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPosPrinter.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPostavke.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSveInventure.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmUnosInventura.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmKarticaRobe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmKarticaSkladiste.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmKasa.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmKasaPrijava.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmOtpremnica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPromocijePostavke.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmStavkeRadnogNaloga.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSveOtpremnice.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSviNormativi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmFaktura.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmNormativi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmNovaKalkulacija.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPodsjetnik.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPrometKase.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPrometPoRobi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPromjenaCijene.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmPromjenaNacinaPlacanja.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmSviRacuni.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Faktura.repFaktura.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Inventura.frmInventura.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Kalkulacija.frmKalkulacija.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Kasa.frmPrometKase.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Liste2.frmListe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Liste.frmListe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Report.Odjava.frmOdjava.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmIzdatnica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSveIzdatnice.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSveMS.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmMeduskladisnica.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSveKalkulacije.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmKalkulacija.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmOdjavaKomisione.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmPostaviStanjePremaZadnjojInventuri.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmPovratRobe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmPrimka.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSveOdjave_komisione.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSvePrimke.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSvePromjeneCijena.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmSviPovrati.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Robno.frmZapisnikopromjeniCijene.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmBlagajne.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmDodajZemlju.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmKartice.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmNapomene.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmOtpremnice.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmZiroRacun.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmAddPartners.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmNoviGrad.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPartnerTrazi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmMenu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmNoviPartner.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPonude.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmPopisKalkulacija.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmRadniNalog.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmRobaTrazi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmRobaUsluge.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSveFakture.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSavPotrosniMaterijal.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSviRadniNalozi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmUzvratiti.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmIspisOdredenogRacuna.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Kasa.frmStornoRacuna.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.probe.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Properties.Resources.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmDucani.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.Gradovi.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmGrupeProizvoda.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmProizvodaci.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmSkladista.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmZaposlenici.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sifarnik.frmZemlje.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.frmSveMeduskladisnice.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.SinkronizacijaDobavljac.frmRoto.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Sinkronizacija.frmPoruka.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Until.frmHtmlInfo.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPorezUpozorenje.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPromjenaGodine.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPotvrdaZaNovuGodinu.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Until.frmPromjenaPoreza.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Until.frmUvozArtiklaCSV.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Properties.Strings.en.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PCPOS.Properties.Strings.it.resources
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC CAFFE.csproj.GenerateResource.cache
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\RdlCompile.cache
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\RdlCompile.compiled
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC CAFFE.csproj.CoreCompileInputs.cache
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC POS.exe
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC POS.pdb
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC POS.XmlSerializers.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\database.sdf
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\PC POS.exe.config
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\PC POS.exe
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\PC POS.XmlSerializers.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\PC POS.pdb
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\en\PC POS.resources.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\it\PC POS.resources.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\GenCode128.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\ICSharpCode.SharpZipLib.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Microsoft.ReportViewer.Common.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Microsoft.ReportViewer.WinForms.DLL
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Microsoft.SqlServer.Types.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Mono.Security.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Newtonsoft.Json.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Npgsql.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\System.Data.DataSetExtensions.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\System.Data.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\System.Data.Linq.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\System.Data.SqlServerCe.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\System.Data.SqlServerCe.Entity.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Newtonsoft.Json.xml
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\bin\Release\Raverus.FiskalizacijaDEV.XmlSerializers.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\en\PC POS.resources.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\it\PC POS.resources.dll
+F:\work\CodeIT\POScaffe\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\PC CAFFE\obj\x86\Release\PC CAFFE.csproj.CopyComplete

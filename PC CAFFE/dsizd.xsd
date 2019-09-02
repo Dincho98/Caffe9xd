@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsizd" targetNamespace="http://tempuri.org/dsizd.xsd" xmlns:mstns="http://tempuri.org/dsizd.xsd" xmlns="http://tempuri.org/dsizd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsizd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsizd" msprop:Generator_UserDSName="dsizd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTRIzdatnica" msprop:Generator_TableClassName="DTRIzdatnicaDataTable" msprop:Generator_TableVarName="tableDTRIzdatnica" msprop:Generator_TablePropName="DTRIzdatnica" msprop:Generator_RowDeletingName="DTRIzdatnicaRowDeleting" msprop:Generator_RowChangingName="DTRIzdatnicaRowChanging" msprop:Generator_RowEvHandlerName="DTRIzdatnicaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTRIzdatnicaRowDeleted" msprop:Generator_UserTableName="DTRIzdatnica" msprop:Generator_RowChangedName="DTRIzdatnicaRowChanged" msprop:Generator_RowEvArgName="DTRIzdatnicaRowChangeEvent" msprop:Generator_RowClassName="DTRIzdatnicaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kupac_tvrtka" msprop:Generator_ColumnVarNameInTable="columnkupac_tvrtka" msprop:Generator_ColumnPropNameInRow="kupac_tvrtka" msprop:Generator_ColumnPropNameInTable="kupac_tvrtkaColumn" msprop:Generator_UserColumnName="kupac_tvrtka" type="xs:string" minOccurs="0" />
+              <xs:element name="kupac_adresa" msprop:Generator_ColumnVarNameInTable="columnkupac_adresa" msprop:Generator_ColumnPropNameInRow="kupac_adresa" msprop:Generator_ColumnPropNameInTable="kupac_adresaColumn" msprop:Generator_UserColumnName="kupac_adresa" type="xs:string" minOccurs="0" />
+              <xs:element name="kupac_grad" msprop:Generator_ColumnVarNameInTable="columnkupac_grad" msprop:Generator_ColumnPropNameInRow="kupac_grad" msprop:Generator_ColumnPropNameInTable="kupac_gradColumn" msprop:Generator_UserColumnName="kupac_grad" type="xs:string" minOccurs="0" />
+              <xs:element name="kupac_oib" msprop:Generator_ColumnVarNameInTable="columnkupac_oib" msprop:Generator_ColumnPropNameInRow="kupac_oib" msprop:Generator_ColumnPropNameInTable="kupac_oibColumn" msprop:Generator_UserColumnName="kupac_oib" type="xs:string" minOccurs="0" />
+              <xs:element name="Naslov" msprop:Generator_ColumnVarNameInTable="columnNaslov" msprop:Generator_ColumnPropNameInRow="Naslov" msprop:Generator_ColumnPropNameInTable="NaslovColumn" msprop:Generator_UserColumnName="Naslov" type="xs:string" minOccurs="0" />
+              <xs:element name="broj" msprop:Generator_ColumnVarNameInTable="columnbroj" msprop:Generator_ColumnPropNameInRow="broj" msprop:Generator_ColumnPropNameInTable="brojColumn" msprop:Generator_UserColumnName="broj" type="xs:string" minOccurs="0" />
+              <xs:element name="napomena" msprop:Generator_ColumnVarNameInTable="columnnapomena" msprop:Generator_ColumnPropNameInRow="napomena" msprop:Generator_ColumnPropNameInTable="napomenaColumn" msprop:Generator_UserColumnName="napomena" type="xs:string" minOccurs="0" />
+              <xs:element name="datum" msprop:Generator_ColumnVarNameInTable="columndatum" msprop:Generator_ColumnPropNameInRow="datum" msprop:Generator_ColumnPropNameInTable="datumColumn" msprop:Generator_UserColumnName="datum" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="izradio" msprop:Generator_ColumnVarNameInTable="columnizradio" msprop:Generator_ColumnPropNameInRow="izradio" msprop:Generator_ColumnPropNameInTable="izradioColumn" msprop:Generator_UserColumnName="izradio" type="xs:string" minOccurs="0" />
+              <xs:element name="sifra_kupac" msprop:Generator_ColumnVarNameInTable="columnsifra_kupac" msprop:Generator_ColumnPropNameInRow="sifra_kupac" msprop:Generator_ColumnPropNameInTable="sifra_kupacColumn" msprop:Generator_UserColumnName="sifra_kupac" type="xs:string" minOccurs="0" />
+              <xs:element name="godina" msprop:Generator_ColumnVarNameInTable="columngodina" msprop:Generator_ColumnPropNameInRow="godina" msprop:Generator_ColumnPropNameInTable="godinaColumn" msprop:Generator_UserColumnName="godina" type="xs:string" minOccurs="0" />
+              <xs:element name="originalni_dokument" msprop:Generator_ColumnVarNameInTable="columnoriginalni_dokument" msprop:Generator_ColumnPropNameInRow="originalni_dokument" msprop:Generator_ColumnPropNameInTable="originalni_dokumentColumn" msprop:Generator_UserColumnName="originalni_dokument" type="xs:string" minOccurs="0" />
+              <xs:element name="id_skladiste" msprop:Generator_ColumnVarNameInTable="columnid_skladiste" msprop:Generator_ColumnPropNameInRow="id_skladiste" msprop:Generator_ColumnPropNameInTable="id_skladisteColumn" msprop:Generator_UserColumnName="id_skladiste" type="xs:string" minOccurs="0" />
+              <xs:element name="skladiste" msprop:Generator_ColumnVarNameInTable="columnskladiste" msprop:Generator_ColumnPropNameInRow="skladiste" msprop:Generator_ColumnPropNameInTable="skladisteColumn" msprop:Generator_UserColumnName="skladiste" type="xs:string" minOccurs="0" />
+              <xs:element name="mjesto" msprop:Generator_ColumnVarNameInTable="columnmjesto" msprop:Generator_ColumnPropNameInRow="mjesto" msprop:Generator_ColumnPropNameInTable="mjestoColumn" msprop:Generator_UserColumnName="mjesto" type="xs:string" minOccurs="0" />
+              <xs:element name="kupac_grad_id" msprop:Generator_ColumnVarNameInTable="columnkupac_grad_id" msprop:Generator_ColumnPropNameInRow="kupac_grad_id" msprop:Generator_ColumnPropNameInTable="kupac_grad_idColumn" msprop:Generator_UserColumnName="kupac_grad_id" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

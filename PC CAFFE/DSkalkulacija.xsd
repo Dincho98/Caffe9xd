@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSkalkulacija" targetNamespace="http://tempuri.org/DSkalkulacija.xsd" xmlns:mstns="http://tempuri.org/DSkalkulacija.xsd" xmlns="http://tempuri.org/DSkalkulacija.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSkalkulacija" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSkalkulacija" msprop:Generator_UserDSName="DSkalkulacija">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTKalkulacijA" msprop:Generator_TableClassName="DTKalkulacijADataTable" msprop:Generator_TableVarName="tableDTKalkulacijA" msprop:Generator_TablePropName="DTKalkulacijA" msprop:Generator_RowDeletingName="DTKalkulacijARowDeleting" msprop:Generator_UserTableName="DTKalkulacijA" msprop:Generator_RowChangingName="DTKalkulacijARowChanging" msprop:Generator_RowEvHandlerName="DTKalkulacijARowChangeEventHandler" msprop:Generator_RowDeletedName="DTKalkulacijARowDeleted" msprop:Generator_RowEvArgName="DTKalkulacijARowChangeEvent" msprop:Generator_RowChangedName="DTKalkulacijARowChanged" msprop:Generator_RowClassName="DTKalkulacijARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="broj" msprop:Generator_ColumnVarNameInTable="columnbroj" msprop:Generator_ColumnPropNameInRow="broj" msprop:Generator_ColumnPropNameInTable="brojColumn" msprop:Generator_UserColumnName="broj" type="xs:string" minOccurs="0" />
+              <xs:element name="godina" msprop:Generator_ColumnVarNameInTable="columngodina" msprop:Generator_ColumnPropNameInRow="godina" msprop:Generator_ColumnPropNameInTable="godinaColumn" msprop:Generator_UserColumnName="godina" type="xs:string" minOccurs="0" />
+              <xs:element name="naslov" msprop:Generator_ColumnVarNameInTable="columnnaslov" msprop:Generator_ColumnPropNameInRow="naslov" msprop:Generator_ColumnPropNameInTable="naslovColumn" msprop:Generator_UserColumnName="naslov" type="xs:string" minOccurs="0" />
+              <xs:element name="skladiste" msprop:Generator_ColumnVarNameInTable="columnskladiste" msprop:Generator_ColumnPropNameInRow="skladiste" msprop:Generator_ColumnPropNameInTable="skladisteColumn" msprop:Generator_UserColumnName="skladiste" type="xs:string" minOccurs="0" />
+              <xs:element name="datum" msprop:Generator_ColumnVarNameInTable="columndatum" msprop:Generator_ColumnPropNameInRow="datum" msprop:Generator_ColumnPropNameInTable="datumColumn" msprop:Generator_UserColumnName="datum" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="dobavljac" msprop:Generator_ColumnVarNameInTable="columndobavljac" msprop:Generator_ColumnPropNameInRow="dobavljac" msprop:Generator_ColumnPropNameInTable="dobavljacColumn" msprop:Generator_UserColumnName="dobavljac" type="xs:string" minOccurs="0" />
+              <xs:element name="valuta" msprop:Generator_ColumnVarNameInTable="columnvaluta" msprop:Generator_ColumnPropNameInRow="valuta" msprop:Generator_ColumnPropNameInTable="valutaColumn" msprop:Generator_UserColumnName="valuta" type="xs:string" minOccurs="0" />
+              <xs:element name="racun" msprop:Generator_ColumnVarNameInTable="columnracun" msprop:Generator_ColumnPropNameInRow="racun" msprop:Generator_ColumnPropNameInTable="racunColumn" msprop:Generator_UserColumnName="racun" type="xs:string" minOccurs="0" />
+              <xs:element name="racun_datum" msprop:Generator_ColumnVarNameInTable="columnracun_datum" msprop:Generator_ColumnPropNameInRow="racun_datum" msprop:Generator_ColumnPropNameInTable="racun_datumColumn" msprop:Generator_UserColumnName="racun_datum" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="kalkulirao" msprop:Generator_ColumnVarNameInTable="columnkalkulirao" msprop:Generator_ColumnPropNameInRow="kalkulirao" msprop:Generator_ColumnPropNameInTable="kalkuliraoColumn" msprop:Generator_UserColumnName="kalkulirao" type="xs:string" minOccurs="0" />
+              <xs:element name="tecaj" msprop:Generator_ColumnVarNameInTable="columntecaj" msprop:Generator_ColumnPropNameInRow="tecaj" msprop:Generator_ColumnPropNameInTable="tecajColumn" msprop:Generator_UserColumnName="tecaj" type="xs:string" minOccurs="0" />
+              <xs:element name="fak_iznos" msprop:Generator_ColumnVarNameInTable="columnfak_iznos" msprop:Generator_ColumnPropNameInRow="fak_iznos" msprop:Generator_ColumnPropNameInTable="fak_iznosColumn" msprop:Generator_UserColumnName="fak_iznos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="osnovica" msprop:Generator_ColumnVarNameInTable="columnosnovica" msprop:Generator_ColumnPropNameInRow="osnovica" msprop:Generator_ColumnPropNameInTable="osnovicaColumn" msprop:Generator_UserColumnName="osnovica" type="xs:decimal" minOccurs="0" />
+              <xs:element name="netto_fak_iznos" msprop:Generator_ColumnVarNameInTable="columnnetto_fak_iznos" msprop:Generator_ColumnPropNameInRow="netto_fak_iznos" msprop:Generator_ColumnPropNameInTable="netto_fak_iznosColumn" msprop:Generator_UserColumnName="netto_fak_iznos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pdv" msprop:Generator_ColumnVarNameInTable="columnpdv" msprop:Generator_ColumnPropNameInRow="pdv" msprop:Generator_ColumnPropNameInTable="pdvColumn" msprop:Generator_UserColumnName="pdv" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ukupno" msprop:Generator_ColumnVarNameInTable="columnukupno" msprop:Generator_ColumnPropNameInRow="ukupno" msprop:Generator_ColumnPropNameInTable="ukupnoColumn" msprop:Generator_UserColumnName="ukupno" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

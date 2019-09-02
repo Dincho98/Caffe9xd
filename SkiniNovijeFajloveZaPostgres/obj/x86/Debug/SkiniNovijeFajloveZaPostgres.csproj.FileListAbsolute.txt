@@ -1,0 +1,79 @@
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\POWER\Desktop\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.Cache
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Programer\Desktop\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.Cache
+D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csprojResolveAssemblyReference.cache
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csprojResolveAssemblyReference.cache
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.Cache
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.CoreCompileInputs.cache
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\Code - iT\Novo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.Cache
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.CoreCompileInputs.cache
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csprojAssemblyReference.cache
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csprojAssemblyReference.cache
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.cache
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.CoreCompileInputs.cache
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+D:\Code - iT\Code-iT Ugostiteljstvo - Rework\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Korisnik\Desktop\PCPosCaffeFinal\Code-iT Ugostiteljstvo\Code-iT Ugostiteljstvo\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb

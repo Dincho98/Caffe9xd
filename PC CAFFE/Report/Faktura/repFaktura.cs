@@ -286,7 +286,7 @@ namespace PCPOS.Report.Faktura
                 "";
 
             //DSRpodaciTvrtke DSpt = new DSRpodaciTvrtke();
-            
+
             if (classSQL.remoteConnectionString == "")
             {
                 classSQL.CeAdatpter(sql1).Fill(dSRpodaciTvrtke, "DTRpodaciTvrtke");
@@ -506,34 +506,38 @@ namespace PCPOS.Report.Faktura
             this.reportViewer1.RefreshReport();
 
             //----------------------------------------------------BarCode------------------------------------------
-            string barCodeString = DodajRedak("HRVHUB30",8) + "\n";
-            barCodeString += DodajRedak("HRK",3) + "\n";
-            barCodeString += DodajRedak(BarCodeIznos(Double.Parse(dSFaktura.DTRfaktura.Rows[0]["ukupno"].ToString()).ToString("#0.00")),15)+ "\n";
-            barCodeString += DodajRedak(dSFaktura.DTRfaktura.Rows[0]["kupac_tvrtka"].ToString(),30) + "\n";
-            barCodeString += DodajRedak(dSFaktura.DTRfaktura.Rows[0]["kupac_adresa"].ToString(), 30) + "\n";
-            barCodeString += DodajRedak(dSFaktura.DTRfaktura.Rows[0]["kupac_grad"].ToString(), 30) + "\n";
-            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["ime_tvrtke"].ToString(),25) + "\n";
-            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["adresa"].ToString(),25) + "\n";
-            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["grad"].ToString(),27) + "\n";
-            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["iban"].ToString(),21) + "\n";
-            barCodeString += DodajRedak("MODEL",4) + "\n"; // Pitati dejana kaj tu?
-            barCodeString += DodajRedak("POZIV NA BROJ",22) + "\n"; // Pitati dejana kaj tu?
-            barCodeString += DodajRedak("SIFRA NAMJENE",4) + "\n"; // Pitati dejana kaj tu?
-            barCodeString += DodajRedak("Uplata",35);
+            string barCodeString = DodajRedak("HRVHUB30", 8) + "\n";
+            barCodeString += DodajRedak("HRK", 3) + "\n";
+            barCodeString += DodajRedak(BarCodeIznos(Double.Parse(dSFaktura.DTRfaktura.Rows[0]["ukupno"].ToString()).ToString("#0.00")), 15) + "\n";
+            barCodeString += DodajRedak(dSFaktura.DTRfaktura.Rows[0]["kupac_tvrtka"].ToString(), 30) + "\n";
+            barCodeString += DodajRedak(dSFaktura.DTRfaktura.Rows[0]["kupac_adresa"].ToString(), 27) + "\n";
+            barCodeString += DodajRedak(dSFaktura.DTRfaktura.Rows[0]["kupac_grad"].ToString(), 27) + "\n";
+            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["ime_tvrtke"].ToString(), 25) + "\n";
+            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["adresa"].ToString(), 25) + "\n";
+            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["grad"].ToString(), 27) + "\n";
+            barCodeString += DodajRedak(dSRpodaciTvrtke.DTRpodaciTvrtke.Rows[0]["iban"].ToString(), 21) + "\n";
+            barCodeString += "HR00" + "\n"; 
+            barCodeString += DodajRedak(dSFaktura.DTRfaktura.Rows[0]["model"].ToString().Trim(), 22) + "\n"; 
+            barCodeString += "PADD" + "\n"; 
+            barCodeString += DodajRedak("Uplata", 35);
 
-            //Napravi bitmapu
-            Bitmap bitmap = (Bitmap)(new ImageConverter()).ConvertFrom(GenerateBarCodeZXing(barCodeString));
-            //Napravi i napuni data table
+            //Napravi data table
             DataTable dt = new DataTable();
             dt.Columns.Add("image", typeof(byte[]));
-            ImageConverter converter = new ImageConverter();
-            byte[] slikaUBytes = (byte[])converter.ConvertTo(bitmap, typeof(byte[]));
-            dt.Rows.Add(slikaUBytes);
+            if (SviPodaciPostoje(barCodeString))
+            {
+                //Napravi bitmapu
+                Bitmap bitmap = (Bitmap)(new ImageConverter()).ConvertFrom(GenerateBarCodeZXing(barCodeString));
+                ImageConverter converter = new ImageConverter();
+                byte[] slikaUBytes = (byte[])converter.ConvertTo(bitmap, typeof(byte[]));
+                dt.Rows.Add(slikaUBytes);
+            }
 
             //Napuni data set dataSetPDF417Code s data tableom dt
             dataSetPDF417Code.Tables.Add(dt); // Tables[1]
             dataSetPDF417Code.Tables[1].TableName = "tablica1";
             bindingSourceSlika.DataMember = "tablica1";
+
 
             //Opcenita shema za reportDataSource
             ReportDataSource dsPDF417Kod = new ReportDataSource();
@@ -544,9 +548,10 @@ namespace PCPOS.Report.Faktura
             reportViewer1.LocalReport.ReportEmbeddedResource = "PCPOS.Report.Faktura.Report.rdlc";
             reportViewer1.LocalReport.EnableExternalImages = true;
             reportViewer1.RefreshReport();
+
         }
 
-        //Metoda za generiranje PDF417 codea. References: ZXing
+        //Metoda za generiranje PDF417 codea.
         private byte[] GenerateBarCodeZXing(string data)
         {
             var writer = new BarcodeWriter
@@ -567,14 +572,14 @@ namespace PCPOS.Report.Faktura
         private string BarCodeIznos(string iznos)
         {
             string iznosPremaPropisu = ""; // Ovo je varijabla koja će u konačnici imati oblik kakav treba biti kod skeniranja
-            string praviIznos = iznos; 
+            string praviIznos = iznos;
             int kolikoZnakovaNisuNule = PrebrojiOnoStoNijeNulaIliZarez(praviIznos); //Maknemo , i . iz pravog iznosa
             int kolikoNula = 15 - kolikoZnakovaNisuNule;
             //U string upisujemo 15-kolikoZnakovaNisuNule nula.
             for (int i = 0; i < kolikoNula; i++)
                 iznosPremaPropisu += "0";
             //U string upisujemo iznos bez točke i zareza -> TAKO JE PROPISANO ZAKONOM da mora biti kod skeniranja
-            for(int i = 0; i < praviIznos.Length; i++)
+            for (int i = 0; i < praviIznos.Length; i++)
             {
                 if (praviIznos[i] != ',' && praviIznos[i] != '.')
                     iznosPremaPropisu += praviIznos[i];
@@ -585,7 +590,7 @@ namespace PCPOS.Report.Faktura
         private int PrebrojiOnoStoNijeNulaIliZarez(string iznos)
         {
             int brojZnakova = 0;
-            for(int i = 0; i < iznos.Length; i++)
+            for (int i = 0; i < iznos.Length; i++)
             {
                 if (iznos[i] != '.' && iznos[i] != ',')
                     brojZnakova++;
@@ -601,9 +606,31 @@ namespace PCPOS.Report.Faktura
         {
             string zapisZaDodati = zapis;
             if (zapisZaDodati.Length > maximalnaDuljina)
-                zapisZaDodati=zapisZaDodati.Substring(0, maximalnaDuljina);
+                zapisZaDodati = zapisZaDodati.Substring(0, maximalnaDuljina);
             return zapisZaDodati;
         }
+
+        //Ako neki od podataka za bar kod u postavkama ne postoji,
+        //tada se bar kod ne ispisuje.
+        private bool SviPodaciPostoje(string barCodeString)
+        {
+            bool podaciPostoje = true;
+            string[] redovi = barCodeString.Split('\n');
+            string[] imenaRedova = {"-","-","Iznos","Ime i prezime platitelja","Ulica i broj platitelja","Poštanski broj i mjesto platitelja","Naziv primatelja",
+                            "Ulica i broj primatelja","Poštanski broj i mjesto primatelja","IBAN primatelja","Model računa primatelja",
+                            "Poziv na broj primatelja","Šifra namjene","Opis plaćanja" };
+            for (int i = 0; i < redovi.Length && podaciPostoje; i++)
+            {
+                if (redovi[i].Trim() == "-")
+                {
+                    MessageBox.Show("Barkod neće biti generiran jer nedostaje podatak o: " + imenaRedova[i] + ".","Informacija",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    podaciPostoje = false;
+                }
+            }
+            return podaciPostoje;
+        }
+        //-----------------------------------------------------------------------------------------------------------//
+
 
         //DataRow RowPdv;
         private void StopePDVa(double pdv, double iznos, double osnovica)
@@ -624,7 +651,6 @@ namespace PCPOS.Report.Faktura
                 dataROW[0]["osnovica"] = Convert.ToDouble(dataROW[0]["osnovica"].ToString()) + osnovica;
             }
         }
-        //-----------------------------------------------------------------------------------------------------------//
 
         private void FillPonude(string broj)
         {

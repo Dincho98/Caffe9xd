@@ -35,18 +35,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBoxPartner = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnOne = new System.Windows.Forms.Button();
-            this.btnTwo = new System.Windows.Forms.Button();
-            this.btnThree = new System.Windows.Forms.Button();
-            this.btnSix = new System.Windows.Forms.Button();
-            this.btnFive = new System.Windows.Forms.Button();
-            this.btnFour = new System.Windows.Forms.Button();
-            this.btnNine = new System.Windows.Forms.Button();
-            this.btnEight = new System.Windows.Forms.Button();
-            this.btnSeven = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnComma = new System.Windows.Forms.Button();
+            this.btnNine = new System.Windows.Forms.Button();
+            this.btnEight = new System.Windows.Forms.Button();
+            this.btnSeven = new System.Windows.Forms.Button();
+            this.btnSix = new System.Windows.Forms.Button();
+            this.btnFive = new System.Windows.Forms.Button();
+            this.btnFour = new System.Windows.Forms.Button();
+            this.btnThree = new System.Windows.Forms.Button();
+            this.btnTwo = new System.Windows.Forms.Button();
+            this.btnOne = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPartner)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -127,88 +127,49 @@
             this.panel1.Controls.Add(this.btnThree);
             this.panel1.Controls.Add(this.btnTwo);
             this.panel1.Controls.Add(this.btnOne);
-            this.panel1.Location = new System.Drawing.Point(29, 91);
+            this.panel1.Location = new System.Drawing.Point(29, 96);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(317, 384);
             this.panel1.TabIndex = 564;
             // 
-            // btnOne
+            // btnDel
             // 
-            this.btnOne.BackColor = System.Drawing.Color.White;
-            this.btnOne.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOne.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnOne.Location = new System.Drawing.Point(24, 16);
-            this.btnOne.Name = "btnOne";
-            this.btnOne.Size = new System.Drawing.Size(84, 84);
-            this.btnOne.TabIndex = 0;
-            this.btnOne.Text = "1";
-            this.btnOne.UseVisualStyleBackColor = false;
+            this.btnDel.BackColor = System.Drawing.Color.White;
+            this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDel.Location = new System.Drawing.Point(209, 286);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(84, 84);
+            this.btnDel.TabIndex = 11;
+            this.btnDel.Text = "DEL";
+            this.btnDel.UseVisualStyleBackColor = false;
             // 
-            // btnTwo
+            // btnZero
             // 
-            this.btnTwo.BackColor = System.Drawing.Color.White;
-            this.btnTwo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTwo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnTwo.Location = new System.Drawing.Point(116, 16);
-            this.btnTwo.Name = "btnTwo";
-            this.btnTwo.Size = new System.Drawing.Size(84, 84);
-            this.btnTwo.TabIndex = 1;
-            this.btnTwo.Text = "2";
-            this.btnTwo.UseVisualStyleBackColor = false;
+            this.btnZero.BackColor = System.Drawing.Color.White;
+            this.btnZero.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZero.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZero.Location = new System.Drawing.Point(116, 286);
+            this.btnZero.Name = "btnZero";
+            this.btnZero.Size = new System.Drawing.Size(84, 84);
+            this.btnZero.TabIndex = 10;
+            this.btnZero.Text = "0";
+            this.btnZero.UseVisualStyleBackColor = false;
             // 
-            // btnThree
+            // btnComma
             // 
-            this.btnThree.BackColor = System.Drawing.Color.White;
-            this.btnThree.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThree.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnThree.Location = new System.Drawing.Point(209, 16);
-            this.btnThree.Name = "btnThree";
-            this.btnThree.Size = new System.Drawing.Size(84, 84);
-            this.btnThree.TabIndex = 2;
-            this.btnThree.Text = "3";
-            this.btnThree.UseVisualStyleBackColor = false;
-            // 
-            // btnSix
-            // 
-            this.btnSix.BackColor = System.Drawing.Color.White;
-            this.btnSix.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSix.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnSix.Location = new System.Drawing.Point(209, 106);
-            this.btnSix.Name = "btnSix";
-            this.btnSix.Size = new System.Drawing.Size(84, 84);
-            this.btnSix.TabIndex = 5;
-            this.btnSix.Text = "6";
-            this.btnSix.UseVisualStyleBackColor = false;
-            // 
-            // btnFive
-            // 
-            this.btnFive.BackColor = System.Drawing.Color.White;
-            this.btnFive.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFive.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnFive.Location = new System.Drawing.Point(116, 106);
-            this.btnFive.Name = "btnFive";
-            this.btnFive.Size = new System.Drawing.Size(84, 84);
-            this.btnFive.TabIndex = 4;
-            this.btnFive.Text = "5";
-            this.btnFive.UseVisualStyleBackColor = false;
-            // 
-            // btnFour
-            // 
-            this.btnFour.BackColor = System.Drawing.Color.White;
-            this.btnFour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFour.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnFour.Location = new System.Drawing.Point(24, 106);
-            this.btnFour.Name = "btnFour";
-            this.btnFour.Size = new System.Drawing.Size(84, 84);
-            this.btnFour.TabIndex = 3;
-            this.btnFour.Text = "4";
-            this.btnFour.UseVisualStyleBackColor = false;
+            this.btnComma.BackColor = System.Drawing.Color.White;
+            this.btnComma.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnComma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnComma.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnComma.Location = new System.Drawing.Point(24, 286);
+            this.btnComma.Name = "btnComma";
+            this.btnComma.Size = new System.Drawing.Size(84, 84);
+            this.btnComma.TabIndex = 9;
+            this.btnComma.Text = ",";
+            this.btnComma.UseVisualStyleBackColor = false;
             // 
             // btnNine
             // 
@@ -249,44 +210,83 @@
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = false;
             // 
-            // btnDel
+            // btnSix
             // 
-            this.btnDel.BackColor = System.Drawing.Color.White;
-            this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDel.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnDel.Location = new System.Drawing.Point(209, 286);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(84, 84);
-            this.btnDel.TabIndex = 11;
-            this.btnDel.Text = "DEL";
-            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnSix.BackColor = System.Drawing.Color.White;
+            this.btnSix.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSix.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSix.Location = new System.Drawing.Point(209, 106);
+            this.btnSix.Name = "btnSix";
+            this.btnSix.Size = new System.Drawing.Size(84, 84);
+            this.btnSix.TabIndex = 5;
+            this.btnSix.Text = "6";
+            this.btnSix.UseVisualStyleBackColor = false;
             // 
-            // btnZero
+            // btnFive
             // 
-            this.btnZero.BackColor = System.Drawing.Color.White;
-            this.btnZero.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZero.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZero.Location = new System.Drawing.Point(116, 286);
-            this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(84, 84);
-            this.btnZero.TabIndex = 10;
-            this.btnZero.Text = "0";
-            this.btnZero.UseVisualStyleBackColor = false;
+            this.btnFive.BackColor = System.Drawing.Color.White;
+            this.btnFive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFive.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnFive.Location = new System.Drawing.Point(116, 106);
+            this.btnFive.Name = "btnFive";
+            this.btnFive.Size = new System.Drawing.Size(84, 84);
+            this.btnFive.TabIndex = 4;
+            this.btnFive.Text = "5";
+            this.btnFive.UseVisualStyleBackColor = false;
             // 
-            // btnComma
+            // btnFour
             // 
-            this.btnComma.BackColor = System.Drawing.Color.White;
-            this.btnComma.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnComma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComma.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnComma.Location = new System.Drawing.Point(24, 286);
-            this.btnComma.Name = "btnComma";
-            this.btnComma.Size = new System.Drawing.Size(84, 84);
-            this.btnComma.TabIndex = 9;
-            this.btnComma.Text = ",";
-            this.btnComma.UseVisualStyleBackColor = false;
+            this.btnFour.BackColor = System.Drawing.Color.White;
+            this.btnFour.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFour.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnFour.Location = new System.Drawing.Point(24, 106);
+            this.btnFour.Name = "btnFour";
+            this.btnFour.Size = new System.Drawing.Size(84, 84);
+            this.btnFour.TabIndex = 3;
+            this.btnFour.Text = "4";
+            this.btnFour.UseVisualStyleBackColor = false;
+            // 
+            // btnThree
+            // 
+            this.btnThree.BackColor = System.Drawing.Color.White;
+            this.btnThree.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThree.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnThree.Location = new System.Drawing.Point(209, 16);
+            this.btnThree.Name = "btnThree";
+            this.btnThree.Size = new System.Drawing.Size(84, 84);
+            this.btnThree.TabIndex = 2;
+            this.btnThree.Text = "3";
+            this.btnThree.UseVisualStyleBackColor = false;
+            // 
+            // btnTwo
+            // 
+            this.btnTwo.BackColor = System.Drawing.Color.White;
+            this.btnTwo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTwo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnTwo.Location = new System.Drawing.Point(116, 16);
+            this.btnTwo.Name = "btnTwo";
+            this.btnTwo.Size = new System.Drawing.Size(84, 84);
+            this.btnTwo.TabIndex = 1;
+            this.btnTwo.Text = "2";
+            this.btnTwo.UseVisualStyleBackColor = false;
+            // 
+            // btnOne
+            // 
+            this.btnOne.BackColor = System.Drawing.Color.White;
+            this.btnOne.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOne.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOne.Location = new System.Drawing.Point(24, 16);
+            this.btnOne.Name = "btnOne";
+            this.btnOne.Size = new System.Drawing.Size(84, 84);
+            this.btnOne.TabIndex = 0;
+            this.btnOne.Text = "1";
+            this.btnOne.UseVisualStyleBackColor = false;
             // 
             // frmStornoRacuna
             // 

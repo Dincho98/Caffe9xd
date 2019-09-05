@@ -154,6 +154,9 @@ namespace PCPOS
             return classSQL.select(query, "primka").Tables[0];
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void PocetnoStanje()
         {
             string query = $@"SELECT kolicina FROM pocetno WHERE sifra='{txtSifraArtikla.Text}' AND novo = TRUE ";
@@ -171,7 +174,6 @@ namespace PCPOS
             lblPocetnoStanje.Text = ukupno.ToString("#0.0000");
         }
 
-
         private void KolPrimka()
         {
             string query = $@"SELECT kolicina FROM primka_stavke WHERE sifra='{txtSifraArtikla.Text}' AND is_kalkulacija = FALSE AND id_skladiste='{cbSkladiste.SelectedValue.ToString()}' ";
@@ -188,6 +190,7 @@ namespace PCPOS
 
             lblPrimke.Text = ukupno.ToString("#0.0000");
         }
+
         private void KolKalkulacija()
         {
             string query = $@"SELECT kolicina FROM primka_stavke WHERE sifra='{txtSifraArtikla.Text}' AND is_kalkulacija = TRUE AND id_skladiste='{cbSkladiste.SelectedValue.ToString()}' ";
@@ -322,7 +325,7 @@ namespace PCPOS
             }
             lblMedjuskladisnice.Text = ukupno.ToString("#0.0000");
         }
-
+        
         private void KolOtpis()
         {
             string sql = "SELECT SUM(CAST(REPLACE(povrat_robe_stavke.kolicina, ',', '.') AS decimal)) " +
@@ -631,8 +634,8 @@ namespace PCPOS
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if(txtSifraArtikla.Text == "")
-                SelectRoba();
+                if (txtSifraArtikla.Text == "")
+                    SelectRoba();
                 else
                 {
                     lblLoading.Visible = true;

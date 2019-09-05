@@ -7386,3 +7386,5 @@ C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\it\PC POS.resources.dll
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PC CAFFE.csproj.CopyComplete
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PC POS.exe
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PC POS.pdb
+C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PCPOS.Kasa.frmStornoRacuna2.resources
+C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PCPOS.Caffe.frmOpcije2.resources

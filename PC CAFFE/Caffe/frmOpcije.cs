@@ -364,43 +364,8 @@ namespace PCPOS.Caffe
 
         private void button3_Click(object sender, EventArgs e)
         {
-            bool storno = false;
-            if (!File.Exists("belveder"))
-            {
-                if (MessageBox.Show("Dali ste sigurni da želite stornirati račun?", "Storno računa!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    storno = true;
-                }
-            }
-            else
-            {
-                Dodaci.frmVracaNekuVrijednost v = new Dodaci.frmVracaNekuVrijednost();
-                Properties.Settings.Default.privremena_vrijednost = "";
-                v.txtBroj.PasswordChar = '*';
-                v._title = "Unesite ključ:";
-                v.ShowDialog();
-
-                string key = File.ReadAllText("belveder");
-                if (Properties.Settings.Default.privremena_vrijednost == key)
-                {
-                    if (MessageBox.Show("Dali ste sigurni da želite stornirati račun?", "Storno računa!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                    {
-                        storno = true;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Krivi unos!");
-                }
-            }
-
-            if (!storno)
-                return;
-
-            //if (MessageBox.Show("Dali ste sigurni da želite napraviti storno računa?", "Storno", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
             Kasa.frmStornoRacuna sr = new Kasa.frmStornoRacuna();
             sr.ShowDialog();
-            //}
         }
 
         private void button4_Click(object sender, EventArgs e)

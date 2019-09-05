@@ -203,6 +203,12 @@
     <Compile Include="Caffe\frmOdabirPodgrupe.Designer.cs">
       <DependentUpon>frmOdabirPodgrupe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Caffe\frmOpcije2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caffe\frmOpcije2.Designer.cs">
+      <DependentUpon>frmOpcije2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Caffe\frmStoloviNapredno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -596,6 +602,12 @@
     </Compile>
     <Compile Include="frmPotrosniMaterijal.designer.cs">
       <DependentUpon>frmPotrosniMaterijal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa\frmStornoRacuna2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa\frmStornoRacuna2.Designer.cs">
+      <DependentUpon>frmStornoRacuna2.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\DataSetPDF417Code.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1657,6 +1669,9 @@
     <EmbeddedResource Include="Caffe\frmOdabirPodgrupe.resx">
       <DependentUpon>frmOdabirPodgrupe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Caffe\frmOpcije2.resx">
+      <DependentUpon>frmOpcije2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Caffe\frmStoloviNapredno.resx" />
     <EmbeddedResource Include="Caffe\frmSveNarudzbe.resx">
       <DependentUpon>frmSveNarudzbe.cs</DependentUpon>
@@ -1889,6 +1904,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSinkronizacija.resx">
       <DependentUpon>frmSinkronizacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa\frmStornoRacuna2.resx">
+      <DependentUpon>frmStornoRacuna2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Izdatnica\FormIzdatnicaReport.resx">
       <DependentUpon>FormIzdatnicaReport.cs</DependentUpon>

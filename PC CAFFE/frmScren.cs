@@ -25,6 +25,7 @@ namespace PCPOS
         private DataTable DTpostavke = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
         private string id_kasa;
         private string id_ducan;
+        public static string verzijaProgramaZaRacun = "6.870";
 
         public static bool neuspjelaFiskalizacijaPostoji;
         public static DateTime datumPrveNeuspjeleFiskalizacije;
@@ -62,6 +63,7 @@ namespace PCPOS
                     using (StreamReader reader = new StreamReader(currentPathCurrentVersion))
                     {
                         currentVersion = reader.ReadLine();
+                        verzijaProgramaZaRacun = currentVersion;
                     }
                 }
 
@@ -113,6 +115,12 @@ namespace PCPOS
                     danasnjiDatum = DateTime.Now;
                     var preostaloVrijemeFiskalizacije = (datumZadnjeMoguceFiskalizacije - danasnjiDatum).TotalHours;
                     labelPreostaloVrijeme.Text = "Preostalo vrijeme: " + preostaloVrijemeFiskalizacije.ToString("#0.00h");
+                }
+                else
+                {
+                    labelPostojeNeuspjeleFiskalizacije.Visible = false;
+                    labelPreostaloVrijeme.Visible = false;
+                    labelHitnoNazoviteCodeIt.Visible = false;
                 }
             }
             catch
@@ -663,7 +671,7 @@ namespace PCPOS
             }
         }
 
-        //Ako postoji neuspjela fiskalizacija gleda se svakih 10 min
+        //Provjera ako postoji neuspjela fiskalizacija gleda se svakih 10 min
         private void timer4_Tick(object sender, EventArgs e)
         {
             ProvjeriPostojiLiNeuspjelaFiskalizacija();

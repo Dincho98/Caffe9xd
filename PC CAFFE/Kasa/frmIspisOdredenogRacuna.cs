@@ -16,6 +16,7 @@ namespace PCPOS.Kasa
         private void frmIspisOdredenogRacuna_Load(object sender, EventArgs e)
         {
             textBox1.Select();
+            SubscribeClickEvent();
             //this.Paint += new PaintEventHandler(Class.Postavke.changeBackground);
         }
 
@@ -133,6 +134,42 @@ namespace PCPOS.Kasa
                 CreateParams cp = base.CreateParams;
                 cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
                 return cp;
+            }
+        }
+
+        /// <summary>
+        /// Used to subscribe event on buttons when the form loads
+        /// </summary>
+        private void SubscribeClickEvent()
+        {
+            btnOne.Click += ButtonClick;
+            btnTwo.Click += ButtonClick;
+            btnThree.Click += ButtonClick;
+            btnFour.Click += ButtonClick;
+            btnFive.Click += ButtonClick;
+            btnSix.Click += ButtonClick;
+            btnSeven.Click += ButtonClick;
+            btnEight.Click += ButtonClick;
+            btnNine.Click += ButtonClick;
+            btnZero.Click += ButtonClick;
+            btnComma.Click += ButtonClick;
+            btnDel.Click += ButtonClick;
+        }
+
+        /// <summary>
+        /// This method is called when the button is clicked
+        /// </summary>
+        /// <param name="sender">Reference to button</param>
+        /// <param name="e"></param>
+        private void ButtonClick(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                if (button.Text != "DEL")
+                    textBox1.AppendText(button.Text);
+                else if (textBox1.Text.Length > 0)
+                    textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             }
         }
     }

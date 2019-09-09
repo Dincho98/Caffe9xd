@@ -623,8 +623,17 @@ namespace PCPOS.PosPrint
                 tekst += Environment.NewLine;
             }
 
+            string verzijaPrograma = "6.870";
+            string pathToVersion = AppDomain.CurrentDomain.BaseDirectory + "currentVersion.txt";
+            if (File.Exists("currentVersion.txt"))
+            {
+                using (StreamReader reader = new StreamReader(pathToVersion))
+                {
+                    verzijaPrograma = reader.ReadToEnd();
+                }
+            }
             // Code-iT verzija programa bottom text
-            string codeIt = $"Code-iT verzija programa: {Properties.Settings.Default.verzija_programa.ToString()}";
+            string codeIt = $"Code-iT verzija programa: {verzijaPrograma}";
             tekst += Environment.NewLine;
             PrintTextLine(new string('-', RecLineChars));
             string center = "";

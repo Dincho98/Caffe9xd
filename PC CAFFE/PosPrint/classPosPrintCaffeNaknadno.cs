@@ -464,9 +464,18 @@ namespace PCPOS.PosPrint
             }
             _5 = tekst;
 
+            string verzijaPrograma = "6.870";
+            string pathToVersion = AppDomain.CurrentDomain.BaseDirectory + "currentVersion.txt";
+            if (File.Exists("currentVersion.txt"))
+            {
+                using (StreamReader reader = new StreamReader(pathToVersion))
+                {
+                    verzijaPrograma = reader.ReadToEnd();
+                }
+            }
             // Code-iT verzija programa bottom text
-            string codeIt = $"Code-iT verzija programa: {Properties.Settings.Default.verzija_programa.ToString()}";
-            _6 += Environment.NewLine;
+            string codeIt = $"Code-iT verzija programa: {verzijaPrograma}";
+            _6 = Environment.NewLine;
             PrintTextLine(new string('-', RecLineChars));
             string endline = "";
             for (int i = 0; i < RecLineChars; i++)
@@ -474,7 +483,7 @@ namespace PCPOS.PosPrint
             string center = "";
             for (int i = 0; i < (RecLineChars - codeIt.Length) / 2; i++)
                 center += " ";
-            _6 += endline + "\r\n" + center + codeIt;
+            _6 = endline + "\r\n" + center + codeIt;
 
             tekst = "";
         }
@@ -951,9 +960,17 @@ namespace PCPOS.PosPrint
             //RawPrinterHelper.SendBytesToPrinter(printDoc.PrinterSettings.PrinterName, pUnmanagedBytes, 5);
             //Marshal.FreeCoTaskMem(pUnmanagedBytes);
 
-            string _3 = "";
+            string verzijaPrograma = "6.870";
+            string pathToVersion = AppDomain.CurrentDomain.BaseDirectory + "currentVersion.txt";
+            if (File.Exists("currentVersion.txt"))
+            {
+                using (StreamReader reader = new StreamReader(pathToVersion))
+                {
+                    verzijaPrograma = reader.ReadToEnd();
+                }
+            }
             // Code-iT verzija programa bottom text
-            string codeIt = $"Code-iT verzija programa: {Properties.Settings.Default.verzija_programa.ToString()}";
+            string codeIt = $"Code-iT verzija programa: {verzijaPrograma}";
             _3 += Environment.NewLine;
             PrintTextLine(new string('-', RecLineChars));
             string center = "";

@@ -70,12 +70,13 @@ namespace PCPOS.Caffe
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            /*this.Hide();
             Caffe.frmGasenjePrograma GP = new frmGasenjePrograma();
             GP.Closed += (s, args) => this.Close();
             MainForm.Close();
             this.Close();
-            GP.ShowDialog();
+            GP.ShowDialog();*/
+            Environment.Exit(0);
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -87,7 +88,7 @@ namespace PCPOS.Caffe
         private DataTable DTzap = new DataTable();
 
         private void txtSifra_TextChanged(object sender, EventArgs e)
-        {
+         {
             //LoginPassword((int)cbBlagajnik.SelectedValue, txtSifra.Text.Trim());
 
             if (txtSifra.Text == ",00000000000000000000,")
@@ -146,7 +147,7 @@ namespace PCPOS.Caffe
                 MainForm.Show();
             }
             else
-            {
+            { 
                 this.Hide();
                 frmMenu menu = new frmMenu();
                 menu.Closed += (s, args) => this.Close();

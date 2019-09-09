@@ -448,7 +448,7 @@ namespace PCPOS.Robno
                     "is_kalkulacija='0'," +
                     "editirano='1'," +
                     "iznos='" + iznos_ukupno.ToString().Replace(",", ".") + "'," +
-                    "napomena='" + rtbNapomena.Text + "' WHERE broj_primke='" + PrimkaId + "' AND is_kalkulacija='0'" +
+                    "napomena='" + rtbNapomena.Text + "' WHERE broj_primke='" + PrimkaId + "' AND is_kalkulacija='0'" + $"AND id_skladiste={cbSkladiste.SelectedValue.ToString()}"+
                     "";
 
                 provjera_sql(classSQL.update(sql));
@@ -1188,7 +1188,9 @@ namespace PCPOS.Robno
             IznosUkupno = mpc;
 
             lblNbcUkupno.Text = "Bez poreza: " + u.ToString("#0.00") + " kn";
+            txtIznosBezPoreza.Text = u.ToString("#0.00").Replace('.', ',');
             lblMpcUkupno.Text = "Sa porezom: " + mpc.ToString("#0.00") + " kn";
+            txtIznosSaPorezom.Text=mpc.ToString("#0.00").Replace('.', ',');
             lblPorez.Text = "Porez: " + p.ToString("#0.00") + " kn";
         }
 

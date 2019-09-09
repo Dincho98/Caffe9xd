@@ -1791,7 +1791,7 @@ namespace PCPOS.Caffe
             foreach (DataRow row in DTArtikli.Rows)
             {
                 string sifra = row["sifra_robe"].ToString();
-                int kom = Int32.Parse(row["kolicina"].ToString());
+                decimal kom = decimal.Parse(row["kolicina"].ToString().Replace(',','.'));
                 string mpc = row["mpc"].ToString().Replace(',', '.');
                 string vpc = row["vpc"].ToString().Replace(',', '.');
                 string porez = row["porez"].ToString().Replace(',', '.');

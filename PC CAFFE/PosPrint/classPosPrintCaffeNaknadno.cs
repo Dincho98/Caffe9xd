@@ -59,6 +59,14 @@ namespace PCPOS.PosPrint
 
         public static void PrintReceipt(DataTable DTstavke, string blagajnik, string broj_racuna, string kupac, string barcode, string brRac, string placanje, string storno)
         {
+            int a = Convert.ToInt16(DTsetting.Rows[0]["ispred_artikl"].ToString());
+            int k = Convert.ToInt16(DTsetting.Rows[0]["ispred_kolicine"].ToString());
+            int c = Convert.ToInt16(DTsetting.Rows[0]["ispred_cijene"].ToString());
+            int p = Convert.ToInt16(DTsetting.Rows[0]["ispred_popust"].ToString());
+            int s = Convert.ToInt16(DTsetting.Rows[0]["ispred_ukupno"].ToString());
+            RecLineChars = a + k + c + p + s;
+
+
             ukupno = 0;
             BrojRacunaa = brRac;
             img_barcode = Code128Rendering.MakeBarcodeImage("000" + brRac, int.Parse("3"), true);
@@ -223,7 +231,7 @@ namespace PCPOS.PosPrint
                     // Stavke tekst
                     string nazivStavka = DTstavke.Rows[i]["ime"].ToString();
                     PrintText(nazivStavka.Length > 25 ? nazivStavka.Substring(0, 25).TrimEnd() + ".\r\n" : nazivStavka + "\r\n");
-                    PrintLineItem(string.Empty, kolicina, mpc, DTstavke.Rows[i]["rabat"].ToString() + "%", cijena);
+                    PrintLineItem("", kolicina, mpc, rabat + "%", (mpc * kolicina) * (1 - (rabat / 100)));
 
                     //izračun porez potrosnja
                     Porez_potrosnja_sve = (Porez_potrosnja_stavka) + Porez_potrosnja_sve;
@@ -452,7 +460,7 @@ namespace PCPOS.PosPrint
             foreach (string line in lines)
             {
                 int brojText = line.Trim().Length;
-                int brojOstatak = (RecLineChars - brojText) / 2;
+                int brojOstatak = (RecLineChars - brojText) / 3;
                 string praznaMjesta = "";
                 for (int _br = 0; _br < brojOstatak; _br++) { praznaMjesta += " "; }
                 tekst += praznaMjesta + line.Trim() + "\r\n";
@@ -481,7 +489,7 @@ namespace PCPOS.PosPrint
             for (int i = 0; i < RecLineChars; i++)
                 endline += "-";
             string center = "";
-            for (int i = 0; i < (RecLineChars - codeIt.Length) / 2; i++)
+            for (int i = 0; i < (RecLineChars - codeIt.Length) / 3; i++)
                 center += " ";
             _6 = endline + "\r\n" + center + codeIt;
 
@@ -538,6 +546,7 @@ namespace PCPOS.PosPrint
 
             PrintText(TruncateAt(kolicina.ToString("#0.00").PadLeft(k), k));
             PrintText(TruncateAt(cijena.ToString("#0.00").PadLeft(c), c));
+            PrintText(TruncateAt(popust.PadLeft(p), p));
             if (File.Exists("hamer")) { PrintText(TruncateAt(popust.PadLeft(p), p)); }
 
             PrintTextLine(TruncateAt(cijena_sve.ToString("#0.00").PadLeft(s), s));
@@ -628,8 +637,9 @@ namespace PCPOS.PosPrint
             PrintTextLine(new string('-', RecLineChars));
 
             PrintText(TruncateAt("STAVKA".PadRight(a), a));
-            PrintText(TruncateAt("KOL".PadLeft(k), k));
+            PrintText(TruncateAt("KOLICINA".PadLeft(k), k));
             PrintText(TruncateAt("CIJENA".PadLeft(c), c));
+            PrintText(TruncateAt("POPUST".PadLeft(c), c));
             if (File.Exists("hamer")) { PrintText(TruncateAt("RAB%".PadLeft(p), p)); }
             PrintText(TruncateAt("UKUPNO".PadLeft(s), s));
             PrintText("\r\n");
@@ -777,7 +787,7 @@ namespace PCPOS.PosPrint
             else
             {
                 drawString = _2;
-                drawFont = font;
+                drawFont = new Font(privateFonts.Families[0], 8);
                 y = height;
                 x = 0.0F;
                 drawFormat = new StringFormat();

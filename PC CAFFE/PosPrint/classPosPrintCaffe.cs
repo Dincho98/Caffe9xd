@@ -593,7 +593,7 @@ namespace PCPOS.PosPrint
             foreach (string line in lines)
             {
                 int brojText = line.Trim().Length;
-                int brojOstatak = (RecLineChars - brojText) / 2;
+                int brojOstatak = (RecLineChars - brojText) / 3;
                 string praznaMjesta = "";
                 for (int _br = 0; _br < brojOstatak; _br++) { praznaMjesta += " "; }
                 tekst += praznaMjesta + line.Trim() + "\r\n";
@@ -637,7 +637,7 @@ namespace PCPOS.PosPrint
             tekst += Environment.NewLine;
             PrintTextLine(new string('-', RecLineChars));
             string center = "";
-            for (int i = 0; i < (RecLineChars - codeIt.Length) / 2; i++)
+            for (int i = 0; i < (RecLineChars - codeIt.Length) / 3; i++)
                 center += " ";
             tekst += center + codeIt;
 
@@ -790,7 +790,7 @@ namespace PCPOS.PosPrint
             PrintTextLine(new string('-', RecLineChars));
 
             PrintText(TruncateAt("STAVKA".PadRight(a), a));
-            PrintText(TruncateAt("KOL".PadLeft(k), k));
+            PrintText(TruncateAt("KOLICINA".PadLeft(k), k));
             PrintText(TruncateAt("CIJENA".PadLeft(c), c));
             PrintText(TruncateAt("POPUST".PadLeft(p), p));
             PrintText(TruncateAt("UKUPNO".PadLeft(s), s));
@@ -831,6 +831,7 @@ namespace PCPOS.PosPrint
             System.Drawing.Text.PrivateFontCollection privateFonts = new PrivateFontCollection();
             privateFonts.AddFontFile("Slike/msgothic.ttc");
             System.Drawing.Font font = new Font(privateFonts.Families[0], Convert.ToInt16(DTpostavke.Rows[0]["font_print_size"].ToString()));
+            System.Drawing.Font font8pt = new Font(privateFonts.Families[0], 8);
 
             System.Drawing.Text.PrivateFontCollection privateFonts_ukupno = new PrivateFontCollection();
             privateFonts_ukupno.AddFontFile("Slike/msgothic.ttc");
@@ -932,7 +933,7 @@ namespace PCPOS.PosPrint
             else
             {
                 drawString = _2;
-                drawFont = font;
+                drawFont = font8pt; // !!!! bilo je font
                 y = height;
                 x = 0.0F;
                 drawFormat = new StringFormat();

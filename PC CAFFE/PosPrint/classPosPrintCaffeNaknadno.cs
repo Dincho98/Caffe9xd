@@ -231,7 +231,7 @@ namespace PCPOS.PosPrint
                     // Stavke tekst
                     string nazivStavka = DTstavke.Rows[i]["ime"].ToString();
                     PrintText(nazivStavka.Length > 25 ? nazivStavka.Substring(0, 25).TrimEnd() + ".\r\n" : nazivStavka + "\r\n");
-                    PrintLineItem("", kolicina, mpc, rabat + "%", (mpc * kolicina) * (1 - (rabat / 100)));
+                    PrintLineItem("", kolicina, mpc, rabat != 0 ? rabat + "%" : "", (mpc * kolicina) * (1 - (rabat / 100)));
 
                     //izračun porez potrosnja
                     Porez_potrosnja_sve = (Porez_potrosnja_stavka) + Porez_potrosnja_sve;
@@ -403,7 +403,7 @@ namespace PCPOS.PosPrint
                 kockice += "\r\n";
             }
 
-            PrintTextLine(offSetString + string.Format("UKUPNO: {0} KN", ukupno.ToString("#0.00")));
+             PrintTextLine(offSetString + string.Format("UKUPNO: {0} KN", ukupno.ToString("#0.00")));
             _3 = tekst;
             tekst = "";
 
@@ -455,7 +455,7 @@ namespace PCPOS.PosPrint
 
             //tekst +=Environment.NewLine + Environment.NewLine + DTsetting.Rows[0]["bottom_text"].ToString() + Environment.NewLine;
             string[] lines = DTsetting.Rows[0]["bottom_text"].ToString().Split('\n');
-            tekst += Environment.NewLine + Environment.NewLine;
+           // tekst += Environment.NewLine + Environment.NewLine;
 
             foreach (string line in lines)
             {

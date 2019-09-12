@@ -312,7 +312,7 @@ namespace PCPOS.PosPrint
                         string nazivStavka = DTstavke.Rows[i]["ime"].ToString();
 
                         PrintText((nazivStavka.Length > 25 ? nazivStavka.Substring(0, 25).TrimEnd() + "." : nazivStavka) + "\r\n");
-                        PrintLineItem("", kolicina, mpc, rabat + "%", (mpc * kolicina) * (1 - (rabat / 100)));
+                        PrintLineItem("", kolicina, mpc, rabat!=0?rabat+"%":"", (mpc * kolicina) * (1 - (rabat / 100)));
 
                         //izračun porez potrosnja
                         Porez_potrosnja_sve = (Porez_potrosnja_stavka) + Porez_potrosnja_sve;
@@ -588,12 +588,12 @@ namespace PCPOS.PosPrint
             }
 
             string[] lines = DTsetting.Rows[0]["bottom_text"].ToString().Split('\n');
-            tekst += Environment.NewLine + Environment.NewLine;
+            //tekst += Environment.NewLine + Environment.NewLine;
 
             foreach (string line in lines)
             {
                 int brojText = line.Trim().Length;
-                int brojOstatak = (RecLineChars - brojText) / 2;
+                int brojOstatak = (RecLineChars - brojText) / 3;
                 string praznaMjesta = "";
                 for (int _br = 0; _br < brojOstatak; _br++) { praznaMjesta += " "; }
                 tekst += praznaMjesta + line.Trim() + "\r\n";
@@ -623,12 +623,21 @@ namespace PCPOS.PosPrint
                 tekst += Environment.NewLine;
             }
 
+            string verzijaPrograma = "6.870";
+            string pathToVersion = AppDomain.CurrentDomain.BaseDirectory + "currentVersion.txt";
+            if (File.Exists("currentVersion.txt"))
+            {
+                using (StreamReader reader = new StreamReader(pathToVersion))
+                {
+                    verzijaPrograma = reader.ReadToEnd();
+                }
+            }
             // Code-iT verzija programa bottom text
-            string codeIt = $"Code-iT verzija programa: {Properties.Settings.Default.verzija_programa.ToString()}";
+            string codeIt = $"Code-iT verzija programa: {verzijaPrograma}";
             tekst += Environment.NewLine;
             PrintTextLine(new string('-', RecLineChars));
             string center = "";
-            for (int i = 0; i < (RecLineChars - codeIt.Length) / 2; i++)
+            for (int i = 0; i < (RecLineChars - codeIt.Length) / 3; i++)
                 center += " ";
             tekst += center + codeIt;
 
@@ -781,7 +790,7 @@ namespace PCPOS.PosPrint
             PrintTextLine(new string('-', RecLineChars));
 
             PrintText(TruncateAt("STAVKA".PadRight(a), a));
-            PrintText(TruncateAt("KOL".PadLeft(k), k));
+            PrintText(TruncateAt("KOLICINA".PadLeft(k), k));
             PrintText(TruncateAt("CIJENA".PadLeft(c), c));
             PrintText(TruncateAt("POPUST".PadLeft(p), p));
             PrintText(TruncateAt("UKUPNO".PadLeft(s), s));
@@ -822,6 +831,7 @@ namespace PCPOS.PosPrint
             System.Drawing.Text.PrivateFontCollection privateFonts = new PrivateFontCollection();
             privateFonts.AddFontFile("Slike/msgothic.ttc");
             System.Drawing.Font font = new Font(privateFonts.Families[0], Convert.ToInt16(DTpostavke.Rows[0]["font_print_size"].ToString()));
+            System.Drawing.Font font8pt = new Font(privateFonts.Families[0], 8);
 
             System.Drawing.Text.PrivateFontCollection privateFonts_ukupno = new PrivateFontCollection();
             privateFonts_ukupno.AddFontFile("Slike/msgothic.ttc");
@@ -923,7 +933,7 @@ namespace PCPOS.PosPrint
             else
             {
                 drawString = _2;
-                drawFont = font;
+                drawFont = font8pt; // !!!! bilo je font
                 y = height;
                 x = 0.0F;
                 drawFormat = new StringFormat();

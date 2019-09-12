@@ -19,7 +19,7 @@ namespace PCPOS
             DateTime NeDelaDate = new DateTime(2019, 10, 1, 0, 0, 1);
             if (TodaysDate.CompareTo(NeDelaDate) > 0)
             {
-                MessageBox.Show("Javite se tvrtci Code-IT.","Informacija",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Javite se tvrtci Code-IT.", "Informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Environment.Exit(1);
             }
 
@@ -31,7 +31,7 @@ namespace PCPOS
 
                     if (pro.Count() > 1)
                     {
-                        MessageBox.Show("Program je več upaljen. Potražite ga na alatnoj traci.");
+                        MessageBox.Show("Program je vec upaljen. Potražite ga na alatnoj traci.");
                         return;
                     }
                 }

@@ -474,6 +474,7 @@
             this.btnIspisiSveNarudzbe.TabIndex = 147;
             this.btnIspisiSveNarudzbe.Text = "Ispis SVIH narudžbi";
             this.btnIspisiSveNarudzbe.UseVisualStyleBackColor = false;
+            this.btnIspisiSveNarudzbe.Visible = false;
             this.btnIspisiSveNarudzbe.Click += new System.EventHandler(this.btnSveUKuhinju_Click);
             // 
             // panelStolovi

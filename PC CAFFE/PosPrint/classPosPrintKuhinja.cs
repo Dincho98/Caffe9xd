@@ -99,6 +99,11 @@ namespace PCPOS.PosPrint
                     DTrac = DTartikli.Clone();
                     bool artiklZaPrint = false;
                     for (int i = 0; i < DTartikli.Rows.Count; i++)
+
+
+
+
+
                     {
                         string sql = string.Format(@"select
 case when coalesce(grupa.printer3, 0) = 0 then false else true end as printer3, roba.id_podgrupa

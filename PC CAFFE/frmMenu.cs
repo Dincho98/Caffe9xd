@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PCPOS.Report.NaruzdbeNaStolu;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -82,6 +83,7 @@ namespace PCPOS
 
             kor = new Util.Korisno();
             Properties.Settings.Default.verzija_programa = 6.870m;
+            
             Properties.Settings.Default.Save();
 
             #region PROVJERAVAM DALI TREBAM PROVJERITI VERZIJU PROGRAMA I NADOGRADITI TABLICE
@@ -233,54 +235,54 @@ namespace PCPOS
             if (File.Exists("code"))
                 File.Delete("code");
 
-           /* if (Environment.MachineName != "POWER-RAC" && Environment.MachineName != "DEJANVIBOVIĆ")
-            {
-                if (DTpostavke.Rows[0]["aktivnost"].ToString() == "0" || !File.Exists("code"))
-                {
-                    List<string> keys = new List<string>();
-                    string uniqId = Class.Registracija.getUniqueID("C");
-                    string s = Class.Registracija.GetMD5(uniqId + "5AR" + (Class.Registracija.broj == 0 ? "" : Class.Registracija.broj.ToString())).ToUpper();
-                    string ns = s.Substring(0, 8) + "-" + s.Substring(8, 4) + "-" + s.Substring(12, 4) + "-" + s.Substring(16, 4) + "-" + s.Substring(20);
+            /* if (Environment.MachineName != "POWER-RAC" && Environment.MachineName != "DEJANVIBOVIĆ")
+             {
+                 if (DTpostavke.Rows[0]["aktivnost"].ToString() == "0" || !File.Exists("code"))
+                 {
+                     List<string> keys = new List<string>();
+                     string uniqId = Class.Registracija.getUniqueID("C");
+                     string s = Class.Registracija.GetMD5(uniqId + "5AR" + (Class.Registracija.broj == 0 ? "" : Class.Registracija.broj.ToString())).ToUpper();
+                     string ns = s.Substring(0, 8) + "-" + s.Substring(8, 4) + "-" + s.Substring(12, 4) + "-" + s.Substring(16, 4) + "-" + s.Substring(20);
 
-                    if (Util.Korisno.CheckForInternetConnection() && Util.Korisno.CheckForInternetConnection(Properties.Settings.Default.PC_POS_wsSoftKontrol_wsSoftKontrol.ToString()))
-                    {
-                        if (Class.Registracija.productKey.Length == 0 || Class.Registracija.activationCode.Length == 0 || (Class.Registracija.productKey.Length > 0 && Class.Registracija.productKey != ns))
-                        {
-                            int newBroj = 0;
-                            using (var ws = new wsSoftKontrol.wsSoftKontrol())
-                            {
-                                if (Class.Registracija.productKey.Length > 0 && Class.Registracija.productKey != ns)
-                                {
-                                    s = Class.Registracija.GetMD5(uniqId + "5AR").ToUpper();
-                                    ns = s.Substring(0, 8) + "-" + s.Substring(8, 4) + "-" + s.Substring(12, 4) + "-" + s.Substring(16, 4) + "-" + s.Substring(20);
-                                }
+                     if (Util.Korisno.CheckForInternetConnection() && Util.Korisno.CheckForInternetConnection(Properties.Settings.Default.PC_POS_wsSoftKontrol_wsSoftKontrol.ToString()))
+                     {
+                         if (Class.Registracija.productKey.Length == 0 || Class.Registracija.activationCode.Length == 0 || (Class.Registracija.productKey.Length > 0 && Class.Registracija.productKey != ns))
+                         {
+                             int newBroj = 0;
+                             using (var ws = new wsSoftKontrol.wsSoftKontrol())
+                             {
+                                 if (Class.Registracija.productKey.Length > 0 && Class.Registracija.productKey != ns)
+                                 {
+                                     s = Class.Registracija.GetMD5(uniqId + "5AR").ToUpper();
+                                     ns = s.Substring(0, 8) + "-" + s.Substring(8, 4) + "-" + s.Substring(12, 4) + "-" + s.Substring(16, 4) + "-" + s.Substring(20);
+                                 }
 
-                                keys.Add(ns);
-                                if (ws.checkIfProductKeyExists(ns))
-                                {
-                                    for (int i = 1; i < 100; i++)
-                                    {
-                                        s = Class.Registracija.GetMD5(uniqId + "5AR" + i.ToString()).ToUpper();
-                                        ns = s.Substring(0, 8) + "-" + s.Substring(8, 4) + "-" + s.Substring(12, 4) + "-" + s.Substring(16, 4) + "-" + s.Substring(20);
-                                        keys.Add(ns);
-                                        if (!ws.checkIfProductKeyExists(ns))
-                                        {
-                                            newBroj = i;
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
+                                 keys.Add(ns);
+                                 if (ws.checkIfProductKeyExists(ns))
+                                 {
+                                     for (int i = 1; i < 100; i++)
+                                     {
+                                         s = Class.Registracija.GetMD5(uniqId + "5AR" + i.ToString()).ToUpper();
+                                         ns = s.Substring(0, 8) + "-" + s.Substring(8, 4) + "-" + s.Substring(12, 4) + "-" + s.Substring(16, 4) + "-" + s.Substring(20);
+                                         keys.Add(ns);
+                                         if (!ws.checkIfProductKeyExists(ns))
+                                         {
+                                             newBroj = i;
+                                             break;
+                                         }
+                                     }
+                                 }
+                             }
 
-                            //Caffe.frmRegistracija2017 CR = new Caffe.frmRegistracija2017();
-                            //CR.broj = newBroj;
-                            //CR.productKey = ns;
-                            //CR.MainForm = this;
-                            //CR.ShowDialog();
-                        }
-                    }
-                }
-            }*/
+                             //Caffe.frmRegistracija2017 CR = new Caffe.frmRegistracija2017();
+                             //CR.broj = newBroj;
+                             //CR.productKey = ns;
+                             //CR.MainForm = this;
+                             //CR.ShowDialog();
+                         }
+                     }
+                 }
+             }*/
 
             DateTime datum_vece = Convert.ToDateTime(DateTime.Now.Year + "-12-20");
             DateTime datum_manje = Convert.ToDateTime(DateTime.Now.Year + "-1-20");
@@ -1831,6 +1833,12 @@ namespace PCPOS
         {
             FrmPostavkeZaSlanjeDokumentacije frmPostavkeZaSlanjeDokumentacije = new FrmPostavkeZaSlanjeDokumentacije();
             frmPostavkeZaSlanjeDokumentacije.ShowDialog();
+        }
+
+        private void ispisSvihNarudžbiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNarudzbeNaStolu frmNarudzbeNaStolu = new FrmNarudzbeNaStolu();
+            frmNarudzbeNaStolu.ShowDialog();
         }
     }
 }

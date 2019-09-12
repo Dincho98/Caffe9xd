@@ -1473,7 +1473,7 @@ namespace PCPOS.Caffe
 
         private void CloseForm()
         {
-            this.Hide();
+             this.Hide();
             frmMenu formMenu = new frmMenu(true);
             formMenu.Closed += (s, args) => this.Close();
             formMenu.Show();

@@ -86,6 +86,10 @@
             this.bgSinkronizacija = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.checkBoxZeroPercent = new System.Windows.Forms.CheckBox();
+            this.checkBoxFivePercent = new System.Windows.Forms.CheckBox();
+            this.checkBoxThirteenPercent = new System.Windows.Forms.CheckBox();
+            this.checkBoxTrentyFivePercent = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgwA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwR)).BeginInit();
             this.panel1.SuspendLayout();
@@ -199,11 +203,12 @@
             // txtIzlazniPorez
             // 
             this.txtIzlazniPorez.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtIzlazniPorez.Location = new System.Drawing.Point(616, 225);
+            this.txtIzlazniPorez.Location = new System.Drawing.Point(538, 21);
             this.txtIzlazniPorez.MaxLength = 50;
             this.txtIzlazniPorez.Name = "txtIzlazniPorez";
             this.txtIzlazniPorez.Size = new System.Drawing.Size(247, 23);
             this.txtIzlazniPorez.TabIndex = 10;
+            this.txtIzlazniPorez.Visible = false;
             this.txtIzlazniPorez.Enter += new System.EventHandler(this.TRENUTNI_Enter);
             this.txtIzlazniPorez.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.provjera_KeyPress);
             this.txtIzlazniPorez.Leave += new System.EventHandler(this.NAPUSTENI_Leave);
@@ -834,7 +839,7 @@
             this.label16.Font = new System.Drawing.Font("Verdana", 9F);
             this.label16.Location = new System.Drawing.Point(512, 206);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(102, 14);
+            this.label16.Size = new System.Drawing.Size(100, 14);
             this.label16.TabIndex = 67;
             this.label16.Text = "Porez na potr.:";
             // 
@@ -878,12 +883,64 @@
             this.label8.TabIndex = 70;
             this.label8.Text = "Obrub prodajnog gumba";
             // 
+            // checkBoxZeroPercent
+            // 
+            this.checkBoxZeroPercent.AutoSize = true;
+            this.checkBoxZeroPercent.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxZeroPercent.Location = new System.Drawing.Point(616, 229);
+            this.checkBoxZeroPercent.Name = "checkBoxZeroPercent";
+            this.checkBoxZeroPercent.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxZeroPercent.TabIndex = 71;
+            this.checkBoxZeroPercent.Text = "0%";
+            this.checkBoxZeroPercent.UseVisualStyleBackColor = false;
+            this.checkBoxZeroPercent.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBoxZeroPercent_MouseClick);
+            // 
+            // checkBoxFivePercent
+            // 
+            this.checkBoxFivePercent.AutoSize = true;
+            this.checkBoxFivePercent.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxFivePercent.Location = new System.Drawing.Point(680, 229);
+            this.checkBoxFivePercent.Name = "checkBoxFivePercent";
+            this.checkBoxFivePercent.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxFivePercent.TabIndex = 72;
+            this.checkBoxFivePercent.Text = "5%";
+            this.checkBoxFivePercent.UseVisualStyleBackColor = false;
+            this.checkBoxFivePercent.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBoxFivePercent_MouseClick);
+            // 
+            // checkBoxThirteenPercent
+            // 
+            this.checkBoxThirteenPercent.AutoSize = true;
+            this.checkBoxThirteenPercent.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxThirteenPercent.Location = new System.Drawing.Point(750, 229);
+            this.checkBoxThirteenPercent.Name = "checkBoxThirteenPercent";
+            this.checkBoxThirteenPercent.Size = new System.Drawing.Size(46, 17);
+            this.checkBoxThirteenPercent.TabIndex = 73;
+            this.checkBoxThirteenPercent.Text = "13%";
+            this.checkBoxThirteenPercent.UseVisualStyleBackColor = false;
+            this.checkBoxThirteenPercent.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkBoxThirteenPercent_MouseClick);
+            // 
+            // checkBoxTrentyFivePercent
+            // 
+            this.checkBoxTrentyFivePercent.AutoSize = true;
+            this.checkBoxTrentyFivePercent.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxTrentyFivePercent.Location = new System.Drawing.Point(821, 229);
+            this.checkBoxTrentyFivePercent.Name = "checkBoxTrentyFivePercent";
+            this.checkBoxTrentyFivePercent.Size = new System.Drawing.Size(46, 17);
+            this.checkBoxTrentyFivePercent.TabIndex = 74;
+            this.checkBoxTrentyFivePercent.Text = "25%";
+            this.checkBoxTrentyFivePercent.UseVisualStyleBackColor = false;
+            this.checkBoxTrentyFivePercent.Click += new System.EventHandler(this.checkBoxTrentyFivePercent_Click);
+            // 
             // frmProdajniArtikli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(991, 589);
+            this.Controls.Add(this.checkBoxTrentyFivePercent);
+            this.Controls.Add(this.checkBoxThirteenPercent);
+            this.Controls.Add(this.checkBoxFivePercent);
+            this.Controls.Add(this.checkBoxZeroPercent);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbPoreznaGrupa);
@@ -997,5 +1054,9 @@
         private System.ComponentModel.BackgroundWorker bgSinkronizacija;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox checkBoxZeroPercent;
+        private System.Windows.Forms.CheckBox checkBoxFivePercent;
+        private System.Windows.Forms.CheckBox checkBoxThirteenPercent;
+        private System.Windows.Forms.CheckBox checkBoxTrentyFivePercent;
     }
 }

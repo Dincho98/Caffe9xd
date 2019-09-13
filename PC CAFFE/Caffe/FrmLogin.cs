@@ -21,5 +21,14 @@ namespace PCPOS.Caffe
         {
             Application.Exit();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "1")
+            {
+                frmMenu x = new frmMenu();
+                x.ShowDialog();
+            }
+        }
     }
 }

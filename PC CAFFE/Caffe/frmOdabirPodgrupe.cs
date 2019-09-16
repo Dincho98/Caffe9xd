@@ -36,5 +36,27 @@ namespace PCPOS.Caffe
             IdPodgrupa = 3;
             Close();
         }
+
+        private void btnProizvoljno_Click(object sender, EventArgs e)
+        {
+            if (gumbicProizvoljnoOmogucen())
+            {
+                IdPodgrupa = 4;
+            }
+            Close();
+        }
+
+        private bool gumbicProizvoljnoOmogucen()
+        {
+            bool gumbicOmogucen= true;
+            string sql = "SELECT * FROM podgrupa";
+            int numRows=classSQL.select(sql, "podgrupa").Tables[0].Rows.Count;
+            if (numRows != 4)
+            {
+                MessageBox.Show("Potrebno je nadograditi bazu kako bi mogli dodavati Proizvoljnu napomenu.","Upozorenje",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                gumbicOmogucen = false;
+            }
+            return gumbicOmogucen;
+        }
     }
 }

@@ -35,3 +35,9 @@ C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\D
 C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
 C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\bin\Debug\DlluSystem32.exe
+C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\bin\Debug\DlluSystem32.pdb
+C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb

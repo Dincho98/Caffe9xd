@@ -77,3 +77,13 @@ C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPo
 C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
 C:\Users\Korisnik\Desktop\Caffe8BackupPrijeBarkoda - Copy\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe.config
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\bin\Debug\SkiniNovijeFajloveZaPostgres.pdb
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csprojAssemblyReference.cache
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.frmDownloadPostgres.resources
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.Properties.Resources.resources
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.GenerateResource.cache
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.exe
+C:\Users\Korisnik\Desktop\Caffe9\SkiniNovijeFajloveZaPostgres\obj\x86\Debug\SkiniNovijeFajloveZaPostgres.pdb

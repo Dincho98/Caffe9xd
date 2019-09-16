@@ -32,7 +32,109 @@ namespace PCPOS.Caffe
             PaintRows(dgwR);
             PaintRows(dgwA);
             this.Paint += new PaintEventHandler(Class.Postavke.changeBackground);
+            //OnemoguciOdredjenePDVove();
         }
+
+
+        //-----------Zadatak: Prisiliti korisnika ako je u sustavu PDVa da ne stavi 0% PDV.---------------//
+        //Funkcionalnost ostaje ista kao i do sad, znači PDV se upisuje u txtIzlazniPorez.
+        //Upisuje se tako da mi kliknemo na 0,5,13 ili 25% te se taj broj upisuje u txtIzlazniPorez.
+        //------------------------------------------------------------------------------------------------//
+        //Ova metoda služi kako bi se provjerilo nalazi li se tvrtka u sustavu PDVa.
+        private bool TvrtkaJeUSustavuPDVa()
+        {
+            bool tvrtkaJeUSustavuPDVa = false;
+            DataTable DataTablePostavke = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
+            tvrtkaJeUSustavuPDVa=DTpostavke.Rows[0]["sustav_pdv"].ToString()=="1"?true:false;
+            return tvrtkaJeUSustavuPDVa;
+        }
+
+        //Ova metoda onemogućuje klik na 5,13,25% ako firma nije u sustavu PDVa.
+        //Ova metoda onemogućuje klik na 0% ako je firma u sustavu PDVa.
+        private void OnemoguciOdredjenePDVove()
+        {
+            if (!TvrtkaJeUSustavuPDVa())
+            {
+                checkBoxZeroPercent.Enabled = true;
+                checkBoxFivePercent.Enabled = false;
+                checkBoxThirteenPercent.Enabled = false;
+                checkBoxTrentyFivePercent.Enabled = false;
+            }
+            else
+            {
+                checkBoxZeroPercent.Enabled = false;
+                checkBoxFivePercent.Enabled = true;
+                checkBoxThirteenPercent.Enabled = true;
+                checkBoxTrentyFivePercent.Enabled = true;
+            }
+        }
+
+        /// <summary>
+        /// Event handlers
+        /// </summary>
+        //Treba imati na umu da UVIJEK smije biti uključen samo 1 checkBox!
+        private void checkBoxZeroPercent_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (checkBoxZeroPercent.Checked)
+            {
+                KvaciceNaCheckBoxovima(true, false, false, false);
+                txtIzlazniPorez.Text = "0";
+            }
+            else
+            {
+                txtIzlazniPorez.Text = "";
+            }
+        }
+
+        private void checkBoxFivePercent_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (checkBoxFivePercent.Checked)
+            {
+                KvaciceNaCheckBoxovima(false, true, false, false);
+                txtIzlazniPorez.Text = "5";
+            }
+            else
+            {
+                txtIzlazniPorez.Text = "";
+            }
+        }
+
+        private void checkBoxThirteenPercent_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            if (checkBoxThirteenPercent.Checked)
+            {
+                KvaciceNaCheckBoxovima(false, false, true, false);
+                txtIzlazniPorez.Text = "13";
+            }
+            else
+            {
+                txtIzlazniPorez.Text = "";
+            }
+        }
+
+        private void checkBoxTrentyFivePercent_Click(object sender, EventArgs e)
+        {
+
+            if (checkBoxTrentyFivePercent.Checked)
+            {
+                KvaciceNaCheckBoxovima(false, false, false, true);
+                txtIzlazniPorez.Text = "25";
+            }
+            else
+            {
+                txtIzlazniPorez.Text = "";
+            }
+        }
+
+        private void KvaciceNaCheckBoxovima(bool cb0, bool cb5, bool cb13, bool cb25)
+        {
+            checkBoxZeroPercent.Checked = cb0;
+            checkBoxFivePercent.Checked = cb5;
+            checkBoxThirteenPercent.Checked = cb13;
+            checkBoxTrentyFivePercent.Checked = cb25;
+        }
+        //-----------------------------------------------------------------------------//
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
@@ -305,6 +407,21 @@ namespace PCPOS.Caffe
                 txtCijena.Text = dgwR.Rows[RowIndex].Cells["mpc"].FormattedValue.ToString();
                 txtEan.Text = dgwR.Rows[RowIndex].Cells["ean"].FormattedValue.ToString();
                 txtIzlazniPorez.Text = dgwR.Rows[RowIndex].Cells["porez"].FormattedValue.ToString();
+                switch (txtIzlazniPorez.Text)
+                {
+                    case "0":
+                        KvaciceNaCheckBoxovima(true, false, false, false);
+                        break;
+                    case "5":
+                        KvaciceNaCheckBoxovima(false, true, false, false);
+                        break;
+                    case "13":
+                        KvaciceNaCheckBoxovima(false, false, true, false);
+                        break;
+                    case "25":
+                        KvaciceNaCheckBoxovima(false, false, false, true);
+                        break;
+                }
 
                 if (dgwR.Rows[RowIndex].Cells["id_podgrupa"].FormattedValue.ToString() != "")
                 {
@@ -427,11 +544,13 @@ namespace PCPOS.Caffe
             status_spremanja = 1;
             FieldClear();
             EnableDisable(true);
+            KvaciceNaCheckBoxovima(false, false, false, false);
+           // OnemoguciOdredjenePDVove();
             btnUredi.Enabled = false;
             txtSifra.Text = Broj_unosa();
             txtCijena.Text = "0,00";
             txtPNP.Text = "0,00";
-            txtIzlazniPorez.Text = "0,00";
+            txtIzlazniPorez.Text = "";
             txtEan.Text = "0,00";
             chbAktivnost.Checked = true;
             FillRepromaterijal(txtSifra.Text);
@@ -489,6 +608,12 @@ namespace PCPOS.Caffe
             btnObrisiNormativ.Enabled = x;
             btnDodajNoviArtikl.Enabled = x;
             cbPoreznaGrupa.Enabled = x;
+
+            checkBoxZeroPercent.Enabled = x;
+            checkBoxFivePercent.Enabled = x;
+            checkBoxThirteenPercent.Enabled = x;
+            checkBoxTrentyFivePercent.Enabled = x;
+
             if (x == false)
             {
                 dgwR.Enabled = true;
@@ -512,6 +637,7 @@ namespace PCPOS.Caffe
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
+
             if (status_spremanja == 1)
             {
                 Spremi();
@@ -522,6 +648,11 @@ namespace PCPOS.Caffe
             }
 
             classSQL.update("UPDATE caffe_normativ SET editirano='1'");
+        }
+
+        private void ProvjeraPoreza()
+        {
+
         }
 
         private void Spremi()
@@ -535,6 +666,20 @@ namespace PCPOS.Caffe
             decimal dec_parse;
             if (Provjeri_Sifru()) { MessageBox.Show("Krivo upisama šifra.", "Greška"); return; }
             if (txtNaziv.Text == "") { MessageBox.Show("Krivo upisan naziv.", "Greška"); return; }
+
+            if (txtIzlazniPorez.Text == "") { MessageBox.Show("Morate odabrati porez!","Greška"); return;}
+            if (TvrtkaJeUSustavuPDVa() && checkBoxZeroPercent.Checked)
+            {
+                MessageBox.Show("Vaša tvrtka nalazi se u sustavu PDVa. Porez može biti 5%, 13% ili 25%. Ukoliko smatrate da je došlo do pogreške, nazovite Code-IT.", "Greška");
+                return;
+            }
+
+            if (!TvrtkaJeUSustavuPDVa() && !checkBoxZeroPercent.Checked)
+            {
+                MessageBox.Show("Vaša tvrtka ne nalazi se u sustavu PDVa. Porez može biti samo 0%. Ukoliko smatrate da je došlo do pogreške, nazovite Code-IT.", "Greška");
+                return;
+            }
+
             if (!Decimal.TryParse(txtIzlazniPorez.Text, out dec_parse)) { MessageBox.Show("Krivo upisan izlazni porez.", "Greška"); return; }
             if (txtMjera.Text == "") { MessageBox.Show("Krivo upisana mjera.", "Greška"); return; }
             if (!Decimal.TryParse(txtPNP.Text, out dec_parse)) { MessageBox.Show("Krivo upisani porez pnp.", "Greška"); return; }
@@ -595,6 +740,20 @@ namespace PCPOS.Caffe
             decimal dec_parse;
             //if (Provjeri_Sifru()) { MessageBox.Show("Krivo upisana šifra.", "Greška"); return; }
             if (txtNaziv.Text == "") { MessageBox.Show("Krivo upisan naziv.", "Greška"); return; }
+
+            if (txtIzlazniPorez.Text == "") { MessageBox.Show("Morate odabrati porez!", "Greška"); return; }
+            if (TvrtkaJeUSustavuPDVa() && checkBoxZeroPercent.Checked)
+            {
+                MessageBox.Show("Vaša tvrtka nalazi se u sustavu PDVa. Porez može biti 5%, 13% ili 25%. Ukoliko smatrate da je došlo do pogreške, nazovite Code-IT.", "Greška");
+                return;
+            }
+
+            if (!TvrtkaJeUSustavuPDVa() && !checkBoxZeroPercent.Checked)
+            {
+                MessageBox.Show("Vaša tvrtka ne nalazi se u sustavu PDVa. Porez može biti samo 0%. Ukoliko smatrate da je došlo do pogreške, nazovite Code-IT.", "Greška");
+                return;
+            }
+
             if (!Decimal.TryParse(txtIzlazniPorez.Text, out dec_parse)) { MessageBox.Show("Krivo upisan izlazni porez.", "Greška"); return; }
             if (txtMjera.Text == "") { MessageBox.Show("Krivo upisana mjera.", "Greška"); return; }
             if (!Decimal.TryParse(txtPNP.Text, out dec_parse)) { MessageBox.Show("Krivo upisani porez pnp.", "Greška"); return; }
@@ -1121,5 +1280,6 @@ namespace PCPOS.Caffe
                 return cp;
             }
         }
+
     }
 }

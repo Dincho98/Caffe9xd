@@ -71,6 +71,13 @@ namespace PCPOS.Report.Faktura
         {
             PCPOS.classNumberToLetter broj_u_text = new PCPOS.classNumberToLetter();
 
+            ReportDataSource dsPDF417Kod = new ReportDataSource();
+            dsPDF417Kod.Name = "DataSetPdfCode";
+            dsPDF417Kod.Value = dataSetPDF417Code.Tables[0];
+            reportViewer1.LocalReport.DataSources.Add(dsPDF417Kod);
+
+            reportViewer1.LocalReport.ReportEmbeddedResource = "PCPOS.Report.Faktura.Report.rdlc";
+            reportViewer1.LocalReport.EnableExternalImages = true;
             //MessageBox.Show(broj_slovima.ToLower());
 
             string sql2 = "SELECT " +
@@ -656,6 +663,14 @@ namespace PCPOS.Report.Faktura
         {
             PCPOS.classNumberToLetter broj_u_text = new PCPOS.classNumberToLetter();
 
+            ReportDataSource dsPDF417Kod = new ReportDataSource();
+            dsPDF417Kod.Name = "DataSetPdfCode";
+            dsPDF417Kod.Value = dataSetPDF417Code.Tables[0];
+            reportViewer1.LocalReport.DataSources.Add(dsPDF417Kod);
+
+            reportViewer1.LocalReport.ReportEmbeddedResource = "PCPOS.Report.Faktura.Report.rdlc";
+            reportViewer1.LocalReport.EnableExternalImages = true;
+
             string sql2 = "SELECT " +
                " replace(ponude_stavke.kolicina, ',','.')::numeric as kolicina," +
                " ponude_stavke.vpc," +
@@ -840,6 +855,13 @@ namespace PCPOS.Report.Faktura
         {
             PCPOS.classNumberToLetter broj_u_text = new PCPOS.classNumberToLetter();
 
+            ReportDataSource dsPDF417Kod = new ReportDataSource();
+            dsPDF417Kod.Name = "DataSetPdfCode";
+            dsPDF417Kod.Value = dataSetPDF417Code.Tables[0];
+            reportViewer1.LocalReport.DataSources.Add(dsPDF417Kod);
+
+            reportViewer1.LocalReport.ReportEmbeddedResource = "PCPOS.Report.Faktura.Report.rdlc";
+            reportViewer1.LocalReport.EnableExternalImages = true;
             //MessageBox.Show(broj_slovima.ToLower());
 
             string sql2 = "SELECT " +

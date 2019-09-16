@@ -41,9 +41,9 @@
             this.dSRfakturaStavke = new PCPOS.DSRfakturaStavke();
             this.dTstopeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSstope = new PCPOS.DSstope();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.bindingSourceSlika = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetPDF417Code = new PCPOS.Report.DataSetPDF417Code();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.dTRfakturaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSFaktura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dTRpodaciTvrtkeBindingSource)).BeginInit();
@@ -96,6 +96,16 @@
             this.dSstope.DataSetName = "DSstope";
             this.dSstope.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // bindingSourceSlika
+            // 
+            this.bindingSourceSlika.DataMember = "PDF417";
+            this.bindingSourceSlika.DataSource = this.dataSetPDF417Code;
+            // 
+            // dataSetPDF417Code
+            // 
+            this.dataSetPDF417Code.DataSetName = "DataSetPDF417Code";
+            this.dataSetPDF417Code.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -116,16 +126,6 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(816, 755);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // bindingSourceSlika
-            // 
-            this.bindingSourceSlika.DataMember = "PDF417";
-            this.bindingSourceSlika.DataSource = this.dataSetPDF417Code;
-            // 
-            // dataSetPDF417Code
-            // 
-            this.dataSetPDF417Code.DataSetName = "DataSetPDF417Code";
-            this.dataSetPDF417Code.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // repFaktura
             // 
@@ -160,10 +160,10 @@
         private System.Windows.Forms.BindingSource dTRpodaciTvrtkeBindingSource;
         private DSstope dSstope;
         private System.Windows.Forms.BindingSource dTstopeBindingSource;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource dtFakturaStavkeBindingSource;
         private DSRfakturaStavke dSRfakturaStavke;
         private System.Windows.Forms.BindingSource bindingSourceSlika;
         private DataSetPDF417Code dataSetPDF417Code;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

@@ -230,7 +230,7 @@ namespace PCPOS
 
             timerNaknadnaFiskalizacija.Start();
 
-            this.Hide();
+            //this.Hide();
 
             if (File.Exists("code"))
                 File.Delete("code");
@@ -288,14 +288,14 @@ namespace PCPOS
             DateTime datum_manje = Convert.ToDateTime(DateTime.Now.Year + "-1-20");
 
             VisibleControls();
-
+            /*
             if (!skipPrijava)
             {
                 Caffe.frmPrijava p = new Caffe.frmPrijava();
                 p.MainForm = this;
                 p.ShowDialog();
             }
-
+            */
             try
             {
                 frmScren sc = new frmScren();
@@ -610,7 +610,7 @@ namespace PCPOS
             }
 
             Caffe.frmCaffe ks = new Caffe.frmCaffe();
-            ks.MainForm = this;
+            //ks.mainForm = this;
             ks.Show();
         }
 
@@ -865,7 +865,7 @@ namespace PCPOS
                 }
 
                 Caffe.frmCaffe ks = new Caffe.frmCaffe();
-                ks.MainForm = this;
+                //ks.mainForm = this;
                 ks.Show();
             }
         }

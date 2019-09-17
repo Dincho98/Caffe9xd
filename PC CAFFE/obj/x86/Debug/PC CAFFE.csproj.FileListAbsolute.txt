@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 C:\Users\PRO\Desktop\PC CAFFE\PC POS\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\PRO\Desktop\PC CAFFE\PC POS\obj\x86\Debug\Interop.SSCE.dll
 C:\Users\PRO\Desktop\PC CAFFE\PC POS\obj\x86\Debug\PC CAFFE.csproj.ResolveComReference.cache
@@ -7388,6 +7390,7 @@ C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PC POS.exe
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PC POS.pdb
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PCPOS.Kasa.frmStornoRacuna2.resources
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PCPOS.Caffe.frmOpcije2.resources
+>>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\database.sdf
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\PC POS.exe.config
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\PC POS.exe
@@ -7429,7 +7432,10 @@ F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\zxing.presentation.pdb
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\zxing.presentation.xml
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\Raverus.FiskalizacijaDEV.XmlSerializers.dll
+<<<<<<< HEAD
+=======
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\PC CAFFE.csprojAssemblyReference.cache
+>>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\Interop.SSCE.dll
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\PC CAFFE.csproj.ResolveComReference.cache
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\PCPOS.aaaaa.resources
@@ -7652,3 +7658,7 @@ F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\it\PC POS.resources.dll
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\PC CAFFE.csproj.CopyComplete
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\PC POS.exe
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\PC POS.pdb
+<<<<<<< HEAD
+F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\obj\x86\Debug\PC CAFFE.csprojAssemblyReference.cache
+=======
+>>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6

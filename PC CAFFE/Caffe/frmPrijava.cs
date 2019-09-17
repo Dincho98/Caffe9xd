@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace PCPOS.Caffe
@@ -18,7 +19,7 @@ namespace PCPOS.Caffe
 
         private DataTable DTsettings = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
 
-        public frmMenu MainForm { get; set; }
+        public frmScren MainForm { get; set; }
         private DataSet DSzaposlenik;
         private DataTable DTpostavke = new DataTable();
         private bool load = false;
@@ -33,6 +34,12 @@ namespace PCPOS.Caffe
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            Color x = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(170)))), ((int)(((byte)(197)))));
+            Color y = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(109)))), ((int)(((byte)(135)))));
+
+            Graphics c = e.Graphics;
+            Brush bG = new LinearGradientBrush(new Rectangle(0, 0, Width, Height), x, y, 250);
+            c.FillRectangle(bG, 0, 0, Width, Height);
         }
 
         private void fillComboBox()
@@ -125,11 +132,11 @@ namespace PCPOS.Caffe
                 }
                 else if (DTzap.Rows[0]["id_dopustenje"].ToString() == "3")
                 {
-                    PrijavaZaposlenik();
+                    PrijavaAdmin();
                 }
                 else if (DTzap.Rows[0]["id_dopustenje"].ToString() == "4")
                 {
-                    PrijavaZaposlenik();
+                    PrijavaAdmin();
                 }
             }
         }
@@ -139,20 +146,31 @@ namespace PCPOS.Caffe
         /// </summary>
         private void PrijavaAdmin()
         {
+            /*
+            this.Hide();
+            frmMenu menu = new frmMenu();
+            menu.Show();
+            this.Close();
+            */
             txtSifra.Text = "";
-            if (MainForm != null)
-            {
-                this.Hide();
-                MainForm.Closed += (s, args) => this.Close();
-                MainForm.Show();
-            }
-            else
-            { 
-                this.Hide();
-                frmMenu menu = new frmMenu();
-                menu.Closed += (s, args) => this.Close();
-                menu.Show();
-            }
+            
+                if (this.MainForm == null)
+                {
+                    this.Hide();
+                    frmMenu menu = new frmMenu();
+                    //menu.Closed += (s, args) => this.Close();
+                    menu.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    frmScren scren = new frmScren();
+                    scren.prvaPrijava = true;
+                    scren.MdiParent = this.MdiParent;
+                    scren.Dock = DockStyle.Fill;
+                    scren.Show();
+                }
+            
         }
 
         /// <summary>
@@ -162,9 +180,10 @@ namespace PCPOS.Caffe
         {
             txtSifra.Text = "";
             this.Hide();
-            frmCaffe c = new frmCaffe();
-            c.Closed += (s, args) => this.Close();
-            c.ShowDialog();
+            frmScren frmScren = new frmScren();
+            frmScren.Dock = DockStyle.Fill;
+            frmScren.Show();
+            frmScren.btnMaloprodaja.PerformClick();
         }
 
         private void button12_Click(object sender, EventArgs e)

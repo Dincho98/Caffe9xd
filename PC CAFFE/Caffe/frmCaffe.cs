@@ -89,7 +89,7 @@ namespace PCPOS.Caffe
 
         private int napomenaindex = -1;
         //this.Bring
-        public frmMenu MainForm { get; set; }
+        //public frmMenu MainForm { get; set; }
         public string blagajnik_ime = "";
         private DataTable DTremotePostavke;
         private Until.FunkcijeRobno RobnoFunkcije = new Until.FunkcijeRobno();
@@ -105,6 +105,7 @@ namespace PCPOS.Caffe
         private int count_roba;
         private int product_wcount_hcount;
         private int current_page = 1;
+        public frmScren mainForm{ get; set; }
 
         private void frmCaffe_Load(object sender, EventArgs e)
         {
@@ -1439,20 +1440,15 @@ namespace PCPOS.Caffe
 
         private void btnOdjava_Click(object sender, EventArgs e)
         {
-            /* if (Properties.Settings.Default.id_dopustenje ==2)
+             if (Properties.Settings.Default.id_dopustenje ==2)
                  this.Close();
              else
              {
-                 this.Hide();
-                 Global.GlobalFunctions.BackupDatabase();
-                 Caffe.frmPrijava p = new Caffe.frmPrijava();
-                 //  MainForm.Hide();
-                 //  p.MainForm = MainForm;
-                 this.Close();
-                 p.ShowDialog();
-
-             }*/
-
+                this.Hide();
+                mainForm.btnOdjava.PerformClick();
+                this.Close();
+             }
+             /*
             switch (Properties.Settings.Default.id_dopustenje)
             {
                 case 1: // Izbacen
@@ -1469,16 +1465,9 @@ namespace PCPOS.Caffe
                     break;
                     /* default:
                          this.Close();
-                         break;*/
             }
-        }
-
-        private void CloseForm()
-        {
-             this.Hide();
-            frmMenu formMenu = new frmMenu(true);
-            formMenu.Closed += (s, args) => this.Close();
-            formMenu.Show();
+            
+            break;*/
         }
 
         private void btnDodajNaStol_Click(object sender, EventArgs e)
@@ -1679,10 +1668,10 @@ namespace PCPOS.Caffe
                             Global.GlobalFunctions.RestartApplication();
                             break;
                         case 3:
-                            CloseForm();
+                            //CloseForm();
                             break;
                         case 4:
-                            CloseForm();
+                            //CloseForm();
                             break;
                     }
                 }

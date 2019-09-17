@@ -31,6 +31,7 @@
             this.btnPice = new System.Windows.Forms.Button();
             this.btnHrana = new System.Windows.Forms.Button();
             this.btnTrgovackaRoba = new System.Windows.Forms.Button();
+            this.btnProizvoljno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPice
@@ -75,12 +76,27 @@
             this.btnTrgovackaRoba.UseVisualStyleBackColor = false;
             this.btnTrgovackaRoba.Click += new System.EventHandler(this.BtnTrgovackaRoba_Click);
             // 
+            // btnProizvoljno
+            // 
+            this.btnProizvoljno.BackColor = System.Drawing.Color.White;
+            this.btnProizvoljno.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProizvoljno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProizvoljno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnProizvoljno.Location = new System.Drawing.Point(12, 234);
+            this.btnProizvoljno.Name = "btnProizvoljno";
+            this.btnProizvoljno.Size = new System.Drawing.Size(284, 68);
+            this.btnProizvoljno.TabIndex = 3;
+            this.btnProizvoljno.Text = "Proizvoljno";
+            this.btnProizvoljno.UseVisualStyleBackColor = false;
+            this.btnProizvoljno.Click += new System.EventHandler(this.btnProizvoljno_Click);
+            // 
             // frmOdabirPodgrupe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(308, 241);
+            this.ClientSize = new System.Drawing.Size(308, 311);
+            this.Controls.Add(this.btnProizvoljno);
             this.Controls.Add(this.btnTrgovackaRoba);
             this.Controls.Add(this.btnHrana);
             this.Controls.Add(this.btnPice);
@@ -97,5 +113,6 @@
         private System.Windows.Forms.Button btnPice;
         private System.Windows.Forms.Button btnHrana;
         private System.Windows.Forms.Button btnTrgovackaRoba;
+        private System.Windows.Forms.Button btnProizvoljno;
     }
 }

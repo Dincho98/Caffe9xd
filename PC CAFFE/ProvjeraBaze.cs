@@ -2380,6 +2380,20 @@ SELECT setval('fakture_broj_fakture_seq', (SELECT MAX(broj_fakture) FROM fakture
                     classSQL.update("UPDATE roba SET brojcanik='0'");
                 }
             }
+
+            //Ako postoji tablica podgrupa
+            if (DTremote.Select("table_name='podgrupa'").Length != 0)
+            {
+                //Ako je <=3 redka, tada ne postoji 4. podgrupa -> Proizvoljno te ju je potrebno dodati.
+                sql = "SELECT * FROM podgrupa";
+                int numRows = classSQL.select(sql,"podgrupa").Tables[0].Rows.Count;
+
+                if (numRows <= 3)
+                {
+                    sql = "INSERT INTO podgrupa VALUES('Proizvoljno',4)";
+                    classSQL.insert(sql);
+                }
+            }
         }
 
         private static void Porezi()

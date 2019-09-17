@@ -41,3 +41,9 @@ C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.csprojA
 C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
 C:\Users\Korisnik\Desktop\Caffe9\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb
+F:\work\CodeIT\CodeiT - Caffe\DlluSystem32\bin\Debug\DlluSystem32.exe
+F:\work\CodeIT\CodeiT - Caffe\DlluSystem32\bin\Debug\DlluSystem32.pdb
+F:\work\CodeIT\CodeiT - Caffe\DlluSystem32\obj\x86\Debug\DlluSystem32.csprojAssemblyReference.cache
+F:\work\CodeIT\CodeiT - Caffe\DlluSystem32\obj\x86\Debug\DlluSystem32.csproj.CoreCompileInputs.cache
+F:\work\CodeIT\CodeiT - Caffe\DlluSystem32\obj\x86\Debug\DlluSystem32.exe
+F:\work\CodeIT\CodeiT - Caffe\DlluSystem32\obj\x86\Debug\DlluSystem32.pdb

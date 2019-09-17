@@ -81,7 +81,7 @@ namespace PCPOS.PosPrint
                 return "";
             }
         }
-        
+
 
 
         //Friendly advice: If it works, don't touch it.
@@ -168,6 +168,15 @@ left join grupa on roba.id_grupa = grupa.id_grupa where roba.sifra = '{0}';", DT
                             else
                             {
                                 artiklZaPrint = false;
+                            }
+                        }
+                        else if (id_podgrupa == 4)
+                        {
+                            int id_podgrupa2;
+                            int.TryParse(DTartikli.Rows[i-1]["id_podgrupa"].ToString(), out id_podgrupa2);
+                            if (id_podgrupa2 == 4)
+                            {
+                                DTrac.ImportRow(DTartikli.Rows[i]);
                             }
                         }
                         else

@@ -12,6 +12,7 @@ namespace PCPOS
 {
     public partial class frmScren : Form
     {
+        public bool prvaPrijava = false;
         public frmScren()
         {
             InitializeComponent();
@@ -44,8 +45,12 @@ namespace PCPOS
 
             try
             {
+
                 //Preuzmi last version.txt
-                GetTxtLastVersion(); // AKO SE PROGRAM SPORO OTVARA, TREBA ZAKOMENTIRATI OVU LINIJU, NO TADA NADOGRADNJA NECE BITI MOGUCA!
+                if (!prvaPrijava)
+                {
+                    GetTxtLastVersion();
+                }// AKO SE PROGRAM SPORO OTVARA, TREBA ZAKOMENTIRATI OVU LINIJU, NO TADA NADOGRADNJA NECE BITI MOGUCA!
                                      // TO JE ZATO JER PLEXY NE RADI ILI U TOM TRENTKU IZGUBI KONEKCIJU!
                 string lastVersion;
                 string currentPathLastVersion = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $@"lastVersion.txt");
@@ -125,6 +130,12 @@ namespace PCPOS
             }
             catch
             {
+            }
+            if (Properties.Settings.Default.id_dopustenje > 2)
+            {
+                Caffe.frmCaffe ks = new Caffe.frmCaffe();
+                ks.mainForm = this;
+                ks.Show();
             }
         }
 
@@ -212,6 +223,7 @@ namespace PCPOS
                     }
                 }
             }
+            
             catch
             {
                 MessageBox.Show("Ako trenutno postoji nova verzija, nemoguće je updateati program.", "Informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -549,14 +561,14 @@ namespace PCPOS
             {
                 if (OpenForm.GetType() == typeof(frmKasa))
                 {
+
                     OpenForm.WindowState = FormWindowState.Maximized;
                     return;
                 }
             }
 
             Caffe.frmCaffe ks = new Caffe.frmCaffe();
-            ks.MainForm = MainForm;
-            //ks.BringToFront();
+            ks.mainForm = this;
             ks.Show();
         }
 
@@ -834,7 +846,7 @@ namespace PCPOS
             {
                 Caffe.frmPrijava p = new Caffe.frmPrijava();
                 MainForm.Hide();
-                p.MainForm = MainForm;
+                p.MainForm = this;
                 p.ShowDialog();
             }
             if (e.KeyData == Keys.Enter)
@@ -849,7 +861,7 @@ namespace PCPOS
                 }
 
                 Caffe.frmCaffe ks = new Caffe.frmCaffe();
-                ks.MainForm = MainForm;
+                ks.mainForm = this;
                 ks.Show();
             }
         }
@@ -870,9 +882,13 @@ namespace PCPOS
         {
             Global.GlobalFunctions.BackupDatabase();
             Caffe.frmPrijava p = new Caffe.frmPrijava();
-            MainForm.Hide();
-            p.MainForm = MainForm;
-            p.ShowDialog();
+            this.Hide();
+            p.MdiParent = this.MdiParent;
+            p.WindowState = FormWindowState.Normal;
+            p.Dock = DockStyle.Fill;
+            p.MainForm = this;
+            p.Show();
+            this.Close();
         }
 
         private void btnPodrska_Click(object sender, EventArgs e)

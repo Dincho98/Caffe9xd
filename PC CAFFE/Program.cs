@@ -48,7 +48,7 @@ namespace PCPOS
                 //Application.Run(new Caffe.frmOdabirStolaCustom());
                 //Application.Run(new Caffe.frmStoloviZaNaplatuCustom());
 
-                Application.Run(new frmMenu());
+                Application.Run(new Caffe.frmPrijava());
             }
             catch (Exception ex)
             {

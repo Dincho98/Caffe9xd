@@ -887,6 +887,7 @@
             this.Controls.Add(this.flpGrupe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCaffe";
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Activated += new System.EventHandler(this.frmCaffe_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCaffe_FormClosing);

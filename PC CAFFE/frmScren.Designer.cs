@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -206,16 +206,16 @@
             // 
             this.Chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDotDot;
-            chartArea1.Name = "ChartArea1";
-            this.Chart1.ChartAreas.Add(chartArea1);
+            chartArea2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDotDot;
+            chartArea2.Name = "ChartArea1";
+            this.Chart1.ChartAreas.Add(chartArea2);
             this.Chart1.Location = new System.Drawing.Point(0, 49);
             this.Chart1.Name = "Chart1";
             this.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 2;
-            this.Chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Name = "Series1";
+            series2.YValuesPerPoint = 2;
+            this.Chart1.Series.Add(series2);
             this.Chart1.Size = new System.Drawing.Size(607, 268);
             this.Chart1.TabIndex = 5;
             this.Chart1.Text = "chart1";
@@ -789,7 +789,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnMaloprodaja;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -811,7 +810,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnOdjava;
         private System.Windows.Forms.Button btnPodrska;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Panel panel2;
@@ -828,5 +826,7 @@
         private System.Windows.Forms.Label labelPreostaloVrijeme;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
+        public System.Windows.Forms.Button btnOdjava;
+        public System.Windows.Forms.Button btnMaloprodaja;
     }
 }

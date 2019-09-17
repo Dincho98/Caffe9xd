@@ -81,13 +81,20 @@ namespace PCPOS.PosPrint
                 return "";
             }
         }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6
 
+        public static bool[] artiklDodanNaRacun;
         //Friendly advice: If it works, don't touch it.
         //And of course, take MUCH anti stress pills. =)
         public static void PrintOnPrinter2(DataTable DTartikli, bool koristiPrinter3 = false, bool pijaca_i_trgovacka = false, bool koristiPrinter4 = false, bool printNarudzbeNaF4 = false)
         {
+            artiklDodanNaRacun = new bool[DTartikli.Rows.Count];
+            for (int i = 0; i < DTartikli.Rows.Count; i++)
+                artiklDodanNaRacun[i] = false;
             ima_stavke_za_kuhinju = false;
             DataTable DTPosPrint = classSQL.select_settings("SELECT * FROM pos_print", "pos_print").Tables[0];
             tekst = "";
@@ -126,6 +133,7 @@ left join grupa on roba.id_grupa = grupa.id_grupa where roba.sifra = '{0}';", DT
                         int.TryParse(DTartikli.Rows[i]["dod"].ToString(), out dodatak);
                         int.TryParse(DTartikli.Rows[i]["id_podgrupa"].ToString(), out id_podgrupa);
 
+
                         if (dodatak > 0)
                             dod = true;
 
@@ -159,17 +167,20 @@ left join grupa on roba.id_grupa = grupa.id_grupa where roba.sifra = '{0}';", DT
                             if (dod && artiklZaPrint)
                             {
                                 DTrac.ImportRow(DTartikli.Rows[i]);
+                                artiklDodanNaRacun[i] = true;
                             }
                             else if (dod == false && (pijaca_i_trgovacka ? true : printer3 == koristiPrinter3))
                             {
                                 artiklZaPrint = true;
                                 DTrac.ImportRow(DTartikli.Rows[i]);
+                                artiklDodanNaRacun[i] = true;
                             }
                             else
                             {
                                 artiklZaPrint = false;
                             }
                         }
+<<<<<<< HEAD
                         else if (id_podgrupa == 4)
                         {
                             int id_podgrupa2;
@@ -178,11 +189,24 @@ left join grupa on roba.id_grupa = grupa.id_grupa where roba.sifra = '{0}';", DT
                             {
                                 DTrac.ImportRow(DTartikli.Rows[i]);
                             }
+=======
+                        //i mora biti >=1, jer napomena mora ici na artikl
+                        //array[i-1] provjerava ako je artikl na koji ide napomena uopce stavljen na racun
+                        else if (i>=1&&artiklDodanNaRacun[i-1]&&id_podgrupa == 4)
+                        {
+                            /*int id_podgrupa2;
+                            int.TryParse(DTartikli.Rows[i-1]["id_podgrupa"].ToString(), out id_podgrupa2);
+                            if (id_podgrupa2 == 4)
+                            {*/
+                                DTrac.ImportRow(DTartikli.Rows[i]);
+                            //}
+>>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6
                         }
                         else
                         {
                             artiklZaPrint = false;
                         }
+
                     }
                 }
                 else

@@ -43,6 +43,7 @@ namespace PCPOS.Caffe
         public string _OdabraniStol { get; set; }
         public decimal popust_na_cijeli_racun { get; set; }
         public bool _zavrsi { get; set; }
+        public bool mozeOtvoritiNapomenu { get; set; }
 
         //kartica kupca
         public string kartica_kupca { get; set; }
@@ -108,6 +109,7 @@ namespace PCPOS.Caffe
 
         private void frmCaffe_Load(object sender, EventArgs e)
         {
+            mozeOtvoritiNapomenu = true;
             neuspjelaFiskalizacijaPostoji = false;
             posaljiNarudzbeNaStol = false;
             zmirkaj = false;
@@ -1553,7 +1555,20 @@ namespace PCPOS.Caffe
                 for (int i = 0; i < dgw.Rows.Count; i++)
                 {
                     int dodatak = Convert.ToInt32(dg(i, "dod"));
-                    int idPodgrupa = Convert.ToInt32(dg(i, "id_podgrupa"));
+                    int idPodgrupa = 0;
+                    try
+                    {
+                        idPodgrupa = Convert.ToInt32(dg(i, "id_podgrupa"));
+                    }
+                    //Ovo je potrebno zbog F1
+                    catch(Exception ex)
+                    {
+                        //MessageBox.Show("A");
+                        int sifraArtikla = Convert.ToInt32(dg(i, "sifra"));
+                        string sqlCmd = "SELECT * FROM roba WHERE sifra='" + sifraArtikla+"'";
+                        DataTable dt = classSQL.select(sqlCmd, "roba").Tables[0];
+                        idPodgrupa=Int32.Parse(dt.Rows[0]["id_podgrupa"].ToString());
+                    }
 
                     if (dodatak == 0)
                     {
@@ -2412,7 +2427,7 @@ remote);
         private void btnGotovina_Click(object sender, EventArgs e)
         {
             #region PROVJERAVA DALI JE DOBRA GODINA
-
+            mozeOtvoritiNapomenu = false;
             try
             {
                 Until.classFukcijeZaUpravljanjeBazom B = new Until.classFukcijeZaUpravljanjeBazom("CAFFE", "DB");
@@ -2544,6 +2559,8 @@ remote);
                     ((Button)c).PerformClick();
                 }
             }
+
+            mozeOtvoritiNapomenu = true;
         }
 
         public void PrikazZadnjegRacuna()
@@ -3266,7 +3283,9 @@ remote);
 
         private void btnNapomena_Click(object sender, EventArgs e)
         {
-            if (_zavrsi || !string.IsNullOrEmpty(_OdabraniStol))
+            //if (_zavrsi || !string.IsNullOrEmpty(_OdabraniStol))
+            //    return;
+            if (!mozeOtvoritiNapomenu)
                 return;
 
             try

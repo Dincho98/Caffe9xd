@@ -52,6 +52,7 @@ namespace PCPOS.Report.Faktura
             else if (dokumenat == "RAC")
             {
                 if (broj_dokumenta == null) { return; }
+
                 FillRacun(broj_dokumenta);
             }
             else if (dokumenat == "PON")

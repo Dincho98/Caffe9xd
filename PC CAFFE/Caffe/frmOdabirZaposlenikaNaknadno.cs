@@ -108,6 +108,8 @@ where id_zaposlenik = {1}", sql, idZaposlenik), "zaposlenici");
                 }
                 else
                 {
+                    string sql = "select id_dopustenje from zaposlenici where id_zaposlenik='" + conGrupa.Name + "'";
+                    Properties.Settings.Default.id_dopustenje = int.Parse(classSQL.select(sql, "table").Tables[0].Rows[0][0].ToString());
                     Properties.Settings.Default.id_zaposlenik = conGrupa.Name;
                     Properties.Settings.Default.Save();
                     caffe.lblPrijavljen.Text = "Prijavljen: " + conGrupa.Text;

@@ -3356,6 +3356,7 @@ remote);
 
                 // Odabir podgrupe za prikaz određenih napomena
                 frmOdabirPodgrupe formPodgrupa = new frmOdabirPodgrupe();
+                formPodgrupa.TopMost = true;
                 formPodgrupa.ShowDialog();
                 if (formPodgrupa.IdPodgrupa == 0)
                     return;

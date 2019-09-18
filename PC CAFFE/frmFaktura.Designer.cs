@@ -33,26 +33,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFaktura));
             this.sa = new PCPOS.frmFaktura.MyDataGrid();
             this.dgw = new PCPOS.frmFaktura.MyDataGrid();
-            this.br = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sifra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.skladiste = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.jmj = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kolicina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.porez = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mpc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rabat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rabat_iznos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cijena_bez_pdva = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iznos_bez_pdva = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iznos_ukupno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vpc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_stavka = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_roba_prodaja = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oduzmi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.porez_potrosnja = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.povratna_naknada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ttxBrojFakture = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.nmGodinaFakture = new System.Windows.Forms.NumericUpDown();
@@ -139,6 +119,26 @@
             this.btnOdaberiOtpremnice = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.br = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sifra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.skladiste = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.jmj = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolicina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.porez = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mpc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rabat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rabat_iznos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cijena_bez_pdva = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iznos_bez_pdva = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iznos_ukupno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vpc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_stavka = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_roba_prodaja = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oduzmi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.porez_potrosnja = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.povratna_naknada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.sa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmGodinaFakture)).BeginInit();
@@ -219,133 +219,6 @@
             this.dgw.TabStop = false;
             this.dgw.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellClick);
             this.dgw.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellEndEdit);
-            // 
-            // br
-            // 
-            this.br.FillWeight = 50F;
-            this.br.HeaderText = "Br.";
-            this.br.Name = "br";
-            // 
-            // sifra
-            // 
-            this.sifra.FillWeight = 61.10954F;
-            this.sifra.HeaderText = "Šifra";
-            this.sifra.Name = "sifra";
-            this.sifra.ReadOnly = true;
-            // 
-            // naziv
-            // 
-            this.naziv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.naziv.FillWeight = 61.10954F;
-            this.naziv.HeaderText = "Naziv robe ili usluge";
-            this.naziv.MinimumWidth = 130;
-            this.naziv.Name = "naziv";
-            this.naziv.ReadOnly = true;
-            // 
-            // skladiste
-            // 
-            this.skladiste.DataPropertyName = "sifra";
-            this.skladiste.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.skladiste.HeaderText = "Skladište";
-            this.skladiste.Name = "skladiste";
-            this.skladiste.Visible = false;
-            // 
-            // jmj
-            // 
-            this.jmj.HeaderText = "JMJ";
-            this.jmj.Name = "jmj";
-            this.jmj.ReadOnly = true;
-            // 
-            // kolicina
-            // 
-            this.kolicina.FillWeight = 61.10954F;
-            this.kolicina.HeaderText = "Količina";
-            this.kolicina.Name = "kolicina";
-            // 
-            // porez
-            // 
-            this.porez.HeaderText = "Porez";
-            this.porez.Name = "porez";
-            this.porez.ReadOnly = true;
-            // 
-            // mpc
-            // 
-            this.mpc.HeaderText = "MPC";
-            this.mpc.Name = "mpc";
-            // 
-            // rabat
-            // 
-            this.rabat.FillWeight = 61.10954F;
-            this.rabat.HeaderText = "Rabat%";
-            this.rabat.Name = "rabat";
-            // 
-            // rabat_iznos
-            // 
-            this.rabat_iznos.HeaderText = "Rabat iznos";
-            this.rabat_iznos.Name = "rabat_iznos";
-            this.rabat_iznos.ReadOnly = true;
-            // 
-            // cijena_bez_pdva
-            // 
-            this.cijena_bez_pdva.FillWeight = 120F;
-            this.cijena_bez_pdva.HeaderText = "Cijena bez pdv-a";
-            this.cijena_bez_pdva.Name = "cijena_bez_pdva";
-            this.cijena_bez_pdva.ReadOnly = true;
-            // 
-            // iznos_bez_pdva
-            // 
-            this.iznos_bez_pdva.FillWeight = 120F;
-            this.iznos_bez_pdva.HeaderText = "Iznos bez pdv-a";
-            this.iznos_bez_pdva.Name = "iznos_bez_pdva";
-            this.iznos_bez_pdva.ReadOnly = true;
-            // 
-            // iznos_ukupno
-            // 
-            this.iznos_ukupno.HeaderText = "Iznos ukupno";
-            this.iznos_ukupno.Name = "iznos_ukupno";
-            this.iznos_ukupno.ReadOnly = true;
-            // 
-            // vpc
-            // 
-            this.vpc.HeaderText = "VPC";
-            this.vpc.Name = "vpc";
-            this.vpc.Visible = false;
-            // 
-            // nc
-            // 
-            this.nc.HeaderText = "nc";
-            this.nc.Name = "nc";
-            this.nc.Visible = false;
-            // 
-            // id_stavka
-            // 
-            this.id_stavka.HeaderText = "id_stavka";
-            this.id_stavka.Name = "id_stavka";
-            this.id_stavka.Visible = false;
-            // 
-            // id_roba_prodaja
-            // 
-            this.id_roba_prodaja.HeaderText = "id_roba_prodaja";
-            this.id_roba_prodaja.Name = "id_roba_prodaja";
-            this.id_roba_prodaja.Visible = false;
-            // 
-            // oduzmi
-            // 
-            this.oduzmi.HeaderText = "oduzmi";
-            this.oduzmi.Name = "oduzmi";
-            this.oduzmi.Visible = false;
-            // 
-            // porez_potrosnja
-            // 
-            this.porez_potrosnja.HeaderText = "porez_potrosnja";
-            this.porez_potrosnja.Name = "porez_potrosnja";
-            this.porez_potrosnja.Visible = false;
-            // 
-            // povratna_naknada
-            // 
-            this.povratna_naknada.HeaderText = "povratna_naknada";
-            this.povratna_naknada.Name = "povratna_naknada";
-            this.povratna_naknada.Visible = false;
             // 
             // ttxBrojFakture
             // 
@@ -1465,6 +1338,133 @@
             this.panel4.Size = new System.Drawing.Size(969, 36);
             this.panel4.TabIndex = 561;
             // 
+            // br
+            // 
+            this.br.FillWeight = 50F;
+            this.br.HeaderText = "Br.";
+            this.br.Name = "br";
+            // 
+            // sifra
+            // 
+            this.sifra.FillWeight = 61.10954F;
+            this.sifra.HeaderText = "Šifra";
+            this.sifra.Name = "sifra";
+            this.sifra.ReadOnly = true;
+            // 
+            // naziv
+            // 
+            this.naziv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.naziv.FillWeight = 61.10954F;
+            this.naziv.HeaderText = "Naziv robe ili usluge";
+            this.naziv.MinimumWidth = 130;
+            this.naziv.Name = "naziv";
+            this.naziv.ReadOnly = true;
+            // 
+            // skladiste
+            // 
+            this.skladiste.DataPropertyName = "sifra";
+            this.skladiste.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.skladiste.HeaderText = "Skladište";
+            this.skladiste.Name = "skladiste";
+            this.skladiste.Visible = false;
+            // 
+            // jmj
+            // 
+            this.jmj.HeaderText = "JMJ";
+            this.jmj.Name = "jmj";
+            this.jmj.ReadOnly = true;
+            // 
+            // kolicina
+            // 
+            this.kolicina.FillWeight = 61.10954F;
+            this.kolicina.HeaderText = "Količina";
+            this.kolicina.Name = "kolicina";
+            // 
+            // porez
+            // 
+            this.porez.HeaderText = "Porez";
+            this.porez.Name = "porez";
+            this.porez.ReadOnly = true;
+            // 
+            // mpc
+            // 
+            this.mpc.HeaderText = "MPC";
+            this.mpc.Name = "mpc";
+            // 
+            // rabat
+            // 
+            this.rabat.FillWeight = 61.10954F;
+            this.rabat.HeaderText = "Rabat%";
+            this.rabat.Name = "rabat";
+            // 
+            // rabat_iznos
+            // 
+            this.rabat_iznos.HeaderText = "Rabat iznos";
+            this.rabat_iznos.Name = "rabat_iznos";
+            this.rabat_iznos.ReadOnly = true;
+            // 
+            // cijena_bez_pdva
+            // 
+            this.cijena_bez_pdva.FillWeight = 120F;
+            this.cijena_bez_pdva.HeaderText = "Cijena bez pdv-a";
+            this.cijena_bez_pdva.Name = "cijena_bez_pdva";
+            this.cijena_bez_pdva.ReadOnly = true;
+            // 
+            // iznos_bez_pdva
+            // 
+            this.iznos_bez_pdva.FillWeight = 120F;
+            this.iznos_bez_pdva.HeaderText = "Iznos bez pdv-a";
+            this.iznos_bez_pdva.Name = "iznos_bez_pdva";
+            this.iznos_bez_pdva.ReadOnly = true;
+            // 
+            // iznos_ukupno
+            // 
+            this.iznos_ukupno.HeaderText = "Iznos ukupno";
+            this.iznos_ukupno.Name = "iznos_ukupno";
+            this.iznos_ukupno.ReadOnly = true;
+            // 
+            // vpc
+            // 
+            this.vpc.HeaderText = "VPC";
+            this.vpc.Name = "vpc";
+            this.vpc.Visible = false;
+            // 
+            // nc
+            // 
+            this.nc.HeaderText = "nc";
+            this.nc.Name = "nc";
+            this.nc.Visible = false;
+            // 
+            // id_stavka
+            // 
+            this.id_stavka.HeaderText = "id_stavka";
+            this.id_stavka.Name = "id_stavka";
+            this.id_stavka.Visible = false;
+            // 
+            // id_roba_prodaja
+            // 
+            this.id_roba_prodaja.HeaderText = "id_roba_prodaja";
+            this.id_roba_prodaja.Name = "id_roba_prodaja";
+            this.id_roba_prodaja.Visible = false;
+            // 
+            // oduzmi
+            // 
+            this.oduzmi.HeaderText = "oduzmi";
+            this.oduzmi.Name = "oduzmi";
+            this.oduzmi.Visible = false;
+            // 
+            // porez_potrosnja
+            // 
+            this.porez_potrosnja.HeaderText = "porez_potrosnja";
+            this.porez_potrosnja.Name = "porez_potrosnja";
+            this.porez_potrosnja.Visible = false;
+            // 
+            // povratna_naknada
+            // 
+            this.povratna_naknada.HeaderText = "povratna_naknada";
+            this.povratna_naknada.Name = "povratna_naknada";
+            this.povratna_naknada.Visible = false;
+            // 
             // frmFaktura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1599,6 +1599,13 @@
         private System.Windows.Forms.PictureBox btnPartner;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.ComponentModel.BackgroundWorker bgSinkronizacija;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnOdaberiOtpremnice;
         private System.Windows.Forms.DataGridViewTextBoxColumn br;
         private System.Windows.Forms.DataGridViewTextBoxColumn sifra;
         private System.Windows.Forms.DataGridViewTextBoxColumn naziv;
@@ -1619,12 +1626,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn oduzmi;
         private System.Windows.Forms.DataGridViewTextBoxColumn porez_potrosnja;
         private System.Windows.Forms.DataGridViewTextBoxColumn povratna_naknada;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.ComponentModel.BackgroundWorker bgSinkronizacija;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnOdaberiOtpremnice;
     }
 }

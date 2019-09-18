@@ -30,6 +30,8 @@ namespace PCPOS
         private bool remoteDBboll = false;
 
         private void frmRobaTrazi_Load(object sender, EventArgs e)
+
+
         {
             PaintRows(dataGridView2);
             PaintRows(dataGridView1);

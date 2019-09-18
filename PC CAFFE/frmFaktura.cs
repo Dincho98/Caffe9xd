@@ -20,6 +20,7 @@ namespace PCPOS
         private DataTable DTRoba = new DataTable();
         private DataTable DSfakture = new DataTable();
         private DataTable DTpromocije1;
+        private int brojStavkiUFakturi { get; set; }
         private DataTable DSFS = new DataTable();
         private DataTable DTOtprema = new DataTable();
         private DataTable DTpostavke = new DataTable();
@@ -1308,6 +1309,7 @@ namespace PCPOS
                 EnableDisable(false);
                 deleteFields();
                 btnSveFakture.Enabled = true;
+                ttxBrojFakture.Text = brojFakture();
                 ControlDisableEnable(1, 0, 0, 1, 0);
                 return;
             }
@@ -1438,6 +1440,7 @@ namespace PCPOS
             deleteFields();
             btnSveFakture.Enabled = true;
             ttxBrojFakture.ReadOnly = false;
+            ttxBrojFakture.Text = brojFakture();
             nmGodinaFakture.ReadOnly = false;
             ControlDisableEnable(1, 0, 0, 1, 0);
         }
@@ -1542,6 +1545,8 @@ namespace PCPOS
             ControlDisableEnable(0, 1, 1, 0, 1);
 
             DSfakture = classSQL.select("SELECT * FROM fakture WHERE broj_fakture = '" + broj_fakture_edit + "'", "fakture").Tables[0];
+            brojStavkiUFakturi = int.Parse(classSQL.select("SELECT count(*) FROM faktura_stavke WHERE broj_fakture = '" + broj_fakture_edit + "'", "fakture").Tables[0].Rows[0][0].ToString());
+            
 
             cbVD.SelectedValue = DSfakture.Rows[0]["id_vd"].ToString();
             txtSifraOdrediste.Text = DSfakture.Rows[0]["id_odrediste"].ToString();
@@ -1725,21 +1730,23 @@ namespace PCPOS
                         }
                         //}
                     }
-
-                    row1 = DTsend1.NewRow();
-                    row1["kolicina"] = dg(i, "kolicina");
-                    row1["vpc"] = dg(i, "vpc");
-                    row1["nbc"] = dg(i, "nc");
-                    row1["broj_fakture"] = ttxBrojFakture.Text;
-                    row1["porez"] = dg(i, "porez");
-                    row1["id_stavka"] = dg(i, "id_stavka");
-                    row1["sifra"] = ReturnSifra(dg(i, "sifra"));
-                    row1["rabat"] = dg(i, "rabat");
-                    row1["oduzmi"] = dg(i, "oduzmi");
-                    row1["porez_potrosnja"] = dg(i, "porez_potrosnja");
-                    row1["id_skladiste"] = "1"; //dgw.Rows[i].Cells[3].Value;
-                    row1["mpc"] = dg(i, "mpc");
-                    DTsend1.Rows.Add(row1);
+                    if (i > (brojStavkiUFakturi-1))
+                    {
+                        row1 = DTsend1.NewRow();
+                        row1["kolicina"] = dg(i, "kolicina");
+                        row1["vpc"] = dg(i, "vpc");
+                        row1["nbc"] = dg(i, "nc");
+                        row1["broj_fakture"] = ttxBrojFakture.Text;
+                        row1["porez"] = dg(i, "porez");
+                        row1["id_stavka"] = dg(i, "id_stavka");
+                        row1["sifra"] = ReturnSifra(dg(i, "sifra"));
+                        row1["rabat"] = dg(i, "rabat");
+                        row1["oduzmi"] = dg(i, "oduzmi");
+                        row1["porez_potrosnja"] = dg(i, "porez_potrosnja");
+                        row1["id_skladiste"] = "1"; //dgw.Rows[i].Cells[3].Value;
+                        row1["mpc"] = dg(i, "mpc");
+                        DTsend1.Rows.Add(row1);
+                    }
                 }
                 else
                 {
@@ -1751,29 +1758,32 @@ namespace PCPOS
                             SQL.SQLroba_prodaja.UpdateRows(dgw.Rows[i].Cells[3].Value.ToString(), kol, dg(i, "sifra"));
                         }
                     }
-
-                    row = DTsend.NewRow();
-                    row["kolicina"] = dg(i, "kolicina");
-                    row["vpc"] = dg(i, "vpc");
-                    row["nbc"] = dg(i, "nc");
-                    row["broj_fakture"] = ttxBrojFakture.Text;
-                    row["porez"] = dg(i, "porez");
-                    row["id_stavka"] = dg(i, "id_stavka");
-                    row["sifra"] = ReturnSifra(dg(i, "sifra"));
-                    row["rabat"] = dg(i, "rabat");
-                    row["oduzmi"] = dg(i, "oduzmi");
-                    row["porez_potrosnja"] = dg(i, "porez_potrosnja");
-                    row["id_skladiste"] = "1"; //dgw.Rows[i].Cells[3].Value;
-                    row["mpc"] = dg(i, "mpc");
-                    DTsend.Rows.Add(row);
+                    if (i > (brojStavkiUFakturi-1))
+                    {
+                        row = DTsend.NewRow();
+                        row["kolicina"] = dg(i, "kolicina");
+                        row["vpc"] = dg(i, "vpc");
+                        row["nbc"] = dg(i, "nc");
+                        row["broj_fakture"] = ttxBrojFakture.Text;
+                        row["porez"] = dg(i, "porez");
+                        row["id_stavka"] = dg(i, "id_stavka");
+                        row["sifra"] = ReturnSifra(dg(i, "sifra"));
+                        row["rabat"] = dg(i, "rabat");
+                        row["oduzmi"] = dg(i, "oduzmi");
+                        row["porez_potrosnja"] = dg(i, "porez_potrosnja");
+                        row["id_skladiste"] = "1"; //dgw.Rows[i].Cells[3].Value;
+                        row["mpc"] = dg(i, "mpc");
+                        DTsend.Rows.Add(row);
+                    }
                 }
             }
             provjera_sql(classSQL.insert("INSERT INTO aktivnost_zaposlenici (id_zaposlenik,datum,radnja) VALUES ('" + Properties.Settings.Default.id_zaposlenik + "','" + DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") + "','Nova faktura br." + ttxBrojFakture.Text + "')"));
-            provjera_sql(SQL.SQLfaktura.InsertStavke(DTsend));
-            if (GetStavkeCount() > 0)
+            provjera_sql(SQL.SQLfaktura.InsertStavke(DTsend1));
+            /*if (GetStavkeCount() > 0)
                 provjera_sql(SQL.SQLfaktura.UpdateStavke(DTsend1));
             else
                 provjera_sql(SQL.SQLfaktura.InsertStavke(DTsend1));
+                */
             ttxBrojFakture.ReadOnly = false;
             nmGodinaFakture.ReadOnly = false;
             edit = false;
@@ -1829,6 +1839,7 @@ namespace PCPOS
             dgw.Rows[br].Cells["jmj"].Value = DTRoba.Rows[0]["jm"].ToString();
             dgw.Rows[br].Cells["kolicina"].Value = "1";
             dgw.Rows[br].Cells["porez"].Value = DTRoba.Rows[0]["porez"].ToString();
+            dgw.Rows[br].Cells["id_stavka"].Value = DTRoba.Rows[0]["id_roba"].ToString();
             dgw.Rows[br].Cells["rabat"].Value = "0,00";
             dgw.Rows[br].Cells["rabat_iznos"].Value = "0,00";
             dgw.Rows[br].Cells["iznos_bez_pdva"].Value = "0,00";

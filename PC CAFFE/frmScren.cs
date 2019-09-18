@@ -130,12 +130,6 @@ namespace PCPOS
             catch
             {
             }
-            if (Properties.Settings.Default.id_dopustenje > 2)
-            {
-                Caffe.frmCaffe ks = new Caffe.frmCaffe();
-                ks.mainForm = this;
-                ks.Show();
-            }
         }
 
         public static void ProvjeriPostojiLiNeuspjelaFiskalizacija()
@@ -957,5 +951,14 @@ namespace PCPOS
             form.Show();
         }
 
+        private void frmScren_Shown(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.id_dopustenje > 2)
+            {
+                Caffe.frmCaffe ks = new Caffe.frmCaffe();
+                ks.mainForm = this;
+                ks.Show();
+            }
+        }
     }
 }

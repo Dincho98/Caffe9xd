@@ -1444,8 +1444,8 @@ namespace PCPOS.Caffe
                  this.Close();
              else
              {
-                this.Hide();
                 mainForm.btnOdjava.PerformClick();
+                this.Hide();
                 this.Close();
              }
              /*

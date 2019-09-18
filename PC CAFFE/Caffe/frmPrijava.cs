@@ -184,8 +184,8 @@ namespace PCPOS.Caffe
         {
             txtSifra.Text = "";
             this.Hide();
-            Caffe.frmCaffe frmCaffe=new Caffe.frmCaffe();
-            frmCaffe.Show();
+            Caffe.frmCaffe ks = new Caffe.frmCaffe();
+            ks.Show();
         }
 
         private void button12_Click(object sender, EventArgs e)

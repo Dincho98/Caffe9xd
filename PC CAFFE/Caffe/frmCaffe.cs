@@ -11,6 +11,9 @@ using System.IO;
 using System.Windows.Forms;
 using PCPOS.PosPrint;
 using System.Resources;
+using System.Drawing.Printing;
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 
 namespace PCPOS.Caffe
 {
@@ -58,6 +61,8 @@ namespace PCPOS.Caffe
         public DataSet DSpostavke;
         private DataTable DTpostavkePrinter;
         private DataTable DTpromocije;
+        private DataTable DTpostavke = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
+        DataTable DTsetting = classSQL.select_settings("SELECT * FROM pos_print", "pos_print").Tables[0];
         private DataTable DTpromocije1;
         private DataTable dtArtikli;
         private DataTable DTsend = new DataTable();
@@ -2243,6 +2248,7 @@ sql);
             partnerTrazi.FormBorderStyle = FormBorderStyle.None;
             partnerTrazi.MainForm = this;
             partnerTrazi.Dock = DockStyle.Fill;
+            partnerTrazi.TopMost = true;
             partnerTrazi.ShowDialog(this);
 
             if (Properties.Settings.Default.id_partner != "")
@@ -2277,12 +2283,14 @@ sql);
             {
                 frmStoloviZaNaplatuCustom cf = new frmStoloviZaNaplatuCustom();
                 cf.FRMcaffe = this;
+                cf.TopMost = true;
                 cf.ShowDialog(this);
             }
             else
             {
                 frmStoloviZaNaplatu cf = new frmStoloviZaNaplatu();
                 cf.FRMcaffe = this;
+                cf.TopMost = true;
                 cf.ShowDialog(this);
             }
             startTimerKartica(true, true, true);
@@ -2296,6 +2304,7 @@ sql);
                 frmBackOffice bo = new frmBackOffice();
                 bo.MainForm = this;
                 bo.Dock = DockStyle.Fill;
+                bo.TopMost = true;
                 bo.ShowDialog(this);
             }
             else
@@ -2309,6 +2318,7 @@ sql);
         {
             frmOpcije opcije = new frmOpcije();
             opcije.FormCaffe = this;
+            opcije.TopMost = true;
             opcije.ShowDialog(this);
 
             PrikazZadnjegRacuna();
@@ -2421,6 +2431,10 @@ remote);
             {
                 dgw.Rows.RemoveAt(dgw.CurrentRow.Index);
                 IzracunUkupno();
+            }
+            if (e.KeyCode == Keys.F3)
+            {
+                otvaranjeLadice();
             }
         }
 
@@ -2612,6 +2626,7 @@ remote);
         private void btnNarudzbe_Click(object sender, EventArgs e)
         {
             frmNarudzbe na = new frmNarudzbe();
+            na.TopMost = true;
             na.ShowDialog(this);
             startTimerKartica(true, true, true);
         }
@@ -2718,7 +2733,7 @@ remote);
                         }
                         else
                         {
-                            if (MessageBox.Show("Dali ste sigurni da želite završiti smjenu?", "Završetak smjene", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                            if (MessageBox.Show(new Form { TopMost = true }, "Dali ste sigurni da želite završiti smjenu?", "Završetak smjene", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                             {
                                 datumOD = DT_smjena.Rows[0]["pocetak"].ToString();
                                 DataTable DT3 = new DataTable();
@@ -2745,18 +2760,18 @@ remote);
                                 string sql11 = "UPDATE smjene SET zavrsetak='" + DateTime.Now.ToString("yyyy-MM-dd H:mm:ss") + "', zavrsno_stanje='" + Sukupno.Replace(",", ".") + "'," +
                                     "konobarZ='" + Properties.Settings.Default.id_zaposlenik + "' WHERE id='" + ZBS + "'  AND smjene.id_ducan='" + Util.Korisno.idDucan + "' AND smjene.id_kasa='" + Util.Korisno.idKasa + "' ";
                                 provjera_sql(classSQL.update(sql11));
-                                MessageBox.Show("Smjena je završena.", "Završeno!");
+                                MessageBox.Show( new Form { TopMost=true},"Smjena je završena.", "Završeno!");
                             }
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Smjena nije započeta.", "Greška");
+                        MessageBox.Show(new Form { TopMost = true }, "Smjena nije započeta.", "Greška");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Smjena nije započeta.", "Greška");
+                    MessageBox.Show(new Form { TopMost = true }, "Smjena nije započeta.", "Greška");
                 }
             }
 
@@ -3297,6 +3312,7 @@ remote);
                     {
                         frmPartnerTrazi partnerTrazi = new frmPartnerTrazi();
                         partnerTrazi.MainForm = this;
+                        partnerTrazi.TopMost = true;
                         partnerTrazi.ShowDialog(this);
                     }
 
@@ -3314,7 +3330,7 @@ remote);
                         else
                         {
                             removeBeautyOsoba();
-                            MessageBox.Show("Upisana šifra ne postoji.", "Greška");
+                            MessageBox.Show(new Form { TopMost = true }, "Upisana šifra ne postoji.", "Greška");
                         }
 
                         Properties.Settings.Default.id_partner = "";
@@ -3432,7 +3448,7 @@ remote);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(new Form { TopMost = true }, ex.Message);
             }
         }
 
@@ -3662,6 +3678,74 @@ remote);
             Thread.CurrentThread.CurrentCulture = culture;
             Thread.CurrentThread.CurrentUICulture = culture;
         }
+        #region OtvaranjeLadice
+        private void btnOtvaranjeLadice_Click(object sender, EventArgs e)
+        {
+            otvaranjeLadice();
+        }
 
+        private void otvaranjeLadice()
+        {
+            string printerName = DTsetting.Rows[0]["windows_printer_name"].ToString();
+            PrintDocument printDoc = new PrintDocument();
+
+            printDoc.PrinterSettings.PrinterName = printerName;
+
+            if (DTpostavke.Rows[0]["direct_print"].ToString() == "1")
+            {
+                if (DTpostavke.Rows[0]["ladicaOn"].ToString() == "1")
+                {
+                    openCashDrawer1();
+                }
+
+                string GS = Convert.ToString((char)29);
+                string ESC = Convert.ToString((char)27);
+
+                string COMMAND = "";
+                COMMAND = ESC + "@";
+                COMMAND += GS + "V" + (char)1;
+
+                PCPOS.PosPrint.RawPrinterHelper.SendStringToPrinter(printDoc.PrinterSettings.PrinterName, "" + COMMAND);
+            }
+            else
+            {
+                if (!printDoc.PrinterSettings.IsValid)
+                {
+                    string msg = String.Format(
+                       "Can't find printer \"{0}\".", printerName);
+                    MessageBox.Show(msg, "Print Error");
+                    return;
+                }
+                printDoc.PrintPage += new PrintPageEventHandler(PrintPage);
+                printDoc.Print();
+            }
+        }
+
+        private void PrintPage(object o, PrintPageEventArgs e)
+        {
+            StringFormat drawFormat = new StringFormat();
+            drawFormat = new StringFormat();
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+            System.Drawing.Text.PrivateFontCollection privateFonts = new PrivateFontCollection();
+            privateFonts.AddFontFile("Slike/msgothic.ttc");
+            System.Drawing.Font font = new Font(privateFonts.Families[0], 10);
+            String drawString = "";
+            Font drawFont = font;
+
+            e.Graphics.DrawString(drawString, drawFont, drawBrush, 0, 0, drawFormat);
+        }
+
+        private void openCashDrawer1()
+        {
+            string printerName = DTsetting.Rows[0]["windows_printer_name"].ToString();
+
+            byte[] codeOpenCashDrawer = new byte[] { 27, 112, 48, 55, 121 };
+            IntPtr pUnmanagedBytes = new IntPtr(0);
+            pUnmanagedBytes = Marshal.AllocCoTaskMem(5);
+            Marshal.Copy(codeOpenCashDrawer, 0, pUnmanagedBytes, 5);
+            PCPOS.PosPrint.RawPrinterHelper.SendBytesToPrinter(printerName, pUnmanagedBytes, 5);
+            Marshal.FreeCoTaskMem(pUnmanagedBytes);
+        }
+        #endregion
     }
 }

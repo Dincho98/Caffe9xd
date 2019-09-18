@@ -328,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(366, 411);
+            this.ClientSize = new System.Drawing.Size(366, 410);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnUp);
             this.Controls.Add(this.panel1);
@@ -347,6 +347,7 @@
             this.MinimumSize = new System.Drawing.Size(382, 449);
             this.Name = "frmMiniOtpremnica";
             this.Text = "Otpremnica";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frmMiniOtpremnica_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

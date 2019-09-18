@@ -81,11 +81,6 @@ namespace PCPOS.PosPrint
                 return "";
             }
         }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6
 
         public static bool[] artiklDodanNaRacun;
         //Friendly advice: If it works, don't touch it.
@@ -180,16 +175,6 @@ left join grupa on roba.id_grupa = grupa.id_grupa where roba.sifra = '{0}';", DT
                                 artiklZaPrint = false;
                             }
                         }
-<<<<<<< HEAD
-                        else if (id_podgrupa == 4)
-                        {
-                            int id_podgrupa2;
-                            int.TryParse(DTartikli.Rows[i-1]["id_podgrupa"].ToString(), out id_podgrupa2);
-                            if (id_podgrupa2 == 4)
-                            {
-                                DTrac.ImportRow(DTartikli.Rows[i]);
-                            }
-=======
                         //i mora biti >=1, jer napomena mora ici na artikl
                         //array[i-1] provjerava ako je artikl na koji ide napomena uopce stavljen na racun
                         else if (i>=1&&artiklDodanNaRacun[i-1]&&id_podgrupa == 4)
@@ -200,7 +185,6 @@ left join grupa on roba.id_grupa = grupa.id_grupa where roba.sifra = '{0}';", DT
                             {*/
                                 DTrac.ImportRow(DTartikli.Rows[i]);
                             //}
->>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6
                         }
                         else
                         {

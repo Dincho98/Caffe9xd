@@ -11,6 +11,7 @@ using System.IO;
 using System.Windows.Forms;
 using PCPOS.PosPrint;
 using System.Resources;
+using PCPOS.Caffe.Dodaci;
 
 namespace PCPOS.Caffe
 {
@@ -26,6 +27,7 @@ namespace PCPOS.Caffe
         private decimal UDSAPI_MAX_SCORES_DISCOUNT = 0;
         private decimal UDSAPI_SCORES_TO_SUBSTRACT_FROM_CUSTOMER_ACCOUNT = 0;
         private int CODE = 0;
+        public static bool omoguciOtvaranjeNapomene;
         private string[] IT = new string[] { "Bibite", "Cibo", "Ordihi", "R1 Conto", "Opzioni", "Tavoli", "Uscita", "Annulla", "Sconto", "Cancella ultino", "Finisci conto", "Aggiungi al tavolo" };
         public frmCaffe()
         {
@@ -43,7 +45,7 @@ namespace PCPOS.Caffe
         public string _OdabraniStol { get; set; }
         public decimal popust_na_cijeli_racun { get; set; }
         public bool _zavrsi { get; set; }
-        public bool mozeOtvoritiNapomenu { get; set; }
+        public static bool mozeOtvoritiNapomenu { get; set; }
 
         //kartica kupca
         public string kartica_kupca { get; set; }
@@ -105,7 +107,7 @@ namespace PCPOS.Caffe
         private int count_roba;
         private int product_wcount_hcount;
         private int current_page = 1;
-        public frmScren mainForm{ get; set; }
+        public frmScren mainForm { get; set; }
 
         private void frmCaffe_Load(object sender, EventArgs e)
         {
@@ -216,6 +218,7 @@ namespace PCPOS.Caffe
             timer1.Start();
             timer2.Start();
             timer3.Start();
+            timer4.Start();
 
             DataGridViewRow row = dgw.RowTemplate;
             row.Height = 35;
@@ -1095,6 +1098,8 @@ namespace PCPOS.Caffe
             {
                 startTimerKartica(false, true, true);
             }
+
+            omoguciOtvaranjeNapomene = false;
         }
 
         private int brojac = 0;
@@ -1440,34 +1445,34 @@ namespace PCPOS.Caffe
 
         private void btnOdjava_Click(object sender, EventArgs e)
         {
-             if (Properties.Settings.Default.id_dopustenje ==2)
-                 this.Close();
-             else
-             {
+            if (Properties.Settings.Default.id_dopustenje == 2)
+                this.Close();
+            else
+            {
                 this.Hide();
                 mainForm.btnOdjava.PerformClick();
                 this.Close();
-             }
-             /*
-            switch (Properties.Settings.Default.id_dopustenje)
-            {
-                case 1: // Izbacen
-                    this.Close();
-                    break;
-                case 2:
-                    this.Close();
-                    break;
-                case 3:
-                    CloseForm();
-                    break;
-                case 4:
-                    CloseForm();
-                    break;
-                    /* default:
-                         this.Close();
             }
-            
-            break;*/
+            /*
+           switch (Properties.Settings.Default.id_dopustenje)
+           {
+               case 1: // Izbacen
+                   this.Close();
+                   break;
+               case 2:
+                   this.Close();
+                   break;
+               case 3:
+                   CloseForm();
+                   break;
+               case 4:
+                   CloseForm();
+                   break;
+                   /* default:
+                        this.Close();
+           }
+
+           break;*/
         }
 
         private void btnDodajNaStol_Click(object sender, EventArgs e)
@@ -1561,13 +1566,13 @@ namespace PCPOS.Caffe
                         idPodgrupa = Convert.ToInt32(dg(i, "id_podgrupa"));
                     }
                     //Ovo je potrebno zbog F1
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         //MessageBox.Show("A");
                         int sifraArtikla = Convert.ToInt32(dg(i, "sifra"));
-                        string sqlCmd = "SELECT * FROM roba WHERE sifra='" + sifraArtikla+"'";
+                        string sqlCmd = "SELECT * FROM roba WHERE sifra='" + sifraArtikla + "'";
                         DataTable dt = classSQL.select(sqlCmd, "roba").Tables[0];
-                        idPodgrupa=Int32.Parse(dt.Rows[0]["id_podgrupa"].ToString());
+                        idPodgrupa = Int32.Parse(dt.Rows[0]["id_podgrupa"].ToString());
                     }
 
                     if (dodatak == 0)
@@ -1795,7 +1800,7 @@ namespace PCPOS.Caffe
             foreach (DataRow row in DTArtikli.Rows)
             {
                 string sifra = row["sifra_robe"].ToString();
-                decimal kom = decimal.Parse(row["kolicina"].ToString().Replace(',','.'));
+                decimal kom = decimal.Parse(row["kolicina"].ToString().Replace(',', '.'));
                 string mpc = row["mpc"].ToString().Replace(',', '.');
                 string vpc = row["vpc"].ToString().Replace(',', '.');
                 string porez = row["porez"].ToString().Replace(',', '.');
@@ -2797,6 +2802,12 @@ remote);
             ProvjeriNeuspjeleFiskalizacije();
         }
 
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            omoguciOtvaranjeNapomene = true;
+        }
+
         private void btnPredjela_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < dgw.Rows.Count; i++)
@@ -3285,7 +3296,7 @@ remote);
         {
             //if (_zavrsi || !string.IsNullOrEmpty(_OdabraniStol))
             //    return;
-            if (!mozeOtvoritiNapomenu)
+            if (!mozeOtvoritiNapomenu || !omoguciOtvaranjeNapomene)
                 return;
 
             try
@@ -3356,78 +3367,113 @@ remote);
 
                 // Odabir podgrupe za prikaz određenih napomena
                 frmOdabirPodgrupe formPodgrupa = new frmOdabirPodgrupe();
+                formPodgrupa.TopMost = true;
                 formPodgrupa.ShowDialog();
                 if (formPodgrupa.IdPodgrupa == 0)
                     return;
-
-                string sql = $"select * from napomene where aktivno = '1' AND id_podgrupa = {formPodgrupa.IdPodgrupa} order by napomena asc;";
-                DataSet dsNapomena = classSQL.select(sql, "napomene");
-                if (dsNapomena != null)
+                if (formPodgrupa.IdPodgrupa == 4)
                 {
-                    flpArtikli.Controls.Clear();
-                    setWidthHeightMarginForArtiklButtons();
-                    foreach (DataRow dr in dsNapomena.Tables[0].Rows)
-                    {
-                        object ime_gumba = "", name_gumba = "";
+                    formPodgrupa.Close();
+                    //flpArtikli.Controls.Clear();
+                    frmVracaNekuVrijednost forma = new frmVracaNekuVrijednost();
+                    forma.TopMost = true;
+                    forma.ShowDialog();
 
-                        ime_gumba = dr["napomena"];
-                        name_gumba = dr["id"];
+                    DataGridViewRow drNew = (DataGridViewRow)dgw.Rows[0].Clone();
 
-                        Button btnGrupa = new Button();
-                        btnGrupa.Text = ime_gumba.ToString();
-                        btnGrupa.Name = name_gumba.ToString();
-                        btnGrupa.BackColor = Color.Transparent;
+                    drNew.Cells[0].Value = Properties.Settings.Default.privremena_vrijednost;//Naziv
+                    drNew.Cells[1].Value = 0;//Kol
+                    drNew.Cells[2].Value = 0;//Cijena
+                    drNew.Cells[3].Value = null;
+                    drNew.Cells[4].Value = null;
+                    drNew.Cells[5].Value = 0;//porez
+                    drNew.Cells[6].Value = "0";//rabat
+                    drNew.Cells[7].Value = 0;//vpc
+                    drNew.Cells[8].Value = 0;//porez_potrosnja
+                    drNew.Cells[9].Value = "";//zakljucaj
+                    drNew.Cells[10].Value = "";//jelo
+                    drNew.Cells[11].Value = 0;//nbc
+                    drNew.Cells[12].Value = 2;//dod
+                    drNew.Cells[13].Value = "";//polapola
+                    drNew.Cells[14].Value = 4;
 
-                        btnGrupa.BackColor = Util.Korisno.hexToColor(DSpostavke.Tables[0].Rows[0]["button_color_icona"].ToString());
-                        btnGrupa.ForeColor = Util.Korisno.hexToColor(DSpostavke.Tables[0].Rows[0]["font_color_icona"].ToString());
-
-                        btnGrupa.Font = new Font("Arial", Convert.ToInt16(DSpostavke.Tables[0].Rows[0]["font_size_icona"]), Util.Korisno.biu(DSpostavke.Tables[0].Rows[0]["bui_icona"].ToString()));
-                        btnGrupa.Size = new Size(caffe_icon_width, caffe_icon_height);
-                        btnGrupa.Margin = new Padding(margin_all);
-
-                        btnGrupa.BackgroundImageLayout = ImageLayout.Stretch;
-
-                        btnGrupa.Cursor = Cursors.Hand;
-                        btnGrupa.FlatAppearance.BorderColor = Util.Korisno.hexToColor(DSpostavke.Tables[0].Rows[0]["font_color_icona"].ToString());
-                        btnGrupa.FlatAppearance.BorderSize = 0;
-                        btnGrupa.FlatAppearance.CheckedBackColor = Color.Transparent;
-                        btnGrupa.FlatAppearance.MouseDownBackColor = Color.Transparent;
-                        btnGrupa.FlatAppearance.MouseOverBackColor = Color.Transparent;
-                        btnGrupa.FlatStyle = FlatStyle.Flat;
-
-                        btnGrupa.TabIndex = 2;
-                        for (int i = napomenaindex; i < dgw.Rows.Count; i++)
-                        {
-                            if (i != napomenaindex && Convert.ToInt32(dgw.Rows[i].Cells["dod"].Value) == 2 && Convert.ToInt32(dgw.Rows[i].Cells["sifra"].Value) == Convert.ToInt32(name_gumba))
-                            {
-                                btnGrupa.Tag = true;
-                                btnGrupa.FlatAppearance.BorderSize = Util.Korisno.selectButtonBorderSize;
-                                break;
-                            }
-                            else if (i > napomenaindex && Convert.ToInt32(dgw.Rows[i].Cells["dod"].Value) == 0)
-                            {
-                                btnGrupa.Tag = false;
-                                break;
-                            }
-
-                            btnGrupa.Tag = false;
-                        }
-
-                        btnGrupa.UseVisualStyleBackColor = false;
-
-                        btnGrupa.Click += new EventHandler(this.btnNap_Click);
-                        btnGrupa.MouseEnter += new EventHandler(this.pic_MouseEnter1);
-                        btnGrupa.MouseLeave += new EventHandler(this.pic_MouseLeave1);
-                        btnGrupa.KeyDown += new KeyEventHandler(this.btnPice_KeyDown);
-                        btnGrupa.Enter += new EventHandler(this.btnPice_Enter);
-
-                        flpArtikli.Controls.Add(btnGrupa);
-
-                        btnGotovina.Focus();
-                    }
+                    int currentRow = dgw.CurrentCell.RowIndex;
+                    dgw.Rows.Insert((currentRow + 1), drNew);
+                    PaintRows(dgw);
+                    btnGotovina.Focus();
                 }
+                else
+                {
 
-                startTimerKartica(true, true, false);
+                    string sql = $"select * from napomene where aktivno = '1' AND id_podgrupa = {formPodgrupa.IdPodgrupa} order by napomena asc;";
+                    DataSet dsNapomena = classSQL.select(sql, "napomene");
+                    if (dsNapomena != null)
+                    {
+                        flpArtikli.Controls.Clear();
+                        setWidthHeightMarginForArtiklButtons();
+                        foreach (DataRow dr in dsNapomena.Tables[0].Rows)
+                        {
+                            object ime_gumba = "", name_gumba = "";
+
+                            ime_gumba = dr["napomena"];
+                            name_gumba = dr["id"];
+
+                            Button btnGrupa = new Button();
+                            btnGrupa.Text = ime_gumba.ToString();
+                            btnGrupa.Name = name_gumba.ToString();
+                            btnGrupa.BackColor = Color.Transparent;
+
+                            btnGrupa.BackColor = Util.Korisno.hexToColor(DSpostavke.Tables[0].Rows[0]["button_color_icona"].ToString());
+                            btnGrupa.ForeColor = Util.Korisno.hexToColor(DSpostavke.Tables[0].Rows[0]["font_color_icona"].ToString());
+
+                            btnGrupa.Font = new Font("Arial", Convert.ToInt16(DSpostavke.Tables[0].Rows[0]["font_size_icona"]), Util.Korisno.biu(DSpostavke.Tables[0].Rows[0]["bui_icona"].ToString()));
+                            btnGrupa.Size = new Size(caffe_icon_width, caffe_icon_height);
+                            btnGrupa.Margin = new Padding(margin_all);
+
+                            btnGrupa.BackgroundImageLayout = ImageLayout.Stretch;
+
+                            btnGrupa.Cursor = Cursors.Hand;
+                            btnGrupa.FlatAppearance.BorderColor = Util.Korisno.hexToColor(DSpostavke.Tables[0].Rows[0]["font_color_icona"].ToString());
+                            btnGrupa.FlatAppearance.BorderSize = 0;
+                            btnGrupa.FlatAppearance.CheckedBackColor = Color.Transparent;
+                            btnGrupa.FlatAppearance.MouseDownBackColor = Color.Transparent;
+                            btnGrupa.FlatAppearance.MouseOverBackColor = Color.Transparent;
+                            btnGrupa.FlatStyle = FlatStyle.Flat;
+
+                            btnGrupa.TabIndex = 2;
+                            for (int i = napomenaindex; i < dgw.Rows.Count; i++)
+                            {
+                                if (i != napomenaindex && Convert.ToInt32(dgw.Rows[i].Cells["dod"].Value) == 2 && Convert.ToInt32(dgw.Rows[i].Cells["sifra"].Value) == Convert.ToInt32(name_gumba))
+                                {
+                                    btnGrupa.Tag = true;
+                                    btnGrupa.FlatAppearance.BorderSize = Util.Korisno.selectButtonBorderSize;
+                                    break;
+                                }
+                                else if (i > napomenaindex && Convert.ToInt32(dgw.Rows[i].Cells["dod"].Value) == 0)
+                                {
+                                    btnGrupa.Tag = false;
+                                    break;
+                                }
+
+                                btnGrupa.Tag = false;
+                            }
+
+                            btnGrupa.UseVisualStyleBackColor = false;
+
+                            btnGrupa.Click += new EventHandler(this.btnNap_Click);
+                            btnGrupa.MouseEnter += new EventHandler(this.pic_MouseEnter1);
+                            btnGrupa.MouseLeave += new EventHandler(this.pic_MouseLeave1);
+                            btnGrupa.KeyDown += new KeyEventHandler(this.btnPice_KeyDown);
+                            btnGrupa.Enter += new EventHandler(this.btnPice_Enter);
+
+                            flpArtikli.Controls.Add(btnGrupa);
+
+                            btnGotovina.Focus();
+                        }
+                    }
+
+                    startTimerKartica(true, true, false);
+                }
             }
             catch (Exception ex)
             {
@@ -3661,6 +3707,5 @@ remote);
             Thread.CurrentThread.CurrentCulture = culture;
             Thread.CurrentThread.CurrentUICulture = culture;
         }
-
     }
 }

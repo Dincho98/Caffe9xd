@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PCPOS.Caffe.Dodaci;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,10 +40,7 @@ namespace PCPOS.Caffe
 
         private void btnProizvoljno_Click(object sender, EventArgs e)
         {
-            if (gumbicProizvoljnoOmogucen())
-            {
-                IdPodgrupa = 4;
-            }
+            IdPodgrupa = 4;
             Close();
         }
 

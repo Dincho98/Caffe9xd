@@ -4,7 +4,7 @@
     <path_database path="D:\PROJEKTI NE BRISATI\WINDOWS\PC CAFFE -  F45\PC CAFFE\bin\Debug\database.sdf" />
   </database_compact>
   <database_remote>
-    <postgree server="localhost" port="5432" username="postgres" database="db" active="1" />
+    <postgree server="localhost" port="5432" username="postgres" database="db2019" active="1" />
   </database_remote>
   <program>
     <run_progam run="caffe" />

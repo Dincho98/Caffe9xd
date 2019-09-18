@@ -20,6 +20,7 @@ namespace PCPOS.Caffe
         private DataTable DTsettings = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
 
         public frmScren MainForm { get; set; }
+        public frmMenu frmMenu { get; set; }
         private DataSet DSzaposlenik;
         private DataTable DTpostavke = new DataTable();
         private bool load = false;
@@ -160,15 +161,18 @@ namespace PCPOS.Caffe
                     frmMenu menu = new frmMenu();
                     //menu.Closed += (s, args) => this.Close();
                     menu.Show();
+                    //this.Close();
                 }
                 else
                 {
                     this.Hide();
                     frmScren scren = new frmScren();
                     scren.prvaPrijava = true;
-                    scren.MdiParent = this.MdiParent;
+                    scren.MdiParent = frmMenu;
                     scren.Dock = DockStyle.Fill;
+                    //scren.MdiParent.Show();
                     scren.Show();
+                    //this.Close();
                 }
             
         }
@@ -180,10 +184,8 @@ namespace PCPOS.Caffe
         {
             txtSifra.Text = "";
             this.Hide();
-            frmScren frmScren = new frmScren();
-            frmScren.Dock = DockStyle.Fill;
-            frmScren.Show();
-            frmScren.btnMaloprodaja.PerformClick();
+            Caffe.frmCaffe ks = new Caffe.frmCaffe();
+            ks.Show();
         }
 
         private void button12_Click(object sender, EventArgs e)

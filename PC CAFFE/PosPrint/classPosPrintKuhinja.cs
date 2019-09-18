@@ -421,7 +421,7 @@ left join grupa on roba.id_grupa = grupa.id_grupa where roba.sifra = '{0}';", DT
 
                             if (zadnji != msg) // !!
                             {
-                                if (MessageBox.Show(msg, ttl, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                                if (MessageBox.Show(new Form { TopMost=true},msg, ttl, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                                 {
                                     if (pijaca_i_trgovacka)
                                         printaj(4);

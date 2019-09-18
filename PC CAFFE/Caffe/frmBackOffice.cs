@@ -406,14 +406,16 @@ namespace PCPOS.Caffe
         private void btnRobaNaSkladistu_Click(object sender, EventArgs e)
         {
             Caffe.frmRobaNaSkladistu rs = new Caffe.frmRobaNaSkladistu();
-            rs.ShowDialog();
+            rs.TopMost = true;
+            rs.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Kasa.frmSviRacuni sr = new Kasa.frmSviRacuni();
             sr.FormBorderStyle = FormBorderStyle.None;
-            sr.ShowDialog();
+            sr.TopMost = true;
+            sr.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -427,13 +429,15 @@ namespace PCPOS.Caffe
             frmIspisProdajnihArtiklaNaMaliPrinter snm = new frmIspisProdajnihArtiklaNaMaliPrinter();
             snm.datumOd = dtpOD.Value;
             snm.datumDo = dtpDO.Value;
-            snm.ShowDialog();
+            snm.TopMost = true;
+            snm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Fiskalizacija.frmNeupjeleTransakcije nf = new Fiskalizacija.frmNeupjeleTransakcije();
-            nf.ShowDialog(this);
+            nf.TopMost = true;
+            nf.Show(this);
         }
 
         private void btnKontaktPodrska_Click(object sender, EventArgs e)
@@ -554,7 +558,8 @@ namespace PCPOS.Caffe
         private void btnBlagajnickiIzvjestaj_Click(object sender, EventArgs e)
         {
             frmBlagajnickiIzvjestaj bi = new frmBlagajnickiIzvjestaj();
-            bi.ShowDialog();
+            bi.TopMost = true;
+            bi.Show();
         }
 
         private void btnKarticaSkl_Click(object sender, EventArgs e)
@@ -580,7 +585,8 @@ namespace PCPOS.Caffe
         {
             frmKarticaKupca frmKK = new frmKarticaKupca();
             frmKK.WindowState = FormWindowState.Maximized;
-            frmKK.ShowDialog();
+            frmKK.TopMost = true;
+            frmKK.Show();
         }
 
         protected override CreateParams CreateParams

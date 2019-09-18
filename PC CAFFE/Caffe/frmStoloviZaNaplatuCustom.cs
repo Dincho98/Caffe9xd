@@ -1190,7 +1190,8 @@ where id= (select id_adresa_dostave from na_stol where id_stol = '" + _odabraniS
         {
             Caffe.frmDodatniPopustStolovi d = new frmDodatniPopustStolovi();
             d.frmCustom = this;
-            d.ShowDialog();
+            d.TopMost = true;
+            d.Show();
         }
 
         private void btnAdresa_Click(object sender, EventArgs e)
@@ -1201,7 +1202,8 @@ where id= (select id_adresa_dostave from na_stol where id_stol = '" + _odabraniS
                 f.broj_narudzbe = Convert.ToInt32(broj_narudzbe);
                 f.stol = Convert.ToInt32(_odabraniStol);
                 f.id_ducan = Convert.ToInt32(DTpostavke.Rows[0]["default_ducan"]);
-                f.ShowDialog();
+                f.TopMost = true;
+                f.Show();
             }
             catch (Exception ex)
             {
@@ -1223,7 +1225,8 @@ where id= (select id_adresa_dostave from na_stol where id_stol = '" + _odabraniS
         private void btnSveUKuhinju_Click(object sender, EventArgs e)
         {
             FrmNarudzbeNaStolu frmNarudzbeNaStolu = new FrmNarudzbeNaStolu();
-            frmNarudzbeNaStolu.ShowDialog();
+            frmNarudzbeNaStolu.TopMost = true;
+            frmNarudzbeNaStolu.Show();
         }
 
         private void btnOtpremnica_Click(object sender, EventArgs e)
@@ -1233,6 +1236,7 @@ where id= (select id_adresa_dostave from na_stol where id_stol = '" + _odabraniS
                 if (dgw.Rows.Count > 0)
                 {
                     frmMiniOtpremnica f = new frmMiniOtpremnica();
+                    f.TopMost = true;
                     f.dgv = dgw;
                     if (f.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                     {
@@ -1387,7 +1391,8 @@ where id= (select id_adresa_dostave from na_stol where id_stol = '" + _odabraniS
         private void button1_Click(object sender, EventArgs e)
         {
             frmStoloviNapredno frm = new frmStoloviNapredno();
-            frm.ShowDialog();
+            frm.TopMost = true;
+            frm.Show();
             //Refresh
             SetStolovi();
             IscrtajZidove();

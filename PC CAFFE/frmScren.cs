@@ -37,7 +37,6 @@ namespace PCPOS
 
         private void frmScren_Load(object sender, EventArgs e)
         {
-
             this.Paint += new PaintEventHandler(Class.Postavke.changeBackground);
 
             id_kasa = DTpostavke.Rows[0]["default_blagajna"].ToString();
@@ -130,12 +129,6 @@ namespace PCPOS
             }
             catch
             {
-            }
-            if (Properties.Settings.Default.id_dopustenje > 2)
-            {
-                Caffe.frmCaffe ks = new Caffe.frmCaffe();
-                ks.mainForm = this;
-                ks.Show();
             }
         }
 
@@ -883,10 +876,11 @@ namespace PCPOS
             Global.GlobalFunctions.BackupDatabase();
             Caffe.frmPrijava p = new Caffe.frmPrijava();
             this.Hide();
-            p.MdiParent = this.MdiParent;
-            p.WindowState = FormWindowState.Normal;
-            p.Dock = DockStyle.Fill;
+            //p.MdiParent = this.MdiParent;
+            //p.WindowState = FormWindowState.Normal;
+            //p.Dock = DockStyle.Fill;
             p.MainForm = this;
+            p.frmMenu = (this.MdiParent as frmMenu);
             p.Show();
             this.Close();
         }
@@ -957,5 +951,14 @@ namespace PCPOS
             form.Show();
         }
 
+        private void frmScren_Shown(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.id_dopustenje > 2)
+            {
+                Caffe.frmCaffe ks = new Caffe.frmCaffe();
+                ks.mainForm = this;
+                ks.Show();
+            }
+        }
     }
 }

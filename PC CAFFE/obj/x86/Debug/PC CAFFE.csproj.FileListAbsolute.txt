@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 C:\Users\PRO\Desktop\PC CAFFE\PC POS\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\PRO\Desktop\PC CAFFE\PC POS\obj\x86\Debug\Interop.SSCE.dll
@@ -7389,6 +7390,8 @@ C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PC POS.pdb
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PCPOS.Kasa.frmStornoRacuna2.resources
 C:\Users\Korisnik\Desktop\Caffe9\PC CAFFE\obj\x86\Debug\PCPOS.Caffe.frmOpcije2.resources
 >>>>>>> aeeaf5e87527dc74b0c6138ae01a3cb340b9fcd6
+=======
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\database.sdf
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\PC POS.exe.config
 F:\work\CodeIT\CodeiT - Caffe\PC CAFFE\bin\Debug\PC POS.exe

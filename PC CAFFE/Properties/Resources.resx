@@ -130,6 +130,9 @@
   <data name="Printer_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Printer-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bordo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bordo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,8 +148,8 @@
   <data name="plocice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plocice.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zuto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ikona_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ikona_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +157,8 @@
   <data name="Log_Out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Log-Out-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zid1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vodena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vodena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,14 +169,17 @@
   <data name="login_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login_icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Business_Man_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Business Man Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_1059" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1059.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Recyclebin_Empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Recyclebin-Empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="credit_cards_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\credit-cards-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barcode_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barcode-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +190,11 @@
   <data name="plavo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plavo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_10591" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\10591.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zelena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zelena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="folder_open_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder-open-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="perspective_button_standby" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\perspective_button_standby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,14 +202,8 @@
   <data name="pcpos_caffe_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pcpos-caffe-icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RoyalFurniture_Table_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RoyalFurniture_Table-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_support_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn-support-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnArtikli" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\btnArtikli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,14 +211,11 @@
   <data name="sivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zuto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ljubicasto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ljubicasto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zelena" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zelena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1059" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1059.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_10591" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10591.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnGrupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnGrupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +223,8 @@
   <data name="table_icon_med" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\table-icon-med.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ljubicasto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ljubicasto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RoyalFurniture_Table_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoyalFurniture_Table-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="filesave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filesave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,14 +250,17 @@
   <data name="Information_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Information-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_1211806505" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1211806505.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ikona_podrska" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ikona-podrska.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="crveno_crna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crveno_crna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vodena" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vodena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Business_Man_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Business Man Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="naranda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\naranda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,10 +268,16 @@
   <data name="ikona_izlaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ikona-izlaz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_1211806505" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1211806505.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Barcode_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Barcode-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_support_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-support-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zid1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pozadina formi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pozadina formi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

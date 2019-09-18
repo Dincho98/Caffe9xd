@@ -20,7 +20,7 @@ namespace PCPOS.Caffe
         }
 
         public Caffe.frmCaffe FormCaffe { get; set; }
-        private DataTable DTsetting;
+        private static DataTable DTsetting;
         private DataTable DTsend;
         private DataTable DTsettings = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
         private DataTable DTremotePostavke;
@@ -365,7 +365,8 @@ namespace PCPOS.Caffe
         private void button3_Click(object sender, EventArgs e)
         {
             Kasa.frmStornoRacuna sr = new Kasa.frmStornoRacuna();
-            sr.ShowDialog();
+            sr.TopMost = true;
+            sr.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -383,7 +384,8 @@ namespace PCPOS.Caffe
         private void button2_Click(object sender, EventArgs e)
         {
             Kasa.frmIspisOdredenogRacuna odd = new Kasa.frmIspisOdredenogRacuna();
-            odd.ShowDialog();
+            odd.TopMost = true;
+            odd.Show();
         }
 
         private void provjera_sql(string str)
@@ -495,9 +497,9 @@ namespace PCPOS.Caffe
             }
         }
 
-        private DataTable DTpostavke = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
+        private static DataTable DTpostavke = classSQL.select_settings("SELECT * FROM postavke", "postavke").Tables[0];
 
-        private void openCashDrawer1()
+        private static void openCashDrawer1()
         {
             string printerName = DTsetting.Rows[0]["windows_printer_name"].ToString();
 
@@ -510,6 +512,11 @@ namespace PCPOS.Caffe
         }
 
         private void button4_Click_1(object sender, EventArgs e)
+        {
+            otvaranjeLadice();
+        }
+
+        private static void otvaranjeLadice()
         {
             DTsetting = classSQL.select_settings("SELECT * FROM pos_print", "pos_print").Tables[0];
             string printerName = DTsetting.Rows[0]["windows_printer_name"].ToString();
@@ -547,7 +554,7 @@ namespace PCPOS.Caffe
             }
         }
 
-        private void PrintPage(object o, PrintPageEventArgs e)
+        private static void PrintPage(object o, PrintPageEventArgs e)
         {
             StringFormat drawFormat = new StringFormat();
             drawFormat = new StringFormat();
@@ -731,11 +738,12 @@ namespace PCPOS.Caffe
             try
             {
                 Caffe.frmNaknadnoDodavanjePartnera f = new frmNaknadnoDodavanjePartnera();
-                f.ShowDialog();
+                f.TopMost = true;
+                f.Show();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(new Form { TopMost = true }, ex.Message);
             }
         }
 
@@ -743,8 +751,8 @@ namespace PCPOS.Caffe
         {
             try
             {
-                string broj_otpremnice = Interaction.InputBox("Ispis otpremnice", "Otpremnica", classSQL.select("select coalesce(max(broj_otpremnice), 0) as br from otpremnice", "otpremnice").Tables[0].Rows[0]["br"].ToString());
-                if (broj_otpremnice != null && broj_otpremnice != "0")
+                string broj_otpremnice =classSQL.select("select coalesce(max(broj_otpremnice), 0) as br from otpremnice", "otpremnice").Tables[0].Rows[0]["br"].ToString();
+                if (MessageBox.Show(new Form { TopMost=true},"Želite li ispisati otpremnicu broj "+broj_otpremnice+"?", "Generirano!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Class.Otpremnica _otpremnica = new Class.Otpremnica();
                     _otpremnica.otpremnicaPripremaZaPrint(broj_otpremnice);
@@ -752,7 +760,7 @@ namespace PCPOS.Caffe
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(new Form { TopMost=true},ex.Message);
             }
         }
     }

@@ -2643,6 +2643,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\logo_code_it.jpg" />
+    <None Include="Resources\pozadina formi.png" />
     <Content Include="Ugostiteljstvo_okrugla.ico" />
     <None Include="Resources\ikona-izlaz.png" />
     <None Include="Resources\ikona_info.png" />

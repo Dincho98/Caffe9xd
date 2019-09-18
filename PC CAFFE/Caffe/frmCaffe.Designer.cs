@@ -30,10 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCaffe));
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
             this.flpGrupe = new System.Windows.Forms.FlowLayoutPanel();
             this.flpArtikli = new System.Windows.Forms.FlowLayoutPanel();
             this.lblBrojRac = new System.Windows.Forms.Label();
@@ -104,7 +111,11 @@
             this.labelPostojeNeuspjeleFiskalizacije = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+<<<<<<< HEAD
             this.timer4 = new System.Windows.Forms.Timer(this.components);
+=======
+            this.btnOtvaranjeLadice = new System.Windows.Forms.Button();
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
             ((System.ComponentModel.ISupportInitialize)(this.dgw)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -145,6 +156,7 @@
             this.dgw.AllowUserToResizeRows = false;
             resources.ApplyResources(this.dgw, "dgw");
             this.dgw.BackgroundColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
@@ -153,6 +165,16 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgw.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+=======
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
             this.dgw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgw.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.naziv,
@@ -170,6 +192,7 @@
             this.dod,
             this.polapola,
             this.id_podgrupa});
+<<<<<<< HEAD
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -178,11 +201,22 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw.DefaultCellStyle = dataGridViewCellStyle6;
+=======
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw.DefaultCellStyle = dataGridViewCellStyle14;
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
             this.dgw.GridColor = System.Drawing.Color.Gainsboro;
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.ReadOnly = true;
             this.dgw.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+<<<<<<< HEAD
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -197,6 +231,22 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             this.dgw.RowsDefaultCellStyle = dataGridViewCellStyle8;
+=======
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dgw.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            this.dgw.RowsDefaultCellStyle = dataGridViewCellStyle16;
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgw.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellClick);
             this.dgw.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellEnter);
@@ -841,10 +891,25 @@
             this.timer3.Interval = 600000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+<<<<<<< HEAD
             // timer4
             // 
             this.timer4.Interval = 500;
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+=======
+            // btnOtvaranjeLadice
+            // 
+            resources.ApplyResources(this.btnOtvaranjeLadice, "btnOtvaranjeLadice");
+            this.btnOtvaranjeLadice.BackColor = System.Drawing.Color.White;
+            this.btnOtvaranjeLadice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOtvaranjeLadice.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(53)))), ((int)(((byte)(79)))));
+            this.btnOtvaranjeLadice.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnOtvaranjeLadice.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.btnOtvaranjeLadice.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnOtvaranjeLadice.Name = "btnOtvaranjeLadice";
+            this.btnOtvaranjeLadice.UseVisualStyleBackColor = false;
+            this.btnOtvaranjeLadice.Click += new System.EventHandler(this.btnOtvaranjeLadice_Click);
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
             // 
             // frmCaffe
             // 
@@ -852,6 +917,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.btnOtvaranjeLadice);
             this.Controls.Add(this.btnKoristiKarticu);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -982,6 +1048,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dod;
         private System.Windows.Forms.DataGridViewTextBoxColumn polapola;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_podgrupa;
+<<<<<<< HEAD
         private System.Windows.Forms.Timer timer4;
+=======
+        public System.Windows.Forms.Button btnOtvaranjeLadice;
+>>>>>>> f120c95b9793967ed0e8749c8999f3e5ec32094c
     }
 }
